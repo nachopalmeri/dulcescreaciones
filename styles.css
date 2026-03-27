@@ -1,4 +1,4 @@
-﻿:root{
+:root{
   --nude:#F5EDE3;--rosa:#F2A7BB;--rosa-d:#D4748F;--crema:#FBF5EE;
   --choco:#5C3317;--choco-l:#8B5E3C;--blanco:#FFFFFF;--wa:#25D366;
   --text:#3D2314;--muted:#8B7067;
@@ -43,7 +43,7 @@ nav.scrolled{background:rgba(251,245,238,.93);backdrop-filter:blur(14px);box-sha
 @keyframes fadeUp{from{opacity:0;transform:translateY(40px);}to{opacity:1;transform:translateY(0);}}
 @keyframes logo-pulse{0%,100%{transform:scale(1);}50%{transform:scale(1.03);}}
 .hero-content{position:relative;z-index:2;text-align:center;padding:2rem;max-width:780px;animation:fadeUp var(--duration-hero) var(--ease-out) both;}
-.hero-logo{width:200px;height:200px;object-fit:contain;margin:0 auto 1.5rem;display:block;animation:fadeUp var(--duration-hero) var(--ease-out) both;cursor:pointer;transition:transform var(--duration-fast) var(--ease-out);}
+.hero-logo{width:200px;height:200px;object-fit:contain;margin:0 auto 1.5rem;display:block;animation:fadeUp var(--duration-hero) var(--ease-out) both;cursor:pointer;transition:transform var(--duration-fast) var(--ease-out);clip-path:inset(0 12% 0 0);}
 .hero-logo:active{animation:logo-pulse var(--duration-normal) var(--ease-out);}
 .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,6vw,5rem);font-weight:600;line-height:1.12;color:var(--choco);margin-bottom:.5rem;animation:fadeUp var(--duration-hero) var(--ease-out) both;animation-delay:150ms;}
 .hero h1 em{font-style:italic;color:var(--rosa-d);}
