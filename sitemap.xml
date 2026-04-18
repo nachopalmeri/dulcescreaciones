@@ -1,9 +1,248 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+                            http://www.google.com/schemas/sitemap-image/1.1 
+                            http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
+
+  <!-- ======================================== -->
+  <!-- PÁGINA PRINCIPAL - INDEX                 -->
+  <!-- Priority: 1.0 | ChangeFreq: weekly       -->
+  <!-- ======================================== -->
   <url>
-    <loc>https://dulcescreaciones.com.ar/</loc>
-    <lastmod>2026-03-27</lastmod>
+    <loc>https://dulcescreaciones.com/</loc>
+    <lastmod>2025-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    
+    <!-- Logo principal -->
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Pastelería Artesanal en Rosario</image:title>
+      <image:caption>Logo de Dulces Creaciones, pastelería artesanal especializada en tortas personalizadas</image:caption>
+    </image:image>
+    
+    <!-- Hero Image: Torta de corazones -->
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/images/torta-corazones-amor.webp</image:loc>
+      <image:title>Torta de Corazones para Enamorados</image:title>
+      <image:caption>Torta decorada con corazones de colores pastel, ideal para celebraciones románticas</image:caption>
+    </image:image>
+    
+    <!-- Galería destacada 1 -->
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/images/torta-globos-cumpleanos.webp</image:loc>
+      <image:title>Torta con Globos para Cumpleaños</image:title>
+      <image:caption>Torta festiva decorada con globos de colores vibrantes</image:caption>
+    </image:image>
+    
+    <!-- Galería destacada 2 -->
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/images/torta-disco-retro.webp</image:loc>
+      <image:title>Torta Disco Retro Temática</image:title>
+      <image:caption>Torta con temática disco retro, perfecta para fiestas ochenteras</image:caption>
+    </image:image>
   </url>
+
+  <!-- ======================================== -->
+  <!-- TORTAS INFANTILES                        -->
+  <!-- Priority: 0.9 | ChangeFreq: monthly      -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.com/tortas-infantiles.html</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    
+    <!-- Logo -->
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Tortas Infantiles Personalizadas</image:title>
+      <image:caption>Especialistas en tortas infantiles temáticas para cumpleaños de niños</image:caption>
+    </image:image>
+    
+    <!-- Torta Moana Disney -->
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/images/torta-moana-disney.webp</image:loc>
+      <image:title>Torta Temática Moana Disney</image:title>
+      <image:caption>Torta decorada con temática de Moana, personaje de Disney, ideal para cumpleaños infantiles</image:caption>
+    </image:image>
+    
+    <!-- Torta Kuromi Sanrio -->
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/images/torta-kuromi-sanrio.webp</image:loc>
+      <image:title>Torta Kuromi Sanrio</image:title>
+      <image:caption>Torta temática de Kuromi, personaje de Sanrio, decoración morada y elegante</image:caption>
+    </image:image>
+    
+    <!-- Galería infantil -->
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/images/torta-anime-tematica.webp</image:loc>
+      <image:title>Torta Anime Temática</image:title>
+      <image:caption>Torta personalizada con temática de anime para fans</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- TORTAS GAMING                              -->
+  <!-- Priority: 0.9 | ChangeFreq: monthly      -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.com/tortas-gaming.html</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    
+    <!-- Logo -->
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Tortas Gaming y Videojuegos</image:title>
+      <image:caption>Tortas personalizadas para gamers y fans de videojuegos en Rosario</image:caption>
+    </image:image>
+    
+    <!-- Torta Fortnite Gaming -->
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/images/torta-fortnite-gaming.webp</image:loc>
+      <image:title>Torta Fortnite Gaming</image:title>
+      <image:caption>Torta temática de Fortnite, popular videojuego, decorada con elementos del juego</image:caption>
+    </image:image>
+    
+    <!-- Torta Gaming Topper -->
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/images/torta-gaming-topper.webp</image:loc>
+      <image:title>Torta Gaming con Topper Decorativo</image:title>
+      <image:caption>Torta con topper gamer personalizado, ideal para gamers y esports</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- TORTAS FÚTBOL                              -->
+  <!-- Priority: 0.9 | ChangeFreq: monthly      -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.com/tortas-futbol.html</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    
+    <!-- Logo -->
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Tortas de Fútbol Personalizadas</image:title>
+      <image:caption>Tortas temáticas de fútbol para hinchas de todos los clubes en Rosario</image:caption>
+    </image:image>
+    
+    <!-- Torta Fútbol San Lorenzo -->
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/images/torta-futbol-san-lorenzo.webp</image:loc>
+      <image:title>Torta Fútbol San Lorenzo de Almagro</image:title>
+      <image:caption>Torta decorada con temática de San Lorenzo de Almagro, escudo azulgrana</image:caption>
+    </image:image>
+    
+    <!-- Torta Fútbol Camiseta -->
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/images/torta-futbol-camiseta.webp</image:loc>
+      <image:title>Torta en forma de Camiseta de Fútbol</image:title>
+      <image:caption>Torta 3D en forma de camiseta de fútbol, personalizable con cualquier equipo</image:caption>
+    </image:image>
+    
+    <!-- Torta Infantil Personalizada Fútbol -->
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/images/torta-infantil-personalizada.webp</image:loc>
+      <image:title>Torta Infantil Fútbol Personalizada</image:title>
+      <image:caption>Torta infantil personalizada con temática deportiva para cumpleaños de niños</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- TORTAS 15 AÑOS                           -->
+  <!-- Priority: 0.9 | ChangeFreq: monthly      -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.com/tortas-15-anos.html</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    
+    <!-- Logo -->
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Tortas para 15 Años</image:title>
+      <image:caption>Tortas elegantes y sofisticadas para fiestas de quince años en Rosario</image:caption>
+    </image:image>
+    
+    <!-- Torta 15 Años Fiesta -->
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/images/torta-15-anos-fiesta.webp</image:loc>
+      <image:title>Torta para Fiesta de 15 Años</image:title>
+      <image:caption>Torta elegante para fiesta de quince años, diseño festivo y sofisticado</image:caption>
+    </image:image>
+    
+    <!-- Torta Quinceañera Rosa -->
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/images/torta-quinceanos-rosa.webp</image:loc>
+      <image:title>Torta Quinceañera Rosa</image:title>
+      <image:caption>Torta rosa para quinceañera, diseño romántico y elegante</image:caption>
+    </image:image>
+    
+    <!-- Galería 15 años -->
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/images/torta-dos-pisos.webp</image:loc>
+      <image:title>Torta de Dos Pisos para 15 Años</image:title>
+      <image:caption>Torta elaborada de dos pisos, perfecta para celebraciones importantes</image:caption>
+    </image:image>
+    
+    <!-- Torta Elegante Festiva -->
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/images/torta-elegante-festiva.webp</image:loc>
+      <image:title>Torta Elegante Festiva</image:title>
+      <image:caption>Diseño elegante y festivo para celebraciones especiales de quince años</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- MESAS DULCES                               -->
+  <!-- Priority: 0.8 | ChangeFreq: monthly      -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.com/mesas-dulces.html</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    
+    <!-- Logo -->
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Mesas Dulces para Eventos</image:title>
+      <image:caption>Servicio de mesas dulces completas para eventos y celebraciones en Rosario</image:caption>
+    </image:image>
+    
+    <!-- Galería de mesas dulces - representativa -->
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/images/gallery-1.webp</image:loc>
+      <image:title>Mesa Dulce Decorada para Evento</image:title>
+      <image:caption>Decoración de mesa dulce con variedad de postres y torta principal</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/images/gallery-2.webp</image:loc>
+      <image:title>Detalles de Mesa Dulce</image:title>
+      <image:caption>Candy bar con macarons, cupcakes y cookies personalizados</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/images/gallery-3.webp</image:loc>
+      <image:title>Mesa Dulce Temática Infantil</image:title>
+      <image:caption>Mesa dulce decorada para cumpleaños infantil con temática colorida</image:caption>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://dulcescreaciones.com/images/gallery-4.webp</image:loc>
+      <image:title>Presentación Elegante de Mesa Dulce</image:title>
+      <image:caption>Arreglo sofisticado de mesa dulce para eventos formales</image:caption>
+    </image:image>
+  </url>
+
 </urlset>

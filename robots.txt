@@ -1,4 +1,30 @@
 User-agent: *
 Allow: /
+Disallow: /index_backup.html
+Disallow: /.git/
+Disallow: /convert_images.py
+Disallow: /conversion_report.txt
+Disallow: /create_index.ps1
+Disallow: /extract.ps1
+Disallow: /*.mp4$
+Disallow: /*.ps1$
 
-Sitemap: https://dulcescreaciones.com.ar/sitemap.xml
+# Allow specific crawlers
+User-agent: Googlebot
+Allow: /
+Allow: /*.webp$
+Allow: /*.jpg$
+Allow: /*.png$
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /images/
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap
+Sitemap: https://dulcescreaciones.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1

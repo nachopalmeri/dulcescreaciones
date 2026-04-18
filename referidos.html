@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="author" content="Dulces Creaciones"/>
+<meta name="theme-color" content="#F2A7BB"/>
+<meta name="color-scheme" content="light"/>
+<meta name="robots" content="index, follow"/>
+<meta name="googlebot" content="index, follow"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>"/>
+
+<!-- SEO Meta Tags -->
+<title>Programa de Referidos · Regalá Dulzura · Dulces Creaciones</title>
+<meta name="description" content="Programa de referidos Dulces Creaciones: Regalá $500 a un amigo, recibí $500 vos. Tortas personalizadas Temperley. Pedí tu código único."/>
+<meta name="keywords" content="programa referidos, referidos tortas, descuento tortas, codigo referido, dulces creaciones referidos, tortas personalizadas promocion"/>
+<link rel="canonical" href="https://dulcescreaciones.com/referidos.html"/>
+
+<!-- Geo Tags Argentina -->
+<meta name="geo.region" content="AR-B"/>
+<meta name="geo.placename" content="Temperley, Buenos Aires, Argentina"/>
+<meta name="geo.position" content="-34.7755;-58.3986"/>
+<meta name="ICBM" content="-34.7755, -58.3986"/>
+
+<!-- Open Graph -->
+<meta property="og:title" content="Programa de Referidos · Regalá Dulzura · Dulces Creaciones"/>
+<meta property="og:description" content="Regalá $500 a un amigo, recibí $500 vos. Pedí tu código de referido y empezá a ganar créditos."/>
+<meta property="og:image" content="https://dulcescreaciones.com/images/torta-referidos.webp"/>
+<meta property="og:url" content="https://dulcescreaciones.com/referidos.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="es_AR"/>
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Programa de Referidos · Regalá Dulzura"/>
+<meta name="twitter:description" content="Regalá $500 a un amigo, recibí $500 vos. Pedí tu código de referido."/>
+<meta name="twitter:image" content="https://dulcescreaciones.com/images/torta-referidos.webp"/>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="dns-prefetch" href="https://whatsapp.com"/>
+<link rel="preconnect" href="https://wa.me"/>
+<link rel="preload" href="https://fonts.googleapis.com/css2Afamily=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2Afamily=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap"/></noscript>
+<link rel="stylesheet" href="styles.css"/>
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/jsAid=G-7M2V2QC4ME"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7M2V2QC4ME');
+</script>
+
+<style>
+/* Referidos Page Specific Styles */
+.referidos-hero{background:linear-gradient(135deg,var(--rosa) 0%,var(--rosa-d) 100%);min-height:70vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
+.referidos-hero::before{content:'🎁';position:absolute;font-size:20rem;opacity:0.1;right:-5rem;top:-5rem;}
+.referidos-hero::after{content:'💕';position:absolute;font-size:15rem;opacity:0.1;left:-3rem;bottom:-3rem;}
+.referidos-content{position:relative;z-index:2;text-align:center;padding:2rem;max-width:800px;}
+.referidos-content h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,6vw,4.5rem);font-weight:600;color:white;margin-bottom:1rem;line-height:1.1;}
+.referidos-content p{color:rgba(255,255,255,0.9);font-size:1.1rem;margin-bottom:2rem;line-height:1.7;}
+
+.pasos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin:3rem auto;max-width:1000px;}
+@media(max-width:768px){.pasos-grid{grid-template-columns:1fr;}}
+.paso-card{background:white;padding:2.5rem 2rem;border-radius:var(--radius-lg);text-align:center;box-shadow:var(--shadow-md);transition:transform 0.3s,box-shadow 0.3s;}
+.paso-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);}
+.paso-num{width:70px;height:70px;background:linear-gradient(135deg,var(--rosa),var(--rosa-d));border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:2rem;color:white;font-weight:700;}
+.paso-card h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--choco);margin-bottom:0.75rem;}
+.paso-card p{color:var(--muted);font-size:0.95rem;line-height:1.7;}
+
+.beneficios-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin:2rem auto;max-width:800px;}
+@media(max-width:768px){.beneficios-grid{grid-template-columns:1fr;}}
+.beneficio-item{display:flex;align-items:flex-start;gap:1rem;padding:1.5rem;background:white;border-radius:var(--radius-md);box-shadow:var(--shadow-sm);}
+.beneficio-icon{font-size:2rem;flex-shrink:0;}
+.beneficio-text h4{font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--choco);margin-bottom:0.3rem;}
+.beneficio-text p{color:var(--muted);font-size:0.9rem;line-height:1.5;margin:0;}
+
+.ejemplo-box{background:white;padding:3rem 2rem;border-radius:var(--radius-lg);max-width:700px;margin:2rem auto;box-shadow:var(--shadow-md);text-align:center;}
+.ejemplo-box h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--choco);margin-bottom:2rem;}
+.ejemplo-step{display:flex;align-items:center;justify-content:center;gap:1rem;margin:1.5rem 0;font-size:1rem;color:var(--text);}
+@media(max-width:768px){.ejemplo-step{flex-direction:column;}}
+.ejemplo-arrow{font-size:2rem;color:var(--rosa-d);}
+.ejemplo-highlight{background:linear-gradient(135deg,var(--nude),var(--crema));padding:1rem 1.5rem;border-radius:var(--radius-md);font-weight:500;}
+
+.faq-referidos .faq-answer{max-height:0;overflow:hidden;transition:max-height 0.4s ease-out,padding 0.4s;}
+.faq-referidos .faq-answer.open{max-height:400px;padding:0 1.5rem 1.5rem;}
+
+.btn-referidos-big{display:inline-flex;align-items:center;gap:0.75rem;background:#25D366;color:white;font-family:'DM Sans',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:0.08em;text-transform:uppercase;padding:1.2rem 3rem;border-radius:999px;text-decoration:none;box-shadow:0 12px 40px rgba(37,211,102,0.4);transition:transform 0.15s,box-shadow 0.15s;}
+.btn-referidos-big:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 20px 48px rgba(37,211,102,0.5);}
+.btn-referidos-big svg{width:24px;height:24px;fill:currentColor;}
+
+.testimonio-referido{background:white;padding:2rem;border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);max-width:400px;margin:1rem;text-align:center;}
+.testimonio-referido .quote{font-style:italic;color:var(--choco);line-height:1.7;margin-bottom:1.5rem;font-size:1rem;}
+.testimonio-referido .ganancia{background:linear-gradient(135deg,var(--rosa),var(--rosa-d));color:white;padding:0.5rem 1rem;border-radius:99px;font-weight:600;display:inline-block;margin-bottom:1rem;}
+.testimonio-referido .autor{color:var(--muted);font-size:0.9rem;}
+.testimonios-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem;margin:2rem 0;}
+
+.terminos-box{background:var(--crema);padding:2rem;border-radius:var(--radius-md);max-width:900px;margin:2rem auto;}
+.terminos-box h3{color:var(--choco);font-family:'Cormorant Garamond',serif;font-size:1.5rem;margin-bottom:1rem;}
+.terminos-box ol{margin:0;padding-left:1.5rem;color:var(--muted);line-height:1.9;}
+.terminos-box li{margin-bottom:0.5rem;}
+
+/* FAQ Styles */
+.faq-referidos{max-width:800px;margin:0 auto;}
+.faq-referidos .faq-item{background:white;border-radius:12px;margin-bottom:1rem;box-shadow:0 2px 8px rgba(92,51,23,0.08);overflow:hidden;}
+.faq-referidos .faq-question{cursor:pointer;padding:1.5rem;display:flex;justify-content:space-between;align-items:center;margin:0;font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:500;color:var(--choco);transition:color 0.3s;}
+.faq-referidos .faq-question:hover{color:var(--rosa-d);}
+.faq-referidos .faq-question::after{content:'+';font-size:1.5rem;color:var(--rosa-d);transition:transform 0.3s;}
+.faq-referidos .faq-question.active::after{transform:rotate(45deg);}
+.faq-referidos .faq-answer p{color:var(--muted);line-height:1.7;margin:0;}
+</style>
+
+<!-- Schema.org: Programa de Referidos -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Offer",
+  "name": "Programa de Referidos - Regalá Dulzura",
+  "description": "Programa de referidos: Regalá $500 a un amigo, recibí $500 vos por cada referido exitoso",
+  "url": "https://dulcescreaciones.com/referidos.html",
+  "offeredBy": {
+    "@type": "Bakery",
+    "name": "Dulces Creaciones"
+  },
+  "potentialAction": {
+    "@type": "RegisterAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://wa.me/5491133266362?text=Hola!%20Quiero%20mi%20código%20de%20referido%20🎁"
+    }
+  }
+}
+</script>
+
+<!-- Schema.org: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cómo funciona el programa de referidosA",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El programa 'Regalá Dulzura' funciona así: 1) Pedís tu código único de referido. 2) Lo compartís con amigos. 3) Cuando un amigo usa tu código, él recibe $500 de descuento en su primera torta y vos acumulás $500 de crédito para tu próxima compra."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuántos amigos puedo referirA",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "¡Ilimitados! Mientras más amigos referís, más crédito acumulás. No hay límite de referidos por código."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El crédito tiene vencimientoA",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, el crédito acumulado no tiene fecha de vencimiento. Podés usarlo cuando quieras en tu próxima torta de $8000 o más."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header>
+<nav id="navbar">
+  <a href="index.html#inicio" class="nav-logo">Dulces Creaciones</a>
+  <button class="hamburger" aria-label="Menú" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="index.html#galeria">Galería</a></li>
+    <li><a href="index.html#rellenos">Sabores</a></li>
+    <li><a href="index.html#proceso">Cómo Pedir</a></li>
+    <li><a href="index.html#faq">Preguntas</a></li>
+    <li><a href="https://wa.me/5491133266362?text=Hola!%20Quiero%20mi%20código%20de%20referido%20🎁" target="_blank" rel="noopener noreferrer" class="nav-cta">WhatsApp</a></li>
+  </ul>
+</nav>
+</header>
+
+<main>
+
+<!-- HERO REFERIDOS -->
+<section class="referidos-hero" id="inicio">
+  <div class="referidos-content">
+    <span style="background:rgba(255,255,255,0.2);color:white;padding:0.4rem 1rem;border-radius:99px;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:1.5rem;">Programa Exclusivo</span>
+    <h1>Regalá Dulzura<br/>a tus Amigos 🎁</h1>
+    <p style="font-size:1.2rem;max-width:600px;margin:0 auto 2rem;">
+      <strong>Regalá $500 a un amigo, recibí $500 vos.</strong><br/>
+      Compartí tu experiencia y ganá créditos ilimitados para tus próximas tortas.
+    </p>
+    <a href="https://wa.me/5491133266362?text=Hola!%20Ya%20fui%20cliente%20y%20quiero%20mi%20código%20de%20referido%20🎁%20Mi%20nombre%20es:%20" target="_blank" rel="noopener noreferrer" class="btn-referidos-big">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Quiero mi Código
+    </a>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-inner">
+    <span class="marquee-item">Regalá $500 a un amigo</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Recibí $500 vos</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Crédito ilimitado</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Sin vencimiento</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Programa Regalá Dulzura</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Regalá $500 a un amigo</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Recibí $500 vos</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Crédito ilimitado</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Sin vencimiento</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">Programa Regalá Dulzura</span><span class="marquee-dot">✦</span>
+  </div>
+</div>
+
+<!-- CÓMO FUNCIONA -->
+<section id="como-funciona" style="background:var(--crema);padding:5rem 1.5rem;">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem;">
+      <span class="section-label">Simple y Rápido</span>
+      <h2 class="section-title">Cómo Funciona</h2>
+      <p style="color:var(--muted);max-width:500px;margin:1rem auto 0;">Tres pasos para empezar a ganar créditos ilimitados</p>
+    </div>
+    
+    <div class="pasos-grid">
+      <div class="paso-card reveal">
+        <div class="paso-num">1</div>
+        <h3>Pedí tu Código</h3>
+        <p>Escribinos por WhatsApp y te damos tu código único personalizado (ej: <strong>REF-MARIA-001</strong>)</p>
+      </div>
+      <div class="paso-card reveal reveal-delay-1">
+        <div class="paso-num">2</div>
+        <h3>Compartí con Amigos</h3>
+        <p>Compartí el código con amigos y familiares. Tu amigo recibe <strong>$500 de descuento</strong> en su primera torta.</p>
+      </div>
+      <div class="paso-card reveal reveal-delay-2">
+        <div class="paso-num">3</div>
+        <h3>Ganá Créditos</h3>
+        <p>Vos recibís <strong>$500 de crédito</strong> por cada referido que compra. ¡Acumulá ilimitado!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFICIOS -->
+<section id="beneficios" style="background:var(--nude);padding:5rem 1.5rem;">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem;">
+      <span class="section-label">Ventajas Exclusivas</span>
+      <h2 class="section-title">¿Por qué unirte?</h2>
+    </div>
+    
+    <div class="beneficios-grid">
+      <div class="beneficio-item reveal">
+        <div class="beneficio-icon">💰</div>
+        <div class="beneficio-text">
+          <h4>Ganá Crédito Real</h4>
+          <p>$500 por cada amigo que compra. Sin límite de acumulación.</p>
+        </div>
+      </div>
+      <div class="beneficio-item reveal reveal-delay-1">
+        <div class="beneficio-icon">🎁</div>
+        <div class="beneficio-text">
+          <h4>Regalá Descuentos</h4>
+          <p>Tus amigos ahorran $500 en su primera torta. ¡Ellos también ganan!</p>
+        </div>
+      </div>
+      <div class="beneficio-item reveal reveal-delay-2">
+        <div class="beneficio-icon">♾️</div>
+        <div class="beneficio-text">
+          <h4>Sin Vencimiento</h4>
+          <p>Tu crédito nunca expira. Usalo cuando quieras.</p>
+        </div>
+      </div>
+      <div class="beneficio-item reveal reveal-delay-3">
+        <div class="beneficio-icon">📱</div>
+        <div class="beneficio-text">
+          <h4>Fácil y Rápido</h4>
+          <p>Solo compartís tu código por WhatsApp. Sin complicaciones.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EJEMPLO REAL -->
+<section id="ejemplo" style="background:linear-gradient(135deg,var(--rosa) 0%,var(--rosa-d) 100%);padding:5rem 1.5rem;">
+  <div class="container">
+    <div class="ejemplo-box reveal">
+      <h3>🎂 Ejemplo Real</h3>
+      
+      <div class="ejemplo-step">
+        <div class="ejemplo-highlight">
+          <strong>Mariana</strong> compra una torta Moana<br/>
+          <span style="color:var(--rosa-d);">→ Recibe su código REF-MARIA-001</span>
+        </div>
+      </div>
+      
+      <div class="ejemplo-arrow">↓</div>
+      
+      <div class="ejemplo-step">
+        <span>Comparte su código con 3 amigas en WhatsApp</span>
+      </div>
+      
+      <div class="ejemplo-arrow">↓</div>
+      
+      <div class="ejemplo-step">
+        <div class="ejemplo-highlight">
+          <strong>2 amigas compran</strong> usando el código<br/>
+          <span style="color:var(--rosa-d);">→ Cada una ahorra $500</span>
+        </div>
+      </div>
+      
+      <div class="ejemplo-arrow">↓</div>
+      
+      <div class="ejemplo-step">
+        <div style="background:linear-gradient(135deg,var(--rosa),var(--rosa-d));color:white;padding:1rem 2rem;border-radius:var(--radius-md);font-weight:600;">
+          Mariana acumula <strong>$1000</strong> en crédito<br/>
+          <span style="opacity:0.9;">para su próxima torta 💕</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section id="testimonios" style="background:var(--crema);padding:5rem 1.5rem;">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem;">
+      <span class="section-label">Experiencias Reales</span>
+      <h2 class="section-title">Lo que dicen nuestros referidores</h2>
+    </div>
+    
+    <div class="testimonios-grid">
+      <div class="testimonio-referido reveal">
+        <span class="ganancia">💰 $1500 acumulados</span>
+        <p class="quote">"Compartí mi código con las mamás del jardín. 3 usaron el código para tortas infantiles y yo ya tengo $1500 de crédito. ¡Es genial!"</p>
+        <p class="autor">— Mariana L., Temperley</p>
+      </div>
+      
+      <div class="testimonio-referido reveal reveal-delay-1">
+        <span class="ganancia">💰 $500 acumulados</span>
+        <p class="quote">"Mi hermana usó mi código para su torta de 15 años. Ella ahorró $500 y yo ya tengo crédito para mi próxima compra."</p>
+        <p class="autor">— Gabriel P., Lomas de Zamora</p>
+      </div>
+      
+      <div class="testimonio-referido reveal reveal-delay-2">
+        <span class="ganancia">💰 $2000 acumulados</span>
+        <p class="quote">"Soy fanática de Dulces Creaciones y siempre recomiendo. Ya junté $2000 y lo voy a usar para mi torta de cumpleaños."</p>
+        <p class="autor">— Silvia R., Adrogué</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLICITAR CÓDIGO -->
+<section id="solicitar" style="background:var(--choco);padding:5rem 1.5rem;text-align:center;">
+  <div class="container">
+    <div class="reveal" style="max-width:600px;margin:0 auto;">
+      <span class="section-label" style="color:var(--rosa);">¿Ya sos clienteA</span>
+      <h2 class="section-title" style="color:white;margin-bottom:1rem;">Pedí tu Código de Referido</h2>
+      <p style="color:rgba(255,255,255,0.8);margin-bottom:2.5rem;line-height:1.7;">
+        Si ya compraste una torta con nosotros, tenés derecho a tu código único.<br/>
+        Escribinos por WhatsApp y te lo damos al instante.
+      </p>
+      <a href="https://wa.me/5491133266362?text=Hola!%20Ya%20fui%20cliente%20y%20quiero%20mi%20código%20de%20referido%20🎁%20Mi%20nombre%20es:%20" target="_blank" rel="noopener noreferrer" class="btn-referidos-big" style="background:white;color:var(--wa);box-shadow:0 12px 40px rgba(255,255,255,0.3);">
+        <svg viewBox="0 0 24 24" style="fill:#25D366;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Solicitar mi Código
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TÉRMINOS -->
+<section id="terminos" style="background:var(--nude);padding:4rem 1.5rem;">
+  <div class="container">
+    <div class="terminos-box reveal">
+      <h3>📋 Términos y Condiciones</h3>
+      <ol>
+        <li>El código de referido es válido para pedidos de <strong>$8.000 o más</strong>.</li>
+        <li>El descuento de $500 <strong>no es acumulable</strong> con otras promociones.</li>
+        <li>El crédito del referidor se aplica en su próxima compra de $8.000+.</li>
+        <li>El código puede usarse <strong>ilimitadas veces</strong> (uno por cliente nuevo).</li>
+        <li>El crédito <strong>no tiene fecha de vencimiento</strong>.</li>
+        <li>Solo aplica para <strong>tortas personalizadas</strong>, no para productos de línea.</li>
+        <li>Dulces Creaciones se reserva el derecho de modificar el programa.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="background:var(--crema);padding:5rem 1.5rem;">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem;">
+      <span class="section-label">Preguntas Frecuentes</span>
+      <h2 class="section-title">Todo sobre el Programa</h2>
+    </div>
+    
+    <div class="faq-referidos">
+      <div class="faq-item reveal">
+        <h3 class="faq-question">¿Cómo funciona el programa de referidos?</h3>
+        <div class="faq-answer">
+          <p>Es muy simple: 1) Pedís tu código único de referido. 2) Lo compartís con amigos. 3) Cuando un amigo usa tu código, él recibe $500 de descuento en su primera torta y vos acumulás $500 de crédito para tu próxima compra.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item reveal reveal-delay-1">
+        <h3 class="faq-question">¿Cuántos amigos puedo referir?</h3>
+        <div class="faq-answer">
+          <p>¡Ilimitados! Mientras más amigos referís, más crédito acumulás. No hay límite de referidos por código.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item reveal reveal-delay-2">
+        <h3 class="faq-question">¿El crédito tiene vencimiento?</h3>
+        <div class="faq-answer">
+          <p>No, el crédito acumulado no tiene fecha de vencimiento. Podés usarlo cuando quieras en tu próxima torta de $8.000 o más.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item reveal reveal-delay-3">
+        <h3 class="faq-question">¿Cómo recibo mi código de referido?</h3>
+        <div class="faq-answer">
+          <p>Si ya sos cliente, escribinos por WhatsApp con el mensaje "Quiero mi código de referido" y te lo generamos al instante con tu nombre personalizado (ej: REF-MARIA-001).</p>
+        </div>
+      </div>
+      
+      <div class="faq-item reveal reveal-delay-1">
+        <h3 class="faq-question">¿Cómo se si alguien usó mi código?</h3>
+        <div class="faq-answer">
+          <p>Te avisamos por WhatsApp cada vez que alguien usa tu código y te informamos cuánto crédito acumulaste hasta el momento.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item reveal reveal-delay-2">
+        <h3 class="faq-question">¿Puedo usar mi crédito en cualquier torta?</h3>
+        <div class="faq-answer">
+          <p>Sí, podés usar tu crédito acumulado en cualquier torta personalizada de $8.000 o más. Podés usarlo todo junto o parcialmente.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="cta-final" style="background:linear-gradient(135deg,var(--rosa) 0%,var(--rosa-d) 100%);text-align:center;padding:5rem 2rem;">
+  <div class="reveal">
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.5rem);font-weight:600;color:white;margin-bottom:1rem;line-height:1.1;">¿Listo para empezar?</h2>
+    <p style="color:rgba(255,255,255,0.9);margin-bottom:2.5rem;font-size:1.1rem;max-width:500px;margin-left:auto;margin-right:auto;">
+      Pedí tu código hoy y empezá a ganar créditos para tus próximas tortas
+    </p>
+    <a href="https://wa.me/5491133266362?text=Hola!%20Ya%20fui%20cliente%20y%20quiero%20mi%20código%20de%20referido%20🎁%20Mi%20nombre%20es:%20" target="_blank" rel="noopener noreferrer" class="btn-referidos-big">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Quiero mi Código Ahora
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 <strong style="color:var(--rosa)">Dulces Creaciones</strong> · Elizabeth · Temperley, Zona Sur GBA ·
+  <a href="https://instagram.com/dulcescreaciones_dc" target="_blank" rel="noopener noreferrer">@dulcescreaciones_dc</a></p>
+  <p style="margin-top:.5rem;"><a href="index.html" style="color:var(--muted);text-decoration:none;font-size:.85rem;">← Volver al Inicio</a> · <a href="referidos.html" style="color:var(--rosa-d);text-decoration:none;font-size:.85rem;">Programa de Referidos</a></p>
+</footer>
+
+<a href="https://wa.me/5491133266362?text=Hola!%20Ya%20fui%20cliente%20y%20quiero%20mi%20código%20de%20referido%20🎁" target="_blank" rel="noopener noreferrer" class="fab-wa" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script src="scripts.js"></script>
+
+<!-- FAQ Accordion Script -->
+<script>
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => {
+    q.classList.toggle('active');
+    q.nextElementSibling.classList.toggle('open');
+  });
+});
+</script>
+
+</body>
+</html>

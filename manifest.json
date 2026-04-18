@@ -1,0 +1,130 @@
+{
+  "name": "Dulces Creaciones",
+  "short_name": "DulcesCrea",
+  "description": "Pasteleria artesanal - Tortas personalizadas y mesas dulces",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FBF5EE",
+  "theme_color": "#F2A7BB",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "es-AR",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "logo_perfil.jpg",
+      "sizes": "72x72",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "logo_perfil.jpg",
+      "sizes": "96x96",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "logo_perfil.jpg",
+      "sizes": "128x128",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "logo_perfil.jpg",
+      "sizes": "144x144",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "logo_perfil.jpg",
+      "sizes": "152x152",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "logo_perfil.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo_perfil.jpg",
+      "sizes": "384x384",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "logo_perfil.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "shopping"],
+  "screenshots": [
+    {
+      "src": "gallery_img_1.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Galeria de tortas personalizadas"
+    },
+    {
+      "src": "torta_fortnite.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Torta tematica Fortnite"
+    },
+    {
+      "src": "gallery_img_5.jpg",
+      "sizes": "640x640",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Torta personalizada"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Tortas Infantiles",
+      "short_name": "Infantiles",
+      "description": "Tortas para los mas pequeños",
+      "url": "/tortas-infantiles.html",
+      "icons": [
+        {
+          "src": "logo_perfil.jpg",
+          "sizes": "96x96",
+          "type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "name": "Tortas Gaming",
+      "short_name": "Gaming",
+      "description": "Tortas de videojuegos y streaming",
+      "url": "/tortas-gaming.html",
+      "icons": [
+        {
+          "src": "logo_perfil.jpg",
+          "sizes": "96x96",
+          "type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "name": "Mesas Dulces",
+      "short_name": "Mesas",
+      "description": "Mesas dulces para eventos",
+      "url": "/mesas-dulces.html",
+      "icons": [
+        {
+          "src": "logo_perfil.jpg",
+          "sizes": "96x96",
+          "type": "image/jpeg"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}
