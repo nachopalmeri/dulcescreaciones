@@ -50,250 +50,10 @@
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap"/></noscript>
 <link rel="stylesheet" href="styles.css"/>
-<style>
-.faq-accordion{max-width:800px;margin:0 auto}
-.faq-item{background:#fff;border-radius:12px;margin-bottom:1rem;box-shadow:0 2px 8px rgba(92,51,23,.08);overflow:hidden}
-.faq-question{cursor:pointer;padding:1.5rem;display:flex;justify-content:space-between;align-items:center;margin:0;font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:500;color:#5C3317;transition:color .3s}
-.faq-question:hover{color:#D4748F}
-.faq-question::after{content:'+';font-size:1.5rem;color:#D4748F;transition:transform .3s}
-.faq-question.active::after{transform:rotate(45deg)}
-.faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease-out,padding .4s}
-.faq-answer.open{max-height:300px;padding:0 1.5rem 1.5rem}
-.faq-answer p{color:#8B7067;line-height:1.7;margin:0}
-</style>
-
-<!-- Breadcrumb -->
-<link rel="prev" href="https://dulcescreaciones.com/"/>
-
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/jsíid=G-7M2V2QC4ME"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-7M2V2QC4ME');
-</script>
-
-<!-- 
-  INSTRUCCIONES PARA ACTIVAR META PIXEL:
-  1. Ir a business.facebook.com
-  2. Crear/Seleccionar cuenta publicitaria
-  3. Event Manager → Add New Data Source → Facebook Pixel
-  4. Copiar el Pixel ID y reemplazar '123456789012345' abajo
-  5. Testear con Facebook Pixel Helper (extensión Chrome)
--->
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod ?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-
-// Reemplazar 123456789012345 con tu Pixel ID real
-fbq('init', '123456789012345');
-fbq('track', 'PageView');
-</script>
-
-<noscript>
-<img height="1" width="1" style="display:none" 
-     src="https://www.facebook.com/tróid=123456789012345&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Meta Pixel Code -->
-
-<!-- Schema.org: LocalBusiness -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Bakery",
-  "@id": "https://dulcescreaciones.com/tortas-infantiles.html#business",
-  "name": "Dulces Creaciones",
-  "description": "Tortas infantiles personalizadas en Temperley, Zona Sur GBA. Especialistas en tortas temáticas Moana, Kuromi, Disney y personajes favoritos de los niños.",
-  "url": "https://dulcescreaciones.com/tortas-infantiles.html",
-  "telephone": "+5491133266362",
-  "email": "dulcescreaciones@gmail.com",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Temperley",
-    "addressRegion": "Buenos Aires",
-    "addressCountry": "AR"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": -34.7755,
-    "longitude": -58.3986
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "opens": "09:00",
-      "closes": "19:00"
-    }
-  ],
-  "priceRange": "$$",
-  "image": "https://dulcescreaciones.com/images/torta-moana-disney.webp",
-  "logo": "https://dulcescreaciones.com/logo_perfil.jpg",
-  "servesCuisine": ["Tortas Infantiles", "Tortas Personalizadas", "Mesas Temáticas", "Cupcakes"],
-  "areaServed": {
-    "@type": "GeoCircle",
-    "geoMidpoint": {
-      "@type": "GeoCoordinates",
-      "latitude": -34.7755,
-      "longitude": -58.3986
-    },
-    "geoRadius": "15000"
-  },
-  "sameAs": [
-    "https://instagram.com/dulcescreaciones_dc",
-    "https://www.facebook.com/dulcescreacionesDC"
-  ]
-}
-</script>
-
-<!-- Schema.org: BreadcrumbList -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Inicio",
-      "item": "https://dulcescreaciones.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Tortas Infantiles",
-      "item": "https://dulcescreaciones.com/tortas-infantiles.html"
-    }
-  ]
-}
-</script>
-
-<!-- Schema.org: Product - Torta Moana -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Torta Temática Moana Disney",
-  "description": "Torta infantil personalizada con temática Moana Disney. Bizcochuelo a elección con rellenos de dulce de leche, crema o ganache. Decoración con figuras del céano y personajes.",
-  "image": "https://dulcescreaciones.com/images/torta-moana-disney.webp",
-  "brand": {
-    "@type": "Brand",
-    "name": "Dulces Creaciones"
-  },
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "ARS",
-    "availability": "https://schema.org/PreOrder",
-    "validFrom": "2025-01-01",
-    "seller": {
-      "@type": "Bakery",
-      "name": "Dulces Creaciones"
-    }
-  }
-}
-</script>
-
-<!-- Schema.org: Product - Torta Kuromi -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Torta Temática Kuromi Sanrio",
-  "description": "Torta infantil personalizada con temática Kuromi de Sanrio. Decoración en tonos negro, rosa y morado. Perfecta para fans de Sanrio y Hello Kitty.",
-  "image": "https://dulcescreaciones.com/images/torta-kuromi-sanrio.webp",
-  "brand": {
-    "@type": "Brand",
-    "name": "Dulces Creaciones"
-  },
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "ARS",
-    "availability": "https://schema.org/PreOrder",
-    "validFrom": "2025-01-01",
-    "seller": {
-      "@type": "Bakery",
-      "name": "Dulces Creaciones"
-    }
-  }
-}
-</script>
-
-<!-- Schema.org: Product - Torta Infantil Personalizada -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Torta Infantil Personalizada",
-  "description": "Torta infantil personalizada con el personaje o temática favorita de tu hijo. Diseños únicos para cumpleaños inolvidables. Consultanos por tu idea.",
-  "image": "https://dulcescreaciones.com/images/torta-infantil-personalizada.webp",
-  "brand": {
-    "@type": "Brand",
-    "name": "Dulces Creaciones"
-  },
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "ARS",
-    "availability": "https://schema.org/PreOrder",
-    "validFrom": "2025-01-01",
-    "seller": {
-      "@type": "Bakery",
-      "name": "Dulces Creaciones"
-    }
-  }
-}
-</script>
-
-<!-- Schema.org: FAQPage -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "¿Con cuánta anticipación debo encargar una torta infantilA",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Recomendamos encargar las tortas infantiles con al menos 10 días de anticipación. Para personajes populares como Moana o Kuromi durante temporada alta, sugerimos 15 días de anticipación para asegurar disponibilidad."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Hacen tortas con personajes Disney como MoanaA",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sí, realizamos tortas temáticas de Disney incluyendo Moana, Frozen, Princesas, Mickey Mouse y todos los personajes populares. Cada torta es personalizada según tus preferencias."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Hacen tortas de Kuromi y personajes SanrioA",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Si, somos especialistas en tortas de Sanrio incluyendo Kuromi, Hello Kitty, My Melody, Cinnamoroll y todos los personajes de la familia Sanrio. Decoracion en colores caracteristicos."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Dónde retiro mi torta infantilA",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Las tortas infantiles se retiran personalmente en nuestra ubicación en Temperley. Coordinamos día y horario para que pases a buscar la torta de tu pequeño lista y en perfectas condiciones."
-      }
-    }
-  ]
-}
-</script>
 </head>
 <body>
+
+<a href="#galeria" class="skip-link">Saltar al contenido principal</a>
 
 <header>
 <nav id="navbar">
@@ -548,7 +308,7 @@ fbq('track', 'PageView');
         </div>
       </div>
       <div class="mapa-frame reveal reveal-delay-2">
-        <iframe src="https://maps.google.com/maps?q=Temperley,+Buenos+Aires,+Argentina&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        <iframe title="Mapa de ubicación en Temperley, Zona Sur GBA" src="https://maps.google.com/maps?q=Temperley,+Buenos+Aires,+Argentina&t=&z=13&ie=UTF8&iwloc=&output=embed"
           allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
@@ -624,24 +384,7 @@ fbq('track', 'PageView');
 
 <script src="scripts.js"></script>
 
-<!-- Meta Pixel Tracking for CRO -->
-<script>
-// Track WhatsApp CTA clicks
-function trackWhatsAppClick(ctaLocation) {
-  if (typeof fbq !== 'undefined') {
-    fbq('trackCustom', 'WhatsAppClick', {
-      location: ctaLocation,
-      page: window.location.pathname
-    });
-  }
-}
-
-// Add event listeners to CTAs
-document.addEventListener('DOMContentLoaded', function() {
-  // Track all WhatsApp links
-  document.querySelectorAll('a[href^="https://wa.me"]').forEach(function(link) {
-    link.addEventListener('click', function() {
-      const location = this.closest('section')A.id || 
+<!-- PWA Install Prompt --> 
                       this.classList.contains('fab-wa') A 'fab' : 'unknown';
       trackWhatsAppClick(location);
     });
@@ -669,7 +412,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   }
 });
 
-pwaInstallA.addEventListener('click', async () => {
+pwaInstall.addEventListener('click', async () => {
   if (!deferredPrompt) return;
   deferredPrompt.prompt();
   const { outcome } = await deferredPrompt.userChoice;
@@ -683,7 +426,7 @@ pwaInstallA.addEventListener('click', async () => {
   }, 300);
 });
 
-pwaDismissA.addEventListener('click', () => {
+pwaDismiss.addEventListener('click', () => {
   localStorage.setItem('pwaDismissed', 'true');
   pwaPrompt.classList.remove('visible');
   setTimeout(() => {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -46,250 +46,10 @@
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap"/></noscript>
 <link rel="stylesheet" href="styles.css"/>
-<style>
-.faq-accordion{max-width:800px;margin:0 auto}
-.faq-item{background:#fff;border-radius:12px;margin-bottom:1rem;box-shadow:0 2px 8px rgba(92,51,23,.08);overflow:hidden}
-.faq-question{cursor:pointer;padding:1.5rem;display:flex;justify-content:space-between;align-items:center;margin:0;font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:500;color:#5C3317;transition:color .3s}
-.faq-question:hover{color:#D4748F}
-.faq-question::after{content:'+';font-size:1.5rem;color:#D4748F;transition:transform .3s}
-.faq-question.active::after{transform:rotate(45deg)}
-.faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease-out,padding .4s}
-.faq-answer.open{max-height:300px;padding:0 1.5rem 1.5rem}
-.faq-answer p{color:#8B7067;line-height:1.7;margin:0}
-</style>
-
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/jsíid=G-7M2V2QC4ME"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-7M2V2QC4ME');
-</script>
-
-<!-- 
-  INSTRUCCIONES PARA ACTIVAR META PIXEL:
-  1. Ir a business.facebook.com
-  2. Crear/Seleccionar cuenta publicitaria
-  3. Event Manager → Add New Data Source → Facebook Pixel
-  4. Copiar el Pixel ID y reemplazar '123456789012345' abajo
-  5. Testear con Facebook Pixel Helper (extensión Chrome)
--->
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod ?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-
-// Reemplazar 123456789012345 con tu Pixel ID real
-fbq('init', '123456789012345');
-fbq('track', 'PageView');
-</script>
-
-<noscript>
-<img height="1" width="1" style="display:none" 
-     src="https://www.facebook.com/tróid=123456789012345&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Meta Pixel Code -->
-
-<!-- Schema.org: LocalBusiness -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Bakery",
-  "@id": "https://dulcescreaciones.com.ar/#business",
-  "name": "Dulces Creaciones",
-  "description": "Pastelería artesanal en Temperley, Zona Sur GBA. Tortas personalizadas gaming, Fortnite y anime. <!--  invisible SEO -->.",
-  "url": "https://dulcescreaciones.com.ar",
-  "telephone": "+5491133266362",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Temperley",
-    "addressRegion": "Buenos Aires",
-    "addressCountry": "AR"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": -34.7755,
-    "longitude": -58.3996
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "opens": "09:00",
-      "closes": "19:00"
-    }
-  ],
-  "priceRange": "$$",
-  "image": "https://dulcescreaciones.com.ar/images/torta-fortnite-gaming.webp",
-  "logo": "https://dulcescreaciones.com.ar/logo_perfil.jpg",
-  "servesCuisine": ["Pastelería artesanal", "Tortas gaming", "Tortas Fortnite", "Tortas anime"],
-  "sameAs": [
-    "https://instagram.com/dulcescreaciones_dc",
-    "https://www.facebook.com/dulcescreacionesDC"
-  ]
-}
-</script>
-
-<!-- Schema.org: Product - Torta Fortnite -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Torta Fortnite Gaming",
-  "description": "Torta temática de Fortnite para gamers. Bizcochuelo a elección con rellenos de dulce de leche, crema o ganache. Decoración con personajes, escudos y elementos del juego.",
-  "image": "https://dulcescreaciones.com.ar/images/torta-fortnite-gaming.webp",
-  "brand": {
-    "@type": "Brand",
-    "name": "Dulces Creaciones"
-  },
-  "category": "Tortas Temáticas Gaming",
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "ARS",
-    "availability": "https://schema.org/PreOrder",
-    "validFrom": "2025-01-01",
-    "seller": {
-      "@type": "Bakery",
-      "name": "Dulces Creaciones"
-    },
-
-      "shippingDestination": {
-        "@type": "DefinedRegion",
-        "addressCountry": "AR",
-        "addressRegion": "Buenos Aires"
-      }
-    }
-  },
-  "keywords": "torta fortnite, torta gaming, torta videojuegos, torta gamer"
-}
-</script>
-
-<!-- Schema.org: Product - Torta Anime -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Torta Temática Anime",
-  "description": "Torta personalizada con temática anime y cosplay. Decoración con personajes de tu serie favorita, estilo chibi o realista. Ideal para fans del anime y cosplayers.",
-  "image": "https://dulcescreaciones.com.ar/images/torta-anime-tematica.webp",
-  "brand": {
-    "@type": "Brand",
-    "name": "Dulces Creaciones"
-  },
-  "category": "Tortas Temáticas Anime",
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "ARS",
-    "availability": "https://schema.org/PreOrder",
-    "validFrom": "2025-01-01",
-    "seller": {
-      "@type": "Bakery",
-      "name": "Dulces Creaciones"
-    }
-  },
-  "keywords": "torta anime, torta cosplay, torta manga, torta otaku"
-}
-</script>
-
-<!-- Schema.org: Product - Torta Gaming Topper -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Torta Gaming con Topper Personalizado",
-  "description": "Torta dos pisos con temática gaming y topper personalizado con control de videojuegos. Perfecta para cumpleaños de gamers y fanáticos de los videojuegos.",
-  "image": "https://dulcescreaciones.com.ar/images/torta-gaming-topper.webp",
-  "brand": {
-    "@type": "Brand",
-    "name": "Dulces Creaciones"
-  },
-  "category": "Tortas Gaming Premium",
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "ARS",
-    "availability": "https://schema.org/PreOrder",
-    "validFrom": "2025-01-01",
-    "seller": {
-      "@type": "Bakery",
-      "name": "Dulces Creaciones"
-    }
-  },
-  "keywords": "torta gaming topper, torta control videojuegos, torta dos pisos gaming"
-}
-</script>
-
-<!-- Schema.org: BreadcrumbList -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Inicio",
-      "item": "https://dulcescreaciones.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Tortas Gaming & Anime",
-      "item": "https://dulcescreaciones.com/tortas-gaming.html"
-    }
-  ]
-}
-</script>
-
-<!-- Schema.org: FAQPage -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "¿Hacen tortas de Fortnite en Buenos AiresA",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sí, realizamos tortas temáticas de Fortnite con decoración personalizada incluyendo personajes, escudos y elementos del juego. Ideales para cumpleaños de gamers. Las tortas se retiran personalmente en Temperley."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Pueden hacer tortas con temática de animeA",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "¡Por supuesto! Creamos tortas temáticas de anime con personajes de tu serie favorita, estilo chibi o realista. Popular entre teens y jóvenes. Consultanos por WhatsApp para diseñar tu torta anime personalizada."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Con cuánta anticipación debo pedir una torta gamingA",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Recomendamos encargar tortas gaming y anime con al menos 10 días de anticipación. Los diseños personalizados con personajes requieren tiempo de elaboración para garantizar la mejor calidad."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Dónde retiro mi torta gamingA",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Las tortas gaming se retiran personalmente en nuestra ubicación en Temperley. Coordinamos día y horario para que pases a buscar tu pedido listo y en perfectas condiciones."
-      }
-    }
-  ]
-}
-</script>
 </head>
 <body>
+
+<a href="#galeria" class="skip-link">Saltar al contenido principal</a>
 
 <header>
 <nav id="navbar">
@@ -503,7 +263,7 @@ fbq('track', 'PageView');
         </div>
       </div>
       <div class="mapa-frame reveal reveal-delay-2">
-        <iframe src="https://maps.google.com/maps?q=Temperley,+Buenos+Aires,+Argentina&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        <iframe title="Mapa de ubicación en Temperley, Zona Sur GBA" src="https://maps.google.com/maps?q=Temperley,+Buenos+Aires,+Argentina&t=&z=13&ie=UTF8&iwloc=&output=embed"
           allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
@@ -579,24 +339,12 @@ document.querySelectorAll('.faq-question').forEach(q => {
 </script>
 <script src="scripts.js"></script>
 
-<!-- Meta Pixel Tracking for CRO -->
-<script>
-// Track WhatsApp CTA clicks
-function trackWhatsAppClick(ctaLocation) {
-  if (typeof fbq !== 'undefined') {
-    fbq('trackCustom', 'WhatsAppClick', {
-      location: ctaLocation,
-      page: window.location.pathname
-    });
-  }
-}
-
-// Add event listeners to CTAs
+<!-- PWA Install Prompt -->
 document.addEventListener('DOMContentLoaded', function() {
   // Track all WhatsApp links
   document.querySelectorAll('a[href^="https://wa.me"]').forEach(function(link) {
     link.addEventListener('click', function() {
-      const location = this.closest('section')A.id || 
+      const location = this.closest('section')?.id || 
                       this.classList.contains('fab-wa') A 'fab' : 'unknown';
       trackWhatsAppClick(location);
     });
@@ -624,7 +372,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   }
 });
 
-pwaInstallA.addEventListener('click', async () => {
+pwaInstall.addEventListener('click', async () => {
   if (!deferredPrompt) return;
   deferredPrompt.prompt();
   const { outcome } = await deferredPrompt.userChoice;
@@ -638,7 +386,7 @@ pwaInstallA.addEventListener('click', async () => {
   }, 300);
 });
 
-pwaDismissA.addEventListener('click', () => {
+pwaDismiss.addEventListener('click', () => {
   localStorage.setItem('pwaDismissed', 'true');
   pwaPrompt.classList.remove('visible');
   setTimeout(() => {

@@ -152,3 +152,23 @@ if (faqQuestions.length > 0) {
     }
   });
 }
+
+// WhatsApp Click Tracking - Meta Pixel
+function trackWhatsAppClick(ctaLocation) {
+  if (typeof fbq !== 'undefined') {
+    fbq('track', 'Lead', {
+      content_category: 'tortas',
+      location: ctaLocation
+    });
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('a[href^="https://wa.me"]').forEach(function(link) {
+    link.addEventListener('click', function() {
+      const location = this.closest('section')?.id || 
+                      this.classList.contains('fab-wa') ? 'fab' : 'unknown';
+      trackWhatsAppClick(location);
+    });
+  });
+});

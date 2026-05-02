@@ -55,7 +55,7 @@
 <link rel="next" href="https://dulcescreaciones.com/tortas-personalizadas.html"/>
 
 <!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/jsíid=G-7M2V2QC4ME"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7M2V2QC4ME"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -277,69 +277,11 @@ fbq('track', 'PageView');
 }
 </script>
 
-<style>
-.mesas-hero .hero-bg{background:linear-gradient(135deg,#F5EDE3 0%,#f2c8d6 40%,#e8a0b8 100%)!important;}
-.mesas-hero h1 em{color:var(--choco-l);}
-.incluye-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem;}
-@media(max-width:900px){.incluye-grid{grid-template-columns:repeat(2,1fr);}}
-@media(max-width:480px){.incluye-grid{grid-template-columns:1fr;}}
-.incluye-card{background:white;border-radius:var(--radius-lg);padding:2rem;text-align:center;box-shadow:var(--shadow-sm);transition:transform var(--duration-normal) var(--ease-out),box-shadow var(--duration-normal) var(--ease-out);}
-.incluye-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);}
-.incluye-icon{font-size:3.5rem;margin-bottom:1rem;animation:bounce-subtle 2.5s ease-in-out infinite;}
-.incluye-card:nth-child(2) .incluye-icon{animation-delay:.5s;}
-.incluye-card:nth-child(3) .incluye-icon{animation-delay:1s;}
-.incluye-card:nth-child(4) .incluye-icon{animation-delay:1.5s;}
-.incluye-card h3{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:600;color:var(--choco);margin-bottom:.75rem;}
-.incluye-card p{color:var(--muted);font-size:.9rem;line-height:1.6;}
-.galeria-mesas{background:var(--nude);}
-.galeria-mesas-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;margin-top:2.5rem;justify-items:center;}
-@media(max-width:980px){.galeria-mesas-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
-@media(max-width:640px){.galeria-mesas-grid{grid-template-columns:1fr;}}
-.galeria-mesas-item{overflow:hidden;border-radius:28px;position:relative;aspect-ratio:9/16;cursor:pointer;transition:transform var(--duration-normal) var(--ease-out),box-shadow var(--duration-normal) var(--ease-out);width:min(100%,320px);background:#d9c3b6;}
-.galeria-mesas-item:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);}
-.galeria-mesas-item video{width:100%;height:100%;object-fit:cover;display:block;transition:transform var(--duration-normal) var(--ease-out);background:#e9ddd1;}
-.galeria-mesas-item:hover video{transform:scale(1.02);}
-.galeria-mesas-overlay{position:absolute;inset:auto 0 0 0;background:linear-gradient(to top,rgba(92,51,23,.78) 0%,rgba(92,51,23,0) 100%);transition:opacity var(--duration-normal) var(--ease-out);display:flex;align-items:flex-end;padding:1.25rem;min-height:32%;}
-.galeria-mesas-label{color:white;font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;line-height:1.2;}
-.galeria-videos-note{color:var(--muted);margin-top:.85rem;font-size:.92rem;line-height:1.7;max-width:620px;}
-.video-badge{position:absolute;top:1rem;left:1rem;background:rgba(255,255,255,.92);color:var(--choco);padding:.45rem .75rem;border-radius:999px;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;z-index:2;}
-.precios-mesas{background:var(--crema);text-align:center;}
-.precios-note{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;color:var(--choco);margin:1.5rem 0 2rem;}
-.coordina-section{background:var(--choco);}
-.coordina-section .section-label{color:var(--rosa);}
-.coordina-section .section-title{color:white;}
-.coordina-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-top:2.5rem;}
-@media(max-width:768px){.coordina-grid{grid-template-columns:1fr;}}
-.coordina-text p{color:rgba(255,255,255,.8);font-size:.95rem;line-height:1.8;margin-bottom:1rem;}
-.coordina-text ul{list-style:none;margin-top:1.5rem;}
-.coordina-text li{color:rgba(255,255,255,.85);padding:.5rem 0;padding-left:1.5rem;position:relative;}
-.coordina-text li::before{content:'✦';position:absolute;left:0;color:var(--rosa);}
-.coordina-img{border-radius:var(--radius-lg);overflow:hidden;box-shadow:0 16px 48px rgba(0,0,0,.2);}
-.coordina-img img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;}
-.tipos-mesas{background:var(--nude);}
-.tipos-grid{display:grid;grid-template:repeat(2,1fr)/repeat(2,1fr);gap:1.5rem;margin-top:2.5rem;}
-@media(max-width:768px){.tipos-grid{grid-template:1fr/1fr;}}
-.tipo-card{background:white;border-radius:var(--radius-lg);padding:2rem;box-shadow:var(--shadow-sm);transition:transform var(--duration-normal) var(--ease-out),box-shadow var(--duration-normal) var(--ease-out);}
-.tipo-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);}
-.tipo-card h3{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--choco);margin-bottom:.75rem;display:flex;align-items:center;gap:.5rem;}
-.tipo-card p{color:var(--muted);font-size:.9rem;line-height:1.7;}
-.breadcrumb{font-size:.8rem;color:var(--muted);margin-bottom:1.5rem;display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;}
-.breadcrumb a{color:var(--choco-l);text-decoration:none;transition:color var(--duration-fast);}
-.breadcrumb a:hover{color:var(--rosa-d);}
-.nav-category{display:inline-flex;align-items:center;gap:.5rem;background:var(--nude);border:1px solid var(--rosa);color:var(--choco);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;padding:.6rem 1.2rem;border-radius:var(--radius-full);text-decoration:none;margin-left:.5rem;transition:background var(--duration-fast),color var(--duration-fast);}
-.nav-category:hover{background:var(--rosa);color:white;}
-.faq-accordion{max-width:800px;margin:0 auto}
-.faq-item{background:#fff;border-radius:12px;margin-bottom:1rem;box-shadow:0 2px 8px rgba(92,51,23,.08);overflow:hidden}
-.faq-question{cursor:pointer;padding:1.5rem;display:flex;justify-content:space-between;align-items:center;margin:0;font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:500;color:#5C3317;transition:color .3s}
-.faq-question:hover{color:#D4748F}
-.faq-question::after{content:'+';font-size:1.5rem;color:#D4748F;transition:transform .3s}
-.faq-question.active::after{transform:rotate(45deg)}
-.faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease-out,padding .4s}
-.faq-answer.open{max-height:300px;padding:0 1.5rem 1.5rem}
-.faq-answer p{color:#8B7067;line-height:1.7;margin:0}
-</style>
+<link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
+
+<a href="#incluye" class="skip-link">Saltar al contenido principal</a>
 
 <header>
 <nav id="navbar">
@@ -636,28 +578,7 @@ fbq('track', 'PageView');
 
 <script src="scripts.js"></script>
 
-<!-- Meta Pixel Tracking for CRO -->
-<script>
-// Track WhatsApp CTA clicks
-function trackWhatsAppClick(ctaLocation) {
-  if (typeof fbq !== 'undefined') {
-    fbq('trackCustom', 'WhatsAppClick', {
-      location: ctaLocation,
-      page: window.location.pathname
-    });
-  }
-}
-
-// Add event listeners to CTAs
-document.addEventListener('DOMContentLoaded', function() {
-  // Track all WhatsApp links
-  document.querySelectorAll('a[href^="https://wa.me"]').forEach(function(link) {
-    link.addEventListener('click', function() {
-      const location = this.closest('section')A.id || 
-                      this.classList.contains('fab-wa') A 'fab' : 'unknown';
-      trackWhatsAppClick(location);
-    });
-  });
+<!-- PWA Install Prompt -->
 });
 
 // PWA Install Prompt
@@ -681,7 +602,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   }
 });
 
-pwaInstallA.addEventListener('click', async () => {
+pwaInstall.addEventListener('click', async () => {
   if (!deferredPrompt) return;
   deferredPrompt.prompt();
   const { outcome } = await deferredPrompt.userChoice;
@@ -695,7 +616,7 @@ pwaInstallA.addEventListener('click', async () => {
   }, 300);
 });
 
-pwaDismissA.addEventListener('click', () => {
+pwaDismiss.addEventListener('click', () => {
   localStorage.setItem('pwaDismissed', 'true');
   pwaPrompt.classList.remove('visible');
   setTimeout(() => {
