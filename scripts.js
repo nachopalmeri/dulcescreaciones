@@ -172,3 +172,115 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+// ===== DARK MODE TOGGLE =====
+const themeToggle = document.querySelector('.theme-toggle');
+const html = document.documentElement;
+
+function setTheme(theme) {
+  html.setAttribute('data-theme', theme);
+  if (themeToggle) {
+    themeToggle.textContent = theme === 'dark' ? '☀' : '☽';
+    themeToggle.title = theme === 'dark' ? 'Modo claro' : 'Modo oscuro';
+  }
+  localStorage.setItem('dc-theme', theme);
+}
+
+if (themeToggle) {
+  const saved = localStorage.getItem('dc-theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (saved) { setTheme(saved); }
+  else if (prefersDark) { setTheme('dark'); }
+
+  themeToggle.addEventListener('click', () => {
+    const current = html.getAttribute('data-theme') || 'light';
+    setTheme(current === 'dark' ? 'light' : 'dark');
+  });
+}
+
+// ===== LIGHTBOX =====
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxCounter = document.getElementById('lightbox-counter');
+const lightboxClose = document.querySelector('.lightbox-close');
+const lightboxPrev = document.querySelector('.lightbox-prev');
+const lightboxNext = document.querySelector('.lightbox-next');
+let lightboxImages = [];
+let lightboxIndex = 0;
+
+function openLightbox(images, startIndex) {
+  lightboxImages = images;
+  lightboxIndex = startIndex;
+  updateLightbox();
+  lightbox.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  lightbox.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+function updateLightbox() {
+  if (!lightboxImages[lightboxIndex]) return;
+  lightboxImg.src = lightboxImages[lightboxIndex].src;
+  lightboxImg.alt = lightboxImages[lightboxIndex].alt || '';
+  lightboxCounter.textContent = `${lightboxIndex + 1} / ${lightboxImages.length}`;
+}
+
+if (lightbox) {
+  const galleryItems = document.querySelectorAll('.gallery-item img');
+  const images = Array.from(galleryItems);
+
+  galleryItems.forEach((img, i) => {
+    img.parentElement.addEventListener('click', (e) => {
+      e.preventDefault();
+      openLightbox(images, i);
+    });
+  });
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+
+  lightboxPrev.addEventListener('click', () => {
+    lightboxIndex = (lightboxIndex - 1 + lightboxImages.length) % lightboxImages.length;
+    updateLightbox();
+  });
+
+  lightboxNext.addEventListener('click', () => {
+    lightboxIndex = (lightboxIndex + 1) % lightboxImages.length;
+    updateLightbox();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('active')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') { lightboxIndex = (lightboxIndex - 1 + lightboxImages.length) % lightboxImages.length; updateLightbox(); }
+    if (e.key === 'ArrowRight') { lightboxIndex = (lightboxIndex + 1) % lightboxImages.length; updateLightbox(); }
+  });
+
+  // Touch swipe support
+  let touchStartX = 0;
+  lightbox.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].screenX; });
+  lightbox.addEventListener('touchend', (e) => {
+    const diff = touchStartX - e.changedTouches[0].screenX;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) { lightboxIndex = (lightboxIndex + 1) % lightboxImages.length; }
+      else { lightboxIndex = (lightboxIndex - 1 + lightboxImages.length) % lightboxImages.length; }
+      updateLightbox();
+    }
+  });
+}
+
+// ===== SCROLL COUNTER ANIMATION =====
+const statNums = document.querySelectorAll('.stat-num');
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('counting');
+      counterObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+statNums.forEach(el => counterObserver.observe(el));
