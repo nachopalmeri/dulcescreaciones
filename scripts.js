@@ -153,12 +153,21 @@ if (faqQuestions.length > 0) {
   });
 }
 
-// WhatsApp Click Tracking - Meta Pixel
+// WhatsApp Click Tracking - Meta Pixel + GA4
 function trackWhatsAppClick(ctaLocation) {
+  // Meta Pixel
   if (typeof fbq !== 'undefined') {
     fbq('track', 'Lead', {
       content_category: 'tortas',
       location: ctaLocation
+    });
+  }
+  // GA4 Event
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'whatsapp_click', {
+      event_category: 'contact',
+      event_label: ctaLocation,
+      value: 1
     });
   }
 }
@@ -166,9 +175,12 @@ function trackWhatsAppClick(ctaLocation) {
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('a[href^="https://wa.me"]').forEach(function(link) {
     link.addEventListener('click', function() {
-      const location = this.closest('section')?.id || 
-                      this.classList.contains('fab-wa') ? 'fab' : 'unknown';
-      trackWhatsAppClick(location);
+      // Extract UTM source from URL or fallback to section ID
+      const url = new URL(this.href);
+      const utmSource = url.searchParams.get('utm_source') || 
+                        this.closest('section')?.id || 
+                        (this.classList.contains('fab-wa') ? 'fab' : 'unknown');
+      trackWhatsAppClick(utmSource);
     });
   });
 });
@@ -284,3 +296,32 @@ const counterObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 statNums.forEach(el => counterObserver.observe(el));
+
+// ===== EXIT INTENT POPUP (honest, no fake urgency) =====
+const exitPopup = document.getElementById('exit-popup');
+const exitDismissed = sessionStorage.getItem('dc-exit-dismissed');
+
+if (exitPopup && !exitDismissed) {
+  let exitShown = false;
+  document.addEventListener('mouseout', function(e) {
+    if (e.clientY < 5 && !exitShown) {
+      exitShown = true;
+      exitPopup.classList.add('active');
+    }
+  });
+
+  const exitClose = document.getElementById('exit-popup-close');
+  if (exitClose) {
+    exitClose.addEventListener('click', function() {
+      exitPopup.classList.remove('active');
+      sessionStorage.setItem('dc-exit-dismissed', '1');
+    });
+  }
+
+  exitPopup.addEventListener('click', function(e) {
+    if (e.target === exitPopup) {
+      exitPopup.classList.remove('active');
+      sessionStorage.setItem('dc-exit-dismissed', '1');
+    }
+  });
+}
