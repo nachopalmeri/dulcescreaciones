@@ -1,0 +1,108 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Dulces Creaciones",
+  "description": "Pasteleria artesanal especializada en tortas personalizadas y mesas dulces en Temperley, Zona Sur GBA, Argentina.",
+  "url": "https://dulcescreaciones.vercel.app",
+  "telephone": "+5491133266362",
+  "email": "dulcescreaciones@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Temperley",
+    "addressRegion": "Buenos Aires",
+    "addressCountry": "AR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -34.7755,
+    "longitude": -58.3986
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Buenos Aires",
+    "containsPlace": [
+      {"@type": "City", "name": "Temperley"},
+      {"@type": "City", "name": "Lomas de Zamora"},
+      {"@type": "City", "name": "Adrogue"},
+      {"@type": "City", "name": "Banfield"},
+      {"@type": "City", "name": "Turdera"},
+      {"@type": "City", "name": "Glew"}
+    ]
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    }
+  ],
+  "priceRange": "$$",
+  "paymentAccepted": ["MercadoPago", "transferencia bancaria", "efectivo"],
+  "currenciesAccepted": "ARS",
+  "image": "https://dulcescreaciones.vercel.app/logo_perfil.jpg",
+  "logo": "https://dulcescreaciones.vercel.app/logo_perfil.jpg",
+  "sameAs": [
+    "https://instagram.com/dulcescreaciones_dc",
+    "https://www.facebook.com/dulcescreacionesDC"
+  ],
+  "knowsAbout": [
+    "Tortas personalizadas",
+    "Mesas dulces",
+    "Candy bar",
+    "Tortas infantiles tematicas",
+    "Tortas de 15 anos",
+    "Reposteria creativa",
+    "Pasteleria artesanal",
+    "Cupcakes personalizados",
+    "Cake pops",
+    "Galletitas decoradas"
+  ],
+  "hasCredential": "Pasteleria artesanal con 5+ anos de experiencia",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "anos_experiencia",
+      "value": "5+",
+      "valueReference": "Desde 2021"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "tortas_entregadas",
+      "value": "224+",
+      "valueReference": "Contador actualizado 2026"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "estilo",
+      "value": "100% personalizado",
+      "valueReference": "Diseños únicos hechos a mano"
+    }
+  ],
+  "potentialAction": [
+    {
+      "@type": "OrderAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://wa.me/5491133266362?text=Hola!%20Quiero%20hacer%20un%20pedido%20de%20torta%20%F0%9F%8E%82",
+        "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"]
+      },
+      "result": {
+        "@type": "Order",
+        "name": "Pedido de torta personalizada"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://wa.me/5491133266362",
+        "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"]
+      },
+      "instrument": {
+        "@type": "Product",
+        "name": "WhatsApp"
+      }
+    }
+  ]
+}

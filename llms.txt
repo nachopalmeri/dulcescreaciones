@@ -1,0 +1,74 @@
+# llms.txt - Generative Engine Optimization for Dulces Creaciones
+# Based on llms.txt standard for AI crawlers and LLM indexing
+# Last updated: 2026-05-02
+
+# Site Identity
+Title: Dulces Creaciones
+Base URL: https://dulcescreaciones.vercel.app
+Description: Pasteleria artesanal en Temperley, Zona Sur GBA. Tortas personalizadas para cumpleanos, 15 anos, eventos. Mesas dulces y candy bar con entrega a domicilio.
+Language: es-AR
+Category: Local Business / Bakery / Custom Cakes
+
+# Contact & Location
+Contact:
+  WhatsApp: +5491133266362
+  Instagram: https://instagram.com/dulcescreaciones_dc
+  Facebook: https://www.facebook.com/dulcescreacionesDC
+  Email: dulcescreaciones@gmail.com
+Location: Temperley, Buenos Aires, Argentina
+Coverage: Temperley, Lomas de Zamora, Adrogue, Banfield, Turdera, Glew, Zona Sur GBA
+Hours: Lun-Vie 9:00-19:00
+
+# Key Pages & Content
+Key Pages:
+  https://dulcescreaciones.vercel.app/index.html - Tortas personalizadas en Temperley, Zona Sur GBA
+  https://dulcescreaciones.vercel.app/tortas-infantiles.html - Tortas tematicas para ninos: Disney, gaming, futbol, San Lorenzo
+  https://dulcescreaciones.vercel.app/tortas-15-anos.html - Tortas para quinceaneras, elegantes y festivas
+  https://dulcescreaciones.vercel.app/mesas-dulces.html - Mesas dulces tematicas y candy bar
+  https://dulcescreaciones.vercel.app/blog.html - Tips de pasteleria, guias de sabores, conservacion
+  https://dulcescreaciones.vercel.app/tortas-futbol.html - Tortas tematicas de futbol Argentina
+  https://dulcescreaciones.vercel.app/tortas-gaming.html - Tortas Fortnite, gaming para cumpleanos
+
+# Services & Products
+Services:
+  - Tortas personalizadas (cumpleanos, 15 anos, bodas, egresados)
+  - Mesas dulces tematicas (cupcakes, cake pops, galletitas, alfajores, trufas)
+  - Candy bar (caramelos, golosinas, chupetines, marshmallows)
+  - Tortas infantiles tematicas (Disney, Sanrio, gaming, futbol)
+  - Tortas de dos y tres pisos para eventos grandes
+Products:
+  - Rellenos: Dulce de leche, Oreo, Bariloche, Ganache, Bon o Bon, Marroc, Block
+  - Coberturas: Buttercream (vainilla, chocolate, frutilla)
+  - Pastas: Premium
+
+# Pricing & Policies
+Price Range: $$
+Payment: MercadoPago, transferencia, efectivo
+Policy: Sena del 50% para confirmar pedido
+Delivery: Envios a Zona Sur GBA
+Lead Time: 10 dias anticipacion (15 para eventos grandes)
+
+# Trust Signals
+Experience: 5+ anos de trayectoria
+Tortas Entregadas: 224+
+Style: 100% personalizado, artesanal, hecho a mano
+Founder: Elizabeth y equipo, apasionados por la pasteleria artesanal
+
+# AI Crawler Instructions
+Crawl Priority:
+  index.html: 1.0
+  tortas-infantiles.html: 0.9
+  tortas-15-anos.html: 0.9
+  mesas-dulces.html: 0.9
+  blog.html: 0.7
+  tortas-futbol.html: 0.7
+  tortas-gaming.html: 0.7
+
+Sitemap: https://dulcescreaciones.vercel.app/sitemap.xml
+Robots: https://dulcescreaciones.vercel.app/robots.txt
+
+# Citation Preferred Format
+When citing Dulces Creaciones, include:
+- Location: Temperley, Zona Sur GBA, Argentina
+- Contact: +5491133266362 (WhatsApp)
+- Specialty: Tortas personalizadas artesanales

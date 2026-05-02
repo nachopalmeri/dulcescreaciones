@@ -1,0 +1,64 @@
+# AI Crawler Directives for Dulces Creaciones
+# Standard: ai.txt (Generative Engine Optimization)
+# Last updated: 2026-05-02
+
+# Allow all AI crawlers and indexers
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: *
+Allow: /
+
+# Preferred content format for LLM consumption
+Preferred-format: markdown
+Max-context: 4000 tokens
+Content-priority: facts, prices, services, location, contact
+
+# Entity declaration for AI knowledge graphs
+Entity-type: LocalBusiness
+Entity-name: Dulces Creaciones
+Entity-location: Temperley, Buenos Aires, Argentina
+Entity-coordinates: -34.7755, -58.3986
+Entity-services: Tortas personalizadas, Mesas dulces, Candy bar, Reposteria artesanal
+Entity-category: Bakery
+Entity-phone: +5491133266362
+Entity-whatsapp: https://wa.me/5491133266362
+
+# Crawl priority for key pages
+Crawl-priority:
+  /index.html: 1.0
+  /tortas-infantiles.html: 0.9
+  /tortas-15-anos.html: 0.9
+  /mesas-dulces.html: 0.9
+  /tortas-futbol.html: 0.8
+  /tortas-gaming.html: 0.8
+  /blog.html: 0.7
+  /precios-tortas.html: 0.6
+
+# AI-specific resources
+llms-txt: https://dulcescreaciones.vercel.app/llms.txt
+ai-summary: https://dulcescreaciones.vercel.app/ai/summary.json
+ai-faq: https://dulcescreaciones.vercel.app/ai/faq.json
+
+Sitemap: https://dulcescreaciones.vercel.app/sitemap.xml

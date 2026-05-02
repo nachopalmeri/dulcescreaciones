@@ -8,19 +8,26 @@
 <meta name="color-scheme" content="light"/>
 <meta name="robots" content="index, follow"/>
 <meta name="googlebot" content="index, follow"/>
+<meta name="ai-purpose" content="Generative Engine Optimization"/>
+<meta name="ai-summary" content="https://dulcescreaciones.vercel.app/ai/summary.json"/>
+<meta name="ai-faq" content="https://dulcescreaciones.vercel.app/ai/faq.json"/>
+<meta name="llms-txt" content="https://dulcescreaciones.vercel.app/llms.txt"/>
+<link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs Summary"/>
+<link rel="alternate" type="application/json" href="/ai/summary.json" title="AI Entity Summary"/>
+<link rel="alternate" type="application/json" href="/ai/faq.json" title="AI FAQ Data"/>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>"/>
 
 <title>Dulces Creaciones | Tortas Personalizadas en Temperley, Zona Sur GBA</title>
-<meta name="description" content="🎂 Tortas artesanales 100% personalizadas en Temperley, Zona Sur GBA. Cumpleaños, 15 años, eventos. Envíos a toda la zona sur. Pedidos con 10 días de anticipación. ¡Consultá tu diseño!"/>
-<link rel="canonical" href="https://dulcescreaciones.com.ar/"/>
-<link rel="alternate" hreflang="es-AR" href="https://dulcescreaciones.com.ar/"/>
-<link rel="alternate" hreflang="x-default" href="https://dulcescreaciones.com.ar/"/>
+<meta name="description" content="Tortas personalizadas en Temperley, Zona Sur GBA. Cumpleaños, 15 años, eventos. Pastelería artesanal con entrega a domicilio. ¡Pedí tu presupuesto!"/>
+<link rel="canonical" href="https://dulcescreaciones.vercel.app/"/>
+<link rel="alternate" hreflang="es-AR" href="https://dulcescreaciones.vercel.app/"/>
+<link rel="alternate" hreflang="x-default" href="https://dulcescreaciones.vercel.app/"/>
 
 <!-- Open Graph -->
 <meta property="og:title" content="Dulces Creaciones | Tortas Personalizadas en Temperley"/>
 <meta property="og:description" content="Tortas artesanales 100% personalizadas. Envíos a toda Zona Sur GBA. ¡Hacé tu pedido! 🎂"/>
-<meta property="og:image" content="https://dulcescreaciones.com.ar/images/torta-moana-disney.webp"/>
-<meta property="og:url" content="https://dulcescreaciones.com.ar/"/>
+<meta property="og:image" content="https://dulcescreaciones.vercel.app/images/torta-moana-disney.webp"/>
+<meta property="og:url" content="https://dulcescreaciones.vercel.app/"/>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Dulces Creaciones"/>
 <meta property="og:locale" content="es_AR"/>
@@ -29,7 +36,7 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Dulces Creaciones | Tortas Personalizadas"/>
 <meta name="twitter:description" content="Tortas artesanales personalizadas en Temperley."/>
-<meta name="twitter:image" content="https://dulcescreaciones.com.ar/images/torta-moana-disney.webp"/>
+<meta name="twitter:image" content="https://dulcescreaciones.vercel.app/images/torta-moana-disney.webp"/>
 
 <!-- Geo Tags -->
 <meta name="geo.region" content="AR-B"/>
@@ -84,15 +91,38 @@ fbq('track', 'PageView');
      src="https://www.facebook.com/tr?id=TU_PIXEL_ID_AQUI&ev=PageView&noscript=1"/>
 </noscript>
 
+<!-- Tracking de clicks WhatsApp -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Tracking para todos los links de WhatsApp
+  document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(function(link) {
+    link.addEventListener('click', function() {
+      // Meta Pixel Lead event
+      if (typeof fbq !== 'undefined') {
+        fbq('track', 'Lead');
+      }
+      // GA4 custom event
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'whatsapp_click', {
+          'event_category': 'engagement',
+          'event_label': this.getAttribute('href'),
+          'page_location': window.location.pathname
+        });
+      }
+    });
+  });
+});
+</script>
+
 <!-- Schema.org: LocalBusiness -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Bakery",
-  "@id": "https://dulcescreaciones.com.ar/#business",
+  "@id": "https://dulcescreaciones.vercel.app/#business",
   "name": "Dulces Creaciones",
   "description": "Pastelería artesanal especializada en tortas personalizadas y mesas dulces en Temperley, Zona Sur GBA.",
-  "url": "https://dulcescreaciones.com.ar",
+  "url": "https://dulcescreaciones.vercel.app",
   "telephone": "+5491133266362",
   "email": "dulcescreaciones@gmail.com",
   "address": {
@@ -115,11 +145,70 @@ fbq('track', 'PageView');
     }
   ],
   "priceRange": "$$",
-  "image": "https://dulcescreaciones.com.ar/images/torta-moana-disney.webp",
-  "logo": "https://dulcescreaciones.com.ar/logo_perfil.jpg",
+  "image": "https://dulcescreaciones.vercel.app/images/torta-moana-disney.webp",
+  "logo": "https://dulcescreaciones.vercel.app/logo_perfil.jpg",
   "sameAs": [
     "https://instagram.com/dulcescreaciones_dc",
     "https://www.facebook.com/dulcescreacionesDC"
+  ],
+  "knowsAbout": [
+    "Tortas personalizadas",
+    "Mesas dulces",
+    "Candy bar",
+    "Tortas infantiles tematicas",
+    "Tortas de 15 anos",
+    "Reposteria creativa",
+    "Pasteleria artesanal",
+    "Cupcakes personalizados",
+    "Cake pops",
+    "Galletitas decoradas"
+  ],
+  "hasCredential": "Pasteleria artesanal con 5+ anos de experiencia",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "anos_experiencia",
+      "value": "5+",
+      "valueReference": "Desde 2021"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "tortas_entregadas",
+      "value": "224+",
+      "valueReference": "Contador actualizado 2026"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "estilo",
+      "value": "100% personalizado",
+      "valueReference": "Disenos unicos hechos a mano"
+    }
+  ],
+  "potentialAction": [
+    {
+      "@type": "OrderAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://wa.me/5491133266362?text=Hola!%20Quiero%20hacer%20un%20pedido%20de%20torta%20%F0%9F%8E%82",
+        "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"]
+      },
+      "result": {
+        "@type": "Order",
+        "name": "Pedido de torta personalizada"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://wa.me/5491133266362",
+        "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"]
+      },
+      "instrument": {
+        "@type": "Product",
+        "name": "WhatsApp"
+      }
+    }
   ]
 }
 </script>
@@ -243,7 +332,7 @@ fbq('track', 'PageView');
   "itemReviewed": {
     "@type": "Bakery",
     "name": "Dulces Creaciones",
-    "url": "https://dulcescreaciones.com.ar"
+    "url": "https://dulcescreaciones.vercel.app"
   },
   "ratingValue": "4.8",
   "bestRating": "5",
@@ -259,10 +348,10 @@ fbq('track', 'PageView');
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://dulcescreaciones.com.ar/"},
-    {"@type": "ListItem", "position": 2, "name": "Tortas Infantiles", "item": "https://dulcescreaciones.com.ar/tortas-infantiles.html"},
-    {"@type": "ListItem", "position": 3, "name": "Tortas 15 Años", "item": "https://dulcescreaciones.com.ar/tortas-15-anos.html"},
-    {"@type": "ListItem", "position": 4, "name": "Mesas Dulces", "item": "https://dulcescreaciones.com.ar/mesas-dulces.html"}
+    {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://dulcescreaciones.vercel.app/"},
+    {"@type": "ListItem", "position": 2, "name": "Tortas Infantiles", "item": "https://dulcescreaciones.vercel.app/tortas-infantiles.html"},
+    {"@type": "ListItem", "position": 3, "name": "Tortas 15 Años", "item": "https://dulcescreaciones.vercel.app/tortas-15-anos.html"},
+    {"@type": "ListItem", "position": 4, "name": "Mesas Dulces", "item": "https://dulcescreaciones.vercel.app/mesas-dulces.html"}
   ]
 }
 </script>
@@ -281,21 +370,21 @@ fbq('track', 'PageView');
       "position": 1,
       "name": "Escribinos por WhatsApp",
       "text": "Iniciá la charla, contanos la ocasión y despejá todas tus dudas sobre sabores y diseños.",
-      "image": "https://dulcescreaciones.com.ar/images/torta-moana-disney.webp"
+      "image": "https://dulcescreaciones.vercel.app/images/torta-moana-disney.webp"
     },
     {
       "@type": "HowToStep",
       "position": 2,
       "name": "Contanos tu idea y fecha",
       "text": "Definimos juntos el diseño, la temática y los rellenos. Reservamos tu lugar con seña del 50%.",
-      "image": "https://dulcescreaciones.com.ar/images/torta-dos-pisos.webp"
+      "image": "https://dulcescreaciones.vercel.app/images/torta-dos-pisos.webp"
     },
     {
       "@type": "HowToStep",
       "position": 3,
       "name": "¡Recibís tu torta!",
       "text": "Coordinamos entrega o retiro en Temperley. Tu torta única, lista para el festejo.",
-      "image": "https://dulcescreaciones.com.ar/images/torta-15-anos-fiesta.webp"
+      "image": "https://dulcescreaciones.vercel.app/images/torta-15-anos-fiesta.webp"
     }
   ]
 }
@@ -330,32 +419,19 @@ fbq('track', 'PageView');
 
 <!-- HERO -->
 <section class="hero" id="inicio">
-  <div class="hero-bg">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-    <div class="hero-slides">
-      <div class="hero-slide active"><img src="images/torta-moana-disney.webp" alt="" loading="eager"/></div>
-      <div class="hero-slide"><img src="images/torta-15-anos-fiesta.webp" alt="" loading="lazy"/></div>
-      <div class="hero-slide"><img src="images/torta-dos-pisos.webp" alt="" loading="lazy"/></div>
-      <div class="hero-slide"><img src="images/torta-futbol-camiseta.webp" alt="" loading="lazy"/></div>
+  <div class="hero-editorial">
+    <div class="hero-text-col">
+      <span class="hero-label">Pastelería Artesanal</span>
+      <h1>Tortas<br/>Personalizadas</h1>
+      <p class="hero-location">en Temperley, <em>Zona Sur</em></p>
+      <p class="hero-meta">Cumpleaños · 15 años · Eventos · Acordar entrega</p>
+      <a href="https://wa.me/5491133266362?text=Hola!%20Quiero%20hacer%20un%20pedido%20de%20torta%20%F0%9F%8E%82&utm_source=hero&utm_medium=whatsapp&utm_campaign=index" target="_blank" rel="noopener noreferrer" class="btn-wa btn-wa-shimmer hero-cta">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Pedí la tuya por WhatsApp
+      </a>
     </div>
-  </div>
-  <div class="hero-dots">
-    <button class="hero-dot active" aria-label="Slide 1"></button>
-    <button class="hero-dot" aria-label="Slide 2"></button>
-    <button class="hero-dot" aria-label="Slide 3"></button>
-    <button class="hero-dot" aria-label="Slide 4"></button>
-  </div>
-  <div class="hero-content">
-    <img src="logo_perfil-removebg-preview.png" alt="Dulces Creaciones - Tortas Personalizadas" class="hero-logo" width="200" height="200" fetchpriority="high"/>
-    <h1>Tortas Personalizadas en Temperley<br/><em>Zona Sur GBA</em></h1>
-    <p class="hero-sub">Cumpleaños · 15 años · Eventos · Envíos a toda la zona sur</p>
-    <a href="https://wa.me/5491133266362?text=Hola!%20Quiero%20hacer%20un%20pedido%20de%20torta%20%F0%9F%8E%82&utm_source=hero&utm_medium=whatsapp&utm_campaign=index" target="_blank" rel="noopener noreferrer" class="btn-wa btn-wa-shimmer">
-      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Pedí la tuya por WhatsApp →
-    </a>
-  </div>
-  <div class="scroll-hint"><span></span>Scroll</div>
+    <div class="hero-image-col">
+      <img src="images/torta-elegante-festiva.webp" alt="Torta elegante personalizada para eventos" loading="eager" fetchpriority="high"/>
+    </div>
 </section>
 
 <!-- MARQUEE -->
@@ -436,13 +512,13 @@ fbq('track', 'PageView');
           "Cada torta es única, creada especialmente para hacer inolvidable tu momento."
         </blockquote>
         <p class="about-text">
-          Somos <strong>Elizabeth y equipo</strong>, apasionados por la pastelería artesanal en <strong>Temperley, Zona Sur</strong>.
-          Trabajamos con materias primas de calidad y atención personalizada en cada pedido.
+          Pastelería artesanal en <strong>Temperley, Zona Sur</strong>.
+          Tortas personalizadas con atención en cada detalle.
         </p>
         <div class="stat-row">
           <div class="stat"><span class="stat-num">100%</span><span class="stat-lbl">Personalizado</span></div>
           <div class="stat"><span class="stat-num">Artesanal</span><span class="stat-lbl">Hecho a mano</span></div>
-          <div class="stat"><span class="stat-num">Zona Sur</span><span class="stat-lbl">Envíos GBA</span></div>
+          <div class="stat"><span class="stat-num">Zona Sur</span><span class="stat-lbl">Acordar entrega</span></div>
         </div>
       </div>
       <div class="about-imgs reveal reveal-delay-2">
@@ -550,26 +626,23 @@ fbq('track', 'PageView');
         <span class="section-label">Cobertura</span>
         <h2 class="section-title">Estamos en<br/>Temperley</h2>
         <p class="mapa-desc">
-          Hacemos envíos y entregas en toda la <strong>Zona Sur del GBA</strong>.
-          Desde nuestro taller artesanal llegamos a vos.
+          Acordamos entrega en toda la <strong>Zona Sur del GBA</strong>.
+          Desde nuestro taller en Temperley.
         </p>
         <div class="mapa-tags">
           <span class="mapa-tag">Temperley</span>
           <span class="mapa-tag">Lomas de Zamora</span>
           <span class="mapa-tag">Adrogué</span>
-          <span class="mapa-tag">Banfield</span>
-          <span class="mapa-tag">Turdera</span>
           <span class="mapa-tag">Glew</span>
         </div>
         <div style="margin-top:2rem;">
-          <a href="https://wa.me/5491133266362?text=Hola!%20Quiero%20consultar%20si%20hacen%20envios%20a%20mi%20zona&utm_source=zona&utm_medium=whatsapp&utm_campaign=index" target="_blank" class="btn-wa btn-wa-sm">
-            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Consultar envío
+          <a href="https://wa.me/5491133266362?text=Hola!%20Quiero%20consultar%20por%20entrega%20a%20mi%20zona&utm_source=zona&utm_medium=whatsapp&utm_campaign=entrega" target="_blank" class="btn-wa btn-wa-sm">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Consultar entrega
           </a>
         </div>
       </div>
       <div class="mapa-frame reveal reveal-delay-2">
         <iframe title="Mapa de ubicación en Temperley, Zona Sur GBA" src="https://maps.google.com/maps?q=Temperley,+Buenos+Aires,+Argentina&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
     </div>
   </div>
 </section>
@@ -607,8 +680,8 @@ fbq('track', 'PageView');
         <p>Recomendamos <strong>10 días de anticipación</strong> para garantizar disponibilidad y calidad. Para eventos grandes (15 años, bodas) preferimos 15 días. Pero consultanos igual, que a veces tenemos turnos disponibles.</p>
       </details>
       <details class="faq-item reveal reveal-delay-2">
-        <summary>¿Hacen envíos a toda la zona sur?</summary>
-        <p>Sí, entregamos en <strong>Temperley, Lomas de Zamora, Adrogué, Banfield, Turdera, Glew</strong> y zonas aledañas. Consultá por tu barrio.</p>
+        <summary>¿Hacen entregas a toda la zona sur?</summary>
+        <p>Sí, acordamos entrega en <strong>Temperley, Lomas de Zamora, Adrogué, Banfield, Turdera, Glew</strong> y zonas aledañas. Consultá por tu barrio.</p>
       </details>
       <details class="faq-item reveal reveal-delay-1">
         <summary>¿Cuánto dura una torta artesanal?</summary>
