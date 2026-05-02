@@ -5,7 +5,6 @@
   "description": "Pasteleria artesanal especializada en tortas personalizadas y mesas dulces en Temperley, Zona Sur GBA, Argentina.",
   "url": "https://dulcescreaciones.vercel.app",
   "telephone": "+5491133266362",
-  "email": "dulcescreaciones@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Temperley",

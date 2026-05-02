@@ -200,9 +200,8 @@ function setTheme(theme) {
 
 if (themeToggle) {
   const saved = localStorage.getItem('dc-theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   if (saved) { setTheme(saved); }
-  else if (prefersDark) { setTheme('dark'); }
+  // default: light — no auto-detect OS preference
 
   themeToggle.addEventListener('click', () => {
     const current = html.getAttribute('data-theme') || 'light';
