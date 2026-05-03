@@ -419,24 +419,27 @@ fbq('track', 'PageView');
       </p>
     </div>
     <div class="galeria-mesas-grid">
-      <div class="galeria-mesas-item reveal reveal-delay-1">
+      <div class="galeria-mesas-item reveal reveal-delay-1" onclick="this.querySelector('video').play()">
         <span class="video-badge">Video real</span>
-        <video autoplay muted loop playsinline preload="metadata" aria-label="Video de mesa dulce temática inspirada en Avengers">
+        <video autoplay muted loop playsinline preload="metadata" poster="images/gallery-1.webp" aria-label="Video de mesa dulce temática inspirada en Avengers" onloadeddata="this.parentElement.classList.add('video-loaded')">
           <source src="videos/mesa-dulce-avengers.mp4" type="video/mp4"/>
+          <img src="images/gallery-1.webp" alt="Mesa dulce temática Avengers" loading="lazy" style="width:100%;height:100%;object-fit:cover;"/>
         </video>
         <div class="galeria-mesas-overlay"><span class="galeria-mesas-label">Mesa temática Avengers</span></div>
       </div>
-      <div class="galeria-mesas-item reveal reveal-delay-2">
+      <div class="galeria-mesas-item reveal reveal-delay-2" onclick="this.querySelector('video').play()">
         <span class="video-badge">Video real</span>
-        <video autoplay muted loop playsinline preload="metadata" aria-label="Video de mesa dulce de festejo Campeones">
+        <video autoplay muted loop playsinline preload="metadata" poster="images/gallery-2.webp" aria-label="Video de mesa dulce de festejo Campeones" onloadeddata="this.parentElement.classList.add('video-loaded')">
           <source src="videos/mesa-dulce-campeones.mp4" type="video/mp4"/>
+          <img src="images/gallery-2.webp" alt="Mesa dulce festejo Campeones" loading="lazy" style="width:100%;height:100%;object-fit:cover;"/>
         </video>
         <div class="galeria-mesas-overlay"><span class="galeria-mesas-label">Mesa Campeones</span></div>
       </div>
-      <div class="galeria-mesas-item reveal reveal-delay-3">
+      <div class="galeria-mesas-item reveal reveal-delay-3" onclick="this.querySelector('video').play()">
         <span class="video-badge">Video real</span>
-        <video autoplay muted loop playsinline preload="metadata" aria-label="Video de mesa dulce para quince años">
+        <video autoplay muted loop playsinline preload="metadata" poster="images/gallery-3.webp" aria-label="Video de mesa dulce para quince años" onloadeddata="this.parentElement.classList.add('video-loaded')">
           <source src="videos/mesa-dulce-xv.mp4" type="video/mp4"/>
+          <img src="images/gallery-3.webp" alt="Mesa dulce para quince años" loading="lazy" style="width:100%;height:100%;object-fit:cover;"/>
         </video>
         <div class="galeria-mesas-overlay"><span class="galeria-mesas-label">Mesa XV</span></div>
       </div>
@@ -649,6 +652,24 @@ window.addEventListener('appinstalled', () => {
     </div>
   </div>
 </div>
+
+<script>
+// Auto-play videos on mobile (iOS Safari requires user interaction for autoplay)
+document.addEventListener('DOMContentLoaded', function() {
+  const videos = document.querySelectorAll('.galeria-mesas-item video');
+  videos.forEach(function(v) {
+    v.muted = true;
+    v.playsInline = true;
+    var p = v.play();
+    if (p && typeof p.then === 'function') {
+      p.catch(function() {
+        // Autoplay blocked, show poster/fallback
+        v.setAttribute('controls', 'controls');
+      });
+    }
+  });
+});
+</script>
 
 </body>
 </html>
