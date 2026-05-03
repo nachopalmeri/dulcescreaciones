@@ -9,7 +9,7 @@ import os
 from pathlib import Path
 
 SITE_DIR = Path(__file__).parent
-BASE_URL = "https://dulcescreaciones.com.ar"
+BASE_URL = "https://dulcescreaciones.vercel.app"
 
 CHECKS = {
     "on_page": [
@@ -33,6 +33,10 @@ CHECKS = {
         (".well-known/ai.txt file exists", 10),
         ("ai/summary.json file exists", 10),
         ("ai/faq.json file exists", 10),
+        ("ai/services.json file exists", 5),
+        ("ai/faq-tortas-infantiles.json file exists", 3),
+        ("ai/faq-15-anos.json file exists", 3),
+        ("ai/faq-mesas-dulces.json file exists", 3),
         ("ai meta tags in HTML head", 5),
         ("Schema knowsAbout array", 5),
         ("Schema hasCredential", 5),
@@ -124,8 +128,21 @@ def run_audit():
                 passed = check_file(SITE_DIR / "ai" / "summary.json")
             elif name == "ai/faq.json file exists":
                 passed = check_file(SITE_DIR / "ai" / "faq.json")
+            elif name == "ai/services.json file exists":
+                passed = check_file(SITE_DIR / "ai" / "services.json")
+            elif name == "ai/faq-tortas-infantiles.json file exists":
+                passed = check_file(SITE_DIR / "ai" / "faq-tortas-infantiles.json")
+            elif name == "ai/faq-15-anos.json file exists":
+                passed = check_file(SITE_DIR / "ai" / "faq-15-anos.json")
+            elif name == "ai/faq-mesas-dulces.json file exists":
+                passed = check_file(SITE_DIR / "ai" / "faq-mesas-dulces.json")
             elif name == "ai meta tags in HTML head":
                 passed = 'name="ai-summary"' in html_text
+                # Verificar que al menos una pagina secundaria tambien tiene ai meta tags
+                sec_path = SITE_DIR / "tortas-infantiles.html"
+                if sec_path.exists():
+                    sec_text = sec_path.read_text(encoding="utf-8")
+                    passed = passed and 'name="ai-summary"' in sec_text
             elif name == "Schema knowsAbout array":
                 passed = '"knowsAbout"' in html_text
             elif name == "Schema hasCredential":
@@ -135,15 +152,18 @@ def run_audit():
             elif name == "Schema additionalProperty statistics":
                 passed = '"additionalProperty"' in html_text
             elif name == "AreaServed with city list":
-                passed = '"areaServed"' in html_text
+                passed = '"areaServed"' in html_text and '"containsPlace"' in html_text and '"City"' in html_text
             elif name == "FAQ answers with direct facts":
-                faq_path = SITE_DIR / "ai" / "faq.json"
-                if faq_path.exists():
-                    try:
-                        data = json.loads(faq_path.read_text(encoding="utf-8"))
-                        passed = len(data.get("faqs", [])) >= 3
-                    except Exception:
-                        passed = False
+                total_faqs = 0
+                for faq_file in ["faq.json", "faq-tortas-infantiles.json", "faq-15-anos.json", "faq-mesas-dulces.json"]:
+                    faq_path = SITE_DIR / "ai" / faq_file
+                    if faq_path.exists():
+                        try:
+                            data = json.loads(faq_path.read_text(encoding="utf-8"))
+                            total_faqs += len(data.get("faqs", []))
+                        except Exception:
+                            pass
+                passed = total_faqs >= 6
             elif name == "Statistics/numbers in content":
                 passed = any(x in html_text for x in ["224+", "5+", "10 días", "50%"])
             elif name == "Location mentions (Temperley, Zona Sur)":

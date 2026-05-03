@@ -1,0 +1,187 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {
+      "@type": "Service",
+      "name": "Tortas Personalizadas",
+      "description": "Tortas 100% personalizadas para cumpleanos, 15 anos y eventos en Temperley, Zona Sur GBA. Diseno unico segun tematica. Rellenos: dulce de leche, Oreo, Bariloche, ganache. Entrega a domicilio.",
+      "provider": {
+        "@type": "Bakery",
+        "name": "Dulces Creaciones",
+        "telephone": "+5491133266362",
+        "url": "https://dulcescreaciones.vercel.app"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Buenos Aires",
+        "containsPlace": [
+          {"@type": "City", "name": "Temperley"},
+          {"@type": "City", "name": "Lomas de Zamora"},
+          {"@type": "City", "name": "Adrogue"},
+          {"@type": "City", "name": "Banfield"},
+          {"@type": "City", "name": "Turdera"},
+          {"@type": "City", "name": "Glew"}
+        ]
+      },
+      "serviceType": "Pasteleria",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "ARS",
+        "availability": "https://schema.org/PreOrder",
+        "priceValidUntil": "2026-12-31"
+      },
+      "keywords": ["tortas personalizadas", "tortas cumpleanos", "tortas eventos", "tortas Temperley", "pasteleria artesanal"]
+    },
+    {
+      "@type": "Service",
+      "name": "Tortas Infantiles Tematicas",
+      "description": "Tortas tematicas para ninos en Temperley, Zona Sur. Personajes Disney: Moana, Frozen, encanto. Gaming: Fortnite, Minecraft, Roblox. Anime y mas. 100% personalizadas.",
+      "provider": {
+        "@type": "Bakery",
+        "name": "Dulces Creaciones",
+        "telephone": "+5491133266362",
+        "url": "https://dulcescreaciones.vercel.app/tortas-infantiles.html"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Buenos Aires",
+        "containsPlace": [
+          {"@type": "City", "name": "Temperley"},
+          {"@type": "City", "name": "Lomas de Zamora"},
+          {"@type": "City", "name": "Adrogue"},
+          {"@type": "City", "name": "Banfield"},
+          {"@type": "City", "name": "Turdera"},
+          {"@type": "City", "name": "Glew"}
+        ]
+      },
+      "serviceType": "Pasteleria",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "ARS",
+        "availability": "https://schema.org/PreOrder"
+      },
+      "keywords": ["tortas infantiles", "torta Moana", "torta Fortnite", "tortas Disney Temperley", "tortas para ninos"]
+    },
+    {
+      "@type": "Service",
+      "name": "Tortas de 15 Anos",
+      "description": "Tortas elegantes y festivas para quinceaneras en Temperley, Zona Sur GBA. Disenos 2026: drip cakes, flores, dos y tres pisos. Paleta pastel, dorado, rosa. Consulta presupuesto.",
+      "provider": {
+        "@type": "Bakery",
+        "name": "Dulces Creaciones",
+        "telephone": "+5491133266362",
+        "url": "https://dulcescreaciones.vercel.app/tortas-15-anos.html"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Buenos Aires",
+        "containsPlace": [
+          {"@type": "City", "name": "Temperley"},
+          {"@type": "City", "name": "Lomas de Zamora"},
+          {"@type": "City", "name": "Adrogue"},
+          {"@type": "City", "name": "Banfield"},
+          {"@type": "City", "name": "Turdera"},
+          {"@type": "City", "name": "Glew"}
+        ]
+      },
+      "serviceType": "Pasteleria",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "ARS",
+        "availability": "https://schema.org/PreOrder"
+      },
+      "keywords": ["tortas 15 anos", "torta quinceanera", "torta 15 elegantes", "tortas 15 Temperley", "drip cake 15 anos"]
+    },
+    {
+      "@type": "Service",
+      "name": "Mesas Dulces y Candy Bar",
+      "description": "Mesas dulces tematicas y candy bar para eventos en Temperley, Zona Sur. Cupcakes, cake pops, galletitas decoradas, alfajores, trufas. Diseno estetico tematico. Ideal para 15 anos y cumpleanos.",
+      "provider": {
+        "@type": "Bakery",
+        "name": "Dulces Creaciones",
+        "telephone": "+5491133266362",
+        "url": "https://dulcescreaciones.vercel.app/mesas-dulces.html"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Buenos Aires",
+        "containsPlace": [
+          {"@type": "City", "name": "Temperley"},
+          {"@type": "City", "name": "Lomas de Zamora"},
+          {"@type": "City", "name": "Adrogue"},
+          {"@type": "City", "name": "Banfield"},
+          {"@type": "City", "name": "Turdera"},
+          {"@type": "City", "name": "Glew"}
+        ]
+      },
+      "serviceType": "Catering",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "ARS",
+        "availability": "https://schema.org/PreOrder"
+      },
+      "keywords": ["mesas dulces", "candy bar", "mesa dulce tematica", "cupcakes Temperley", "mesa dulce eventos"]
+    },
+    {
+      "@type": "Service",
+      "name": "Tortas de Futbol Argentina",
+      "description": "Tortas tematicas de futbol en Temperley: Boca Juniors, River Plate, San Lorenzo, Racing, Independiente, Seleccion Argentina. Camisetas, escudos, pelotas. Para hinchas fanaticos.",
+      "provider": {
+        "@type": "Bakery",
+        "name": "Dulces Creaciones",
+        "telephone": "+5491133266362",
+        "url": "https://dulcescreaciones.vercel.app/tortas-futbol.html"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Buenos Aires",
+        "containsPlace": [
+          {"@type": "City", "name": "Temperley"},
+          {"@type": "City", "name": "Lomas de Zamora"},
+          {"@type": "City", "name": "Adrogue"},
+          {"@type": "City", "name": "Banfield"},
+          {"@type": "City", "name": "Turdera"},
+          {"@type": "City", "name": "Glew"}
+        ]
+      },
+      "serviceType": "Pasteleria",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "ARS",
+        "availability": "https://schema.org/PreOrder"
+      },
+      "keywords": ["tortas futbol", "torta Boca Juniors", "torta River Plate", "torta San Lorenzo", "tortas futbol Temperley"]
+    },
+    {
+      "@type": "Service",
+      "name": "Tortas Gaming y Anime",
+      "description": "Tortas tematicas gaming y anime en Temperley. Fortnite, Minecraft, Roblox, Pokemon, Spider-Man. Disenos para gamers, otakus y fans. 100% personalizadas.",
+      "provider": {
+        "@type": "Bakery",
+        "name": "Dulces Creaciones",
+        "telephone": "+5491133266362",
+        "url": "https://dulcescreaciones.vercel.app/tortas-gaming.html"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Buenos Aires",
+        "containsPlace": [
+          {"@type": "City", "name": "Temperley"},
+          {"@type": "City", "name": "Lomas de Zamora"},
+          {"@type": "City", "name": "Adrogue"},
+          {"@type": "City", "name": "Banfield"},
+          {"@type": "City", "name": "Turdera"},
+          {"@type": "City", "name": "Glew"}
+        ]
+      },
+      "serviceType": "Pasteleria",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "ARS",
+        "availability": "https://schema.org/PreOrder"
+      },
+      "keywords": ["tortas gaming", "torta Fortnite", "torta Minecraft", "tortas anime Temperley", "tortas videojuegos"]
+    }
+  ]
+}

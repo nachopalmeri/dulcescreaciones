@@ -229,7 +229,15 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       "areaServed": {
         "@type": "State",
-        "name": "Buenos Aires"
+        "name": "Buenos Aires",
+        "containsPlace": [
+          {"@type": "City", "name": "Temperley"},
+          {"@type": "City", "name": "Lomas de Zamora"},
+          {"@type": "City", "name": "Adrogué"},
+          {"@type": "City", "name": "Banfield"},
+          {"@type": "City", "name": "Turdera"},
+          {"@type": "City", "name": "Glew"}
+        ]
       },
       "serviceType": "Pasteleria"
     },
@@ -244,7 +252,15 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       "areaServed": {
         "@type": "State",
-        "name": "Buenos Aires"
+        "name": "Buenos Aires",
+        "containsPlace": [
+          {"@type": "City", "name": "Temperley"},
+          {"@type": "City", "name": "Lomas de Zamora"},
+          {"@type": "City", "name": "Adrogué"},
+          {"@type": "City", "name": "Banfield"},
+          {"@type": "City", "name": "Turdera"},
+          {"@type": "City", "name": "Glew"}
+        ]
       },
       "serviceType": "Catering"
     },
@@ -259,7 +275,15 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       "areaServed": {
         "@type": "State",
-        "name": "Buenos Aires"
+        "name": "Buenos Aires",
+        "containsPlace": [
+          {"@type": "City", "name": "Temperley"},
+          {"@type": "City", "name": "Lomas de Zamora"},
+          {"@type": "City", "name": "Adrogué"},
+          {"@type": "City", "name": "Banfield"},
+          {"@type": "City", "name": "Turdera"},
+          {"@type": "City", "name": "Glew"}
+        ]
       },
       "serviceType": "Pasteleria"
     },
@@ -274,7 +298,15 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       "areaServed": {
         "@type": "State",
-        "name": "Buenos Aires"
+        "name": "Buenos Aires",
+        "containsPlace": [
+          {"@type": "City", "name": "Temperley"},
+          {"@type": "City", "name": "Lomas de Zamora"},
+          {"@type": "City", "name": "Adrogué"},
+          {"@type": "City", "name": "Banfield"},
+          {"@type": "City", "name": "Turdera"},
+          {"@type": "City", "name": "Glew"}
+        ]
       },
       "serviceType": "Pasteleria"
     }
@@ -396,7 +428,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <header>
 <nav id="navbar">
-  <a href="#inicio" class="nav-logo">Dulces Creaciones</a>
+  <a href="#inicio" class="nav-logo">
+    <img src="logo_perfil-removebg-preview.png" alt="Dulces Creaciones" class="nav-logo-img"/>
+    <span>Dulces Creaciones</span>
+  </a>
   <button class="hamburger" aria-label="Menu" aria-expanded="false">
     <span></span>
     <span></span>
@@ -420,6 +455,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <section class="hero" id="inicio">
   <div class="hero-editorial">
     <div class="hero-text-col">
+      <img class="hero-logo" src="logo_perfil-removebg-preview.png" alt="Dulces Creaciones" loading="eager"/>
       <span class="hero-label">Pastelería Artesanal · Temperley</span>
       <h1>Tortas<br/><em>Personalizadas</em></h1>
       <p class="hero-location">Cumpleaños · 15 años · Eventos</p>
