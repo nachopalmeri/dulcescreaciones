@@ -13,14 +13,14 @@
   <!-- ======================================== -->
   <url>
     <loc>https://dulcescreaciones.vercel.app/</loc>
-    <lastmod>2025-04-17</lastmod>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     
     <!-- Logo principal -->
     <image:image>
       <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
-      <image:title>Dulces Creaciones - Pastelería Artesanal en Rosario</image:title>
+      <image:title>Dulces Creaciones - Pastelería Artesanal en Temperley, Zona Sur GBA</image:title>
       <image:caption>Logo de Dulces Creaciones, pastelería artesanal especializada en tortas personalizadas</image:caption>
     </image:image>
     
@@ -52,7 +52,7 @@
   <!-- ======================================== -->
   <url>
     <loc>https://dulcescreaciones.vercel.app/tortas-infantiles.html</loc>
-    <lastmod>2026-04-12</lastmod>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     
@@ -91,7 +91,7 @@
   <!-- ======================================== -->
   <url>
     <loc>https://dulcescreaciones.vercel.app/tortas-gaming.html</loc>
-    <lastmod>2026-04-12</lastmod>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     
@@ -99,7 +99,7 @@
     <image:image>
       <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
       <image:title>Dulces Creaciones - Tortas Gaming y Videojuegos</image:title>
-      <image:caption>Tortas personalizadas para gamers y fans de videojuegos en Rosario</image:caption>
+      <image:caption>Tortas personalizadas para gamers y fans de videojuegos en Temperley, Zona Sur GBA</image:caption>
     </image:image>
     
     <!-- Torta Fortnite Gaming -->
@@ -123,7 +123,7 @@
   <!-- ======================================== -->
   <url>
     <loc>https://dulcescreaciones.vercel.app/tortas-futbol.html</loc>
-    <lastmod>2026-04-12</lastmod>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     
@@ -131,7 +131,7 @@
     <image:image>
       <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
       <image:title>Dulces Creaciones - Tortas de Fútbol Personalizadas</image:title>
-      <image:caption>Tortas temáticas de fútbol para hinchas de todos los clubes en Rosario</image:caption>
+      <image:caption>Tortas temáticas de fútbol para hinchas de todos los clubes en Temperley, Zona Sur GBA</image:caption>
     </image:image>
     
     <!-- Torta Fútbol San Lorenzo -->
@@ -162,7 +162,7 @@
   <!-- ======================================== -->
   <url>
     <loc>https://dulcescreaciones.vercel.app/tortas-15-anos.html</loc>
-    <lastmod>2026-04-12</lastmod>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     
@@ -170,7 +170,7 @@
     <image:image>
       <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
       <image:title>Dulces Creaciones - Tortas para 15 Años</image:title>
-      <image:caption>Tortas elegantes y sofisticadas para fiestas de quince años en Rosario</image:caption>
+      <image:caption>Tortas elegantes y sofisticadas para fiestas de quince años en Temperley, Zona Sur GBA</image:caption>
     </image:image>
     
     <!-- Torta 15 Años Fiesta -->
@@ -208,7 +208,7 @@
   <!-- ======================================== -->
   <url>
     <loc>https://dulcescreaciones.vercel.app/mesas-dulces.html</loc>
-    <lastmod>2026-04-12</lastmod>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     
@@ -216,7 +216,7 @@
     <image:image>
       <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
       <image:title>Dulces Creaciones - Mesas Dulces para Eventos</image:title>
-      <image:caption>Servicio de mesas dulces completas para eventos y celebraciones en Rosario</image:caption>
+      <image:caption>Servicio de mesas dulces completas para eventos y celebraciones en Temperley, Zona Sur GBA</image:caption>
     </image:image>
     
     <!-- Galería de mesas dulces - representativa -->
@@ -251,7 +251,7 @@
   <!-- ======================================== -->
   <url>
     <loc>https://dulcescreaciones.vercel.app/blog.html</loc>
-    <lastmod>2026-05-02</lastmod>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -262,7 +262,7 @@
   <!-- ======================================== -->
   <url>
     <loc>https://dulcescreaciones.vercel.app/tortas-bodas-egresados.html</loc>
-    <lastmod>2026-05-02</lastmod>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -273,7 +273,68 @@
   <!-- ======================================== -->
   <url>
     <loc>https://dulcescreaciones.vercel.app/precios-tortas.html</loc>
-    <lastmod>2026-05-02</lastmod>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- CATÁLOGO / MENÚ (para GBP)              -->
+  <!-- Priority: 0.8 | ChangeFreq: monthly      -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/menu.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- PSEO: TORTAS ALMIRANTE BROWN            -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-almirante-brown.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- PSEO: TORTAS LOMAS DE ZAMORA            -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-lomas-de-zamora.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- PSEO: TORTAS ADROGUÉ                    -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-adrogue.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- PSEO: TARTAS DULCES ZONA SUR            -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tartas-dulces-zona-sur.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- PSEO: TORTAS CUMPLEAÑOS TEMPERLEY       -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-cumpleanos-temperley.html</loc>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

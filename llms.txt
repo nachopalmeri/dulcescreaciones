@@ -27,6 +27,13 @@ Key Pages:
   https://dulcescreaciones.vercel.app/blog.html - Tips de pasteleria, guias de sabores, conservacion
   https://dulcescreaciones.vercel.app/tortas-futbol.html - Tortas tematicas de futbol Argentina
   https://dulcescreaciones.vercel.app/tortas-gaming.html - Tortas Fortnite, gaming para cumpleanos
+  https://dulcescreaciones.vercel.app/menu.html - Catalogo completo de tortas y servicios
+  https://dulcescreaciones.vercel.app/tortas-cumpleanos-temperley.html - Tortas cumpleanos Temperley
+  https://dulcescreaciones.vercel.app/tortas-almirante-brown.html - Tortas personalizadas Almirante Brown
+  https://dulcescreaciones.vercel.app/tortas-lomas-de-zamora.html - Tortas personalizadas Lomas de Zamora
+  https://dulcescreaciones.vercel.app/tortas-adrogue.html - Tortas personalizadas Adrogue
+  https://dulcescreaciones.vercel.app/tartas-dulces-zona-sur.html - Tartas dulces y tortas zona sur GBA
+  https://dulcescreaciones.vercel.app/precios-tortas.html - Presupuesto de tortas personalizado
 
 # Services & Products
 Services:
