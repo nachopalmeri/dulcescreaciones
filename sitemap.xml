@@ -339,4 +339,75 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- ======================================== -->
+  <!-- PSEO: TORTAS BANFIELD                   -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-banfield.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- PSEO: TORTAS TURDERA                   -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-turdera.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- PSEO: MESA DULCE TEMPERLEY             -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/mesa-dulce-temperley.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- PSEO: TORTAS PERSONALIZADAS ZONA SUR    -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-personalizadas-zona-sur.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- BLOG: ARTÍCULOS SEO                     -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/blog/cuanto-cuesta-torta-personalizada-2026.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/blog/ideas-tortas-cumpleanos-ninos.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/blog/como-conservar-torta-artesanal.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/blog/diferencia-torta-artesanal-vs-industrial.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>

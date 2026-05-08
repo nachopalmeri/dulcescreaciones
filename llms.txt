@@ -15,7 +15,7 @@ Contact:
   Instagram: https://instagram.com/dulcescreaciones_dc
   Facebook: https://www.facebook.com/dulcescreacionesDC
 Location: Temperley, Buenos Aires, Argentina
-Coverage: Temperley, Lomas de Zamora, Adrogue, Banfield, Turdera, Glew, Zona Sur GBA
+Coverage: Temperley, Lomas de Zamora, Adrogue, Banfield, Turdera, Glew, Burzaco, Longchamps, Rafael Calzada, Almirante Brown, Zona Sur GBA
 Hours: Lun-Vie 9:00-19:00
 
 # Key Pages & Content
@@ -34,6 +34,14 @@ Key Pages:
   https://dulcescreaciones.vercel.app/tortas-adrogue.html - Tortas personalizadas Adrogue
   https://dulcescreaciones.vercel.app/tartas-dulces-zona-sur.html - Tartas dulces y tortas zona sur GBA
   https://dulcescreaciones.vercel.app/precios-tortas.html - Presupuesto de tortas personalizado
+  https://dulcescreaciones.vercel.app/tortas-banfield.html - Tortas personalizadas Banfield, Lomas de Zamora
+  https://dulcescreaciones.vercel.app/tortas-turdera.html - Tortas personalizadas Turdera, zona sur
+  https://dulcescreaciones.vercel.app/mesa-dulce-temperley.html - Mesa dulce y candy bar Temperley
+  https://dulcescreaciones.vercel.app/tortas-personalizadas-zona-sur.html - Tortas personalizadas toda zona sur GBA
+  https://dulcescreaciones.vercel.app/blog/cuanto-cuesta-torta-personalizada-2026.html - Guia de precios tortas 2026
+  https://dulcescreaciones.vercel.app/blog/ideas-tortas-cumpleanos-ninos.html - Ideas tortas infantiles 2026
+  https://dulcescreaciones.vercel.app/blog/como-conservar-torta-artesanal.html - Tips conservar torta artesanal
+  https://dulcescreaciones.vercel.app/blog/diferencia-torta-artesanal-vs-industrial.html - Artesanal vs industrial
 
 # Services & Products
 Services:
@@ -69,6 +77,12 @@ Crawl Priority:
   blog.html: 0.7
   tortas-futbol.html: 0.7
   tortas-gaming.html: 0.7
+  tortas-personalizadas-zona-sur.html: 0.8
+  tortas-banfield.html: 0.7
+  tortas-turdera.html: 0.7
+  mesa-dulce-temperley.html: 0.7
+  blog/cuanto-cuesta-torta-personalizada-2026.html: 0.6
+  blog/ideas-tortas-cumpleanos-ninos.html: 0.6
 
 Sitemap: https://dulcescreaciones.vercel.app/sitemap.xml
 Robots: https://dulcescreaciones.vercel.app/robots.txt

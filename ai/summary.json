@@ -25,7 +25,11 @@
       {"@type": "City", "name": "Adrogue"},
       {"@type": "City", "name": "Banfield"},
       {"@type": "City", "name": "Turdera"},
-      {"@type": "City", "name": "Glew"}
+      {"@type": "City", "name": "Glew"},
+      {"@type": "City", "name": "Burzaco"},
+      {"@type": "City", "name": "Longchamps"},
+      {"@type": "City", "name": "Rafael Calzada"},
+      {"@type": "City", "name": "Almirante Brown"}
     ]
   },
   "openingHoursSpecification": [
@@ -55,7 +59,10 @@
     "Pasteleria artesanal",
     "Cupcakes personalizados",
     "Cake pops",
-    "Galletitas decoradas"
+    "Galletitas decoradas",
+    "Tortas bodas y egresados",
+    "Tortas futbol argentino",
+    "Blog de pasteleria"
   ],
   "hasCredential": "Pasteleria artesanal con 5+ anos de experiencia",
   "additionalProperty": [

@@ -182,6 +182,46 @@
         "availability": "https://schema.org/PreOrder"
       },
       "keywords": ["tortas gaming", "torta Fortnite", "torta Minecraft", "tortas anime Temperley", "tortas videojuegos"]
+    },
+    {
+      "@type": "Service",
+      "name": "Tortas Personalizadas Almirante Brown",
+      "description": "Tortas artesanales personalizadas con entrega en Almirante Brown: Adrogue, Glew, Burzaco, Rafael Calzada, Longchamps. Cumpleanos, 15 anos, mesas dulces.",
+      "provider": {"@type": "Bakery", "name": "Dulces Creaciones", "telephone": "+5491133266362"},
+      "areaServed": [{"@type": "City", "name": "Almirante Brown"}, {"@type": "City", "name": "Adrogue"}, {"@type": "City", "name": "Glew"}, {"@type": "City", "name": "Burzaco"}],
+      "serviceType": "Pasteleria",
+      "url": "https://dulcescreaciones.vercel.app/tortas-almirante-brown.html",
+      "keywords": ["tortas Almirante Brown", "tortas Adrogue", "tortas Glew", "tortas Burzaco"]
+    },
+    {
+      "@type": "Service",
+      "name": "Tortas Personalizadas Lomas de Zamora",
+      "description": "Tortas artesanales con entrega en Lomas de Zamora y Banfield. Cumpleanos, 15 anos, mesas dulces. 224+ tortas entregadas.",
+      "provider": {"@type": "Bakery", "name": "Dulces Creaciones", "telephone": "+5491133266362"},
+      "areaServed": [{"@type": "City", "name": "Lomas de Zamora"}, {"@type": "City", "name": "Banfield"}, {"@type": "City", "name": "Temperley"}],
+      "serviceType": "Pasteleria",
+      "url": "https://dulcescreaciones.vercel.app/tortas-lomas-de-zamora.html",
+      "keywords": ["tortas Lomas de Zamora", "tortas Banfield", "tortas zona sur Lomas"]
+    },
+    {
+      "@type": "Service",
+      "name": "Tortas Personalizadas Zona Sur GBA",
+      "description": "Tortas artesanales personalizadas en toda la zona sur del GBA. Temperley, Lomas, Adrogue, Banfield, Turdera, Glew, Almirante Brown. Entrega a domicilio.",
+      "provider": {"@type": "Bakery", "name": "Dulces Creaciones", "telephone": "+5491133266362"},
+      "areaServed": [{"@type": "City", "name": "Temperley"}, {"@type": "City", "name": "Lomas de Zamora"}, {"@type": "City", "name": "Adrogue"}, {"@type": "City", "name": "Banfield"}, {"@type": "City", "name": "Turdera"}, {"@type": "City", "name": "Almirante Brown"}],
+      "serviceType": "Pasteleria",
+      "url": "https://dulcescreaciones.vercel.app/tortas-personalizadas-zona-sur.html",
+      "keywords": ["tortas zona sur", "tortas personalizadas zona sur GBA", "pasteleria zona sur Buenos Aires"]
+    },
+    {
+      "@type": "Service",
+      "name": "Mesa Dulce y Candy Bar Temperley",
+      "description": "Mesas dulces tematicas en Temperley y zona sur. Cupcakes, cake pops, galletitas, alfajores, trufas. Diseno estetico para eventos.",
+      "provider": {"@type": "Bakery", "name": "Dulces Creaciones", "telephone": "+5491133266362"},
+      "areaServed": [{"@type": "City", "name": "Temperley"}, {"@type": "City", "name": "Lomas de Zamora"}, {"@type": "City", "name": "Adrogue"}],
+      "serviceType": "Catering",
+      "url": "https://dulcescreaciones.vercel.app/mesa-dulce-temperley.html",
+      "keywords": ["mesa dulce Temperley", "candy bar Temperley", "mesa dulce zona sur"]
     }
   ]
 }
