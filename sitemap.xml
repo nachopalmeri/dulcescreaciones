@@ -410,4 +410,24 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- ======================================== -->
+  <!-- PSEO: TORTAS BODAS Y EGRESADOS           -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-bodas-egresados-temperley.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- BLOG: MESA DULCE PORCIONES              -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/blog/mesa-dulce-cuantas-porciones-persona.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>

@@ -212,6 +212,75 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 </script>
 
+<!-- Schema.org: Organization + SameAs (Entity Authority for AI Mode / Knowledge Graph) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://dulcescreaciones.vercel.app/#organization",
+  "name": "Dulces Creaciones",
+  "url": "https://dulcescreaciones.vercel.app",
+  "logo": "https://dulcescreaciones.vercel.app/logo_perfil.jpg",
+  "description": "Pasteleria artesanal especializada en tortas personalizadas y mesas dulces en Temperley, Zona Sur GBA, Argentina.",
+  "sameAs": [
+    "https://instagram.com/dulcescreaciones_dc",
+    "https://www.facebook.com/dulcescreacionesDC",
+    "https://www.wikidata.org/wiki/Q131769543"
+  ],
+  "knowsAbout": [
+    "Tortas personalizadas",
+    "Pasteleria artesanal",
+    "Mesas dulces",
+    "Candy bar",
+    "Tortas infantiles tematicas",
+    "Tortas de 15 anos",
+    "Tortas de bodas y egresados",
+    "Reposteria creativa",
+    "Cupcakes personalizados",
+    "Cake pops",
+    "Galletitas decoradas",
+    "Tortas de futbol",
+    "Tortas gaming"
+  ],
+  "foundingDate": "2021",
+  "numberOfEmployees": {"@type": "QuantitativeValue", "minValue": 1, "maxValue": 5}
+}
+</script>
+
+<!-- Schema.org: Person (Fundadora - E-E-A-T signal for AI Mode) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://dulcescreaciones.vercel.app/#founder",
+  "name": "Elizabeth",
+  "jobTitle": "Pastelera Artesanal y Fundadora",
+  "worksFor": {"@id": "https://dulcescreaciones.vercel.app/#organization"},
+  "knowsAbout": [
+    "Pasteleria artesanal",
+    "Tortas personalizadas",
+    "Reposteria creativa",
+    "Mesas dulces tematicas",
+    "Decoracion de tortas"
+  ],
+  "description": "Fundadora de Dulces Creaciones con 5+ anos de experiencia en pasteleria artesanal personalizada en Temperley, Zona Sur GBA."
+}
+</script>
+
+<!-- Schema.org: Speakable (marca pasaje citable para AI Mode) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://dulcescreaciones.vercel.app/#webpage",
+  "url": "https://dulcescreaciones.vercel.app/",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", ".section-title", ".mapa-desc"]
+  }
+}
+</script>
+
 <!-- Service Schema -->
 <script type="application/ld+json">
 {
@@ -715,6 +784,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <a href="tortas-turdera.html" class="mapa-tag">Turdera</a>
           <a href="tortas-almirante-brown.html" class="mapa-tag">Almirante Brown</a>
           <a href="tortas-personalizadas-zona-sur.html" class="mapa-tag">Zona Sur GBA</a>
+          <a href="tortas-bodas-egresados-temperley.html" class="mapa-tag">Bodas y Egresados</a>
         </div>
         <div style="margin-top:2rem;">
           <a href="https://wa.me/5491133266362?text=Hola!%20Quiero%20consultar%20por%20entrega%20a%20mi%20zona&utm_source=zona&utm_medium=whatsapp&utm_campaign=entrega" target="_blank" class="btn-wa btn-wa-sm">

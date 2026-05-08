@@ -222,6 +222,16 @@
       "serviceType": "Catering",
       "url": "https://dulcescreaciones.vercel.app/mesa-dulce-temperley.html",
       "keywords": ["mesa dulce Temperley", "candy bar Temperley", "mesa dulce zona sur"]
+    },
+    {
+      "@type": "Service",
+      "name": "Tortas para Bodas y Egresados",
+      "description": "Tortas artesanales para bodas y egresados en Temperley y zona sur GBA. Diseños elegantes de dos y tres pisos, rellenos premium, cobertura buttercream y ganache.",
+      "provider": {"@type": "Bakery", "name": "Dulces Creaciones", "telephone": "+5491133266362"},
+      "areaServed": [{"@type": "City", "name": "Temperley"}, {"@type": "City", "name": "Lomas de Zamora"}, {"@type": "City", "name": "Adrogue"}, {"@type": "City", "name": "Banfield"}],
+      "serviceType": "Pasteleria",
+      "url": "https://dulcescreaciones.vercel.app/tortas-bodas-egresados-temperley.html",
+      "keywords": ["tortas bodas Temperley", "tortas egresados zona sur", "tortas boda artesanal", "tortas eventos zona sur"]
     }
   ]
 }
