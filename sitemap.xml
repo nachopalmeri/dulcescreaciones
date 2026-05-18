@@ -86,7 +86,7 @@
   </url>
 
   <!-- ======================================== -->
-  <!-- TORTAS GAMING                              -->
+  <!-- TORTAS GAMING                            -->
   <!-- Priority: 0.9 | ChangeFreq: monthly      -->
   <!-- ======================================== -->
   <url>
@@ -118,7 +118,7 @@
   </url>
 
   <!-- ======================================== -->
-  <!-- TORTAS FÚTBOL                              -->
+  <!-- TORTAS FÚTBOL                            -->
   <!-- Priority: 0.9 | ChangeFreq: monthly      -->
   <!-- ======================================== -->
   <url>
@@ -203,7 +203,7 @@
   </url>
 
   <!-- ======================================== -->
-  <!-- MESAS DULCES                               -->
+  <!-- MESAS DULCES                             -->
   <!-- Priority: 0.8 | ChangeFreq: monthly      -->
   <!-- ======================================== -->
   <url>
@@ -219,7 +219,7 @@
       <image:caption>Servicio de mesas dulces completas para eventos y celebraciones en Temperley, Zona Sur GBA</image:caption>
     </image:image>
     
-    <!-- Galería de mesas dulces - representativa -->
+    <!-- Galería de mesas dulces -->
     <image:image>
       <image:loc>https://dulcescreaciones.vercel.app/images/gallery-1.webp</image:loc>
       <image:title>Mesa Dulce Decorada para Evento</image:title>
@@ -246,7 +246,7 @@
   </url>
 
   <!-- ======================================== -->
-  <!-- BLOG                                     -->
+  <!-- BLOG PRINCIPAL                           -->
   <!-- Priority: 0.8 | ChangeFreq: weekly       -->
   <!-- ======================================== -->
   <url>
@@ -279,7 +279,7 @@
   </url>
 
   <!-- ======================================== -->
-  <!-- CATÁLOGO / MENÚ (para GBP)              -->
+  <!-- CATÁLOGO / MENÚ                          -->
   <!-- Priority: 0.8 | ChangeFreq: monthly      -->
   <!-- ======================================== -->
   <url>
@@ -290,7 +290,18 @@
   </url>
 
   <!-- ======================================== -->
-  <!-- PSEO: TORTAS ALMIRANTE BROWN            -->
+  <!-- PROGRAMA DE REFERIDOS                    -->
+  <!-- Priority: 0.6 | ChangeFreq: monthly      -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/referidos.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- PSEO: TORTAS ALMIRANTE BROWN             -->
   <!-- ======================================== -->
   <url>
     <loc>https://dulcescreaciones.vercel.app/tortas-almirante-brown.html</loc>
@@ -300,7 +311,7 @@
   </url>
 
   <!-- ======================================== -->
-  <!-- PSEO: TORTAS LOMAS DE ZAMORA            -->
+  <!-- PSEO: TORTAS LOMAS DE ZAMORA             -->
   <!-- ======================================== -->
   <url>
     <loc>https://dulcescreaciones.vercel.app/tortas-lomas-de-zamora.html</loc>
@@ -310,7 +321,7 @@
   </url>
 
   <!-- ======================================== -->
-  <!-- PSEO: TORTAS ADROGUÉ                    -->
+  <!-- PSEO: TORTAS ADROGUÉ                     -->
   <!-- ======================================== -->
   <url>
     <loc>https://dulcescreaciones.vercel.app/tortas-adrogue.html</loc>
@@ -320,27 +331,7 @@
   </url>
 
   <!-- ======================================== -->
-  <!-- PSEO: TARTAS DULCES ZONA SUR            -->
-  <!-- ======================================== -->
-  <url>
-    <loc>https://dulcescreaciones.vercel.app/tartas-dulces-zona-sur.html</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ======================================== -->
-  <!-- PSEO: TORTAS CUMPLEAÑOS TEMPERLEY       -->
-  <!-- ======================================== -->
-  <url>
-    <loc>https://dulcescreaciones.vercel.app/tortas-cumpleanos-temperley.html</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ======================================== -->
-  <!-- PSEO: TORTAS BANFIELD                   -->
+  <!-- PSEO: TORTAS BANFIELD                    -->
   <!-- ======================================== -->
   <url>
     <loc>https://dulcescreaciones.vercel.app/tortas-banfield.html</loc>
@@ -350,7 +341,7 @@
   </url>
 
   <!-- ======================================== -->
-  <!-- PSEO: TORTAS TURDERA                   -->
+  <!-- PSEO: TORTAS TURDERA                     -->
   <!-- ======================================== -->
   <url>
     <loc>https://dulcescreaciones.vercel.app/tortas-turdera.html</loc>
@@ -360,7 +351,27 @@
   </url>
 
   <!-- ======================================== -->
-  <!-- PSEO: MESA DULCE TEMPERLEY             -->
+  <!-- PSEO: TORTAS CUMPLEAÑOS TEMPERLEY        -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-cumpleanos-temperley.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- PSEO: TORTAS BODAS EGRESADOS TEMPERLEY   -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-bodas-egresados-temperley.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- PSEO: MESA DULCE TEMPERLEY               -->
   <!-- ======================================== -->
   <url>
     <loc>https://dulcescreaciones.vercel.app/mesa-dulce-temperley.html</loc>
@@ -370,7 +381,17 @@
   </url>
 
   <!-- ======================================== -->
-  <!-- PSEO: TORTAS PERSONALIZADAS ZONA SUR    -->
+  <!-- PSEO: TARTAS DULCES ZONA SUR             -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tartas-dulces-zona-sur.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- PSEO: TORTAS PERSONALIZADAS ZONA SUR     -->
   <!-- ======================================== -->
   <url>
     <loc>https://dulcescreaciones.vercel.app/tortas-personalizadas-zona-sur.html</loc>
@@ -380,7 +401,247 @@
   </url>
 
   <!-- ======================================== -->
-  <!-- BLOG: ARTÍCULOS SEO                     -->
+  <!-- PSEO LOCAL: PARTIDO DE ALMIRANTE BROWN   -->
+  <!-- NEW: Glew, Burzaco, Longchamps, Claypole -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-glew.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Tortas Personalizadas en Glew</image:title>
+      <image:caption>Tortas artesanales personalizadas con envío a Glew, Zona Sur GBA</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-burzaco.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Tortas Personalizadas en Burzaco</image:title>
+      <image:caption>Tortas artesanales personalizadas con envío a Burzaco, Zona Sur GBA</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-longchamps.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Tortas Personalizadas en Longchamps</image:title>
+      <image:caption>Tortas artesanales personalizadas con envío a Longchamps, Zona Sur GBA</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-claypole.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Tortas Personalizadas en Claypole</image:title>
+      <image:caption>Tortas artesanales personalizadas con envío a Claypole, Zona Sur GBA</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-monte-grande.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Tortas Personalizadas en Monte Grande</image:title>
+      <image:caption>Tortas artesanales personalizadas con envío a Monte Grande, Zona Sur GBA</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-lanus.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Tortas Personalizadas en Lanús</image:title>
+      <image:caption>Tortas artesanales personalizadas con envío a Lanús, Zona Sur GBA</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- PSEO TEMÁTICAS NUEVAS                    -->
+  <!-- Priority: 0.8                           -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-baby-shower.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Tortas para Baby Shower</image:title>
+      <image:caption>Tortas personalizadas para baby shower con diseños tiernos en Temperley, Zona Sur GBA</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-bautismo.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Tortas para Bautismo</image:title>
+      <image:caption>Tortas elegantes para bautismo y celebraciones religiosas en Temperley, Zona Sur GBA</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-comunion.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Tortas para Comunión</image:title>
+      <image:caption>Tortas personalizadas para comunión con diseños especiales en Temperley, Zona Sur GBA</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-unicornio.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Tortas de Unicornio</image:title>
+      <image:caption>Tortas mágicas de unicornio color pastel para cumpleaños infantiles en Temperley, Zona Sur GBA</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-princesas.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Tortas de Princesas</image:title>
+      <image:caption>Tortas temáticas de princesas Disney para cumpleaños infantiles en Temperley, Zona Sur GBA</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-superheroes.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Tortas de Superhéroes</image:title>
+      <image:caption>Tortas personalizadas de superhéroes para cumpleaños infantiles en Temperley, Zona Sur GBA</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-sin-gluten.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Tortas Sin Gluten</image:title>
+      <image:caption>Tortas sin gluten artesanales para celíacos en Temperley, Zona Sur GBA</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- PÁGINAS FAQ / CONSULTAS COMUNES           -->
+  <!-- Priority: 0.7                           -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/cuanto-cuesta-torta-personalizada.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - ¿Cuánto cuesta una torta personalizada?</image:title>
+      <image:caption>Precios de tortas personalizadas en Temperley, Zona Sur GBA</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/como-pedir-torta-por-whatsapp.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Cómo pedir torta por WhatsApp</image:title>
+      <image:caption>Cómo hacer pedidos de tortas por WhatsApp en Dulces Creaciones, Temperley</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/hay-tortas-sin-tacc-zona-sur.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Tortas sin TACC en Zona Sur</image:title>
+      <image:caption>Tortas sin TACC aptas para celíacos en Temperley, Zona Sur GBA</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/envio-tortas-temperley.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Envío de Tortas en Temperley</image:title>
+      <image:caption>Servicio de envío de tortas personalizadas en Temperley y Zona Sur GBA</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-para-celiacos-zona-sur.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Tortas para Celíacos en Zona Sur</image:title>
+      <image:caption>Tortas aptas para celíacos, sin TACC, en Temperley, Zona Sur GBA</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/tortas-con-dulce-de-leche.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
+      <image:title>Dulces Creaciones - Tortas con Dulce de Leche</image:title>
+      <image:caption>Tortas artesanales con relleno de dulce de leche en Temperley, Zona Sur GBA</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- BLOG: ARTÍCULOS EXISTENTES               -->
   <!-- ======================================== -->
   <url>
     <loc>https://dulcescreaciones.vercel.app/blog/cuanto-cuesta-torta-personalizada-2026.html</loc>
@@ -410,22 +671,82 @@
     <priority>0.6</priority>
   </url>
 
-  <!-- ======================================== -->
-  <!-- PSEO: TORTAS BODAS Y EGRESADOS           -->
-  <!-- ======================================== -->
-  <url>
-    <loc>https://dulcescreaciones.vercel.app/tortas-bodas-egresados-temperley.html</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ======================================== -->
-  <!-- BLOG: MESA DULCE PORCIONES              -->
-  <!-- ======================================== -->
   <url>
     <loc>https://dulcescreaciones.vercel.app/blog/mesa-dulce-cuantas-porciones-persona.html</loc>
     <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ======================================== -->
+  <!-- BLOG: ARTÍCULOS NUEVOS                  -->
+  <!-- ======================================== -->
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/blog/donde-comprar-tortas-personalizadas-zona-sur.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/blog/precio-torta-personalizada-temperley-2026.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/blog/tortas-15-anos-guia-completa.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/blog/cuanto-cuesta-mesa-dulce-30-personas.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/blog/mejores-rellenos-torta-personalizada.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/blog/torta-cumpleanos-adultos-ideas.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/blog/como-pedir-torta-por-whatsapp.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/blog/ideas-tortas-futbol-personalizadas.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/blog/que-torta-elegir-baby-shower.html</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://dulcescreaciones.vercel.app/blog/tortas-sin-gluten-zona-sur.html</loc>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

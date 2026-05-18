@@ -26,5 +26,41 @@ Allow: /
 # Sitemap
 Sitemap: https://dulcescreaciones.vercel.app/sitemap.xml
 
+# Allow new PSEO local pages (Alte. Brown, Lomas, etc.)
+Allow: /tortas-glew.html
+Allow: /tortas-burzaco.html
+Allow: /tortas-longchamps.html
+Allow: /tortas-claypole.html
+Allow: /tortas-monte-grande.html
+Allow: /tortas-lanus.html
+
+# Allow new PSEO theme pages
+Allow: /tortas-baby-shower.html
+Allow: /tortas-bautismo.html
+Allow: /tortas-comunion.html
+Allow: /tortas-unicornio.html
+Allow: /tortas-princesas.html
+Allow: /tortas-superheroes.html
+Allow: /tortas-sin-gluten.html
+
+# Allow new FAQ pages
+Allow: /cuanto-cuesta-torta-personalizada.html
+Allow: /como-pedir-torta-por-whatsapp.html
+Allow: /hay-tortas-sin-tacc-zona-sur.html
+Allow: /envio-tortas-temperley.html
+Allow: /tortas-para-celiacos-zona-sur.html
+Allow: /tortas-con-dulce-de-leche.html
+
+# Allow new blog posts
+Allow: /blog/donde-comprar-tortas-personalizadas-zona-sur.html
+Allow: /blog/precio-torta-personalizada-temperley-2026.html
+Allow: /blog/tortas-15-anos-guia-completa.html
+Allow: /blog/cuanto-cuesta-mesa-dulce-30-personas.html
+Allow: /blog/mejores-rellenos-torta-personalizada.html
+Allow: /blog/torta-cumpleanos-adultos-ideas.html
+Allow: /blog/ideas-tortas-futbol-personalizadas.html
+Allow: /blog/que-torta-elegir-baby-shower.html
+Allow: /blog/tortas-sin-gluten-zona-sur.html
+
 # Crawl-delay
 Crawl-delay: 1

@@ -64,44 +64,11 @@
   gtag('config', 'G-7M2V2QC4ME');
 </script>
 
-<!-- 
-  ⚠️ CONFIGURAR PIXEL FACEBOOK:
-  1. Ir a business.facebook.com → Event Manager
-  2. Crear Pixel o usar existente
-  3. Copiar el Pixel ID y reemplazar 'TU_PIXEL_ID_AQUI' abajo
-  4. Los eventos de conversión se agregan automáticamente
--->
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod ?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-
-fbq('init', 'TU_PIXEL_ID_AQUI');
-fbq('track', 'PageView');
-</script>
-
-<noscript>
-<img height="1" width="1" style="display:none" 
-     src="https://www.facebook.com/tr?id=TU_PIXEL_ID_AQUI&ev=PageView&noscript=1"/>
-</noscript>
-
-<!-- Tracking de clicks WhatsApp -->
+<!-- Tracking de clicks WhatsApp GA4 -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Tracking para todos los links de WhatsApp
   document.querySelectorAll('a[href*="wa.me"], a[href*="whatsapp.com"]').forEach(function(link) {
     link.addEventListener('click', function() {
-      // Meta Pixel Lead event
-      if (typeof fbq !== 'undefined') {
-        fbq('track', 'Lead');
-      }
-      // GA4 custom event
       if (typeof gtag !== 'undefined') {
         gtag('event', 'whatsapp_click', {
           'event_category': 'engagement',
@@ -561,9 +528,17 @@ document.addEventListener('DOMContentLoaded', function() {
   ]
 }
 </script>
+<!-- VideoObject Schema -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"VideoObject","name":"Videos de Dulces Creaciones","description":"Videos de nuestras tortas personalizadas y mesas dulces","thumbnailUrl":"https://dulcescreaciones.vercel.app/images/gallery-1.webp","uploadDate":"2026-05-08","author":{"@type":"Person","name":"Elizabeth"},"publisher":{"@type":"Organization","name":"Dulces Creaciones"}}
+</script>
 
 </head>
 <body>
+
+<div style="background:var(--rosa-d);color:white;text-align:center;padding:0.4rem 1rem;font-size:0.8rem;font-family:'DM Sans',sans-serif;letter-spacing:0.3px;">
+  Presupuesto sin cargo · <a href="https://wa.me/5491133266362?text=Hola!%20Quiero%20un%20presupuesto%20sin%20cargo&utm_source=topbar&utm_medium=whatsapp&utm_campaign=index" target="_blank" style="color:white;text-decoration:underline;font-weight:500;">Consultanos por WhatsApp</a>
+</div>
 
 <a href="#galeria" class="skip-link">Saltar al contenido principal</a>
 
@@ -820,6 +795,29 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
   </div>
 </section>
+
+<!-- INTERNAL LINKS PSEO (invisible - solo crawlers) -->
+<div style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;" aria-hidden="true">
+  <a href="tortas-glew.html">Tortas Glew</a>
+  <a href="tortas-burzaco.html">Tortas Burzaco</a>
+  <a href="tortas-longchamps.html">Tortas Longchamps</a>
+  <a href="tortas-claypole.html">Tortas Claypole</a>
+  <a href="tortas-monte-grande.html">Tortas Monte Grande</a>
+  <a href="tortas-lanus.html">Tortas Lanús</a>
+  <a href="tortas-baby-shower.html">Tortas Baby Shower</a>
+  <a href="tortas-bautismo.html">Tortas Bautismo</a>
+  <a href="tortas-comunion.html">Tortas Comunión</a>
+  <a href="tortas-unicornio.html">Tortas Unicornio</a>
+  <a href="tortas-princesas.html">Tortas Princesas</a>
+  <a href="tortas-superheroes.html">Tortas Superhéroes</a>
+  <a href="tortas-sin-gluten.html">Tortas Sin Gluten</a>
+  <a href="cuanto-cuesta-torta-personalizada.html">¿Cuánto cuesta una torta personalizada?</a>
+  <a href="como-pedir-torta-por-whatsapp.html">Cómo pedir torta por WhatsApp</a>
+  <a href="hay-tortas-sin-tacc-zona-sur.html">Tortas sin TACC zona sur</a>
+  <a href="envio-tortas-temperley.html">Envío de tortas Temperley</a>
+  <a href="tortas-para-celiacos-zona-sur.html">Tortas para celíacos zona sur</a>
+  <a href="tortas-con-dulce-de-leche.html">Tortas con dulce de leche</a>
+</div>
 
 <!-- FAQ -->
 <section id="faq" style="background:var(--nude);padding:4rem 1.5rem;">
