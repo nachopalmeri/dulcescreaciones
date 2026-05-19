@@ -8,67 +8,16 @@ window.addEventListener('scroll', () => {
   } else {
     navbar.classList.remove('scrolled');
   }
-});
-
-// Hamburger menu toggle
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-
-if (hamburger && navLinks) {
-  hamburger.addEventListener('click', () => {
-    const isOpen = navLinks.classList.toggle('open');
-    hamburger.classList.toggle('active', isOpen);
-    hamburger.setAttribute('aria-expanded', String(isOpen));
-  });
-
-  // Close menu when a link is clicked
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      hamburger.classList.remove('active');
-      navLinks.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', 'false');
-    });
-  });
-
-  // Close menu when clicking outside
-  document.addEventListener('click', (e) => {
-    if (!hamburger.contains(e.target) && !navLinks.contains(e.target) && navLinks.classList.contains('open')) {
-      hamburger.classList.remove('active');
-      navLinks.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', 'false');
-    }
   });
 }
 
-// Hero Carousel
-const heroSlides = document.querySelectorAll('.hero-slide');
-const heroDots = document.querySelectorAll('.hero-dot');
-let currentSlide = 0;
-
-function showSlide(index) {
-  heroSlides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === index);
-  });
-  heroDots.forEach((dot, i) => {
-    dot.classList.toggle('active', i === index);
+// Register Service Worker
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
   });
 }
 
-function nextSlide() {
-  currentSlide = (currentSlide + 1) % heroSlides.length;
-  showSlide(currentSlide);
-}
-
-if (heroSlides.length > 0) {
-  // Auto-advance every 5 seconds
-  setInterval(nextSlide, 5000);
-
-  // Dot click navigation
-  heroDots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      currentSlide = index;
-      showSlide(currentSlide);
-    });
   });
 }
 
@@ -283,26 +232,13 @@ if (lightbox) {
   });
 }
 
-// ===== SCROLL COUNTER ANIMATION =====
-const statNums = document.querySelectorAll('.stat-num');
-const counterObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('counting');
-      counterObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.5 });
-
-statNums.forEach(el => counterObserver.observe(el));
-
 // ===== EXIT INTENT POPUP (honest, no fake urgency) =====
 const exitPopup = document.getElementById('exit-popup');
 const exitDismissed = sessionStorage.getItem('dc-exit-dismissed');
 
 if (exitPopup && !exitDismissed) {
   let exitShown = false;
-  document.addEventListener('mouseout', function(e) {
+  document.addEventListener('mouseleave', function(e) {
     if (e.clientY < 5 && !exitShown) {
       exitShown = true;
       exitPopup.classList.add('active');
@@ -324,3 +260,17 @@ if (exitPopup && !exitDismissed) {
     }
   });
 }
+
+// PWA Install Prompt
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  const pwaPrompt = document.getElementById('pwa-prompt');
+  if (pwaPrompt && !localStorage.getItem('pwaDismissed') && !window.matchMedia('(display-mode: standalone)').matches) {
+    setTimeout(() => {
+      pwaPrompt.style.display = 'block';
+      setTimeout(() => pwaPrompt.classList.add('visible'), 100);
+    }, 5000);
+  }
+});

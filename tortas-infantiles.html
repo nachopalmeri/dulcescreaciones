@@ -79,6 +79,55 @@
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap"/></noscript>
 <link rel="stylesheet" href="styles.css"/>
+<!-- Schema.org: Service -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Tortas Infantiles Temperley | Dulces Creaciones",
+  "description": "Tortas artesanales infantiles personalizadas en Temperley, Zona Sur GBA.",
+  "provider": {"@type": "Bakery", "name": "Dulces Creaciones", "telephone": "+5491133266362"},
+  "areaServed": {"@type": "State", "name": "Buenos Aires", "containsPlace": [
+    {"@type": "City", "name": "Temperley"},
+    {"@type": "City", "name": "Lomas de Zamora"},
+    {"@type": "City", "name": "Adrogué"},
+    {"@type": "City", "name": "Banfield"},
+    {"@type": "City", "name": "Turdera"}
+  ]},
+  "serviceType": "Pastelería"
+}
+</script>
+
+<!-- Schema.org: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Con cuánta anticipación debo pedir una torta infantil?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Recomendamos 10 días de anticipación mínimo. Para personajes populares como Moana o Kuromi en temporada alta, sugerimos 15 días para asegurar tu lugar."}
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hacen tortas de personajes Disney como Moana?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Sí, somos especialistas en tortas temáticas Disney incluyendo Moana, Frozen, Princesas, Mickey y todos los personajes populares."}
+    },
+    {
+      "@type": "Question",
+      "name": "¿Tienen tortas de Kuromi y Sanrio?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Sí, realizamos tortas Kuromi, Hello Kitty, My Melody y toda la familia Sanrio con decoración en colores característicos."}
+    },
+    {
+      "@type": "Question",
+      "name": "¿Dónde retiro mi torta infantil?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Las tortas se retiran personalmente en Temperley, Buenos Aires. Coordinamos día y horario para que pases a buscar tu pedido listo y en perfectas condiciones."}
+    }
+  ]
+}
+</script>
+
 </head>
 <body>
 
@@ -307,7 +356,7 @@
       <div class="paso reveal reveal-delay-3">
         <div class="paso-num">03</div>
         <h3>Reserva con Seña</h3>
-<!-- <p>Contactanos por WhatsApp con 10 días de anticipación, coordinamos retiro en Temperley.</p> -->
+<p>Contactanos por WhatsApp con 10 días de anticipación, coordinamos retiro en Temperley.</p>
       </div>
     </div>
     <div class="proceso-cta reveal">
@@ -382,7 +431,7 @@
     <div class="faq-accordion">
       <div class="faq-item reveal reveal-delay-1">
         <h3 class="faq-question">¿Con cuánta anticipación debo pedir una torta infantil?</h3>
-<!-- <div class="faq-answer"><p>Recomendamos <strong>10 días de anticipación</strong> mínimo. Para personajes populares como Moana o Kuromi en temporada alta, sugerimos 15 días para asegurar tu lugar.</p></div> -->
+<div class="faq-answer"><p>Recomendamos <strong>10 días de anticipación</strong> mínimo. Para personajes populares como Moana o Kuromi en temporada alta, sugerimos 15 días para asegurar tu lugar.</p></div>
       </div>
       <div class="faq-item reveal reveal-delay-2">
         <h3 class="faq-question">¿Hacen tortas de personajes Disney como Moana?</h3>
@@ -415,11 +464,6 @@
 <script src="scripts.js"></script>
 
 <!-- PWA Install Prompt --> 
-                      this.classList.contains('fab-wa') A 'fab' : 'unknown';
-      trackWhatsAppClick(location);
-    });
-  });
-});
 
 // PWA Install Prompt
 let deferredPrompt;
@@ -473,23 +517,6 @@ window.addEventListener('appinstalled', () => {
   deferredPrompt = null;
 });
 </script>
-
-<!-- PWA Install Prompt -->
-<div id="pwa-prompt">
-  <div class="pwa-prompt-inner">
-    <div class="pwa-prompt-content">
-      <div class="pwa-prompt-icon">🎂</div>
-      <div class="pwa-prompt-text">
-        <p class="pwa-prompt-title">Agregá Dulces Creaciones a tu pantalla</p>
-        <p class="pwa-prompt-subtitle">Accedé rápido a nuestros diseños</p>
-      </div>
-    </div>
-    <div class="pwa-prompt-actions">
-      <button id="pwa-dismiss" class="pwa-prompt-btn">Ahora no</button>
-      <button id="pwa-install" class="pwa-prompt-btn">Agregar</button>
-    </div>
-  </div>
-</div>
 
 <!-- INTERNAL LINKS PSEO (invisible - solo crawlers) -->
 <div style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;" aria-hidden="true">

@@ -45,6 +45,45 @@ Key Pages:
   https://dulcescreaciones.vercel.app/tortas-bodas-egresados-temperley.html - Tortas bodas y egresados Temperley zona sur
   https://dulcescreaciones.vercel.app/blog/mesa-dulce-cuantas-porciones-persona.html - Guia porciones mesa dulce por persona
 
+  ## PSEO Local
+  https://dulcescreaciones.vercel.app/tortas-glew.html - Tortas personalizadas Glew, zona sur GBA
+  https://dulcescreaciones.vercel.app/tortas-burzaco.html - Tortas personalizadas Burzaco, zona sur
+  https://dulcescreaciones.vercel.app/tortas-longchamps.html - Tortas personalizadas Longchamps, zona sur
+  https://dulcescreaciones.vercel.app/tortas-claypole.html - Tortas personalizadas Claypole, zona sur
+  https://dulcescreaciones.vercel.app/tortas-monte-grande.html - Tortas personalizadas Monte Grande, zona sur
+  https://dulcescreaciones.vercel.app/tortas-lanus.html - Tortas personalizadas Lanus, zona sur
+
+  ## PSEO Tematico
+  https://dulcescreaciones.vercel.app/tortas-baby-shower.html - Tortas baby shower personalizadas Temperley
+  https://dulcescreaciones.vercel.app/tortas-bautismo.html - Tortas de bautismo personalizadas Temperley
+  https://dulcescreaciones.vercel.app/tortas-comunion.html - Tortas de primera comunion personalizadas
+  https://dulcescreaciones.vercel.app/tortas-unicornio.html - Tortas unicornio magicas personalizadas
+  https://dulcescreaciones.vercel.app/tortas-princesas.html - Tortas de princesas Disney personalizadas
+  https://dulcescreaciones.vercel.app/tortas-superheroes.html - Tortas de superheroes personalizadas
+  https://dulcescreaciones.vercel.app/tortas-sin-gluten.html - Tortas sin gluten aptas celiacos
+  https://dulcescreaciones.vercel.app/tortas-para-celiacos-zona-sur.html - Tortas aptas celiacos zona sur
+  https://dulcescreaciones.vercel.app/tortas-con-dulce-de-leche.html - Tortas con dulce de leche artesanal
+  https://dulcescreaciones.vercel.app/tortas-bodas-egresados.html - Tortas para bodas y egresados zona sur
+
+  ## FAQ Pages
+  https://dulcescreaciones.vercel.app/envio-tortas-temperley.html - Retiro y envio de tortas Temperley
+  https://dulcescreaciones.vercel.app/como-pedir-torta-por-whatsapp.html - Como pedir torta personalizada por WhatsApp
+  https://dulcescreaciones.vercel.app/cuanto-cuesta-torta-personalizada.html - Cuanto cuesta una torta personalizada
+  https://dulcescreaciones.vercel.app/hay-tortas-sin-tacc-zona-sur.html - Hay tortas sin TACC en zona sur
+  https://dulcescreaciones.vercel.app/referidos.html - Programa de referidos Regala Dulzura
+
+  ## Blog Posts
+  https://dulcescreaciones.vercel.app/blog/precio-torta-personalizada-temperley-2026.html - Precio torta personalizada Temperley 2026
+  https://dulcescreaciones.vercel.app/blog/donde-comprar-tortas-personalizadas-zona-sur.html - Donde comprar tortas personalizadas zona sur
+  https://dulcescreaciones.vercel.app/blog/tortas-15-anos-guia-completa.html - Guia completa tortas de 15 anos
+  https://dulcescreaciones.vercel.app/blog/cuanto-cuesta-mesa-dulce-30-personas.html - Cuanto cuesta mesa dulce 30 personas
+  https://dulcescreaciones.vercel.app/blog/mejores-rellenos-torta-personalizada.html - Mejores rellenos torta personalizada
+  https://dulcescreaciones.vercel.app/blog/torta-cumpleanos-adultos-ideas.html - Ideas tortas cumpleanos adultos elegantes
+  https://dulcescreaciones.vercel.app/blog/como-pedir-torta-por-whatsapp.html - Como pedir torta por WhatsApp paso a paso
+  https://dulcescreaciones.vercel.app/blog/ideas-tortas-futbol-personalizadas.html - Ideas tortas futbol personalizadas
+  https://dulcescreaciones.vercel.app/blog/que-torta-elegir-baby-shower.html - Que torta elegir para baby shower
+  https://dulcescreaciones.vercel.app/blog/tortas-sin-gluten-zona-sur.html - Tortas sin gluten zona sur opciones
+
 # Services & Products
 Services:
   - Tortas personalizadas (cumpleanos, 15 anos, bodas, egresados)
