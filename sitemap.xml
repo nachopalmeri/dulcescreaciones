@@ -256,16 +256,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- ======================================== -->
-  <!-- TORTAS BODAS Y EGRESADOS                 -->
-  <!-- Priority: 0.7 | ChangeFreq: monthly      -->
-  <!-- ======================================== -->
-  <url>
-    <loc>https://dulcescreaciones.vercel.app/tortas-bodas-egresados.html</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+
 
   <!-- ======================================== -->
   <!-- PRECIOS TORTAS                           -->
@@ -592,17 +583,7 @@
     </image:image>
   </url>
 
-  <url>
-    <loc>https://dulcescreaciones.vercel.app/hay-tortas-sin-tacc-zona-sur.html</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
-      <image:title>Dulces Creaciones - Tortas sin TACC en Zona Sur</image:title>
-      <image:caption>Tortas sin TACC aptas para celíacos en Temperley, Zona Sur GBA</image:caption>
-    </image:image>
-  </url>
+
 
   <url>
     <loc>https://dulcescreaciones.vercel.app/envio-tortas-temperley.html</loc>
@@ -616,17 +597,7 @@
     </image:image>
   </url>
 
-  <url>
-    <loc>https://dulcescreaciones.vercel.app/tortas-para-celiacos-zona-sur.html</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://dulcescreaciones.vercel.app/logo_perfil-removebg-preview.png</image:loc>
-      <image:title>Dulces Creaciones - Tortas para Celíacos en Zona Sur</image:title>
-      <image:caption>Tortas aptas para celíacos, sin TACC, en Temperley, Zona Sur GBA</image:caption>
-    </image:image>
-  </url>
+
 
   <url>
     <loc>https://dulcescreaciones.vercel.app/tortas-con-dulce-de-leche.html</loc>

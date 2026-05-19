@@ -1,6 +1,6 @@
 # llms.txt - Generative Engine Optimization for Dulces Creaciones
 # Based on llms.txt standard for AI crawlers and LLM indexing
-# Last updated: 2026-05-02
+# Last updated: 2026-05-19
 
 # Site Identity
 Title: Dulces Creaciones

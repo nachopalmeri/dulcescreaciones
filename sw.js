@@ -31,32 +31,6 @@ const urlsToCache = [
   '/logo_transparent.png',
   '/logo_perfil-removebg-preview.png',
 
-  // Gallery images (root level)
-  '/gallery_img_1.jpg',
-  '/gallery_img_2.jpg',
-  '/gallery_img_3.jpg',
-  '/gallery_img_4.jpg',
-  '/gallery_img_5.jpg',
-  '/gallery_img_6.jpg',
-  '/gallery_img_7.jpg',
-  '/gallery_img_8.jpg',
-  '/gallery_img_9.jpg',
-  '/gallery_img_10.jpg',
-  '/gallery_img_11.jpg',
-  '/gallery_img_12.jpg',
-  '/gallery_img_13.jpg',
-  '/gallery_img_14.jpg',
-
-  // Product images (root level)
-  '/torta_sanlorrenzo_camiseta.jpg',
-  '/torta_moana_amanda.jpg',
-  '/torta_kuromi_morada.jpg',
-  '/torta_happy15_rosa.jpg',
-  '/torta_globos_verde.jpg',
-  '/torta_fortnite.jpg',
-  '/torta_disco_cumple.jpg',
-  '/torta_corazones.jpg',
-
   // Images folder - Gallery webp images
   '/images/gallery-1.webp',
   '/images/gallery-2.webp',
@@ -347,7 +321,7 @@ self.addEventListener('notificationclick', (event) => {
 
   // Open the relevant page
   event.waitUntil(
-    clients.openWindow(event.notification.dataA.url || '/')
+    clients.openWindow(event.notification.data.url || '/')
   );
 });
 
