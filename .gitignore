@@ -1,0 +1,27 @@
+# OS
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+
+# PowerShell
+*.ps1
+
+# Backups
+*backup*
+*corrupto*
+
+# Logs
+*.log
+conversion_report.txt
+
+# Images source (we use WebP in images/)
+*.jpg
+*.png
