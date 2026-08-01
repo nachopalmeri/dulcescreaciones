@@ -53,6 +53,7 @@
 <link rel="preconnect" href="https://wa.me"/>
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap"/></noscript>
+<script>document.documentElement.classList.add('js');</script>
 <link rel="stylesheet" href="styles.css"/>
 
 <!-- Google Analytics 4 -->
@@ -565,7 +566,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </head>
 <body>
 
-<a href="#galeria" class="skip-link">Saltar al contenido principal</a>
+<a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
 <header>
 <nav id="navbar">
@@ -573,12 +574,12 @@ document.addEventListener('DOMContentLoaded', function() {
     <img src="logo_perfil-removebg-preview.png" alt="Dulces Creaciones" class="nav-logo-img"/>
     <span>Dulces Creaciones</span>
   </a>
-  <button class="hamburger" aria-label="Menu" aria-expanded="false">
+  <button class="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-navigation">
     <span></span>
     <span></span>
     <span></span>
   </button>
-  <ul class="nav-links">
+  <ul class="nav-links" id="primary-navigation">
     <li><a href="#galeria">Galería</a></li>
     <li><a href="#rellenos">Rellenos</a></li>
     <li><a href="#proceso">Cómo Pedir</a></li>
@@ -590,7 +591,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </nav>
 </header>
 
-<main>
+<main id="main-content" tabindex="-1">
 
 <!-- HERO -->
 <section class="hero" id="inicio">

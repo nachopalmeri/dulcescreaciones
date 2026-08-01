@@ -19,6 +19,7 @@ if (hamburger && navLinks) {
     const isOpen = navLinks.classList.toggle('open');
     hamburger.classList.toggle('active', isOpen);
     hamburger.setAttribute('aria-expanded', String(isOpen));
+    hamburger.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
   });
 
   // Close menu when a link is clicked
@@ -27,6 +28,7 @@ if (hamburger && navLinks) {
       hamburger.classList.remove('active');
       navLinks.classList.remove('open');
       hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.setAttribute('aria-label', 'Abrir menú');
     });
   });
 
@@ -36,6 +38,7 @@ if (hamburger && navLinks) {
       hamburger.classList.remove('active');
       navLinks.classList.remove('open');
       hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.setAttribute('aria-label', 'Abrir menú');
     }
   });
 }
