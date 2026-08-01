@@ -17,6 +17,39 @@ if ('serviceWorker' in navigator) {
   });
 }
 
+// Hamburger menu toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+if (hamburger && navLinks) {
+  hamburger.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    hamburger.classList.toggle('active', isOpen);
+    hamburger.setAttribute('aria-expanded', String(isOpen));
+    hamburger.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+  });
+
+  // Close menu when a link is clicked
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navLinks.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.setAttribute('aria-label', 'Abrir menú');
+    });
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !navLinks.contains(e.target) && navLinks.classList.contains('open')) {
+      hamburger.classList.remove('active');
+      navLinks.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.setAttribute('aria-label', 'Abrir menú');
+    }
+  });
+}
+
 // Scroll reveal animation
 const revealElements = document.querySelectorAll('.reveal');
 const revealObserver = new IntersectionObserver((entries) => {
@@ -122,8 +155,8 @@ document.addEventListener('DOMContentLoaded', function() {
     link.addEventListener('click', function() {
       // Extract UTM source from URL or fallback to section ID
       const url = new URL(this.href);
-      const utmSource = url.searchParams.get('utm_source') || 
-                        this.closest('section')?.id || 
+      const utmSource = url.searchParams.get('utm_source') ||
+                        this.closest('section')?.id ||
                         (this.classList.contains('fab-wa') ? 'fab' : 'unknown');
       trackWhatsAppClick(utmSource);
     });

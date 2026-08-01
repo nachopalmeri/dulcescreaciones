@@ -320,8 +320,9 @@ footer a:hover{color:var(--rosa-d);}
 @keyframes pulse-wa{0%,100%{box-shadow:0 6px 24px rgba(37,211,102,.45);}50%{box-shadow:0 6px 40px rgba(37,211,102,.75),0 0 0 10px rgba(37,211,102,.1);}}
 
 /* REVEAL */
-.reveal{opacity:0;transform:translateY(28px);transition:opacity var(--duration-slow) var(--ease-out),transform var(--duration-slow) var(--ease-out);}
-.reveal.visible{opacity:1;transform:none;}
+.reveal{opacity:1;transform:none;}
+.js .reveal{opacity:0;transform:translateY(28px);transition:opacity var(--duration-slow) var(--ease-out),transform var(--duration-slow) var(--ease-out);}
+.js .reveal.visible{opacity:1;transform:none;}
 .reveal-delay-1{transition-delay:.1s;}.reveal-delay-2{transition-delay:.2s;}
 .reveal-delay-3{transition-delay:.3s;}.reveal-delay-4{transition-delay:.4s;}
 
