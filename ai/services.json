@@ -186,7 +186,7 @@
     {
       "@type": "Service",
       "name": "Tortas Personalizadas Almirante Brown",
-      "description": "Tortas artesanales personalizadas con entrega en Almirante Brown: Adrogue, Glew, Burzaco, Rafael Calzada, Longchamps. Cumpleanos, 15 anos, mesas dulces.",
+      "description": "Tortas artesanales personalizadas con retiro en Temperley para vecinos de Almirante Brown: Adrogue, Glew, Burzaco, Rafael Calzada, Longchamps. Cumpleanos, 15 anos, mesas dulces.",
       "provider": {"@type": "Bakery", "name": "Dulces Creaciones", "telephone": "+5491133266362"},
       "areaServed": [{"@type": "City", "name": "Almirante Brown"}, {"@type": "City", "name": "Adrogue"}, {"@type": "City", "name": "Glew"}, {"@type": "City", "name": "Burzaco"}],
       "serviceType": "Pasteleria",
@@ -196,7 +196,7 @@
     {
       "@type": "Service",
       "name": "Tortas Personalizadas Lomas de Zamora",
-      "description": "Tortas artesanales con entrega en Lomas de Zamora y Banfield. Cumpleanos, 15 anos, mesas dulces. 224+ tortas entregadas.",
+      "description": "Tortas artesanales con retiro en Temperley para vecinos de Lomas de Zamora y Banfield. Cumpleanos, 15 anos, mesas dulces. Elaboración 100% artesanal.",
       "provider": {"@type": "Bakery", "name": "Dulces Creaciones", "telephone": "+5491133266362"},
       "areaServed": [{"@type": "City", "name": "Lomas de Zamora"}, {"@type": "City", "name": "Banfield"}, {"@type": "City", "name": "Temperley"}],
       "serviceType": "Pasteleria",

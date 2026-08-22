@@ -5,7 +5,7 @@
 # Site Identity
 Title: Dulces Creaciones
 Base URL: https://dulcescreaciones.vercel.app
-Description: Pasteleria artesanal en Temperley, Zona Sur GBA. Tortas personalizadas para cumpleanos, 15 anos, eventos. Mesas dulces y candy bar con entrega a domicilio.
+Description: Pasteleria artesanal en Temperley, Zona Sur GBA. Tortas personalizadas para cumpleanos, 15 anos, eventos. Mesas dulces y candy bar con Retiro en taller de Temperley.
 Language: es-AR
 Category: Local Business / Bakery / Custom Cakes
 
@@ -105,7 +105,7 @@ Lead Time: 10 dias anticipacion (15 para eventos grandes)
 
 # Trust Signals
 Experience: 5+ anos de trayectoria
-Tortas Entregadas: 224+
+Modalidad: Retiro en taller de Temperley
 Style: 100% personalizado, artesanal, hecho a mano
 Founder: Elizabeth y equipo, apasionados por la pasteleria artesanal
 

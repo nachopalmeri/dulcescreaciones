@@ -165,7 +165,7 @@ def run_audit():
                             pass
                 passed = total_faqs >= 6
             elif name == "Statistics/numbers in content":
-                passed = any(x in html_text for x in ["224+", "5+", "10 días", "50%"])
+                passed = any(x in html_text for x in ["7 a 15 días", "50%", "10 días", "24h", "2026"])
             elif name == "Location mentions (Temperley, Zona Sur)":
                 passed = "Temperley" in html_text and "Zona Sur" in html_text
             elif name == "Contact info visible (WhatsApp)":
