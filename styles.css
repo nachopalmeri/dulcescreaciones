@@ -678,23 +678,29 @@ nav.scrolled {
 @media (max-width: 900px) {
   .hero {
     min-height: auto;
-    padding-top: 7rem;
+    padding-top: 8.5rem;
     padding-bottom: 3.5rem;
   }
   .hero-grid {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
     text-align: center;
   }
   .hero-text-col {
     text-align: center;
   }
+  .hero-badge-pill {
+    margin-bottom: 1rem;
+  }
   .hero-desc {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1.75rem;
   }
   .hero-actions {
     justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
   }
   .hero-actions .btn-primary-wa,
   .hero-actions .btn-secondary-outline {
@@ -707,7 +713,7 @@ nav.scrolled {
     gap: 0.85rem 1.25rem;
   }
   .hero-img-showcase {
-    max-width: 360px;
+    max-width: 320px;
     margin: 0 auto;
   }
 }
@@ -2062,23 +2068,27 @@ details.faq-item p {
 }
 
 /* ==========================================================================
-   SCROLL REVEAL UTILITIES & REDUCED MOTION
+   SCROLL REVEAL & MICRO-ANIMATIONS (SMOOTH & RESILIENT)
    ========================================================================== */
 .reveal {
   opacity: 1;
   transform: none;
 }
 
-.js .reveal {
-  opacity: 0;
-  transform: translateY(22px);
-  transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
-  will-change: opacity, transform;
-}
-
-.js .reveal.visible {
-  opacity: 1;
-  transform: none;
+@media (prefers-reduced-motion: no-preference) {
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  .js .reveal-anim {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.45s var(--ease-out), transform 0.45s var(--ease-out);
+  }
+  .js .reveal-anim.visible {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .reveal-delay-1 { transition-delay: 0.1s; }
