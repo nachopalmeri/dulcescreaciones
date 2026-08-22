@@ -5,7 +5,7 @@
     {
       "@type": "Service",
       "name": "Tortas Personalizadas",
-      "description": "Tortas 100% personalizadas para cumpleanos, 15 anos y eventos en Temperley, Zona Sur GBA. Diseno unico segun tematica. Rellenos: dulce de leche, Oreo, Bariloche, ganache. Entrega a domicilio.",
+      "description": "Tortas 100% personalizadas para cumpleanos, 15 anos y eventos en Temperley, Zona Sur GBA. Diseno unico segun tematica. Rellenos: dulce de leche, Oreo, Bariloche, ganache. Retiro en Temperley.",
       "provider": {
         "@type": "Bakery",
         "name": "Dulces Creaciones",
@@ -206,7 +206,7 @@
     {
       "@type": "Service",
       "name": "Tortas Personalizadas Zona Sur GBA",
-      "description": "Tortas artesanales personalizadas en toda la zona sur del GBA. Temperley, Lomas, Adrogue, Banfield, Turdera, Glew, Almirante Brown. Entrega a domicilio.",
+      "description": "Tortas artesanales personalizadas en toda la zona sur del GBA. Temperley, Lomas, Adrogue, Banfield, Turdera, Glew, Almirante Brown. Retiro en Temperley.",
       "provider": {"@type": "Bakery", "name": "Dulces Creaciones", "telephone": "+5491133266362"},
       "areaServed": [{"@type": "City", "name": "Temperley"}, {"@type": "City", "name": "Lomas de Zamora"}, {"@type": "City", "name": "Adrogue"}, {"@type": "City", "name": "Banfield"}, {"@type": "City", "name": "Turdera"}, {"@type": "City", "name": "Almirante Brown"}],
       "serviceType": "Pasteleria",

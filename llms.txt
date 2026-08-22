@@ -66,7 +66,7 @@ Key Pages:
   https://dulcescreaciones.vercel.app/tortas-bodas-egresados.html - Tortas para bodas y egresados zona sur
 
   ## FAQ Pages
-  https://dulcescreaciones.vercel.app/envio-tortas-temperley.html - Retiro y envio de tortas Temperley
+  https://dulcescreaciones.vercel.app/envio-tortas-temperley.html - Retiro de tortas en Temperley
   https://dulcescreaciones.vercel.app/como-pedir-torta-por-whatsapp.html - Como pedir torta personalizada por WhatsApp
   https://dulcescreaciones.vercel.app/cuanto-cuesta-torta-personalizada.html - Cuanto cuesta una torta personalizada
   https://dulcescreaciones.vercel.app/hay-tortas-sin-tacc-zona-sur.html - Hay tortas sin TACC en zona sur
@@ -100,7 +100,7 @@ Products:
 Price Range: $$
 Payment: MercadoPago, transferencia, efectivo
 Policy: Sena del 50% para confirmar pedido
-Delivery: Envios a Zona Sur GBA
+Retiro: Retiro personal en Temperley, Zona Sur GBA (no realizamos envíos a domicilio)
 Lead Time: 10 dias anticipacion (15 para eventos grandes)
 
 # Trust Signals
