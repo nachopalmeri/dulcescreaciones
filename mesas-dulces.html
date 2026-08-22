@@ -668,62 +668,6 @@
 <script src="scripts.js"></script>
 
 <!-- PWA Install Prompt -->
-});
-
-// PWA Install Prompt
-let deferredPrompt;
-const pwaPrompt = document.getElementById('pwa-prompt');
-const pwaInstall = document.getElementById('pwa-install');
-const pwaDismiss = document.getElementById('pwa-dismiss');
-const pwaDismissed = localStorage.getItem('pwaDismissed');
-const pwaInstalled = window.matchMedia('(display-mode: standalone)').matches;
-
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredPrompt = e;
-  if (!pwaDismissed && !pwaInstalled && window.innerWidth < 768) {
-    setTimeout(() => {
-      pwaPrompt.style.display = 'block';
-      setTimeout(() => {
-        pwaPrompt.classList.add('visible');
-      }, 100);
-    }, 5000);
-  }
-});
-
-pwaInstall.addEventListener('click', async () => {
-  if (!deferredPrompt) return;
-  deferredPrompt.prompt();
-  const { outcome } = await deferredPrompt.userChoice;
-  if (outcome === 'accepted') {
-    localStorage.setItem('pwaInstalled', 'true');
-  }
-  deferredPrompt = null;
-  pwaPrompt.classList.remove('visible');
-  setTimeout(() => {
-    pwaPrompt.style.display = 'none';
-  }, 300);
-});
-
-pwaDismiss.addEventListener('click', () => {
-  localStorage.setItem('pwaDismissed', 'true');
-  pwaPrompt.classList.remove('visible');
-  setTimeout(() => {
-    pwaPrompt.style.display = 'none';
-  }, 300);
-});
-
-window.addEventListener('appinstalled', () => {
-  pwaPrompt.classList.remove('visible');
-  setTimeout(() => {
-    pwaPrompt.style.display = 'none';
-  }, 300);
-  localStorage.setItem('pwaInstalled', 'true');
-  deferredPrompt = null;
-});
-</script>
-
-<!-- PWA Install Prompt -->
 <div id="pwa-prompt">
   <div class="pwa-prompt-inner">
     <div class="pwa-prompt-content">

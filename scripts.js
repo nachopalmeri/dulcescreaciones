@@ -1,4 +1,7 @@
-/* Dulces Creaciones - Main Scripts & Analytics Tracking */
+/* ==========================================================================
+   DULCES CREACIONES — MAIN SCRIPTS & INTERACTIVE SUITE
+   UX/UI + CRO + Analytics Tracking + Interactive Components
+   ========================================================================== */
 
 // Initialize DataLayer for Google Tag Manager / GA4
 window.dataLayer = window.dataLayer || [];
@@ -7,7 +10,7 @@ window.dataLayer = window.dataLayer || [];
 function trackEvent(eventName, params) {
   params = params || {};
   params.timestamp = new Date().toISOString();
-  
+
   // GTM dataLayer push
   window.dataLayer.push({
     event: eventName,
@@ -22,16 +25,19 @@ function trackEvent(eventName, params) {
 
 // Commercial intent tracking helpers
 function getLinkLocation(element) {
-  if (element.closest('.fab-wa') || element.classList.contains('fab-wa')) return 'fab';
-  if (element.closest('.dc-chat-modal') || element.closest('.dc-chat-launcher')) return 'chatbot';
+  if (element.closest('.fab-wa') || element.classList.contains('fab-wa')) return 'floating_fab';
   if (element.closest('#navbar') || element.closest('nav')) return 'nav';
-  if (element.closest('.hero') || element.closest('.hero-editorial')) return 'hero';
+  if (element.closest('.hero') || element.closest('.hero-grid')) return 'hero';
+  if (element.closest('#especialidades') || element.closest('.category-grid')) return 'categories';
   if (element.closest('#galeria') || element.closest('.gallery-grid')) return 'gallery';
-  if (element.closest('#precios') || element.closest('.precios-grid')) return 'pricing';
+  if (element.closest('#lightbox')) return 'lightbox';
+  if (element.closest('#proceso') || element.closest('.pasos-grid')) return 'proceso';
+  if (element.closest('#rellenos') || element.closest('.rellenos-grid')) return 'rellenos';
+  if (element.closest('#autor')) return 'about_author';
+  if (element.closest('#zona')) return 'location_zone';
   if (element.closest('#faq')) return 'faq';
-  if (element.closest('#proceso')) return 'proceso';
-  if (element.closest('#rellenos')) return 'rellenos';
-  if (element.closest('#contacto') || element.closest('form')) return 'contact_form';
+  if (element.closest('#cta-final')) return 'cta_final';
+  if (element.closest('#exit-popup')) return 'exit_popup';
   if (element.closest('footer')) return 'footer';
   return element.closest('section')?.id || 'body';
 }
@@ -93,112 +99,59 @@ function trackInstagramClick(element) {
   });
 }
 
-function trackMapsClick(element) {
-  const linkLocation = element.getAttribute('data-link-location') || getLinkLocation(element);
-  trackEvent('maps_click', {
-    page_location: window.location.href,
-    page_path: window.location.pathname,
-    page_title: document.title,
-    link_location: linkLocation,
-    destination: 'Temperley, Zona Sur GBA'
+// Global click event delegation for WhatsApp, Instagram, and Maps
+document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('click', (e) => {
+    const waLink = e.target.closest('a[href*="wa.me"], a[href*="whatsapp.com"]');
+    if (waLink) {
+      trackWhatsAppClick(waLink);
+      return;
+    }
+
+    const igLink = e.target.closest('a[href*="instagram.com"]');
+    if (igLink) {
+      trackInstagramClick(igLink);
+      return;
+    }
   });
-}
-
-function trackCtaClick(element) {
-  const ctaText = (element.innerText || element.textContent || element.getAttribute('aria-label') || 'CTA').trim().replace(/\s+/g, ' ');
-  const linkLocation = getLinkLocation(element);
-  const ctaUrl = element.getAttribute('href') || element.getAttribute('action') || '';
-  
-  trackEvent('cta_click', {
-    page_location: window.location.href,
-    page_path: window.location.pathname,
-    page_title: document.title,
-    cta_text: ctaText,
-    cta_url: ctaUrl,
-    link_location: linkLocation
-  });
-}
-
-// Global click event listener for analytics
-document.addEventListener('click', function(e) {
-  const link = e.target.closest('a');
-  if (!link) return;
-
-  const href = link.getAttribute('href') || '';
-
-  // WhatsApp links
-  if (href.includes('wa.me') || href.includes('whatsapp.com')) {
-    trackWhatsAppClick(link);
-    return;
-  }
-
-  // Instagram links
-  if (href.includes('instagram.com')) {
-    trackInstagramClick(link);
-    return;
-  }
-
-  // Google Maps links
-  if (href.includes('maps.google.') || href.includes('goo.gl/maps') || href.includes('google.com/maps')) {
-    trackMapsClick(link);
-    return;
-  }
-
-  // Generic key CTA buttons
-  if (link.classList.contains('nav-cta') || link.classList.contains('btn-wa') || link.classList.contains('btn-wa-big') || link.classList.contains('hero-cta')) {
-    trackCtaClick(link);
-  }
 });
 
-// ===== NAVBAR SCROLL EFFECT =====
-const navbar = document.getElementById('navbar');
-if (navbar) {
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
-  }, { passive: true });
-}
-
-// ===== SERVICE WORKER REGISTRATION =====
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js').catch(() => {});
-  });
-}
-
-// ===== HAMBURGER MENU TOGGLE =====
+// ===== NAVBAR SCROLL EFFECT & MOBILE MENU =====
 document.addEventListener('DOMContentLoaded', () => {
+  const navbar = document.getElementById('navbar') || document.querySelector('nav');
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('.nav-links');
 
+  if (navbar) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 30) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    }, { passive: true });
+  }
+
   if (hamburger && navLinks) {
     const toggleMenu = (open) => {
-      const isOpen = typeof open === 'boolean' ? open : !navLinks.classList.contains('open');
+      const isOpen = open !== undefined ? open : !navLinks.classList.contains('open');
       navLinks.classList.toggle('open', isOpen);
       hamburger.classList.toggle('active', isOpen);
       hamburger.setAttribute('aria-expanded', String(isOpen));
-      hamburger.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
       document.body.style.overflow = isOpen ? 'hidden' : '';
+
+      trackEvent('menu_toggle', {
+        action: isOpen ? 'open' : 'close',
+        viewport_width: window.innerWidth
+      });
     };
 
     hamburger.addEventListener('click', () => toggleMenu());
 
-    // Close menu when a link is clicked
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => toggleMenu(false));
     });
 
-    // Close menu on outside click
-    document.addEventListener('click', (e) => {
-      if (navLinks.classList.contains('open') && !hamburger.contains(e.target) && !navLinks.contains(e.target)) {
-        toggleMenu(false);
-      }
-    });
-
-    // Close menu on Escape key
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && navLinks.classList.contains('open')) {
         toggleMenu(false);
@@ -207,27 +160,35 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// ===== SCROLL REVEAL ANIMATION =====
-if ('IntersectionObserver' in window) {
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
-
-  document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+// ===== SCROLL REVEAL ANIMATION (SAFE & ROBUST) =====
+document.addEventListener('DOMContentLoaded', () => {
+  const reveals = document.querySelectorAll('.reveal');
+  
+  // Reveal immediately if above the fold
+  reveals.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight + 100) {
+      el.classList.add('visible');
+    }
   });
-} else {
-  document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
-  });
-}
 
-// ===== MARQUEE DUPLICATE FOR SEAMLESS LOOP =====
+  if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '150px 0px', threshold: 0.05 });
+
+    reveals.forEach(el => revealObserver.observe(el));
+  } else {
+    reveals.forEach(el => el.classList.add('visible'));
+  }
+});
+
+// ===== MARQUEE SEAMLESS LOOP =====
 document.addEventListener('DOMContentLoaded', () => {
   const marqueeInner = document.querySelector('.marquee-inner');
   if (marqueeInner && !marqueeInner.getAttribute('data-duplicated')) {
@@ -236,94 +197,157 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// ===== FAQ ACCORDION (ENHANCED POLISHED TOGGLES) =====
+// ===== GALLERY FILTERING & LIGHTBOX =====
 document.addEventListener('DOMContentLoaded', () => {
-  const faqQuestions = Array.from(document.querySelectorAll('.faq-question'));
+  const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCounter = document.getElementById('lightbox-counter');
+  const lightboxCaption = document.querySelector('.lightbox-caption');
+  const lightboxCtaLink = document.querySelector('.lightbox-cta-link');
+  const lightboxClose = document.querySelector('.lightbox-close');
+  const lightboxPrev = document.querySelector('.lightbox-prev');
+  const lightboxNext = document.querySelector('.lightbox-next');
 
-  function closeFaqItem(question) {
-    const answer = question.nextElementSibling;
-    const item = question.closest('.faq-item');
-    question.classList.remove('active');
-    question.setAttribute('aria-expanded', 'false');
-    if (item) item.classList.remove('active');
-    if (answer) {
-      answer.classList.remove('open');
-      answer.style.maxHeight = '0px';
+  // Filter Buttons
+  if (filterBtns.length > 0 && galleryItems.length > 0) {
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const category = btn.getAttribute('data-filter') || 'all';
+
+        galleryItems.forEach(item => {
+          const itemCat = item.getAttribute('data-category') || 'all';
+          if (category === 'all' || itemCat.includes(category)) {
+            item.style.display = 'block';
+            setTimeout(() => {
+              item.style.opacity = '1';
+              item.style.transform = 'scale(1)';
+            }, 50);
+          } else {
+            item.style.opacity = '0';
+            item.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+              item.style.display = 'none';
+            }, 200);
+          }
+        });
+
+        trackEvent('gallery_filter', { filter_category: category });
+      });
+    });
+  }
+
+  // Lightbox
+  let visibleImages = [];
+  let currentIndex = 0;
+
+  function updateVisibleImages() {
+    visibleImages = Array.from(document.querySelectorAll('.gallery-item'))
+      .filter(item => window.getComputedStyle(item).display !== 'none')
+      .map(item => ({
+        src: item.querySelector('img')?.getAttribute('src') || '',
+        alt: item.querySelector('img')?.getAttribute('alt') || 'Torta artesanal',
+        label: item.querySelector('.gallery-item-label')?.textContent || 'Diseño Exclusivo'
+      }));
+  }
+
+  function openLightbox(index) {
+    if (!lightbox || !lightboxImg) return;
+    updateVisibleImages();
+    if (visibleImages.length === 0) return;
+
+    currentIndex = index >= 0 && index < visibleImages.length ? index : 0;
+    renderLightboxItem();
+    lightbox.classList.add('active');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+
+    trackEvent('gallery_view', {
+      image_src: visibleImages[currentIndex].src,
+      image_label: visibleImages[currentIndex].label,
+      image_index: currentIndex + 1
+    });
+  }
+
+  function closeLightbox() {
+    if (!lightbox) return;
+    lightbox.classList.remove('active');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  function renderLightboxItem() {
+    const item = visibleImages[currentIndex];
+    if (!item) return;
+
+    lightboxImg.src = item.src;
+    lightboxImg.alt = item.alt;
+
+    if (lightboxCaption) {
+      lightboxCaption.textContent = item.label;
+    }
+    if (lightboxCounter) {
+      lightboxCounter.textContent = `${currentIndex + 1} de ${visibleImages.length}`;
+    }
+    if (lightboxCtaLink) {
+      const msg = encodeURIComponent(`Hola! Estuve viendo la galería y me encantó la ${item.label} 🎂 ¿Podrían pasarme presupuesto y disponibilidad?`);
+      lightboxCtaLink.href = `https://wa.me/5491133266362?text=${msg}&utm_source=lightbox&utm_medium=whatsapp&utm_campaign=gallery_inquiry`;
     }
   }
 
-  function openFaqItem(question) {
-    const answer = question.nextElementSibling;
-    const item = question.closest('.faq-item');
-    if (!answer) return;
-    question.classList.add('active');
-    question.setAttribute('aria-expanded', 'true');
-    if (item) item.classList.add('active');
-    answer.classList.add('open');
-    answer.style.maxHeight = `${answer.scrollHeight + 30}px`;
-    
-    // Track FAQ toggle interaction
-    const faqTitle = (question.innerText || question.textContent || '').trim();
-    trackEvent('faq_toggle', {
-      faq_question: faqTitle,
-      page_location: window.location.href
+  if (galleryItems.length > 0) {
+    galleryItems.forEach(item => {
+      item.addEventListener('click', () => {
+        updateVisibleImages();
+        const imgSrc = item.querySelector('img')?.getAttribute('src');
+        const idx = visibleImages.findIndex(img => img.src === imgSrc);
+        openLightbox(idx !== -1 ? idx : 0);
+      });
     });
   }
 
-  if (faqQuestions.length > 0) {
-    faqQuestions.forEach((question, index) => {
-      const answer = question.nextElementSibling;
-      const answerId = `faq-answer-${index + 1}`;
-
-      question.setAttribute('role', 'button');
-      question.setAttribute('tabindex', '0');
-      question.setAttribute('aria-expanded', 'false');
-
-      if (answer) {
-        answer.id = answerId;
-        question.setAttribute('aria-controls', answerId);
-      }
-    });
-
-    const toggleFaq = (question) => {
-      const isOpen = question.classList.contains('active');
-      faqQuestions.forEach(item => closeFaqItem(item));
-      if (!isOpen) {
-        openFaqItem(question);
-      }
-    };
-
-    document.addEventListener('click', (event) => {
-      const question = event.target.closest('.faq-question');
-      if (!question) return;
-      toggleFaq(question);
-    });
-
-    document.addEventListener('keydown', (event) => {
-      const question = event.target.closest('.faq-question');
-      if (!question) return;
-      if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        toggleFaq(question);
-      }
+  if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+  if (lightbox) {
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
     });
   }
 
-  // Track native <details> toggles
-  document.querySelectorAll('details.faq-item').forEach(details => {
-    details.addEventListener('toggle', () => {
-      if (details.open) {
-        const summaryText = details.querySelector('summary')?.innerText || 'FAQ';
-        trackEvent('faq_toggle', {
-          faq_question: summaryText.trim(),
-          page_location: window.location.href
-        });
-      }
+  if (lightboxPrev) {
+    lightboxPrev.addEventListener('click', (e) => {
+      e.stopPropagation();
+      currentIndex = (currentIndex - 1 + visibleImages.length) % visibleImages.length;
+      renderLightboxItem();
     });
+  }
+
+  if (lightboxNext) {
+    lightboxNext.addEventListener('click', (e) => {
+      e.stopPropagation();
+      currentIndex = (currentIndex + 1) % visibleImages.length;
+      renderLightboxItem();
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox || !lightbox.classList.contains('active')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') {
+      currentIndex = (currentIndex - 1 + visibleImages.length) % visibleImages.length;
+      renderLightboxItem();
+    }
+    if (e.key === 'ArrowRight') {
+      currentIndex = (currentIndex + 1) % visibleImages.length;
+      renderLightboxItem();
+    }
   });
 });
 
-// ===== DARK / LIGHT THEME TOGGLE =====
+// ===== THEME TOGGLE (LIGHT / DARK) =====
 document.addEventListener('DOMContentLoaded', () => {
   const themeToggle = document.querySelector('.theme-toggle');
   const html = document.documentElement;
@@ -355,355 +379,119 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// ===== LIGHTBOX GALLERY =====
+// ===== FAQ ACCORDION TRACKING =====
 document.addEventListener('DOMContentLoaded', () => {
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  const lightboxCounter = document.getElementById('lightbox-counter');
-  const lightboxClose = document.querySelector('.lightbox-close');
-  const lightboxPrev = document.querySelector('.lightbox-prev');
-  const lightboxNext = document.querySelector('.lightbox-next');
-  let lightboxImages = [];
-  let lightboxIndex = 0;
-
-  function openLightbox(images, startIndex) {
-    if (!lightbox || !lightboxImg) return;
-    lightboxImages = images;
-    lightboxIndex = startIndex;
-    updateLightbox();
-    lightbox.classList.add('active');
-    lightbox.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-
-    trackEvent('gallery_view', {
-      image_src: lightboxImg.src,
-      image_index: lightboxIndex + 1,
-      total_images: lightboxImages.length,
-      page_location: window.location.href
-    });
-  }
-
-  function closeLightbox() {
-    if (!lightbox) return;
-    lightbox.classList.remove('active');
-    lightbox.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-  }
-
-  function updateLightbox() {
-    if (!lightboxImages[lightboxIndex] || !lightboxImg) return;
-    lightboxImg.src = lightboxImages[lightboxIndex].src;
-    lightboxImg.alt = lightboxImages[lightboxIndex].alt || 'Torta artesanal Dulces Creaciones';
-    if (lightboxCounter) {
-      lightboxCounter.textContent = `${lightboxIndex + 1} / ${lightboxImages.length}`;
-    }
-  }
-
-  if (lightbox) {
-    const galleryItems = document.querySelectorAll('.gallery-item img');
-    const images = Array.from(galleryItems);
-
-    galleryItems.forEach((img, i) => {
-      const parent = img.parentElement;
-      if (parent) {
-        parent.addEventListener('click', (e) => {
-          e.preventDefault();
-          openLightbox(images, i);
+  document.querySelectorAll('details.faq-item').forEach(details => {
+    details.addEventListener('toggle', () => {
+      if (details.open) {
+        const summaryText = details.querySelector('summary')?.innerText || 'FAQ';
+        trackEvent('faq_toggle', {
+          faq_question: summaryText.trim(),
+          page_location: window.location.href
         });
       }
     });
-
-    if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
-    lightbox.addEventListener('click', (e) => {
-      if (e.target === lightbox) closeLightbox();
-    });
-
-    if (lightboxPrev) {
-      lightboxPrev.addEventListener('click', () => {
-        lightboxIndex = (lightboxIndex - 1 + lightboxImages.length) % lightboxImages.length;
-        updateLightbox();
-      });
-    }
-
-    if (lightboxNext) {
-      lightboxNext.addEventListener('click', () => {
-        lightboxIndex = (lightboxIndex + 1) % lightboxImages.length;
-        updateLightbox();
-      });
-    }
-
-    document.addEventListener('keydown', (e) => {
-      if (!lightbox.classList.contains('active')) return;
-      if (e.key === 'Escape') closeLightbox();
-      if (e.key === 'ArrowLeft') {
-        lightboxIndex = (lightboxIndex - 1 + lightboxImages.length) % lightboxImages.length;
-        updateLightbox();
-      }
-      if (e.key === 'ArrowRight') {
-        lightboxIndex = (lightboxIndex + 1) % lightboxImages.length;
-        updateLightbox();
-      }
-    });
-
-    // Touch swipe for mobile lightbox
-    let touchStartX = 0;
-    lightbox.addEventListener('touchstart', (e) => {
-      touchStartX = e.changedTouches[0].screenX;
-    }, { passive: true });
-
-    lightbox.addEventListener('touchend', (e) => {
-      const diff = touchStartX - e.changedTouches[0].screenX;
-      if (Math.abs(diff) > 50) {
-        if (diff > 0) {
-          lightboxIndex = (lightboxIndex + 1) % lightboxImages.length;
-        } else {
-          lightboxIndex = (lightboxIndex - 1 + lightboxImages.length) % lightboxImages.length;
-        }
-        updateLightbox();
-      }
-    }, { passive: true });
-  }
+  });
 });
 
-// ===== EXIT INTENT POPUP =====
+// ===== EXIT INTENT POPUP (SMART & NON-INTRUSIVE) =====
 document.addEventListener('DOMContentLoaded', () => {
   const exitPopup = document.getElementById('exit-popup');
-  let exitDismissed = false;
+  const exitClose = document.getElementById('exit-popup-close');
+  let shown = false;
+
   try {
-    exitDismissed = sessionStorage.getItem('dc-exit-dismissed');
+    shown = sessionStorage.getItem('dc_exit_popup_shown') === 'true';
   } catch (e) {}
 
-  if (exitPopup && !exitDismissed) {
-    let exitShown = false;
-    document.addEventListener('mouseleave', function(e) {
-      if (e.clientY < 5 && !exitShown) {
-        exitShown = true;
-        exitPopup.classList.add('active');
-        trackEvent('exit_popup_shown', { page_location: window.location.href });
+  if (exitPopup && !shown) {
+    const showPopup = () => {
+      if (shown) return;
+      shown = true;
+      try {
+        sessionStorage.setItem('dc_exit_popup_shown', 'true');
+      } catch (e) {}
+
+      exitPopup.style.opacity = '1';
+      exitPopup.style.pointerEvents = 'auto';
+
+      trackEvent('exit_popup_show', {
+        page_location: window.location.href
+      });
+    };
+
+    const hidePopup = () => {
+      exitPopup.style.opacity = '0';
+      exitPopup.style.pointerEvents = 'none';
+    };
+
+    // Trigger on desktop mouse leaving viewport towards top
+    document.addEventListener('mouseleave', (e) => {
+      if (e.clientY <= 10 && window.innerWidth > 768) {
+        showPopup();
       }
     });
 
-    const exitClose = document.getElementById('exit-popup-close');
     if (exitClose) {
-      exitClose.addEventListener('click', function() {
-        exitPopup.classList.remove('active');
-        try { sessionStorage.setItem('dc-exit-dismissed', '1'); } catch (e) {}
-      });
+      exitClose.addEventListener('click', hidePopup);
     }
-
-    exitPopup.addEventListener('click', function(e) {
-      if (e.target === exitPopup) {
-        exitPopup.classList.remove('active');
-        try { sessionStorage.setItem('dc-exit-dismissed', '1'); } catch (e) {}
-      }
+    exitPopup.addEventListener('click', (e) => {
+      if (e.target === exitPopup) hidePopup();
     });
   }
 });
 
-// ===== BEAUTIFUL ZERO-API PASTRY CHATBOT WIDGET =====
+// ===== PWA INSTALL PROMPT =====
 document.addEventListener('DOMContentLoaded', () => {
-  // Inject Chatbot DOM if not already in document
-  if (!document.getElementById('dc-chatbot-root')) {
-    const chatRoot = document.createElement('div');
-    chatRoot.id = 'dc-chatbot-root';
-    chatRoot.innerHTML = `
-      <!-- Launcher Button -->
-      <button class="dc-chat-launcher" id="dc-chat-launcher" aria-label="Abrir asistente virtual" aria-haspopup="dialog">
-        <div class="dc-chat-avatar">🎂</div>
-        <span>¿Dudas con tu torta?</span>
-        <div class="dc-chat-pulse"></div>
-      </button>
+  let deferredPrompt;
+  const pwaPrompt = document.getElementById('pwa-prompt');
+  const pwaInstall = document.getElementById('pwa-install');
+  const pwaDismiss = document.getElementById('pwa-dismiss');
 
-      <!-- Chat Modal Window -->
-      <div class="dc-chat-modal" id="dc-chat-modal" role="dialog" aria-modal="true" aria-label="Asistente Dulces Creaciones">
-        <div class="dc-chat-header">
-          <div class="dc-chat-header-info">
-            <div class="dc-chat-header-avatar">🍰</div>
-            <div>
-              <h3 class="dc-chat-title">Eli · Dulces Creaciones</h3>
-              <p class="dc-chat-subtitle"><span style="color:#25D366">●</span> En línea · Pastelería Artesanal</p>
-            </div>
-          </div>
-          <button class="dc-chat-close" id="dc-chat-close" aria-label="Cerrar chat">✕</button>
-        </div>
+  let pwaDismissed = false;
+  try {
+    pwaDismissed = localStorage.getItem('pwaDismissed') === 'true';
+  } catch (e) {}
 
-        <div class="dc-chat-body" id="dc-chat-body">
-          <div class="dc-chat-msg bot">
-            <div class="dc-chat-bubble">
-              ¡Hola! 🎂 Soy Eli de <strong>Dulces Creaciones</strong>. Diseñamos tortas 100% artesanales en Temperley. ¿En qué puedo ayudarte hoy?
-            </div>
-            <div class="dc-chat-chips-container" id="dc-initial-chips">
-              <button class="dc-chat-chip" data-query="precio">💰 ¿Cuánto cuesta una torta?</button>
-              <button class="dc-chat-chip" data-query="retiro">📍 ¿Dónde y cómo se retira?</button>
-              <button class="dc-chat-chip" data-query="sabores">🍓 Sabores y rellenos</button>
-              <button class="dc-chat-chip" data-query="tiempo">🕒 ¿Con cuánta anticipación pedir?</button>
-              <button class="dc-chat-chip" data-query="mesas">🧁 Mesas dulces y Candy Bar</button>
-              <button class="dc-chat-chip" data-query="whatsapp">📲 Hablar con Elizabeth por WhatsApp</button>
-            </div>
-          </div>
-        </div>
-
-        <form class="dc-chat-footer" id="dc-chat-form">
-          <input type="text" class="dc-chat-input" id="dc-chat-input" placeholder="Escribí tu consulta aquí..." autocomplete="off" />
-          <button type="submit" class="dc-chat-send" aria-label="Enviar mensaje">➤</button>
-        </form>
-      </div>
-    `;
-    document.body.appendChild(chatRoot);
-  }
-
-  const launcher = document.getElementById('dc-chat-launcher');
-  const modal = document.getElementById('dc-chat-modal');
-  const closeBtn = document.getElementById('dc-chat-close');
-  const chatBody = document.getElementById('dc-chat-body');
-  const chatForm = document.getElementById('dc-chat-form');
-  const chatInput = document.getElementById('dc-chat-input');
-
-  if (!launcher || !modal || !chatBody) return;
-
-  function toggleChat(open) {
-    const isOpen = typeof open === 'boolean' ? open : !modal.classList.contains('open');
-    modal.classList.toggle('open', isOpen);
-    if (isOpen) {
-      chatInput?.focus();
-      trackEvent('chatbot_open', { page_location: window.location.href });
-    }
-  }
-
-  launcher.addEventListener('click', () => toggleChat());
-  closeBtn?.addEventListener('click', () => toggleChat(false));
-
-  // Close on Escape key
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('open')) {
-      toggleChat(false);
-    }
-  });
-
-  // Knowledge base responses
-  const KNOWLEDGE_RESPONSES = {
-    precio: {
-      text: "Cada torta es una creación artesanal personalizada. Los precios se calculan según el tamaño (porciones), pisos y la complejidad del diseño. Te pasamos presupuesto exacto y sin cargo en menos de 24 horas.",
-      cta: "Pedir presupuesto personalizado",
-      msg: "Hola! Quiero consultar el presupuesto de una torta personalizada 🎂"
-    },
-    retiro: {
-      text: "📍 <strong>Punto de retiro en Temperley, Zona Sur GBA</strong>.<br>Para garantizar que cada torta y mesa dulce llegue en perfecto estado, los pedidos se retiran personalmente en nuestro taller coordinando día y franja horaria por WhatsApp (no realizamos envíos a domicilio).",
-      cta: "Coordinar retiro por WhatsApp",
-      msg: "Hola! Quiero coordinar el retiro de un pedido en Temperley 📍"
-    },
-    sabores: {
-      text: "Nuestros rellenos estrella son:<br>• Dulce de leche artesanal con nueces o merenguitos<br>• Bariloche (dulce de leche + ganache chocolate)<br>• Crema Oreo / Bon o Bon<br>• Mousse de chocolate semi-amargo<br>• Crema chantilly con frutos rojos / frutillas<br>Bizcochuelos súper húmedos de vainilla o chocolate.",
-      cta: "Ver disponibilidad de sabores",
-      msg: "Hola! Quiero consultar disponibilidad de sabores y rellenos para mi torta 🍓"
-    },
-    tiempo: {
-      text: "Recomendamos encargar con <strong>7 a 10 días de anticipación</strong> para tortas de cumpleaños, y <strong>15 a 20 días</strong> para eventos grandes (15 años, bodas o mesas dulces). Tomamos los turnos con una seña del 50%.",
-      cta: "Reservar mi fecha ahora",
-      msg: "Hola! Quiero consultar disponibilidad de fecha para un evento 📅"
-    },
-    mesas: {
-      text: "Armamos mesas dulces completas y temáticas con cupcakes decorados, cake pops, alfajorcitos de maicena/chocolate, cookies personalizadas y mini tartas (lemon pie, coco y ddl).",
-      cta: "Cotizar mesa dulce",
-      msg: "Hola! Quisiera un presupuesto para una mesa dulce temática 🧁"
-    },
-    tacc: {
-      text: "Elaboramos tortas especiales libres de gluten / sin TACC para que todos puedan disfrutar del evento con total tranquilidad y el mismo sabor delicioso.",
-      cta: "Consultar opciones sin TACC",
-      msg: "Hola! Quisiera consultar por tortas sin TACC / sin gluten 🌾"
-    },
-    whatsapp: {
-      text: "¡Perfecto! Podés chatear directamente con Elizabeth para enviarle tu foto de referencia, consultar dudas y apartar tu fecha.",
-      cta: "Abrir WhatsApp con Elizabeth",
-      msg: "Hola Elizabeth! Vengo desde la web de Dulces Creaciones para consultar por un pedido 🎂"
-    }
-  };
-
-  function appendUserMessage(text) {
-    const msgDiv = document.createElement('div');
-    msgDiv.className = 'dc-chat-msg user';
-    msgDiv.innerHTML = `<div class="dc-chat-bubble">${text}</div>`;
-    chatBody.appendChild(msgDiv);
-    chatBody.scrollTop = chatBody.scrollHeight;
-  }
-
-  function appendBotResponse(key, customText) {
-    // Show typing indicator
-    const typingDiv = document.createElement('div');
-    typingDiv.className = 'dc-chat-msg bot';
-    typingDiv.id = 'dc-typing';
-    typingDiv.innerHTML = `
-      <div class="dc-chat-typing">
-        <span class="dc-chat-dot"></span>
-        <span class="dc-chat-dot"></span>
-        <span class="dc-chat-dot"></span>
-      </div>
-    `;
-    chatBody.appendChild(typingDiv);
-    chatBody.scrollTop = chatBody.scrollHeight;
-
-    setTimeout(() => {
-      typingDiv.remove();
-      const resp = KNOWLEDGE_RESPONSES[key] || {
-        text: customText || "¡Con gusto te asesoramos! Mandanos tu idea o foto de referencia por WhatsApp y te armamos un presupuesto personalizado.",
-        cta: "Consultar por WhatsApp",
-        msg: "Hola! Quiero hacer una consulta sobre un pedido de pastelería 🎂"
-      };
-
-      const botDiv = document.createElement('div');
-      botDiv.className = 'dc-chat-msg bot';
-      const encodedMsg = encodeURIComponent(resp.msg);
-      botDiv.innerHTML = `
-        <div class="dc-chat-bubble">${resp.text}</div>
-        <a href="https://wa.me/5491133266362?text=${encodedMsg}&utm_source=chatbot&utm_medium=whatsapp&utm_campaign=chat_assistant" target="_blank" rel="noopener noreferrer" class="dc-chat-wa-btn">
-          <span>📲</span> ${resp.cta}
-        </a>
-      `;
-      chatBody.appendChild(botDiv);
-      chatBody.scrollTop = chatBody.scrollHeight;
-
-      trackEvent('chatbot_query', {
-        query_key: key,
-        page_location: window.location.href
-      });
-    }, 380);
-  }
-
-  function matchQueryToKey(query) {
-    const q = query.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-    if (q.includes('precio') || q.includes('costo') || q.includes('cuanto') || q.includes('sale') || q.includes('valor') || q.includes('presupuesto')) return 'precio';
-    if (q.includes('donde') || q.includes('retiro') || q.includes('retira') || q.includes('ubicacion') || q.includes('direccion') || q.includes('envio') || q.includes('delivery') || q.includes('temperley')) return 'retiro';
-    if (q.includes('sabor') || q.includes('rellen') || q.includes('chocolate') || q.includes('dulce de leche') || q.includes('oreo') || q.includes('fruta')) return 'sabores';
-    if (q.includes('tiempo') || q.includes('anticip') || q.includes('cuanto antes') || q.includes('fecha') || q.includes('dia') || q.includes('urgente')) return 'tiempo';
-    if (q.includes('mesa') || q.includes('candy') || q.includes('cupcake') || q.includes('pop') || q.includes('evento')) return 'mesas';
-    if (q.includes('tacc') || q.includes('gluten') || q.includes('celiac')) return 'tacc';
-    if (q.includes('whatsapp') || q.includes('contacto') || q.includes('telefono') || q.includes('hablar') || q.includes('elizabeth')) return 'whatsapp';
-    return null;
-  }
-
-  // Handle Quick Chips
-  chatBody.addEventListener('click', (e) => {
-    const chip = e.target.closest('.dc-chat-chip');
-    if (!chip) return;
-    const queryKey = chip.getAttribute('data-query');
-    const chipText = chip.innerText.trim();
-    appendUserMessage(chipText);
-    appendBotResponse(queryKey);
-  });
-
-  // Handle Form Submission
-  chatForm?.addEventListener('submit', (e) => {
+  window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault();
-    const query = chatInput.value.trim();
-    if (!query) return;
-    appendUserMessage(query);
-    chatInput.value = '';
+    deferredPrompt = e;
 
-    const matchedKey = matchQueryToKey(query);
-    if (matchedKey) {
-      appendBotResponse(matchedKey);
-    } else {
-      appendBotResponse('fallback', `Recibido: "${query}". Para coordinar todos los detalles específicos de tu diseño o fecha, te invitamos a escribirnos directo por WhatsApp con Elizabeth:`);
+    if (pwaPrompt && !pwaDismissed && window.innerWidth < 768) {
+      setTimeout(() => {
+        pwaPrompt.style.display = 'block';
+        setTimeout(() => pwaPrompt.classList.add('visible'), 50);
+      }, 6000);
     }
   });
+
+  if (pwaInstall) {
+    pwaInstall.addEventListener('click', async () => {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      if (outcome === 'accepted') {
+        try {
+          localStorage.setItem('pwaInstalled', 'true');
+        } catch (e) {}
+      }
+      deferredPrompt = null;
+      if (pwaPrompt) {
+        pwaPrompt.classList.remove('visible');
+        setTimeout(() => { pwaPrompt.style.display = 'none'; }, 300);
+      }
+    });
+  }
+
+  if (pwaDismiss) {
+    pwaDismiss.addEventListener('click', () => {
+      try {
+        localStorage.setItem('pwaDismissed', 'true');
+      } catch (e) {}
+      if (pwaPrompt) {
+        pwaPrompt.classList.remove('visible');
+        setTimeout(() => { pwaPrompt.style.display = 'none'; }, 300);
+      }
+    });
+  }
 });
