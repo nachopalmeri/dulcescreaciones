@@ -441,80 +441,96 @@
 }
 </script>
 
-<!-- Product Schema: Tortas Destacadas (invisible - solo para rich snippets) -->
+<!-- Service Offer Catalog Schema: Tortas Destacadas -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "Tortas Destacadas - Dulces Creaciones",
+  "name": "Especialidades de Pastelería - Dulces Creaciones",
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
       "item": {
-        "@type": "Product",
+        "@type": "Service",
         "name": "Torta Infantil Temática Disney",
         "description": "Torta personalizada con personajes Disney (Moana, Frozen, Encanto). Relleno a elección. 100% artesanal en Temperley.",
         "image": "https://dulcescreaciones.vercel.app/images/torta-moana-disney.webp",
-        "brand": {"@type": "Brand", "name": "Dulces Creaciones"},
-        "offers": {"@type": "Offer", "priceCurrency": "ARS", "availability": "https://schema.org/PreOrder", "seller": {"@type": "Bakery", "name": "Dulces Creaciones"}},
-        "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "4"}
+        "provider": {"@type": "Bakery", "name": "Dulces Creaciones", "telephone": "+5491133266362"}
       }
     },
     {
       "@type": "ListItem",
       "position": 2,
       "item": {
-        "@type": "Product",
-        "name": "Torta Gaming Fortnite",
-        "description": "Torta temática Fortnite con decoración gamer. Toppers personalizados. Entrega en zona sur GBA.",
+        "@type": "Service",
+        "name": "Torta Gaming y Streaming",
+        "description": "Torta temática Fortnite, Roblox o Minecraft con decoración gamer y toppers personalizados en Zona Sur GBA.",
         "image": "https://dulcescreaciones.vercel.app/images/torta-fortnite-gaming.webp",
-        "brand": {"@type": "Brand", "name": "Dulces Creaciones"},
-        "offers": {"@type": "Offer", "priceCurrency": "ARS", "availability": "https://schema.org/PreOrder", "seller": {"@type": "Bakery", "name": "Dulces Creaciones"}}
+        "provider": {"@type": "Bakery", "name": "Dulces Creaciones", "telephone": "+5491133266362"}
       }
     },
     {
       "@type": "ListItem",
       "position": 3,
       "item": {
-        "@type": "Product",
+        "@type": "Service",
         "name": "Torta 15 Años Elegante",
-        "description": "Torta para quinceañera. Dos pisos, drip cake, flores de azúcar. Diseños 2026 en Temperley.",
+        "description": "Torta para quinceañera de dos o tres pisos, drip cake y flores. Diseños artesanales en Temperley.",
         "image": "https://dulcescreaciones.vercel.app/images/torta-15-anos-fiesta.webp",
-        "brand": {"@type": "Brand", "name": "Dulces Creaciones"},
-        "offers": {"@type": "Offer", "priceCurrency": "ARS", "availability": "https://schema.org/PreOrder", "seller": {"@type": "Bakery", "name": "Dulces Creaciones"}}
+        "provider": {"@type": "Bakery", "name": "Dulces Creaciones", "telephone": "+5491133266362"}
       }
     },
     {
       "@type": "ListItem",
       "position": 4,
       "item": {
-        "@type": "Product",
-        "name": "Torta Fútbol San Lorenzo",
-        "description": "Torta temática de fútbol con escudo, camiseta o pelota. Cualquier club argentino. Temperley zona sur.",
+        "@type": "Service",
+        "name": "Torta Fútbol Personalizada",
+        "description": "Torta temática de fútbol con escudo, camiseta o pelota de cualquier club argentino en Zona Sur.",
         "image": "https://dulcescreaciones.vercel.app/images/torta-futbol-san-lorenzo.webp",
-        "brand": {"@type": "Brand", "name": "Dulces Creaciones"},
-        "offers": {"@type": "Offer", "priceCurrency": "ARS", "availability": "https://schema.org/PreOrder", "seller": {"@type": "Bakery", "name": "Dulces Creaciones"}}
+        "provider": {"@type": "Bakery", "name": "Dulces Creaciones", "telephone": "+5491133266362"}
       }
     },
     {
       "@type": "ListItem",
       "position": 5,
       "item": {
-        "@type": "Product",
+        "@type": "Service",
         "name": "Mesa Dulce Temática Completa",
-        "description": "Mesa dulce con cupcakes, cake pops, galletitas, alfajores y trufas. Diseño temático para eventos en zona sur.",
+        "description": "Mesa dulce con cupcakes, cake pops, galletitas, alfajores y trufas para eventos en Zona Sur GBA.",
         "image": "https://dulcescreaciones.vercel.app/images/gallery-1.webp",
-        "brand": {"@type": "Brand", "name": "Dulces Creaciones"},
-        "offers": {"@type": "Offer", "priceCurrency": "ARS", "availability": "https://schema.org/PreOrder", "seller": {"@type": "Bakery", "name": "Dulces Creaciones"}}
+        "provider": {"@type": "Bakery", "name": "Dulces Creaciones", "telephone": "+5491133266362"}
       }
     }
   ]
 }
 </script>
+
 <!-- VideoObject Schema -->
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"VideoObject","name":"Videos de Dulces Creaciones","description":"Videos de nuestras tortas personalizadas y mesas dulces","thumbnailUrl":"https://dulcescreaciones.vercel.app/images/gallery-1.webp","uploadDate":"2026-05-08","author":{"@type":"Person","name":"Elizabeth"},"publisher":{"@type":"Organization","name":"Dulces Creaciones"}}
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Presentación de Mesas Dulces y Tortas - Dulces Creaciones",
+  "description": "Video de presentación de nuestras mesas dulces temáticas y tortas artesanales en Temperley, Zona Sur GBA.",
+  "thumbnailUrl": "https://dulcescreaciones.vercel.app/images/gallery-1.webp",
+  "uploadDate": "2026-05-08T12:00:00-03:00",
+  "contentUrl": "https://dulcescreaciones.vercel.app/videos/mesa-dulce-xv.mp4",
+  "embedUrl": "https://dulcescreaciones.vercel.app/videos/mesa-dulce-xv.mp4",
+  "author": {
+    "@type": "Person",
+    "name": "Elizabeth"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dulces Creaciones",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dulcescreaciones.vercel.app/logo_perfil.jpg"
+    }
+  }
+}
 </script>
 
 </head>
