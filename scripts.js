@@ -273,3 +273,205 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// ===== PASTELERIA ASSISTANT CHATBOT (ELI · DULCES CREACIONES) =====
+document.addEventListener('DOMContentLoaded', () => {
+  if (!document.getElementById('dc-chatbot-root')) {
+    const chatRoot = document.createElement('div');
+    chatRoot.id = 'dc-chatbot-root';
+    chatRoot.innerHTML = `
+      <button class="dc-chat-launcher" id="dc-chat-launcher" aria-label="Abrir asistente virtual" aria-haspopup="dialog">
+        <div class="dc-chat-avatar">🎂</div>
+        <span>¿Dudas con tu torta?</span>
+        <div class="dc-chat-pulse"></div>
+      </button>
+
+      <div class="dc-chat-modal" id="dc-chat-modal" role="dialog" aria-modal="true" aria-label="Asistente Dulces Creaciones">
+        <div class="dc-chat-header">
+          <div class="dc-chat-header-info">
+            <div class="dc-chat-header-avatar">🍰</div>
+            <div>
+              <h3 class="dc-chat-title">Eli · Dulces Creaciones</h3>
+              <p class="dc-chat-subtitle"><span style="color:#25D366">●</span> En línea · Pastelería Artesanal</p>
+            </div>
+          </div>
+          <button class="dc-chat-close" id="dc-chat-close" aria-label="Cerrar chat">✕</button>
+        </div>
+
+        <div class="dc-chat-body" id="dc-chat-body">
+          <div class="dc-chat-msg bot">
+            <div class="dc-chat-bubble">
+              ¡Hola! 🎂 Soy Eli de <strong>Dulces Creaciones</strong>. Diseñamos tortas 100% artesanales en Temperley. ¿En qué puedo ayudarte hoy?
+            </div>
+            <div class="dc-chat-chips-container" id="dc-initial-chips">
+              <button class="dc-chat-chip" data-query="precio">💰 ¿Cuánto cuesta una torta?</button>
+              <button class="dc-chat-chip" data-query="retiro">📍 ¿Dónde y cómo se retira?</button>
+              <button class="dc-chat-chip" data-query="sabores">🍓 Sabores y rellenos</button>
+              <button class="dc-chat-chip" data-query="tiempo">🕒 ¿Con cuánta anticipación pedir?</button>
+              <button class="dc-chat-chip" data-query="mesas">🧁 Mesas dulces y Candy Bar</button>
+              <button class="dc-chat-chip" data-query="tacc">🌾 Tortas sin TACC</button>
+              <button class="dc-chat-chip" data-query="whatsapp">📲 Hablar con Elizabeth por WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <form class="dc-chat-footer" id="dc-chat-form">
+          <input type="text" class="dc-chat-input" id="dc-chat-input" placeholder="Escribí tu consulta aquí..." autocomplete="off" />
+          <button type="submit" class="dc-chat-send" aria-label="Enviar mensaje">➤</button>
+        </form>
+      </div>
+    `;
+    document.body.appendChild(chatRoot);
+  }
+
+  const launcher = document.getElementById('dc-chat-launcher');
+  const modal = document.getElementById('dc-chat-modal');
+  const closeBtn = document.getElementById('dc-chat-close');
+  const chatBody = document.getElementById('dc-chat-body');
+  const chatForm = document.getElementById('dc-chat-form');
+  const chatInput = document.getElementById('dc-chat-input');
+
+  if (!launcher || !modal || !chatBody) return;
+
+  function toggleChat(open) {
+    const isOpen = typeof open === 'boolean' ? open : !modal.classList.contains('open');
+    modal.classList.toggle('open', isOpen);
+    if (isOpen) {
+      chatInput?.focus();
+      trackEvent('chatbot_open', { page_location: window.location.href });
+    }
+  }
+
+  launcher.addEventListener('click', () => toggleChat());
+  closeBtn?.addEventListener('click', () => toggleChat(false));
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('open')) {
+      toggleChat(false);
+    }
+  });
+
+  const KNOWLEDGE_RESPONSES = {
+    precio: {
+      text: "Cada torta es una creación artesanal personalizada. Los precios se calculan según el tamaño (porciones), pisos y la complejidad del diseño. Te pasamos presupuesto exacto y sin cargo en menos de 24 horas.",
+      cta: "Pedir presupuesto por WhatsApp",
+      msg: "Hola! Quiero consultar el presupuesto de una torta personalizada 🎂"
+    },
+    retiro: {
+      text: "📍 <strong>Punto de retiro en Temperley, Zona Sur GBA</strong>.<br>Para garantizar que cada torta llegue en perfecto estado, los pedidos se retiran personalmente en nuestro taller coordinando día y horario por WhatsApp.",
+      cta: "Coordinar retiro por WhatsApp",
+      msg: "Hola! Quiero coordinar el retiro de un pedido en Temperley 📍"
+    },
+    sabores: {
+      text: "Nuestros rellenos estrella son:<br>• Dulce de leche artesanal con nueces, chips o merenguitos<br>• Bariloche (dulce de leche + ganache de chocolate)<br>• Crema Oreo / Pasta Bon o Bon / Marroc<br>• Ganache de chocolate blanco o negro<br>Bizcochuelos súper húmedos de vainilla, cacao amargo o marmolado.",
+      cta: "Ver disponibilidad de sabores",
+      msg: "Hola! Quiero consultar disponibilidad de sabores y rellenos para mi torta 🍓"
+    },
+    tiempo: {
+      text: "Recomendamos encargar con <strong>7 a 15 días de anticipación</strong> para tortas de cumpleaños, y <strong>15 a 20 días</strong> para eventos grandes (15 años, bodas o mesas dulces). Tomamos los turnos con una seña del 50%.",
+      cta: "Reservar mi fecha ahora",
+      msg: "Hola! Quiero consultar disponibilidad de fecha para un evento 📅"
+    },
+    mesas: {
+      text: "Armamos mesas dulces completas y temáticas con cupcakes decorados, cake pops, alfajorcitos y mini tartas para complementar tu mesa.",
+      cta: "Cotizar mesa dulce",
+      msg: "Hola! Quisiera un presupuesto para una mesa dulce temática 🧁"
+    },
+    tacc: {
+      text: "Elaboramos tortas especiales libres de gluten / sin TACC para que todos puedan disfrutar del evento con total tranquilidad y el mismo sabor delicioso.",
+      cta: "Consultar opciones sin TACC",
+      msg: "Hola! Quisiera consultar por tortas sin TACC / sin gluten 🌾"
+    },
+    whatsapp: {
+      text: "¡Perfecto! Podés chatear directamente con Elizabeth para enviarle tu foto de referencia, consultar dudas y apartar tu fecha.",
+      cta: "Abrir WhatsApp con Elizabeth",
+      msg: "Hola Elizabeth! Vengo desde la web de Dulces Creaciones para consultar por un pedido 🎂"
+    }
+  };
+
+  function appendUserMessage(text) {
+    const msgDiv = document.createElement('div');
+    msgDiv.className = 'dc-chat-msg user';
+    msgDiv.innerHTML = `<div class="dc-chat-bubble">${text}</div>`;
+    chatBody.appendChild(msgDiv);
+    chatBody.scrollTop = chatBody.scrollHeight;
+  }
+
+  function appendBotResponse(key, customText) {
+    const typingDiv = document.createElement('div');
+    typingDiv.className = 'dc-chat-msg bot';
+    typingDiv.id = 'dc-typing';
+    typingDiv.innerHTML = `
+      <div class="dc-chat-typing">
+        <span class="dc-chat-dot"></span>
+        <span class="dc-chat-dot"></span>
+        <span class="dc-chat-dot"></span>
+      </div>
+    `;
+    chatBody.appendChild(typingDiv);
+    chatBody.scrollTop = chatBody.scrollHeight;
+
+    setTimeout(() => {
+      typingDiv.remove();
+      const resp = KNOWLEDGE_RESPONSES[key] || {
+        text: customText || "¡Con gusto te asesoramos! Mandanos tu idea o foto de referencia por WhatsApp y te armamos un presupuesto personalizado.",
+        cta: "Consultar por WhatsApp",
+        msg: "Hola! Quiero hacer una consulta sobre un pedido de pastelería 🎂"
+      };
+
+      const botDiv = document.createElement('div');
+      botDiv.className = 'dc-chat-msg bot';
+      const encodedMsg = encodeURIComponent(resp.msg);
+      botDiv.innerHTML = `
+        <div class="dc-chat-bubble">${resp.text}</div>
+        <a href="https://wa.me/5491133266362?text=${encodedMsg}&utm_source=chatbot&utm_medium=whatsapp&utm_campaign=chat_assistant" target="_blank" rel="noopener noreferrer" class="dc-chat-wa-btn">
+          <span>📲</span> ${resp.cta}
+        </a>
+      `;
+      chatBody.appendChild(botDiv);
+      chatBody.scrollTop = chatBody.scrollHeight;
+
+      trackEvent('chatbot_query', {
+        query_key: key,
+        page_location: window.location.href
+      });
+    }, 380);
+  }
+
+  function matchQueryToKey(query) {
+    const q = query.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    if (q.includes('precio') || q.includes('costo') || q.includes('cuanto') || q.includes('sale') || q.includes('valor') || q.includes('presupuesto')) return 'precio';
+    if (q.includes('donde') || q.includes('retiro') || q.includes('retira') || q.includes('ubicacion') || q.includes('direccion') || q.includes('envio') || q.includes('delivery') || q.includes('temperley')) return 'retiro';
+    if (q.includes('sabor') || q.includes('rellen') || q.includes('chocolate') || q.includes('dulce de leche') || q.includes('oreo') || q.includes('fruta')) return 'sabores';
+    if (q.includes('tiempo') || q.includes('anticip') || q.includes('cuanto antes') || q.includes('fecha') || q.includes('dia') || q.includes('urgente')) return 'tiempo';
+    if (q.includes('mesa') || q.includes('candy') || q.includes('cupcake') || q.includes('pop') || q.includes('evento')) return 'mesas';
+    if (q.includes('tacc') || q.includes('gluten') || q.includes('celiac')) return 'tacc';
+    if (q.includes('whatsapp') || q.includes('contacto') || q.includes('telefono') || q.includes('hablar') || q.includes('elizabeth')) return 'whatsapp';
+    return null;
+  }
+
+  chatBody.addEventListener('click', (e) => {
+    const chip = e.target.closest('.dc-chat-chip');
+    if (!chip) return;
+    const queryKey = chip.getAttribute('data-query');
+    const chipText = chip.innerText.trim();
+    appendUserMessage(chipText);
+    appendBotResponse(queryKey);
+  });
+
+  chatForm?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const query = chatInput.value.trim();
+    if (!query) return;
+    appendUserMessage(query);
+    chatInput.value = '';
+
+    const matchedKey = matchQueryToKey(query);
+    if (matchedKey) {
+      appendBotResponse(matchedKey);
+    } else {
+      appendBotResponse('fallback', `Recibido: "${query}". Para coordinar todos los detalles específicos de tu diseño o fecha, te invitamos a escribirnos directo por WhatsApp con Elizabeth:`);
+    }
+  });
+});
+
