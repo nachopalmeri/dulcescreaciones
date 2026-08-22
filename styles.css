@@ -1371,6 +1371,20 @@ details.faq-item p {
   overflow: hidden;
   box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
+[data-theme="dark"] .fact-box-summary {
+  background: #21150E !important;
+  border-color: rgba(245, 168, 189, 0.2) !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3) !important;
+}
+[data-theme="dark"] .fact-box-summary h3 {
+  color: #FFFFFF !important;
+}
+[data-theme="dark"] .fact-box-summary ul li {
+  color: var(--choco-l) !important;
+}
+[data-theme="dark"] .fact-box-summary ul li strong {
+  color: #FFFFFF !important;
+}
 [data-theme="dark"] #pwa-prompt{
   background: #1C110A;
   border-top: 1px solid rgba(245, 168, 189, 0.2);

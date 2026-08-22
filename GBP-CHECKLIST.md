@@ -37,7 +37,7 @@
 ### 4. Agregar FAQ del perfil
 Ir a GBP > Preguntas y Respuestas > Preguntarse a uno mismo:
 
-**Pregunta 1:** ¿Hacen entregas a domicilio en zona sur?
+**Pregunta 1:** ¿Cómo y dónde retiro mi pedido en zona sur?
 **Respuesta:** ¡Sí! Entregamos en Temperley, Lomas de Zamora, Adrogué, Banfield, Turdera, Glew y todo Almirante Brown. Coordinamos día y horario por WhatsApp: wa.me/5491133266362
 
 **Pregunta 2:** ¿Cuánto cuesta una torta personalizada?
