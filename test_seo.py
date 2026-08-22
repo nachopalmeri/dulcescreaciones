@@ -5,13 +5,26 @@ from playwright.sync_api import sync_playwright
 import json
 
 def validate_seo():
+    import http.server
+    import socketserver
+    import threading
+    import time
+    
+    port = 8997
+    class QuietHandler(http.server.SimpleHTTPRequestHandler):
+        def log_message(self, format, *args): pass
+    httpd = socketserver.TCPServer(('', port), QuietHandler)
+    t = threading.Thread(target=httpd.serve_forever, daemon=True)
+    t.start()
+    time.sleep(0.3)
+
     results = []
     
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         context = browser.new_context()
         page = context.new_page()
-        page.goto('http://127.0.0.1:8000/')
+        page.goto(f'http://127.0.0.1:{port}/')
         page.wait_for_load_state('networkidle')
         
         print("=" * 60)
@@ -159,6 +172,7 @@ def validate_seo():
             results.append("Instagram Feed: FAIL")
         
         browser.close()
+    httpd.shutdown()
     
     # Summary
     print("\n" + "=" * 60)
