@@ -63,25 +63,25 @@
   "categories": ["food", "shopping"],
   "screenshots": [
     {
-      "src": "gallery_img_1.jpg",
-      "sizes": "1280x720",
-      "type": "image/jpeg",
+      "src": "images/gallery-1.webp",
+      "sizes": "800x800",
+      "type": "image/webp",
       "form_factor": "wide",
-      "label": "Galeria de tortas personalizadas"
+      "label": "Galería de tortas personalizadas"
     },
     {
-      "src": "torta_fortnite.jpg",
-      "sizes": "1280x720",
-      "type": "image/jpeg",
+      "src": "images/torta-fortnite-gaming.webp",
+      "sizes": "800x800",
+      "type": "image/webp",
       "form_factor": "wide",
-      "label": "Torta tematica Fortnite"
+      "label": "Torta temática gaming"
     },
     {
-      "src": "gallery_img_5.jpg",
-      "sizes": "640x640",
-      "type": "image/jpeg",
+      "src": "images/gallery-5.webp",
+      "sizes": "800x800",
+      "type": "image/webp",
       "form_factor": "narrow",
-      "label": "Torta personalizada"
+      "label": "Torta personalizada artesanal"
     }
   ],
   "shortcuts": [

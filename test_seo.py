@@ -21,7 +21,7 @@ def validate_seo():
         # 1. Canonical URL
         print("\n1. Canonical URL Check")
         canonical = page.locator('link[rel="canonical"]').get_attribute('href')
-        if canonical and 'dulcescreaciones.com.ar' in canonical:
+        if canonical and ('dulcescreaciones.vercel.app' in canonical or 'dulcescreaciones.com.ar' in canonical):
             print(f"  ✓ Canonical correct: {canonical}")
             results.append("Canonical: PASS")
         else:

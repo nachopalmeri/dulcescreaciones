@@ -3,12 +3,15 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Blog de Pastelería | Dulces Creaciones - Tips, Recetas y Más</title>
-<meta name="description" content="Blog de Dulces Creaciones: tips para elegir tu torta, cómo conservarla, guías de sabores y más. Pastelería artesanal en Temperley, Zona Sur GBA."/>
+<title>Blog de Pastelería Artesanal | Dulces Creaciones - Temperley</title>
+<meta name="description" content="Guías prácticas, tips de conservación, cálculo de porciones y tendencias en tortas personalizadas y mesas dulces en Zona Sur GBA. Pastelería Dulces Creaciones."/>
 <link rel="canonical" href="https://dulcescreaciones.vercel.app/blog.html"/>
 <link rel="alternate" hreflang="es-AR" href="https://dulcescreaciones.vercel.app/blog.html"/>
+<link rel="alternate" hreflang="x-default" href="https://dulcescreaciones.vercel.app/blog.html"/>
 <meta name="robots" content="index, follow"/>
 <meta name="googlebot" content="index, follow"/>
+<meta name="theme-color" content="#F2A7BB"/>
+
 <meta name="ai-purpose" content="Generative Engine Optimization"/>
 <meta name="ai-summary" content="https://dulcescreaciones.vercel.app/ai/summary.json"/>
 <meta name="ai-faq" content="https://dulcescreaciones.vercel.app/ai/faq.json"/>
@@ -16,129 +19,245 @@
 <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs Summary"/>
 <link rel="alternate" type="application/json" href="/ai/summary.json" title="AI Entity Summary"/>
 <link rel="alternate" type="application/json" href="/ai/faq.json" title="AI FAQ Data"/>
-<meta property="og:title" content="Blog de Pastelería | Dulces Creaciones"/>
-<meta property="og:description" content="Tips para elegir tu torta, guías de sabores y más. Pastelería artesanal en Temperley."/>
+
+<!-- Open Graph -->
+<meta property="og:title" content="Blog de Pastelería Artesanal | Dulces Creaciones"/>
+<meta property="og:description" content="Guías prácticas, tips y tendencias en tortas personalizadas y mesas dulces en Zona Sur GBA."/>
 <meta property="og:url" content="https://dulcescreaciones.vercel.app/blog.html"/>
 <meta property="og:type" content="website"/>
 <meta property="og:locale" content="es_AR"/>
-<meta name="keywords" content="blog pastelería, tips tortas, cómo elegir torta, conservar torta, rellenos tortas, Dulces Creaciones, Temperley"/>
+<meta property="og:image" content="https://dulcescreaciones.vercel.app/images/torta-moana-disney.webp"/>
 
-<!-- Schema.org: BreadcrumbList -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Inicio",
-      "item": "https://dulcescreaciones.vercel.app/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Blog",
-      "item": "https://dulcescreaciones.vercel.app/blog.html"
-    }
-  ]
-}
-</script>
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Blog de Pastelería Artesanal | Dulces Creaciones"/>
+<meta name="twitter:description" content="Guías prácticas y tips para tus celebraciones en Zona Sur."/>
+<meta name="twitter:image" content="https://dulcescreaciones.vercel.app/images/torta-moana-disney.webp"/>
 
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap"/></noscript>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;700&display=swap"/></noscript>
 <link rel="stylesheet" href="styles.css"/>
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7M2V2QC4ME"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7M2V2QC4ME');
+</script>
+
+<!-- Schema.org: BreadcrumbList & Blog -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "Blog de Dulces Creaciones",
-  "description": "Tips de pastelería, guías para elegir tu torta y más contenido útil.",
-  "url": "https://dulcescreaciones.vercel.app/blog.html",
-  "publisher": {
-    "@type": "Bakery",
-    "name": "Dulces Creaciones",
-    "url": "https://dulcescreaciones.vercel.app"
-  }
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://dulcescreaciones.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://dulcescreaciones.vercel.app/blog.html"
+        }
+      ]
+    },
+    {
+      "@type": "Blog",
+      "name": "Blog de Dulces Creaciones",
+      "description": "Artículos, guías y consejos de pastelería artesanal en Temperley y Zona Sur GBA.",
+      "url": "https://dulcescreaciones.vercel.app/blog.html",
+      "publisher": {
+        "@type": "Bakery",
+        "name": "Dulces Creaciones",
+        "url": "https://dulcescreaciones.vercel.app"
+      }
+    }
+  ]
 }
 </script>
 </head>
 <body>
 <nav id="navbar">
-  <a href="index.html" class="nav-logo">Dulces Creaciones</a>
+  <a href="index.html" class="nav-logo">
+    <img src="logo_perfil-removebg-preview.png" alt="Dulces Creaciones Logo" class="nav-logo-img"/>
+    <span>Dulces Creaciones</span>
+  </a>
+  <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
   <ul class="nav-links">
     <li><a href="index.html">Inicio</a></li>
+    <li><a href="menu.html">Menú</a></li>
+    <li><a href="mesas-dulces.html">Mesas Dulces</a></li>
     <li><a href="index.html#galeria">Galería</a></li>
-
-    <li><a href="https://wa.me/5491133266362?text=Hola!%20Quiero%20hacer%20un%20pedido%20de%20torta%20%F0%9F%8E%82&utm_source=blog&utm_medium=whatsapp" target="_blank" rel="noopener noreferrer" class="nav-cta">WhatsApp</a></li>
+    <li><a href="blog.html" style="color:var(--rosa-d);font-weight:600;">Blog</a></li>
+    <li><a href="https://wa.me/5491133266362?text=Hola!%20Quiero%20hacer%20una%20consulta%20por%20una%20torta%20🎂&utm_source=nav_blog&utm_medium=whatsapp" target="_blank" rel="noopener noreferrer" class="nav-cta">WhatsApp</a></li>
   </ul>
 </nav>
 
 <main style="padding-top:100px;">
-<section style="padding:4rem 1.5rem;">
-  <div class="container">
-    <span class="section-label">Nuestro Blog</span>
-    <h1 class="section-title" style="margin-bottom:3rem;">Tips, Guías y<br/>Todo sobre Tortas</h1>
+  <section style="padding:4rem 1.5rem 2rem;">
+    <div class="container">
+      <span class="section-label">Blog & Guías Prácticas</span>
+      <h1 class="section-title" style="margin-bottom:1rem;">Todo lo que Necesitás Saber sobre Tortas y Mesas Dulces</h1>
+      <p style="color:var(--muted);max-width:750px;line-height:1.7;margin-bottom:3rem;font-size:1.05rem;">
+        Consejos de expertos para planificar tu evento, calcular porciones, elegir rellenos y conservar tus tortas artesanales en perfecto estado.
+      </p>
 
-    <article class="detail-card reveal" style="margin-bottom:2rem;">
-      <span class="detail-kicker">Guía</span>
-      <h3>¿Cómo elegir la torta perfecta para tu cumpleaños?</h3>
-      <p>Elegir la torta ideal para tu cumpleaños depende de la cantidad de invitados, la temática del festejo y tus gustos personales. En esta guía te contamos cómo calcular porciones, elegir sabores y planificar con tiempo para que tu torta sea perfecta.</p>
-    </article>
+      <div class="detail-grid">
+        <article class="detail-card reveal">
+          <span class="detail-kicker">Guía de Compra</span>
+          <h3>¿Cómo Pedir tu Torta por WhatsApp?</h3>
+          <p>Paso a paso para solicitar tu presupuesto sin demoras: elección de diseño, cantidad de porciones, fecha y seña.</p>
+          <a href="blog/como-pedir-torta-por-whatsapp.html" style="color:var(--rosa-d);font-weight:600;display:inline-block;margin-top:1rem;">Leer guía completa →</a>
+        </article>
 
-    <article class="detail-card reveal" style="margin-bottom:2rem;">
-      <span class="detail-kicker">Tips</span>
-      <h3>5 tips para conservar tu torta artesanal</h3>
-      <p>Las tortas artesanales no tienen conservantes artificiales, por eso es clave saber conservarlas bien. Refrigerar siempre, consumir dentro de los 3 días y cubrir con film son algunos de los tips esenciales para mantener su frescura y sabor. <a href="blog/como-conservar-torta-artesanal.html" style="color:var(--rosa-d);font-weight:600;">Leer más →</a></p>
-    </article>
+        <article class="detail-card reveal">
+          <span class="detail-kicker">Presupuestos 2026</span>
+          <h3>¿Cuánto Cuesta una Torta Personalizada?</h3>
+          <p>Factores que determinan el valor de una torta artesanal: pisos, técnicas de decoración, modelados y rellenos.</p>
+          <a href="blog/cuanto-cuesta-torta-personalizada-2026.html" style="color:var(--rosa-d);font-weight:600;display:inline-block;margin-top:1rem;">Ver precios y factores →</a>
+        </article>
 
-    <article class="detail-card reveal" style="margin-bottom:2rem;">
-      <span class="detail-kicker">Sabores</span>
-      <h3>¿Qué relleno elegir? Guía de sabores</h3>
-      <p>Elegir el relleno de tu torta puede ser difícil con tantas opciones ricas. Desde los clásicos como dulce de leche hasta combinaciones aventureras como Oreo o Bariloche, acá te ayudamos a encontrar el sabor perfecto para tu torta personalizada. <a href="blog/mejores-rellenos-torta-personalizada.html" style="color:var(--rosa-d);font-weight:600;">Leer más →</a></p>
-    </article>
+        <article class="detail-card reveal">
+          <span class="detail-kicker">Tips de Cuidado</span>
+          <h3>Cómo Conservar una Torta Artesanal</h3>
+          <p>Refrigeración correcta, protección contra olores de la heladera y temperatura ideal de servicio para que rinda al máximo.</p>
+          <a href="blog/como-conservar-torta-artesanal.html" style="color:var(--rosa-d);font-weight:600;display:inline-block;margin-top:1rem;">Ver 5 tips clave →</a>
+        </article>
 
-    <article class="detail-card reveal" style="margin-bottom:2rem;">
-      <span class="detail-kicker">Tendencias</span>
-      <h3>Tortas para 15 años: tendencias 2026</h3>
-      <p>Los diseños para quinceañeras evolucionan cada año. Las tendencias 2026 incluyen tortas drip cake, paletas pastel, tortas de dos y tres pisos, decoración con flores y toppers personalizados. Descubrí todas las ideas para tu fiesta de 15. <a href="blog/tortas-15-anos-guia-completa.html" style="color:var(--rosa-d);font-weight:600;">Leer más →</a></p>
-    </article>
+        <article class="detail-card reveal">
+          <span class="detail-kicker">Quinceañeras</span>
+          <h3>Guía Completa: Tortas de 15 Años</h3>
+          <p>Tendencias 2026 en tortas de 15: drip cakes, estructuras de dos y tres pisos, tonos pasteles y flores naturales.</p>
+          <a href="blog/tortas-15-anos-guia-completa.html" style="color:var(--rosa-d);font-weight:600;display:inline-block;margin-top:1rem;">Descubrir ideas de 15 →</a>
+        </article>
 
-    <article class="detail-card reveal" style="margin-bottom:2rem;">
-      <span class="detail-kicker">Práctico</span>
-      <h3>¿Cuántas porciones necesitas? Guía práctica</h3>
-      <p>Calcular bien las porciones evita que sobre o falte torta en tu evento. Desde tortas de 20 cm hasta dos pisos, usá esta guía práctica para saber cuántas porciones necesitas según la cantidad de invitados. <a href="blog/mesa-dulce-cuantas-porciones-persona.html" style="color:var(--rosa-d);font-weight:600;">Leer más →</a></p>
-    </article>
+        <article class="detail-card reveal">
+          <span class="detail-kicker">Sabores & Rellenos</span>
+          <h3>Mejores Rellenos para Tortas Personalizadas</h3>
+          <p>Combinaciones más pedidas: dulce de leche con nuez o merenguitos, ganache de chocolate semiamargo, crema Oreo y frutos rojos.</p>
+          <a href="blog/mejores-rellenos-torta-personalizada.html" style="color:var(--rosa-d);font-weight:600;display:inline-block;margin-top:1rem;">Elegir rellenos →</a>
+        </article>
 
-    <article class="detail-card reveal" style="margin-bottom:2rem;">
-      <span class="detail-kicker">Info</span>
-      <h3>Diferencia entre mesa dulce y candy bar</h3>
-      <p>Aunque muchos usan los términos como sinónimos, hay diferencias entre una mesa dulce y un candy bar. Te contamos las características de cada uno y cuál elegir según el tipo de evento que estés organizando.</p>
-    </article>
-  </div>
-</section>
+        <article class="detail-card reveal">
+          <span class="detail-kicker">Cálculo de Porciones</span>
+          <h3>Mesa Dulce: ¿Cuántas Porciones por Persona?</h3>
+          <p>Fórmula práctica para calcular cupcakes, cake pops, alfajorcitos y porciones de torta para que no falte ni sobre en tu fiesta.</p>
+          <a href="blog/mesa-dulce-cuantas-porciones-persona.html" style="color:var(--rosa-d);font-weight:600;display:inline-block;margin-top:1rem;">Aprender a calcular →</a>
+        </article>
 
-<section style="text-align:center;padding:4rem 1.5rem;background:var(--rosa);">
-  <h2 style="color:white;font-family:'Cormorant Garamond',serif;font-size:2.5rem;margin-bottom:1rem;">¿Tenés una duda?</h2>
-  <p style="color:rgba(255,255,255,.85);margin-bottom:2rem;">Escribinos y te ayudamos a elegir la torta perfecta</p>
-  <a href="https://wa.me/5491133266362?text=Hola!%20Leí%20el%20blog%20y%20quiero%20consultar%20sobre%20una%20torta%20%F0%9F%8E%82&utm_source=blog&utm_medium=whatsapp" target="_blank" rel="noopener noreferrer" class="btn-wa-big" style="background:white;color:var(--wa);">
-    <svg viewBox="0 0 24 24" style="width:22px;height:22px;fill:var(--wa);"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    Consultá por WhatsApp
-  </a>
-</section>
+        <article class="detail-card reveal">
+          <span class="detail-kicker">Presupuestos para Eventos</span>
+          <h3>Mesa Dulce para 30 Personas: ¿Cuánto Cuesta?</h3>
+          <p>Detalle de productos recomendados para grupos de 30 personas, opciones de armado temático y combos para festejos.</p>
+          <a href="blog/cuanto-cuesta-mesa-dulce-30-personas.html" style="color:var(--rosa-d);font-weight:600;display:inline-block;margin-top:1rem;">Ver detalle de mesa dulce →</a>
+        </article>
+
+        <article class="detail-card reveal">
+          <span class="detail-kicker">Infantiles</span>
+          <h3>Ideas de Tortas para Cumpleaños Infantiles</h3>
+          <p>Diseños más pedidos para niños: personajes Disney, anime, superhéroes y temáticas gaming para celebrar su día.</p>
+          <a href="blog/ideas-tortas-cumpleanos-ninos.html" style="color:var(--rosa-d);font-weight:600;display:inline-block;margin-top:1rem;">Ver temáticas infantiles →</a>
+        </article>
+
+        <article class="detail-card reveal">
+          <span class="detail-kicker">Fútbol & Pasión</span>
+          <h3>Tortas de Fútbol Personalizadas</h3>
+          <p>Tortas con camisetas 3D, escudos y canchas temáticas de Boca, River, San Lorenzo, Racing, Independiente y Lanús.</p>
+          <a href="blog/ideas-tortas-futbol-personalizadas.html" style="color:var(--rosa-d);font-weight:600;display:inline-block;margin-top:1rem;">Ver modelos futboleros →</a>
+        </article>
+
+        <article class="detail-card reveal">
+          <span class="detail-kicker">Baby Shower & Bautismos</span>
+          <h3>Qué Torta Elegir para Baby Shower</h3>
+          <p>Colores pastel, animalitos modelados, nubes y diseños tiernos ideales para celebrar la llegada de un nuevo integrante.</p>
+          <a href="blog/que-torta-elegir-baby-shower.html" style="color:var(--rosa-d);font-weight:600;display:inline-block;margin-top:1rem;">Ver opciones para Baby Shower →</a>
+        </article>
+
+        <article class="detail-card reveal">
+          <span class="detail-kicker">Cumpleaños de Adultos</span>
+          <h3>Tortas Elegantes para Adultos</h3>
+          <p>Diseños sofisticados: semi-naked cakes, acabados en buttercream texturado, números temáticos y paletas sobrias.</p>
+          <a href="blog/torta-cumpleanos-adultos-ideas.html" style="color:var(--rosa-d);font-weight:600;display:inline-block;margin-top:1rem;">Inspirarse para adultos →</a>
+        </article>
+
+        <article class="detail-card reveal">
+          <span class="detail-kicker">Calidad Artesanal</span>
+          <h3>Torta Artesanal vs Industrial: Diferencias</h3>
+          <p>Por qué una pastelería artesanal marca la diferencia en frescura, sabor, personalización y ausencia de conservantes químicos.</p>
+          <a href="blog/diferencia-torta-artesanal-vs-industrial.html" style="color:var(--rosa-d);font-weight:600;display:inline-block;margin-top:1rem;">Leer comparativa →</a>
+        </article>
+
+        <article class="detail-card reveal">
+          <span class="detail-kicker">Zona Sur GBA</span>
+          <h3>Dónde Comprar Tortas Personalizadas en Zona Sur</h3>
+          <p>Cobertura en Temperley, Lomas de Zamora, Banfield, Adrogué y alrededores con entrega coordinada a domicilio.</p>
+          <a href="blog/donde-comprar-tortas-personalizadas-zona-sur.html" style="color:var(--rosa-d);font-weight:600;display:inline-block;margin-top:1rem;">Ver zonas de entrega →</a>
+        </article>
+
+        <article class="detail-card reveal">
+          <span class="detail-kicker">Precios Temperley</span>
+          <h3>Precios de Tortas en Temperley (2026)</h3>
+          <p>Precios referenciales para tortas de cumpleaños, números temáticos y pastelería fina artesanal en Temperley.</p>
+          <a href="blog/precio-torta-personalizada-temperley-2026.html" style="color:var(--rosa-d);font-weight:600;display:inline-block;margin-top:1rem;">Consultar valores →</a>
+        </article>
+
+        <article class="detail-card reveal">
+          <span class="detail-kicker">Opciones Especiales</span>
+          <h3>Tortas Sin Gluten en Zona Sur</h3>
+          <p>Opciones elaboradas con ingredientes libres de gluten para disfrutar celebraciones ricas e inclusivas.</p>
+          <a href="blog/tortas-sin-gluten-zona-sur.html" style="color:var(--rosa-d);font-weight:600;display:inline-block;margin-top:1rem;">Conocer opciones sin gluten →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section style="text-align:center;padding:4rem 1.5rem;background:var(--rosa);">
+    <div class="container" style="max-width:650px;">
+      <h2 style="color:white;font-family:'Cormorant Garamond',serif;font-size:2.4rem;margin-bottom:1rem;">¿Tenés una idea para tu evento?</h2>
+      <p style="color:rgba(255,255,255,.95);margin-bottom:2rem;line-height:1.7;">
+        Mandanos una foto de referencia o tu temática por WhatsApp y te armamos un presupuesto personalizado sin compromiso.
+      </p>
+      <a href="https://wa.me/5491133266362?text=Hola!%20Leí%20el%20blog%20y%20quiero%20consultar%20por%20un%20presupuesto%20🎂&utm_source=blog_cta_banner&utm_medium=whatsapp" target="_blank" rel="noopener noreferrer" class="btn-wa" style="background:white;color:var(--wa);box-shadow:0 8px 24px rgba(0,0,0,.15);">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Presupuesto por WhatsApp
+      </a>
+    </div>
+  </section>
 </main>
 
-<footer style="background:#2a1608;color:rgba(255,255,255,.5);padding:2.5rem 2rem;text-align:center;font-size:.8rem;">
-  <p>© 2026 <strong style="color:var(--rosa)">Dulces Creaciones</strong> · Temperley, Zona Sur GBA · <a href="index.html">Inicio</a></p>
+<footer style="background:#2a1608;color:rgba(255,255,255,.6);padding:3rem 1.5rem 2rem;text-align:center;font-size:.85rem;">
+  <div class="container">
+    <p style="margin-bottom:.8rem;">
+      © 2026 <strong style="color:var(--rosa)">Dulces Creaciones</strong> · Pastelería Artesanal en Temperley, Zona Sur GBA.
+    </p>
+    <p style="margin-bottom:1rem;color:rgba(255,255,255,.4);">
+      <a href="index.html" style="color:rgba(255,255,255,.7);text-decoration:none;margin:0 .5rem;">Inicio</a> ·
+      <a href="menu.html" style="color:rgba(255,255,255,.7);text-decoration:none;margin:0 .5rem;">Menú</a> ·
+      <a href="mesas-dulces.html" style="color:rgba(255,255,255,.7);text-decoration:none;margin:0 .5rem;">Mesas Dulces</a> ·
+      <a href="blog.html" style="color:rgba(255,255,255,.7);text-decoration:none;margin:0 .5rem;">Blog</a>
+    </p>
+  </div>
 </footer>
 
-<a href="https://wa.me/5491133266362?text=Hola!%20Busco%20tortas%20🎂&utm_source=pseo_blog_fab&utm_medium=whatsapp" target="_blank" rel="noopener noreferrer" class="fab-wa" aria-label="WhatsApp">
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/5491133266362?text=Hola!%20Visité%20el%20blog%20y%20quiero%20hacer%20un%20pedido%20🎂&utm_source=blog_fab&utm_medium=whatsapp" target="_blank" rel="noopener noreferrer" class="fab-wa" aria-label="Contactar por WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
+
 <script src="scripts.js"></script>
-<!-- PSEO links removidos -->
 </body>
 </html>

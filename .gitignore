@@ -1,8 +1,10 @@
 *.mp4
 *.ps1
-*.py
 node_modules/
-.env
+.env*
 .DS_Store
 Thumbs.db
 .vercel
+__pycache__/
+*.pyc
+test_*.png

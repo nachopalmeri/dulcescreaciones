@@ -1,18 +1,19 @@
 # Tareas — Dulces Creaciones
 
 ## Completado
-- [x] PSEO local: glew, burzaco, longchamps, claypole, monte-grande, lanus
-- [x] PSEO temático: baby-shower, bautismo, comunión, unicornio, princesas, superhéroes, sin-gluten
-- [x] Blog posts: 10 artículos de compra
-- [x] FAQ landing pages: 6 páginas
-- [x] Sitemap actualizado a 55 URLs
-- [x] Schema VideoObject agregado
-- [x] Meta Pixel placeholder eliminado
-- [x] Barra superior "Presupuesto sin cargo" agregada
-- [x] Hidden internal linking en index.html
+- [x] Reparación estructural de encoding UTF-8 en todos los archivos HTML (cero mojibake)
+- [x] GA4 (G-7M2V2QC4ME) implementado en todas las 57 páginas del sitio
+- [x] Eventos de negocio implementados (whatsapp_click con parámetros ricos, instagram_click, maps_click, cta_click)
+- [x] Menú mobile responsive (botón hamburger accesible y funcional en todas las páginas)
+- [x] blog.html rediseñado y enlazando activamente a los 15 artículos individuales
+- [x] Sitemap.xml generado con 55 URLs canónicas válidas e imágenes
+- [x] Robots.txt optimizado para Googlebot y Bingbot
+- [x] Vercel.json configurado con headers de seguridad, caché inmutable de assets y UTF-8
+- [x] Schema JSON-LD corregido (error de sintaxis en mesas-dulces.html eliminado)
+- [x] Placeholder inválido de Meta Pixel eliminado
+- [x] Manifest.json actualizado con rutas reales de screenshots WebP
+- [x] .gitignore actualizado
 
-## Pendiente
-- [ ] blog.html no enlaza a los 15 posts individuales — los posts existen pero Google no los descubre
-- [ ] GBP checklist sin ejecutar — 0 interacciones en 223 vistas
-- [ ] .gitignore no existe
-- [ ] index_backup.html (725 KB) ocupa espacio innecesario
+## Pendiente (Acciones Externas)
+- [ ] Subir sitemap.xml en Google Search Console (`https://dulcescreaciones.vercel.app/sitemap.xml`)
+- [ ] Ejecutar acciones de Google Business Profile (ver GBP-CHECKLIST.md)
