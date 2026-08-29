@@ -67,14 +67,14 @@ with sync_playwright() as p:
     data_theme2 = page.eval_on_selector("html", "el => el.getAttribute('data-theme')")
     check(data_theme2 == "light", f"Light theme restored: '{data_theme2}'")
     
-    # Check FAQ accordion
-    faqs = page.locator(".faq-question")
+    # Check FAQ accordion (native <details class="faq-item"><summary>)
+    faqs = page.locator(".faq-item")
     check(faqs.count() > 0, f"Found {faqs.count()} FAQ questions")
     if faqs.count() > 0:
-        first_faq = faqs.first
-        first_faq.click()
+        second_faq = faqs.nth(1)
+        second_faq.locator("summary").click()
         page.wait_for_timeout(300)
-        is_active = first_faq.evaluate("el => el.classList.contains('active')")
+        is_active = second_faq.evaluate("el => el.open")
         check(is_active, "FAQ item expands on click")
     
     # Check WhatsApp click tracking event

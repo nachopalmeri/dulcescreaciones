@@ -13,6 +13,9 @@
 - [x] Placeholder inválido de Meta Pixel eliminado
 - [x] Manifest.json actualizado con rutas reales de screenshots WebP
 - [x] .gitignore actualizado
+- [x] Enlace roto index.html -> gbp-content.html eliminado (página no existía)
+- [x] qa_e2e_test.py actualizado: selector FAQ obsoleto (.faq-question) reemplazado por el actual (.faq-item con <details>/<summary>)
+- [x] GEO audit 80.6% -> 92.8% (EXCELLENT): agregado ItemList de especialidades, HowTo "Cómo Pedir", knowsAbout, areaServed con containsPlace (Zona Sur GBA + 9 localidades), potentialAction WhatsApp y meta keywords al schema de index.html
 
 ## Pendiente (Acciones Externas)
 - [ ] Subir sitemap.xml en Google Search Console (`https://dulcescreaciones.vercel.app/sitemap.xml`)

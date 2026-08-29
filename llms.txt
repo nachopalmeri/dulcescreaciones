@@ -1,6 +1,6 @@
 # llms.txt - Generative Engine Optimization for Dulces Creaciones
 # Based on llms.txt standard for AI crawlers and LLM indexing
-# Last updated: 2026-05-19
+# Last updated: 2026-08-22
 
 # Site Identity
 Title: Dulces Creaciones
@@ -16,7 +16,7 @@ Contact:
   Facebook: https://www.facebook.com/dulcescreacionesDC
 Location: Temperley, Buenos Aires, Argentina
 Coverage: Temperley, Lomas de Zamora, Adrogue, Banfield, Turdera, Glew, Burzaco, Longchamps, Rafael Calzada, Almirante Brown, Zona Sur GBA
-Hours: Lun-Vie 9:00-19:00
+Hours: Lun-Vie 9:00-19:00, Sab 9:00-14:00
 
 # Key Pages & Content
 Key Pages:
@@ -101,7 +101,7 @@ Price Range: $$
 Payment: MercadoPago, transferencia, efectivo
 Policy: Sena del 50% para confirmar pedido
 Retiro: Retiro personal en Temperley, Zona Sur GBA (no realizamos envíos a domicilio)
-Lead Time: 10 dias anticipacion (15 para eventos grandes)
+Lead Time: 7 a 15 dias de anticipacion (eventos grandes consultar)
 
 # Trust Signals
 Experience: 5+ anos de trayectoria
