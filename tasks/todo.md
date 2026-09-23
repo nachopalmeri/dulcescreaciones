@@ -27,7 +27,15 @@
 - [x] Contradicciones de envío eliminadas (el negocio es solo retiro)
 - [x] 36 páginas secundarias rediseñadas (hero con foto real + CTA, cards, pasos, FAQ, botones), menú mobile arreglado, galerías honestas sin repetidos, JS roto/visible eliminado, UTM unificados, links de reseña/mapa verificados, páginas huérfanas enlazadas
 
+## Pruebas de búsqueda (2026-09-23)
+- Buscador web usado por asistentes de IA: la web NO aparece en ninguna búsqueda (ni por el dominio exacto). Solo aparece el repo de GitHub
+- Lo que sí aparece para "pastelería Temperley", "tortas personalizadas zona sur", "torta de casamiento zona sur", "mesa dulce Temperley", "tortas Adrogué", "torta 15 años zona sur": Instagram/Facebook de competidores, MercadoLibre, directorios (casamientos.com.ar, portalcasamientos.com.ar, argentino.com.ar, webyeventos.com.ar, ineventos, catering.com.ar, todoadrogue.com.ar) y competidores con dominio propio (tortaspersonalizadascp.com, namnamtortas.com.ar)
+- No hay conector de Google Search Console disponible en Claude; hay que hacerlo manualmente
+
 ## Pendiente (Acciones Externas)
+- [ ] Bing Webmaster Tools: importar desde Search Console (alimenta ChatGPT y Copilot)
+- [ ] Publicar ficha gratuita en directorios que sí aparecen: casamientos.com.ar, portalcasamientos.com.ar, argentino.com.ar, webyeventos.com.ar, todoadrogue.com.ar (mismo nombre, teléfono, dirección y link a la web)
+- [ ] Repo de GitHub: poner https://dulcescreaciones.vercel.app en el campo "Website" del repo
 - [x] Afirmaciones de "certificadas sin TACC", "protocolos contra contaminación cruzada" y "aptas para celíacos" eliminadas (el dueño confirmó que no aplican). Texto estándar: opciones sin gluten a pedido, sin certificación sin TACC, consultar antes si es para celíacos
 - [ ] Subir (o re-enviar) sitemap.xml en Google Search Console y pedir reindexación: antes todas las URLs daban redirección (`https://dulcescreaciones.vercel.app/sitemap.xml`)
 - [x] Perfil de Google Business Profile creado (confirmado por el dueño 2026-09-23)
