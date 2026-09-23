@@ -2986,3 +2986,12 @@ main p a:not([class]) {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* Inline sections/buttons that use --choco as a background stay dark in dark mode */
+[data-theme="dark"] [style*="background:var(--choco)"],
+[data-theme="dark"] [style*="background: var(--choco)"] {
+  background: #120B07 !important;
+}
+[data-theme="dark"] section#proceso[style] .paso {
+  background: rgba(255, 255, 255, 0.04);
+}

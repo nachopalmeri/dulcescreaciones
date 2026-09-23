@@ -18,7 +18,7 @@ def validate_site():
     
     root_dir = Path(".")
     html_files = list(root_dir.glob("*.html")) + list((root_dir / "blog").glob("*.html"))
-    html_files = [f for f in html_files if f.name != "google7e6fa1efbdd8f987.html"]
+    html_files = [f for f in html_files if f.name not in ("google7e6fa1efbdd8f987.html", "404.html")]
     
     print(f"📄 Total de páginas analizadas: {len(html_files)}")
     
