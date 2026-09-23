@@ -149,7 +149,7 @@
 
   <url>
     <loc>https://dulcescreaciones.vercel.app/</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -158,14 +158,84 @@
       <image:caption>Pastelería artesanal especializada en tortas personalizadas y mesas dulces</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/images/torta-minimalista-romantica-hero.webp</image:loc>
+      <image:title>Torta minimalista romántica con corazones</image:title>
+      <image:caption>Torta artesanal blanca con corazones rosa, Dulces Creaciones Temperley</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://dulcescreaciones.vercel.app/images/torta-moana-disney.webp</image:loc>
-      <image:title>Torta Moana Infantil</image:title>
-      <image:caption>Torta infantil personalizada temática Disney Moana</image:caption>
+      <image:title>Torta Moana Disney infantil</image:title>
+      <image:caption>Torta infantil personalizada temática Moana con nombre, Temperley</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/images/torta-kuromi-sanrio.webp</image:loc>
+      <image:title>Torta Kuromi Sanrio</image:title>
+      <image:caption>Torta de dos pisos temática Kuromi Sanrio en violeta</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/images/torta-futbol-san-lorenzo.webp</image:loc>
+      <image:title>Torta camiseta San Lorenzo</image:title>
+      <image:caption>Torta con forma de camiseta de San Lorenzo de Almagro</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/images/ig-post-6.webp</image:loc>
+      <image:title>Torta Selección Argentina</image:title>
+      <image:caption>Torta de fútbol de la Selección Argentina con Messi y tres estrellas</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://dulcescreaciones.vercel.app/images/torta-15-anos-fiesta.webp</image:loc>
-      <image:title>Torta de 15 Años</image:title>
-      <image:caption>Torta elegante para fiesta de quinceañera</image:caption>
+      <image:title>Torta de 15 años rosa</image:title>
+      <image:caption>Torta de 15 años rosa con lettering Happy 15</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/images/ig-post-9.webp</image:loc>
+      <image:title>Torta aniversario 50 años</image:title>
+      <image:caption>Torta de bodas de oro 50 años con alianzas y esferas doradas</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/images/torta-fortnite-gaming.webp</image:loc>
+      <image:title>Torta Fortnite Marshmello</image:title>
+      <image:caption>Torta gaming Fortnite de dos pisos con Marshmello</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/images/ig-post-11.webp</image:loc>
+      <image:title>Torta elegante rosa blanca</image:title>
+      <image:caption>Torta blanca elegante con rosa de azúcar plateada</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/images/ig-post-2.webp</image:loc>
+      <image:title>Torta fondo de mar</image:title>
+      <image:caption>Torta infantil de fondo de mar con ballenita</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/images/torta-disco-retro.webp</image:loc>
+      <image:title>Torta disco y perlas</image:title>
+      <image:caption>Torta blanca de cumpleaños con bolas disco y perlas</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/images/ig-post-12.webp</image:loc>
+      <image:title>Torta black and silver</image:title>
+      <image:caption>Torta negra de cumpleaños con detalles plateados</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/images/ig-post-10.webp</image:loc>
+      <image:title>Torta estrella 19 años</image:title>
+      <image:caption>Torta con forma de estrella para cumpleaños de 19 años</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/images/ig-post-4.webp</image:loc>
+      <image:title>Torta de graduación</image:title>
+      <image:caption>Torta rosa de graduación para licenciada con topper personalizado</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/images/torta-globos-cumpleanos.webp</image:loc>
+      <image:title>Torta cumpleaños con esferas</image:title>
+      <image:caption>Torta de cumpleaños con esferas blancas y negras</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dulcescreaciones.vercel.app/images/ig-post-8.webp</image:loc>
+      <image:title>Torta texturizada blanca</image:title>
+      <image:caption>Torta blanca texturizada Happy Birthday hecha a mano por Elizabeth</image:caption>
     </image:image>
   </url>
 

@@ -16,6 +16,9 @@
 - [x] Enlace roto index.html -> gbp-content.html eliminado (página no existía)
 - [x] qa_e2e_test.py actualizado: selector FAQ obsoleto (.faq-question) reemplazado por el actual (.faq-item con <details>/<summary>)
 - [x] GEO audit 80.6% -> 92.8% (EXCELLENT): agregado ItemList de especialidades, HowTo "Cómo Pedir", knowsAbout, areaServed con containsPlace (Zona Sur GBA + 9 localidades), potentialAction WhatsApp y meta keywords al schema de index.html
+- [x] Rediseño visual home (2026-09-23): collage en hero, galería bento con 13 fotos únicas y etiquetas correctas, categorías deslizables en mobile, pasos con medallones, rellenos con acentos, foto de autora con marco, CTA final con textura, dark mode corregido
+- [x] Galería: eliminadas fotos duplicadas (mismas tortas con distinto nombre) y etiquetas falsas ("Selva & Safari" era Moana); sumadas fotos reales de IG sin usar (Selección Argentina, aniversario 50, graduación, estrella 19, rosa blanca, fondo de mar, black & silver)
+- [x] SEO/GEO invisible: schema Bakery con founder, hasOfferCatalog, menu, hasMap, currenciesAccepted, image[] y Lanús en areaServed; FAQPage con la pregunta de porciones; sitemap con 17 imágenes de la home; llms.txt con portfolio real
 
 ## Pendiente (Acciones Externas)
 - [ ] Subir sitemap.xml en Google Search Console (`https://dulcescreaciones.vercel.app/sitemap.xml`)

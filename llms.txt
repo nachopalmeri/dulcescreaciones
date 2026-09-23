@@ -1,6 +1,6 @@
 # llms.txt - Generative Engine Optimization for Dulces Creaciones
 # Based on llms.txt standard for AI crawlers and LLM indexing
-# Last updated: 2026-08-22
+# Last updated: 2026-09-23
 
 # Site Identity
 Title: Dulces Creaciones
@@ -95,6 +95,20 @@ Products:
   - Rellenos: Dulce de leche, Oreo, Bariloche, Ganache, Bon o Bon, Marroc, Block
   - Coberturas: Buttercream (vainilla, chocolate, frutilla)
   - Pastas: Premium
+
+# Portfolio (disenos reales realizados, fotos en la galeria de la home)
+  - Torta Moana Disney con nombre personalizado (infantil)
+  - Torta Kuromi Sanrio de dos pisos (infantil)
+  - Torta de fondo de mar con ballenita (infantil)
+  - Torta camiseta de San Lorenzo (futbol)
+  - Torta de la Seleccion Argentina con Messi (futbol)
+  - Torta Fortnite con Marshmello de dos pisos (gaming)
+  - Torta de 15 anos rosa "Happy 15"
+  - Torta de aniversario 50 anos / bodas de oro con alianzas doradas
+  - Torta de graduacion para licenciada con topper personalizado
+  - Torta estrella para cumpleanos de 19
+  - Tortas de cumpleanos para adultos: black & silver, disco y perlas, esferas, texturizada blanca, minimalista con corazones
+Gallery: https://dulcescreaciones.vercel.app/#galeria
 
 # Pricing & Policies
 Price Range: $$

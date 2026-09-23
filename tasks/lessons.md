@@ -19,3 +19,8 @@
 - Problema: geo_audit.py penaliza la ausencia de estos 3 schemas (11 pts), pero agregarlos requeriría inventar rating, cantidad de reviews o credenciales que no existen
 - Lección: un score de auditoría más alto no vale una posible penalización manual de Google por "fake reviews/structured data" ni viola la regla de "cero datos no verificados"
 - Regla: dejar estos 3 checks en rojo hasta tener datos reales (reviews de Google Business Profile, credencial verificable); no fabricar para subir el puntaje
+
+## 2026-09-23: Fotos duplicadas con distinto nombre
+- Problema: images/ tiene la misma foto guardada 2-3 veces (gallery-N, ig-post-N, torta-*.webp); la galería mostraba la misma torta varias veces y con etiquetas inventadas
+- Lección: antes de ubicar fotos, comparar visualmente (hoja de contactos), no por nombre de archivo
+- Regla: cada foto visible debe ser única en su sección y su etiqueta/alt debe describir lo que realmente muestra
