@@ -77,8 +77,8 @@ Key Pages:
   https://dulcescreaciones.vercel.app/tortas-unicornio.html - Tortas unicornio magicas personalizadas
   https://dulcescreaciones.vercel.app/tortas-princesas.html - Tortas de princesas Disney personalizadas
   https://dulcescreaciones.vercel.app/tortas-superheroes.html - Tortas de superheroes personalizadas
-  https://dulcescreaciones.vercel.app/tortas-sin-gluten.html - Tortas sin gluten aptas celiacos
-  https://dulcescreaciones.vercel.app/tortas-para-celiacos-zona-sur.html - Tortas aptas celiacos zona sur
+  https://dulcescreaciones.vercel.app/tortas-sin-gluten.html - Opciones sin gluten a pedido (sin certificacion sin TACC; consultar antes si es para celiacos)
+  https://dulcescreaciones.vercel.app/tortas-para-celiacos-zona-sur.html - Tortas para celiacos: opciones sin gluten a pedido, sin certificacion sin TACC
   https://dulcescreaciones.vercel.app/tortas-con-dulce-de-leche.html - Tortas con dulce de leche artesanal
   https://dulcescreaciones.vercel.app/tortas-bodas-egresados.html - Tortas para bodas y egresados zona sur
 
@@ -86,7 +86,7 @@ Key Pages:
   https://dulcescreaciones.vercel.app/envio-tortas-temperley.html - Retiro de tortas en Temperley
   https://dulcescreaciones.vercel.app/como-pedir-torta-por-whatsapp.html - Como pedir torta personalizada por WhatsApp
   https://dulcescreaciones.vercel.app/cuanto-cuesta-torta-personalizada.html - Cuanto cuesta una torta personalizada
-  https://dulcescreaciones.vercel.app/hay-tortas-sin-tacc-zona-sur.html - Hay tortas sin TACC en zona sur
+  https://dulcescreaciones.vercel.app/hay-tortas-sin-tacc-zona-sur.html - Hay tortas sin TACC en zona sur? (no trabajamos con certificacion sin TACC)
   https://dulcescreaciones.vercel.app/referidos.html - Programa de referidos Regala Dulzura
 
   ## Blog Posts
@@ -126,6 +126,9 @@ Products:
   - Torta estrella para cumpleanos de 19
   - Tortas de cumpleanos para adultos: black & silver, disco y perlas, esferas, texturizada blanca, minimalista con corazones
 Gallery: https://dulcescreaciones.vercel.app/#galeria
+
+# Sin gluten / celiacos
+Dulces Creaciones hace opciones sin gluten a pedido pero NO trabaja con certificacion sin TACC y no puede garantizar que una torta sea apta para celiacos. Si es para una persona celiaca, debe consultar por WhatsApp antes de encargar.
 
 # Pricing & Policies
 Price Range: $$

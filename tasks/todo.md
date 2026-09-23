@@ -28,7 +28,7 @@
 - [x] 36 páginas secundarias rediseñadas (hero con foto real + CTA, cards, pasos, FAQ, botones), menú mobile arreglado, galerías honestas sin repetidos, JS roto/visible eliminado, UTM unificados, links de reseña/mapa verificados, páginas huérfanas enlazadas
 
 ## Pendiente (Acciones Externas)
-- [ ] CONFIRMAR con Elizabeth: tortas-sin-gluten.html dice "certificadas libres de gluten" y "protocolos estrictos contra contaminación cruzada". Si no es así, hay que corregirlo (riesgo para celíacos)
+- [x] Afirmaciones de "certificadas sin TACC", "protocolos contra contaminación cruzada" y "aptas para celíacos" eliminadas (el dueño confirmó que no aplican). Texto estándar: opciones sin gluten a pedido, sin certificación sin TACC, consultar antes si es para celíacos
 - [ ] Subir (o re-enviar) sitemap.xml en Google Search Console y pedir reindexación: antes todas las URLs daban redirección (`https://dulcescreaciones.vercel.app/sitemap.xml`)
 - [x] Perfil de Google Business Profile creado (confirmado por el dueño 2026-09-23)
 - [x] Perfil de Google conectado: sameAs/hasMap = https://maps.google.com/?cid=8399718831301719330, mapa de la home con el pin real, coordenadas de todo el sitio = pin de Google (-34.7616, -58.4031), "5.0 en Google" enlazado al perfil

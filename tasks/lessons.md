@@ -38,3 +38,7 @@
 ## 2026-09-23: Etiquetas de galería inventadas
 - Problema: galerías temáticas etiquetaban fotos con temas que no mostraban (Moana como "Boca Juniors", Fortnite como "Sin gluten frutas")
 - Regla: la etiqueta y el alt describen lo que se ve en la foto; si no hay fotos del tema, decir "algunos de nuestros trabajos" en vez de simularlo
+
+## 2026-09-23: Afirmaciones de salud sin respaldo (sin TACC / celíacos)
+- Problema: 4 páginas afirmaban harinas "certificadas", "protocolos estrictos contra contaminación cruzada", "aptas para celíacos" y "envase sellado apto celíaco"; no era cierto
+- Regla: nunca escribir "sin TACC", "apto celíacos" ni garantías de salud sin certificación real confirmada por el dueño. Texto aprobado: "opciones sin gluten a pedido, sin certificación sin TACC; si es para una persona celíaca, consultar antes"
