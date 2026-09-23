@@ -29,6 +29,10 @@
 - [x] Vistas previas para WhatsApp/Facebook: 52 imágenes JPG 1200x630 propias por página (images/og/), generadas con scratchpad og.py (foto + marca + tema)
 - [x] Accesibilidad WCAG AA: --rosa-d #A34A63 y --wa #11803A (contraste ≥4.5), lightbox inert, links ocultos fuera del tab
 - [x] Performance: logo del menú 124KB PNG → 3KB WebP; home 409→288KB, secundarias 229→108KB; LCP ~1.1-1.5s en 3G simulado, CLS 0
+- [x] Página 404 propia (404.html, noindex, WhatsApp + categorías), excluida del test SEO como la verificación de Google
+- [x] Schema: 57 nodos Bakery/Organization parciales unificados con @id #business y mismo NAP
+- [x] Modo oscuro en secundarias: fondos inline var(--choco) forzados a oscuro
+- [x] Copy: ~330 títulos a mayúscula española y ~440 palabras con tilde/ñ restauradas ("15 anos" → "15 años"); subtítulo "Entrega en tu casa" del blog corregido a retiro
 
 ## Search Console (datos del 20/9/26, vistos 23/9)
 - 11 indexadas / 11 no indexadas. Motivos: 4 canónica alternativa, 3 redirección (cleanUrls, ya corregido), 2 noindex, 2 rastreada sin indexar
