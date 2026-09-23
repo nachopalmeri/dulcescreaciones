@@ -22,4 +22,7 @@
 
 ## Pendiente (Acciones Externas)
 - [ ] Subir sitemap.xml en Google Search Console (`https://dulcescreaciones.vercel.app/sitemap.xml`)
-- [ ] Ejecutar acciones de Google Business Profile (ver GBP-CHECKLIST.md)
+- [x] Perfil de Google Business Profile creado (confirmado por el dueño 2026-09-23)
+- [ ] Conseguir el link público del perfil de Google (Maps → Compartir) para sumarlo a sameAs/hasMap del schema y al mapa de la home
+- [ ] Pedir reseñas a clientas reales (guion en GBP-MASTER-KIT.md, sección 3); con reseñas reales recién ahí agregar AggregateRating
+- [ ] Ojo homónimos: existen otras "Dulces Creaciones" (Laferrere, Villa Bosch). Usar siempre "Dulces Creaciones Temperley" en GBP, IG y FB
