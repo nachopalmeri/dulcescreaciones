@@ -19,10 +19,14 @@
 - [x] Rediseño visual home (2026-09-23): collage en hero, galería bento con 13 fotos únicas y etiquetas correctas, categorías deslizables en mobile, pasos con medallones, rellenos con acentos, foto de autora con marco, CTA final con textura, dark mode corregido
 - [x] Galería: eliminadas fotos duplicadas (mismas tortas con distinto nombre) y etiquetas falsas ("Selva & Safari" era Moana); sumadas fotos reales de IG sin usar (Selección Argentina, aniversario 50, graduación, estrella 19, rosa blanca, fondo de mar, black & silver)
 - [x] SEO/GEO invisible: schema Bakery con founder, hasOfferCatalog, menu, hasMap, currenciesAccepted, image[] y Lanús en areaServed; FAQPage con la pregunta de porciones; sitemap con 17 imágenes de la home; llms.txt con portfolio real
+- [x] Fix SEO crítico (2026-09-23): cleanUrls redirigía con 308 todas las URLs .html del sitemap/canonicals; ahora .html sirve 200 y las URLs sin extensión redirigen 301 a .html
+- [x] .vercelignore: tasks/, rules/, workflows/, docs/, *.md, *.py ya no se publican
+- [x] Home: sin emojis como íconos, títulos en mayúscula normal en español, foto primero en mobile, FAB oculto mientras se ve el CTA principal, favicon = logo, CSS/JS versionados (?v=)
+- [x] Publicado en producción (main) y verificado: 55/55 URLs del sitemap en 200
 
 ## Pendiente (Acciones Externas)
-- [ ] Subir sitemap.xml en Google Search Console (`https://dulcescreaciones.vercel.app/sitemap.xml`)
+- [ ] Subir (o re-enviar) sitemap.xml en Google Search Console y pedir reindexación: antes todas las URLs daban redirección (`https://dulcescreaciones.vercel.app/sitemap.xml`)
 - [x] Perfil de Google Business Profile creado (confirmado por el dueño 2026-09-23)
 - [ ] Conseguir el link público del perfil de Google (Maps → Compartir) para sumarlo a sameAs/hasMap del schema y al mapa de la home
 - [ ] Pedir reseñas a clientas reales (guion en GBP-MASTER-KIT.md, sección 3); con reseñas reales recién ahí agregar AggregateRating
-- [ ] Ojo homónimos: existen otras "Dulces Creaciones" (Laferrere, Villa Bosch). Usar siempre "Dulces Creaciones Temperley" en GBP, IG y FB
+- [ ] Ojo homónimos: existen otras "Dulces Creaciones" (Laferrere, Villa Bosch). No agregar "Temperley" al nombre del perfil de Google (va contra sus reglas); diferenciar con dirección, teléfono, categoría y link a la web idénticos en GBP, IG y FB
