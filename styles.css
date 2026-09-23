@@ -2578,3 +2578,19 @@ details.faq-item[open] {
   opacity: 0.85;
 }
 [data-theme="dark"] .marquee-item { color: var(--rosa-d); }
+
+.hero-trust-link {
+  text-decoration: none;
+  border-bottom: 1px dashed transparent;
+  transition: border-color var(--duration-fast), color var(--duration-fast);
+}
+.hero-trust-link:hover {
+  border-bottom-color: var(--gold);
+}
+.hero-trust-link:hover strong {
+  color: var(--rosa-d);
+}
+a.dc-footer-trust-badge:hover {
+  border-color: var(--gold);
+  color: #FFFFFF;
+}

@@ -13,8 +13,8 @@
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": -34.7755,
-    "longitude": -58.3986
+    "latitude": -34.7616,
+    "longitude": -58.4031
   },
   "areaServed": {
     "@type": "State",
@@ -53,7 +53,8 @@
   "logo": "https://dulcescreaciones.vercel.app/logo_perfil.jpg",
   "sameAs": [
     "https://instagram.com/dulcescreaciones_dc",
-    "https://www.facebook.com/dulcescreacionesDC"
+    "https://www.facebook.com/dulcescreacionesDC",
+    "https://maps.google.com/?cid=8399718831301719330"
   ],
   "knowsAbout": [
     "Tortas personalizadas",

@@ -10,6 +10,7 @@ Language: es-AR
 Category: Local Business / Bakery / Custom Cakes
 
 # Contact & Location
+Google Maps (perfil de Google): https://maps.google.com/?cid=8399718831301719330
 Contact:
   WhatsApp: +5491133266362
   Instagram: https://instagram.com/dulcescreaciones_dc

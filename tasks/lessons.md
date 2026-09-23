@@ -24,3 +24,8 @@
 - Problema: images/ tiene la misma foto guardada 2-3 veces (gallery-N, ig-post-N, torta-*.webp); la galería mostraba la misma torta varias veces y con etiquetas inventadas
 - Lección: antes de ubicar fotos, comparar visualmente (hoja de contactos), no por nombre de archivo
 - Regla: cada foto visible debe ser única en su sección y su etiqueta/alt debe describir lo que realmente muestra
+
+## 2026-09-23: Reseñas de Google ≠ AggregateRating en la web
+- Dato real: el perfil de Google tiene 5.0 con 3 reseñas (place ID ChIJS-6XoBtgKmoRIvXlAMbLkXQ, CID 8399718831301719330)
+- Lección: las pautas de Google prohíben marcar con AggregateRating reseñas copiadas de otro sitio (incluido Google Maps); además en LocalBusiness propio no da estrellas en resultados
+- Regla: mostrar el 5.0 como texto con link al perfil de Google para que se pueda verificar; no agregar AggregateRating con esos datos

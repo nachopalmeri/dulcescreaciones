@@ -39,7 +39,7 @@ Content-priority: facts, prices, services, location, contact
 Entity-type: LocalBusiness
 Entity-name: Dulces Creaciones
 Entity-location: Temperley, Buenos Aires, Argentina
-Entity-coordinates: -34.7755, -58.3986
+Entity-coordinates: -34.7616, -58.4031
 Entity-services: Tortas personalizadas, Mesas dulces, Candy bar, Reposteria artesanal
 Entity-category: Bakery
 Entity-phone: +5491133266362
