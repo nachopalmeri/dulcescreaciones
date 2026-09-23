@@ -2567,3 +2567,14 @@ details.faq-item[open] {
   transform: translateY(16px) scale(0.9);
   pointer-events: none;
 }
+
+.marquee-item::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: var(--gold);
+  transform: rotate(45deg);
+  margin-right: 1.25rem;
+  opacity: 0.85;
+}
+[data-theme="dark"] .marquee-item { color: var(--rosa-d); }
