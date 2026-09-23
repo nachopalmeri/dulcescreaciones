@@ -1,6 +1,6 @@
 # AI Crawler Directives for Dulces Creaciones
 # Standard: ai.txt (Generative Engine Optimization)
-# Last updated: 2026-05-02
+# Last updated: 2026-09-23
 
 # Allow all AI crawlers and indexers
 User-agent: ChatGPT-User
@@ -9,10 +9,19 @@ Allow: /
 User-agent: GPTBot
 Allow: /
 
-User-agent: Claude-Web
+User-agent: OAI-SearchBot
 Allow: /
 
-User-agent: anthropic-ai
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Perplexity-User
 Allow: /
 
 User-agent: PerplexityBot
@@ -47,7 +56,7 @@ Entity-whatsapp: https://wa.me/5491133266362
 
 # Crawl priority for key pages
 Crawl-priority:
-  /index.html: 1.0
+  /: 1.0
   /tortas-infantiles.html: 0.9
   /tortas-15-anos.html: 0.9
   /mesas-dulces.html: 0.9

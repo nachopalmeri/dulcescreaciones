@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "@type": "Bakery",
   "name": "Dulces Creaciones",
-  "description": "Pasteleria artesanal especializada en tortas personalizadas y mesas dulces en Temperley, Zona Sur GBA, Argentina.",
+  "description": "Pasteleria artesanal especializada en tortas personalizadas (casamientos, cumpleanos, 15 anos, infantiles y eventos) y mesas dulces en Temperley, Zona Sur GBA, Argentina. Pedidos por WhatsApp y retiro en Temperley.",
   "url": "https://dulcescreaciones.vercel.app",
   "telephone": "+5491133266362",
   "address": {
@@ -61,7 +61,7 @@
     "Cupcakes personalizados",
     "Cake pops",
     "Galletitas decoradas",
-    "Tortas bodas y egresados",
+    "Tortas de casamiento, bodas y egresados",
     "Tortas futbol argentino",
     "Blog de pasteleria"
   ],
