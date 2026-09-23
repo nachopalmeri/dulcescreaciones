@@ -3,6 +3,36 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/tortas-bodas-egresados-temperley.html",
+      "destination": "/tortas-bodas-egresados.html",
+      "permanent": true
+    },
+    {
+      "source": "/hay-tortas-sin-tacc-zona-sur.html",
+      "destination": "/tortas-sin-gluten.html",
+      "permanent": true
+    },
+    {
+      "source": "/tortas-para-celiacos-zona-sur.html",
+      "destination": "/tortas-sin-gluten.html",
+      "permanent": true
+    },
+    {
+      "source": "/tortas-bodas-egresados-temperley",
+      "destination": "/tortas-bodas-egresados.html",
+      "permanent": true
+    },
+    {
+      "source": "/hay-tortas-sin-tacc-zona-sur",
+      "destination": "/tortas-sin-gluten.html",
+      "permanent": true
+    },
+    {
+      "source": "/tortas-para-celiacos-zona-sur",
+      "destination": "/tortas-sin-gluten.html",
+      "permanent": true
+    },
+    {
       "source": "/index",
       "destination": "/",
       "permanent": true

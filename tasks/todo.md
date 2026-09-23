@@ -27,6 +27,12 @@
 - [x] Contradicciones de envío eliminadas (el negocio es solo retiro)
 - [x] 36 páginas secundarias rediseñadas (hero con foto real + CTA, cards, pasos, FAQ, botones), menú mobile arreglado, galerías honestas sin repetidos, JS roto/visible eliminado, UTM unificados, links de reseña/mapa verificados, páginas huérfanas enlazadas
 
+## Search Console (datos del 20/9/26, vistos 23/9)
+- 11 indexadas / 11 no indexadas. Motivos: 4 canónica alternativa, 3 redirección (cleanUrls, ya corregido), 2 noindex, 2 rastreada sin indexar
+- Sitemap leído por última vez el 8/5/26 con 15 URLs (hoy 52): hay que re-enviarlo
+- [x] tortas-bodas-egresados.html tenía noindex + canonical a otra página: ahora indexable y principal; -temperley redirige 301 a ella
+- [x] hay-tortas-sin-tacc-zona-sur y tortas-para-celiacos-zona-sur (noindex, duplicadas) redirigen 301 a tortas-sin-gluten.html
+
 ## Pruebas de búsqueda (2026-09-23)
 - Buscador web usado por asistentes de IA: la web NO aparece en ninguna búsqueda (ni por el dominio exacto). Solo aparece el repo de GitHub
 - Lo que sí aparece para "pastelería Temperley", "tortas personalizadas zona sur", "torta de casamiento zona sur", "mesa dulce Temperley", "tortas Adrogué", "torta 15 años zona sur": Instagram/Facebook de competidores, MercadoLibre, directorios (casamientos.com.ar, portalcasamientos.com.ar, argentino.com.ar, webyeventos.com.ar, ineventos, catering.com.ar, todoadrogue.com.ar) y competidores con dominio propio (tortaspersonalizadascp.com, namnamtortas.com.ar)
@@ -37,7 +43,7 @@
 - [ ] Publicar ficha gratuita en directorios que sí aparecen: casamientos.com.ar, portalcasamientos.com.ar, argentino.com.ar, webyeventos.com.ar, todoadrogue.com.ar (mismo nombre, teléfono, dirección y link a la web)
 - [ ] Repo de GitHub: poner https://dulcescreaciones.vercel.app en el campo "Website" del repo
 - [x] Afirmaciones de "certificadas sin TACC", "protocolos contra contaminación cruzada" y "aptas para celíacos" eliminadas (el dueño confirmó que no aplican). Texto estándar: opciones sin gluten a pedido, sin certificación sin TACC, consultar antes si es para celíacos
-- [ ] Subir (o re-enviar) sitemap.xml en Google Search Console y pedir reindexación: antes todas las URLs daban redirección (`https://dulcescreaciones.vercel.app/sitemap.xml`)
+- [ ] Search Console: re-enviar sitemap.xml, "Validar corrección" en Redirección / noindex / canónica, e Inspeccionar URL → Solicitar indexación de la home, tortas-bodas-egresados.html, tortas-infantiles.html, tortas-15-anos.html, mesas-dulces.html, tortas-cumpleanos-temperley.html (`https://dulcescreaciones.vercel.app/sitemap.xml`)
 - [x] Perfil de Google Business Profile creado (confirmado por el dueño 2026-09-23)
 - [x] Perfil de Google conectado: sameAs/hasMap = https://maps.google.com/?cid=8399718831301719330, mapa de la home con el pin real, coordenadas de todo el sitio = pin de Google (-34.7616, -58.4031), "5.0 en Google" enlazado al perfil
 - [x] Horarios unificados con Google en todo el sitio: lun-sáb 9:00-17:00, dom cerrado (schema, footers, llms.txt, ai/summary.json)

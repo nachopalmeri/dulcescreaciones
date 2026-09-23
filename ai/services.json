@@ -230,7 +230,7 @@
       "provider": {"@type": "Bakery", "name": "Dulces Creaciones", "telephone": "+5491133266362"},
       "areaServed": [{"@type": "City", "name": "Temperley"}, {"@type": "City", "name": "Lomas de Zamora"}, {"@type": "City", "name": "Adrogue"}, {"@type": "City", "name": "Banfield"}],
       "serviceType": "Pasteleria",
-      "url": "https://dulcescreaciones.vercel.app/tortas-bodas-egresados-temperley.html",
+      "url": "https://dulcescreaciones.vercel.app/tortas-bodas-egresados.html",
       "keywords": ["torta de casamiento zona sur", "torta casamiento Temperley", "tortas bodas Temperley", "tortas egresados zona sur", "tortas boda artesanal", "tortas eventos zona sur"]
     }
   ]
