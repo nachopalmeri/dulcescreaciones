@@ -1,6 +1,28 @@
 {
-  "cleanUrls": true,
+  "cleanUrls": false,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/index",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:slug([a-z0-9-]+)",
+      "destination": "/blog/:slug.html",
+      "permanent": true
+    },
+    {
+      "source": "/:slug([a-z0-9-]+)",
+      "destination": "/:slug.html",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

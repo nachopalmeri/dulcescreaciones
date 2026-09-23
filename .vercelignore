@@ -1,0 +1,9 @@
+.atl
+docs
+rules
+tasks
+workflows
+*.md
+*.py
+*.ps1
+test_*.png
