@@ -26,6 +26,9 @@
 - [x] GEO para asistentes (2026-09-23): llms.txt con respuestas directas por ocasión, ai/faq.json con preguntas tipo "¿dónde comprar torta de casamiento en zona sur?", robots.txt con bots de ChatGPT/Claude/Perplexity, "casamiento" en páginas de bodas, IndexNow enviado
 - [x] Contradicciones de envío eliminadas (el negocio es solo retiro)
 - [x] 36 páginas secundarias rediseñadas (hero con foto real + CTA, cards, pasos, FAQ, botones), menú mobile arreglado, galerías honestas sin repetidos, JS roto/visible eliminado, UTM unificados, links de reseña/mapa verificados, páginas huérfanas enlazadas
+- [x] Vistas previas para WhatsApp/Facebook: 52 imágenes JPG 1200x630 propias por página (images/og/), generadas con scratchpad og.py (foto + marca + tema)
+- [x] Accesibilidad WCAG AA: --rosa-d #A34A63 y --wa #11803A (contraste ≥4.5), lightbox inert, links ocultos fuera del tab
+- [x] Performance: logo del menú 124KB PNG → 3KB WebP; home 409→288KB, secundarias 229→108KB; LCP ~1.1-1.5s en 3G simulado, CLS 0
 
 ## Search Console (datos del 20/9/26, vistos 23/9)
 - 11 indexadas / 11 no indexadas. Motivos: 4 canónica alternativa, 3 redirección (cleanUrls, ya corregido), 2 noindex, 2 rastreada sin indexar
