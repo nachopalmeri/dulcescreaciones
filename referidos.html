@@ -85,8 +85,8 @@
 <style>
 /* Referidos Page Specific Styles */
 .referidos-hero{background:linear-gradient(135deg,var(--rosa) 0%,var(--rosa-d) 100%);min-height:70vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
-.referidos-hero::before{content:'🎁';position:absolute;font-size:20rem;opacity:0.1;right:-5rem;top:-5rem;}
-.referidos-hero::after{content:'💕';position:absolute;font-size:15rem;opacity:0.1;left:-3rem;bottom:-3rem;}
+.referidos-hero::before{content:'';position:absolute;font-size:20rem;opacity:0.1;right:-5rem;top:-5rem;}
+.referidos-hero::after{content:'';position:absolute;font-size:15rem;opacity:0.1;left:-3rem;bottom:-3rem;}
 .referidos-content{position:relative;z-index:2;text-align:center;padding:2rem;max-width:800px;}
 .referidos-content h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,6vw,4.5rem);font-weight:600;color:white;margin-bottom:1rem;line-height:1.1;}
 .referidos-content p{color:rgba(255,255,255,0.9);font-size:1.1rem;margin-bottom:2rem;line-height:1.7;}
@@ -223,7 +223,7 @@
 <section class="referidos-hero" id="inicio">
   <div class="referidos-content">
     <span style="background:rgba(255,255,255,0.2);color:white;padding:0.4rem 1rem;border-radius:99px;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:1.5rem;">Programa Exclusivo</span>
-    <h1>Regalá Dulzura<br/>a tus Amigos 🎁</h1>
+    <h1>Regalá Dulzura<br/>a tus amigos</h1>
     <p style="font-size:1.2rem;max-width:600px;margin:0 auto 2rem;">
       <strong>Regalá $500 a un amigo, recibí $500 vos.</strong><br/>
       Compartí tu experiencia y ganá créditos ilimitados para tus próximas tortas.
@@ -289,28 +289,24 @@
     
     <div class="beneficios-grid">
       <div class="beneficio-item reveal">
-        <div class="beneficio-icon">💰</div>
         <div class="beneficio-text">
           <h4>Ganá Crédito Real</h4>
           <p>$500 por cada amigo que compra. Sin límite de acumulación.</p>
         </div>
       </div>
       <div class="beneficio-item reveal reveal-delay-1">
-        <div class="beneficio-icon">🎁</div>
         <div class="beneficio-text">
           <h4>Regalá Descuentos</h4>
           <p>Tus amigos ahorran $500 en su primera torta. ¡Ellos también ganan!</p>
         </div>
       </div>
       <div class="beneficio-item reveal reveal-delay-2">
-        <div class="beneficio-icon">♾️</div>
         <div class="beneficio-text">
           <h4>Sin Vencimiento</h4>
           <p>Tu crédito nunca expira. Usalo cuando quieras.</p>
         </div>
       </div>
       <div class="beneficio-item reveal reveal-delay-3">
-        <div class="beneficio-icon">📱</div>
         <div class="beneficio-text">
           <h4>Fácil y Rápido</h4>
           <p>Solo compartís tu código por WhatsApp. Sin complicaciones.</p>
@@ -324,7 +320,7 @@
 <section id="ejemplo" style="background:linear-gradient(135deg,var(--rosa) 0%,var(--rosa-d) 100%);padding:5rem 1.5rem;">
   <div class="container">
     <div class="ejemplo-box reveal">
-      <h3>🎂 Ejemplo Real</h3>
+      <h3>Ejemplo Real</h3>
       
       <div class="ejemplo-step">
         <div class="ejemplo-highlight">
@@ -353,7 +349,7 @@
       <div class="ejemplo-step">
         <div style="background:linear-gradient(135deg,var(--rosa),var(--rosa-d));color:white;padding:1rem 2rem;border-radius:var(--radius-md);font-weight:600;">
           Mariana acumula <strong>$1000</strong> en crédito<br/>
-          <span style="opacity:0.9;">para su próxima torta 💕</span>
+          <span style="opacity:0.9;">para su próxima torta</span>
         </div>
       </div>
     </div>
@@ -370,19 +366,19 @@
     
     <div class="testimonios-grid">
       <div class="testimonio-referido reveal">
-        <span class="ganancia">💰 $1500 acumulados</span>
+        <span class="ganancia">$1500 acumulados</span>
         <p class="quote">"Compartí mi código con las mamás del jardín. 3 usaron el código para tortas infantiles y yo ya tengo $1500 de crédito. ¡Es genial!"</p>
         <p class="autor">— Mariana L., Temperley</p>
       </div>
       
       <div class="testimonio-referido reveal reveal-delay-1">
-        <span class="ganancia">💰 $500 acumulados</span>
+        <span class="ganancia">$500 acumulados</span>
         <p class="quote">"Mi hermana usó mi código para su torta de 15 años. Ella ahorró $500 y yo ya tengo crédito para mi próxima compra."</p>
         <p class="autor">— Gabriel P., Lomas de Zamora</p>
       </div>
       
       <div class="testimonio-referido reveal reveal-delay-2">
-        <span class="ganancia">💰 $2000 acumulados</span>
+        <span class="ganancia">$2000 acumulados</span>
         <p class="quote">"Soy fanática de Dulces Creaciones y siempre recomiendo. Ya junté $2000 y lo voy a usar para mi torta de cumpleaños."</p>
         <p class="autor">— Silvia R., Adrogué</p>
       </div>
@@ -411,7 +407,7 @@
 <section id="terminos" style="background:var(--nude);padding:4rem 1.5rem;">
   <div class="container">
     <div class="terminos-box reveal">
-      <h3>📋 Términos y Condiciones</h3>
+      <h3>Términos y Condiciones</h3>
       <ol>
         <li>El código de referido es válido para pedidos de <strong>$8.000 o más</strong>.</li>
         <li>El descuento de $500 <strong>no es acumulable</strong> con otras promociones.</li>
@@ -502,7 +498,6 @@
       <!-- Columna 1: Identidad & Marca -->
       <div class="dc-footer-col dc-footer-brand">
         <div class="dc-footer-logo">
-          <span class="dc-footer-icon" aria-hidden="true">🎂</span>
           <span class="dc-footer-brand-title">Dulces Creaciones</span>
         </div>
         <p class="dc-footer-tagline">Pastelería Artesanal & Tortas de Autor</p>
@@ -533,7 +528,6 @@
       <div class="dc-footer-col">
         <h4 class="dc-footer-heading">Zonas & Retiro</h4>
         <div class="dc-footer-location-card">
-          <span class="dc-loc-pin">📍</span>
           <div>
             <strong>Taller en Temperley</strong>
             <p>Punto de retiro personal (coordinamos día y franja horaria)</p>
@@ -569,7 +563,7 @@
           <p class="dc-schedule-title">Horarios de Atención:</p>
           <p>Lunes a sábado: <strong>9:00 - 17:00 hs</strong></p>
           <p>Domingos: <strong>cerrado</strong></p>
-          <span class="dc-schedule-badge">⏱ Tomar pedidos con 7 a 15 días de anticipación</span>
+          <span class="dc-schedule-badge">Tomar pedidos con 7 a 15 días de anticipación</span>
         </div>
       </div>
 
