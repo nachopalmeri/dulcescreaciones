@@ -29,3 +29,12 @@
 - Dato real: el perfil de Google tiene 5.0 con 3 reseñas (place ID ChIJS-6XoBtgKmoRIvXlAMbLkXQ, CID 8399718831301719330)
 - Lección: las pautas de Google prohíben marcar con AggregateRating reseñas copiadas de otro sitio (incluido Google Maps); además en LocalBusiness propio no da estrellas en resultados
 - Regla: mostrar el 5.0 como texto con link al perfil de Google para que se pueda verificar; no agregar AggregateRating con esos datos
+
+## 2026-09-23: Las páginas secundarias perdieron su CSS en un revert
+- Problema: 36-38 páginas usaban clases (hero-editorial, detail-card, paso, faq-question, btn-wa, mesa-card...) que no existían en styles.css; se veían crudas, con el logo gigante como hero y el menú mobile roto (backdrop-filter en nav encierra al drawer fixed)
+- Lección: después de cualquier revert de estilos, listar clases usadas en HTML que no están definidas en CSS (script en esta sesión) y auditar TODAS las páginas en mobile, no solo la home
+- Regla: auditoría mobile de las 55 páginas (errores JS, imágenes rotas, scroll horizontal, 1 H1) antes de publicar
+
+## 2026-09-23: Etiquetas de galería inventadas
+- Problema: galerías temáticas etiquetaban fotos con temas que no mostraban (Moana como "Boca Juniors", Fortnite como "Sin gluten frutas")
+- Regla: la etiqueta y el alt describen lo que se ve en la foto; si no hay fotos del tema, decir "algunos de nuestros trabajos" en vez de simularlo

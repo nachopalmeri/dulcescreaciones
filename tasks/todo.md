@@ -23,8 +23,12 @@
 - [x] .vercelignore: tasks/, rules/, workflows/, docs/, *.md, *.py ya no se publican
 - [x] Home: sin emojis como íconos, títulos en mayúscula normal en español, foto primero en mobile, FAB oculto mientras se ve el CTA principal, favicon = logo, CSS/JS versionados (?v=)
 - [x] Publicado en producción (main) y verificado: 55/55 URLs del sitemap en 200
+- [x] GEO para asistentes (2026-09-23): llms.txt con respuestas directas por ocasión, ai/faq.json con preguntas tipo "¿dónde comprar torta de casamiento en zona sur?", robots.txt con bots de ChatGPT/Claude/Perplexity, "casamiento" en páginas de bodas, IndexNow enviado
+- [x] Contradicciones de envío eliminadas (el negocio es solo retiro)
+- [x] 36 páginas secundarias rediseñadas (hero con foto real + CTA, cards, pasos, FAQ, botones), menú mobile arreglado, galerías honestas sin repetidos, JS roto/visible eliminado, UTM unificados, links de reseña/mapa verificados, páginas huérfanas enlazadas
 
 ## Pendiente (Acciones Externas)
+- [ ] CONFIRMAR con Elizabeth: tortas-sin-gluten.html dice "certificadas libres de gluten" y "protocolos estrictos contra contaminación cruzada". Si no es así, hay que corregirlo (riesgo para celíacos)
 - [ ] Subir (o re-enviar) sitemap.xml en Google Search Console y pedir reindexación: antes todas las URLs daban redirección (`https://dulcescreaciones.vercel.app/sitemap.xml`)
 - [x] Perfil de Google Business Profile creado (confirmado por el dueño 2026-09-23)
 - [x] Perfil de Google conectado: sameAs/hasMap = https://maps.google.com/?cid=8399718831301719330, mapa de la home con el pin real, coordenadas de todo el sitio = pin de Google (-34.7616, -58.4031), "5.0 en Google" enlazado al perfil

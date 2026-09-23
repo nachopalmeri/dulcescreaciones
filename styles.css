@@ -2745,7 +2745,7 @@ section.hero:has(.hero-editorial) {
   justify-content: center;
   gap: 0.6rem;
   background: linear-gradient(135deg, #22B85A 0%, var(--wa) 55%, #178F44 100%);
-  color: #FFFFFF !important;
+  color: #FFFFFF;
   font-weight: 600;
   font-size: 0.95rem;
   padding: 0.9rem 1.8rem;
