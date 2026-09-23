@@ -494,4 +494,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  const fab = document.querySelector('.fab-wa');
+  const heroCta = document.querySelector('.hero-actions');
+  if (fab && heroCta && 'IntersectionObserver' in window) {
+    fab.classList.add('fab-hidden');
+    new IntersectionObserver(([entry]) => {
+      fab.classList.toggle('fab-hidden', entry.isIntersecting);
+    }).observe(heroCta);
+  }
 });
