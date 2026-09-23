@@ -262,6 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     currentIndex = index >= 0 && index < visibleImages.length ? index : 0;
     renderLightboxItem();
+    lightbox.removeAttribute('inert');
     lightbox.classList.add('active');
     lightbox.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
@@ -276,6 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function closeLightbox() {
     if (!lightbox) return;
     lightbox.classList.remove('active');
+    lightbox.setAttribute('inert', '');
     lightbox.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
   }

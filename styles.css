@@ -10,8 +10,8 @@
   --blanco: #FFFFFF;
   --rosa: #E5A4B4;
   --rosa-light: #FDF0F3;
-  --rosa-d: #B85B73;
-  --rosa-hover: #9E465D;
+  --rosa-d: #A34A63;
+  --rosa-hover: #8A3A51;
   --choco: #381E0F;
   --choco-l: #633B20;
   --text: #341F14;
@@ -19,8 +19,8 @@
   --muted-light: #8C6F5E;
   --gold: #C99346;
   --gold-light: #FBF4E8;
-  --wa: #1DA851;
-  --wa-hover: #158A40;
+  --wa: #11803A;
+  --wa-hover: #0D6A2F;
   --wa-light: #E8F9EE;
 
   /* Typography Scale */
@@ -2301,10 +2301,10 @@ body {
 }
 
 .btn-primary-wa {
-  background: linear-gradient(135deg, #22B85A 0%, var(--wa) 55%, #178F44 100%);
+  background: linear-gradient(135deg, #14904A 0%, var(--wa) 55%, #0F7334 100%);
 }
 .btn-primary-wa:hover {
-  background: linear-gradient(135deg, #1DA851 0%, var(--wa-hover) 100%);
+  background: linear-gradient(135deg, var(--wa) 0%, var(--wa-hover) 100%);
 }
 
 /* Steps: numbered medallions joined by a line */
@@ -2744,7 +2744,7 @@ section.hero:has(.hero-editorial) {
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  background: linear-gradient(135deg, #22B85A 0%, var(--wa) 55%, #178F44 100%);
+  background: linear-gradient(135deg, #14904A 0%, var(--wa) 55%, #0F7334 100%);
   color: #FFFFFF;
   font-weight: 600;
   font-size: 0.95rem;
@@ -2978,4 +2978,11 @@ section#proceso[style] {
 
 html {
   overflow-x: clip;
+}
+
+.section-header p a,
+.blog-content p a,
+main p a:not([class]) {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
