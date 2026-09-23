@@ -44,8 +44,7 @@ Trabajamos bajo pedido previo con ingredientes de primera calidad y bizcochuelos
   - Almirante Brown
 
 ### 🕒 Horarios de Atención al Cliente:
-* **Lunes a Viernes:** `09:00 - 19:00 hs`
-* **Sábados:** `09:00 - 14:00 hs`
+* **Lunes a Sábado:** `09:00 - 17:00 hs`
 * **Domingos:** `Cerrado (Solo entregas programadas)`
 
 ### 💳 Medios de Pago y Atributos:

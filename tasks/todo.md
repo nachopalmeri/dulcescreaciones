@@ -28,7 +28,8 @@
 - [ ] Subir (o re-enviar) sitemap.xml en Google Search Console y pedir reindexación: antes todas las URLs daban redirección (`https://dulcescreaciones.vercel.app/sitemap.xml`)
 - [x] Perfil de Google Business Profile creado (confirmado por el dueño 2026-09-23)
 - [x] Perfil de Google conectado: sameAs/hasMap = https://maps.google.com/?cid=8399718831301719330, mapa de la home con el pin real, coordenadas de todo el sitio = pin de Google (-34.7616, -58.4031), "5.0 en Google" enlazado al perfil
-- [ ] Unificar horarios: Google dice lun-sáb 9-17 (dom cerrado); la web dice lun-vie 9-19 y sáb 9-14. Deben coincidir
+- [x] Horarios unificados con Google en todo el sitio: lun-sáb 9:00-17:00, dom cerrado (schema, footers, llms.txt, ai/summary.json)
+- [x] Coordenadas unificadas en las 55 páginas al pin de Google
 - Link directo para pedir reseñas: https://search.google.com/local/writereview?placeid=ChIJS-6XoBtgKmoRIvXlAMbLkXQ
 - [ ] Pedir reseñas a clientas reales (guion en GBP-MASTER-KIT.md, sección 3); con reseñas reales recién ahí agregar AggregateRating
 - [ ] Ojo homónimos: existen otras "Dulces Creaciones" (Laferrere, Villa Bosch). No agregar "Temperley" al nombre del perfil de Google (va contra sus reglas); diferenciar con dirección, teléfono, categoría y link a la web idénticos en GBP, IG y FB
