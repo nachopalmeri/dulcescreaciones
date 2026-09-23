@@ -156,7 +156,7 @@ with sync_playwright() as p:
     menu_page.goto(f"{base_url}/menu.html")
     menu_page.wait_for_load_state("networkidle")
     menu_h1 = menu_page.locator("h1").first.inner_text()
-    check("Menú" in menu_h1 or "Menu" in menu_h1 or "Tortas" in menu_h1 or "Dulces" in menu_h1, f"Menu H1 present: '{menu_h1}'")
+    check(any(w in menu_h1.lower() for w in ("menú", "menu", "tortas", "dulces")), f"Menu H1 present: '{menu_h1}'")
     menu_page.close()
     
     browser.close()

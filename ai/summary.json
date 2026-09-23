@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "@type": "Bakery",
   "name": "Dulces Creaciones",
-  "description": "Pasteleria artesanal especializada en tortas personalizadas (casamientos, cumpleanos, 15 anos, infantiles y eventos) y mesas dulces en Temperley, Zona Sur GBA, Argentina. Pedidos por WhatsApp y retiro en Temperley.",
+  "description": "Pastelería artesanal especializada en tortas personalizadas (casamientos, cumpleaños, 15 años, infantiles y eventos) y mesas dulces en Temperley, Zona Sur GBA, Argentina. Pedidos por WhatsApp y retiro en Temperley.",
   "url": "https://dulcescreaciones.vercel.app",
   "telephone": "+5491133266362",
   "address": {
@@ -54,18 +54,18 @@
     "Tortas personalizadas",
     "Mesas dulces",
     "Candy bar",
-    "Tortas infantiles tematicas",
-    "Tortas de 15 anos",
+    "Tortas infantiles temáticas",
+    "Tortas de 15 años",
     "Reposteria creativa",
-    "Pasteleria artesanal",
+    "Pastelería artesanal",
     "Cupcakes personalizados",
     "Cake pops",
     "Galletitas decoradas",
     "Tortas de casamiento, bodas y egresados",
     "Tortas futbol argentino",
-    "Blog de pasteleria"
+    "Blog de pastelería"
   ],
-  "hasCredential": "Pasteleria artesanal de autor · Elizabeth",
+  "hasCredential": "Pastelería artesanal de autor · Elizabeth",
   "additionalProperty": [
     {
       "@type": "PropertyValue",
@@ -76,20 +76,20 @@
     {
       "@type": "PropertyValue",
       "name": "tiempo_anticipacion",
-      "value": "7 a 15 dias",
-      "valueReference": "Pedidos personalizados con anticipacion"
+      "value": "7 a 15 días",
+      "valueReference": "Pedidos personalizados con anticipación"
     },
     {
       "@type": "PropertyValue",
       "name": "reserva_sena",
-      "value": "50% de sena",
-      "valueReference": "Confirmacion de fecha y diseno"
+      "value": "50% de seña",
+      "valueReference": "Confirmacion de fecha y diseño"
     },
     {
       "@type": "PropertyValue",
       "name": "estilo",
       "value": "100% personalizado",
-      "valueReference": "Disenos de autor hechos a mano"
+      "valueReference": "Diseños de autor hechos a mano"
     }
   ],
   "potentialAction": [

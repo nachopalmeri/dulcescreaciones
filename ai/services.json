@@ -5,7 +5,7 @@
     {
       "@type": "Service",
       "name": "Tortas Personalizadas",
-      "description": "Tortas 100% personalizadas para cumpleanos, 15 anos y eventos en Temperley, Zona Sur GBA. Diseno unico segun tematica. Rellenos: dulce de leche, Oreo, Bariloche, ganache. Retiro en Temperley.",
+      "description": "Tortas 100% personalizadas para cumpleaños, 15 años y eventos en Temperley, Zona Sur GBA. Diseño único según temática. Rellenos: dulce de leche, Oreo, Bariloche, ganache. Retiro en Temperley.",
       "provider": {
         "@type": "Bakery",
         "name": "Dulces Creaciones",
@@ -24,19 +24,19 @@
           {"@type": "City", "name": "Glew"}
         ]
       },
-      "serviceType": "Pasteleria",
+      "serviceType": "Pastelería",
       "offers": {
         "@type": "Offer",
         "priceCurrency": "ARS",
         "availability": "https://schema.org/PreOrder",
         "priceValidUntil": "2026-12-31"
       },
-      "keywords": ["tortas personalizadas", "tortas cumpleanos", "tortas eventos", "tortas Temperley", "pasteleria artesanal"]
+      "keywords": ["tortas personalizadas", "tortas cumpleaños", "tortas eventos", "tortas Temperley", "pastelería artesanal"]
     },
     {
       "@type": "Service",
       "name": "Tortas Infantiles Tematicas",
-      "description": "Tortas tematicas para ninos en Temperley, Zona Sur. Personajes Disney: Moana, Frozen, encanto. Gaming: Fortnite, Minecraft, Roblox. Anime y mas. 100% personalizadas.",
+      "description": "Tortas temáticas para niños en Temperley, Zona Sur. Personajes Disney: Moana, Frozen, encanto. Gaming: Fortnite, Minecraft, Roblox. Anime y más. 100% personalizadas.",
       "provider": {
         "@type": "Bakery",
         "name": "Dulces Creaciones",
@@ -55,18 +55,18 @@
           {"@type": "City", "name": "Glew"}
         ]
       },
-      "serviceType": "Pasteleria",
+      "serviceType": "Pastelería",
       "offers": {
         "@type": "Offer",
         "priceCurrency": "ARS",
         "availability": "https://schema.org/PreOrder"
       },
-      "keywords": ["tortas infantiles", "torta Moana", "torta Fortnite", "tortas Disney Temperley", "tortas para ninos"]
+      "keywords": ["tortas infantiles", "torta Moana", "torta Fortnite", "tortas Disney Temperley", "tortas para niños"]
     },
     {
       "@type": "Service",
       "name": "Tortas de 15 Anos",
-      "description": "Tortas elegantes y festivas para quinceaneras en Temperley, Zona Sur GBA. Disenos 2026: drip cakes, flores, dos y tres pisos. Paleta pastel, dorado, rosa. Consulta presupuesto.",
+      "description": "Tortas elegantes y festivas para quinceañeras en Temperley, Zona Sur GBA. Diseños 2026: drip cakes, flores, dos y tres pisos. Paleta pastel, dorado, rosa. Consulta presupuesto.",
       "provider": {
         "@type": "Bakery",
         "name": "Dulces Creaciones",
@@ -85,18 +85,18 @@
           {"@type": "City", "name": "Glew"}
         ]
       },
-      "serviceType": "Pasteleria",
+      "serviceType": "Pastelería",
       "offers": {
         "@type": "Offer",
         "priceCurrency": "ARS",
         "availability": "https://schema.org/PreOrder"
       },
-      "keywords": ["tortas 15 anos", "torta quinceanera", "torta 15 elegantes", "tortas 15 Temperley", "drip cake 15 anos"]
+      "keywords": ["tortas 15 años", "torta quinceañera", "torta 15 elegantes", "tortas 15 Temperley", "drip cake 15 años"]
     },
     {
       "@type": "Service",
       "name": "Mesas Dulces y Candy Bar",
-      "description": "Mesas dulces tematicas y candy bar para eventos en Temperley, Zona Sur. Cupcakes, cake pops, galletitas decoradas, alfajores, trufas. Diseno estetico tematico. Ideal para 15 anos y cumpleanos.",
+      "description": "Mesas dulces temáticas y candy bar para eventos en Temperley, Zona Sur. Cupcakes, cake pops, galletitas decoradas, alfajores, trufas. Diseño estético temático. Ideal para 15 años y cumpleaños.",
       "provider": {
         "@type": "Bakery",
         "name": "Dulces Creaciones",
@@ -121,12 +121,12 @@
         "priceCurrency": "ARS",
         "availability": "https://schema.org/PreOrder"
       },
-      "keywords": ["mesas dulces", "candy bar", "mesa dulce tematica", "cupcakes Temperley", "mesa dulce eventos"]
+      "keywords": ["mesas dulces", "candy bar", "mesa dulce temática", "cupcakes Temperley", "mesa dulce eventos"]
     },
     {
       "@type": "Service",
       "name": "Tortas de Futbol Argentina",
-      "description": "Tortas tematicas de futbol en Temperley: Boca Juniors, River Plate, San Lorenzo, Racing, Independiente, Seleccion Argentina. Camisetas, escudos, pelotas. Para hinchas fanaticos.",
+      "description": "Tortas temáticas de futbol en Temperley: Boca Juniors, River Plate, San Lorenzo, Racing, Independiente, Seleccion Argentina. Camisetas, escudos, pelotas. Para hinchas fanaticos.",
       "provider": {
         "@type": "Bakery",
         "name": "Dulces Creaciones",
@@ -145,7 +145,7 @@
           {"@type": "City", "name": "Glew"}
         ]
       },
-      "serviceType": "Pasteleria",
+      "serviceType": "Pastelería",
       "offers": {
         "@type": "Offer",
         "priceCurrency": "ARS",
@@ -156,7 +156,7 @@
     {
       "@type": "Service",
       "name": "Tortas Gaming y Anime",
-      "description": "Tortas tematicas gaming y anime en Temperley. Fortnite, Minecraft, Roblox, Pokemon, Spider-Man. Disenos para gamers, otakus y fans. 100% personalizadas.",
+      "description": "Tortas temáticas gaming y anime en Temperley. Fortnite, Minecraft, Roblox, Pokemon, Spider-Man. Diseños para gamers, otakus y fans. 100% personalizadas.",
       "provider": {
         "@type": "Bakery",
         "name": "Dulces Creaciones",
@@ -175,7 +175,7 @@
           {"@type": "City", "name": "Glew"}
         ]
       },
-      "serviceType": "Pasteleria",
+      "serviceType": "Pastelería",
       "offers": {
         "@type": "Offer",
         "priceCurrency": "ARS",
@@ -186,20 +186,20 @@
     {
       "@type": "Service",
       "name": "Tortas Personalizadas Almirante Brown",
-      "description": "Tortas artesanales personalizadas con retiro en Temperley para vecinos de Almirante Brown: Adrogue, Glew, Burzaco, Rafael Calzada, Longchamps. Cumpleanos, 15 anos, mesas dulces.",
+      "description": "Tortas artesanales personalizadas con retiro en Temperley para vecinos de Almirante Brown: Adrogue, Glew, Burzaco, Rafael Calzada, Longchamps. Cumpleaños, 15 años, mesas dulces.",
       "provider": {"@type": "Bakery", "name": "Dulces Creaciones", "telephone": "+5491133266362"},
       "areaServed": [{"@type": "City", "name": "Almirante Brown"}, {"@type": "City", "name": "Adrogue"}, {"@type": "City", "name": "Glew"}, {"@type": "City", "name": "Burzaco"}],
-      "serviceType": "Pasteleria",
+      "serviceType": "Pastelería",
       "url": "https://dulcescreaciones.vercel.app/tortas-almirante-brown.html",
       "keywords": ["tortas Almirante Brown", "tortas Adrogue", "tortas Glew", "tortas Burzaco"]
     },
     {
       "@type": "Service",
       "name": "Tortas Personalizadas Lomas de Zamora",
-      "description": "Tortas artesanales con retiro en Temperley para vecinos de Lomas de Zamora y Banfield. Cumpleanos, 15 anos, mesas dulces. Elaboración 100% artesanal.",
+      "description": "Tortas artesanales con retiro en Temperley para vecinos de Lomas de Zamora y Banfield. Cumpleaños, 15 años, mesas dulces. Elaboración 100% artesanal.",
       "provider": {"@type": "Bakery", "name": "Dulces Creaciones", "telephone": "+5491133266362"},
       "areaServed": [{"@type": "City", "name": "Lomas de Zamora"}, {"@type": "City", "name": "Banfield"}, {"@type": "City", "name": "Temperley"}],
-      "serviceType": "Pasteleria",
+      "serviceType": "Pastelería",
       "url": "https://dulcescreaciones.vercel.app/tortas-lomas-de-zamora.html",
       "keywords": ["tortas Lomas de Zamora", "tortas Banfield", "tortas zona sur Lomas"]
     },
@@ -209,14 +209,14 @@
       "description": "Tortas artesanales personalizadas en toda la zona sur del GBA. Temperley, Lomas, Adrogue, Banfield, Turdera, Glew, Almirante Brown. Retiro en Temperley.",
       "provider": {"@type": "Bakery", "name": "Dulces Creaciones", "telephone": "+5491133266362"},
       "areaServed": [{"@type": "City", "name": "Temperley"}, {"@type": "City", "name": "Lomas de Zamora"}, {"@type": "City", "name": "Adrogue"}, {"@type": "City", "name": "Banfield"}, {"@type": "City", "name": "Turdera"}, {"@type": "City", "name": "Almirante Brown"}],
-      "serviceType": "Pasteleria",
+      "serviceType": "Pastelería",
       "url": "https://dulcescreaciones.vercel.app/tortas-personalizadas-zona-sur.html",
-      "keywords": ["tortas zona sur", "tortas personalizadas zona sur GBA", "pasteleria zona sur Buenos Aires"]
+      "keywords": ["tortas zona sur", "tortas personalizadas zona sur GBA", "pastelería zona sur Buenos Aires"]
     },
     {
       "@type": "Service",
       "name": "Mesa Dulce y Candy Bar Temperley",
-      "description": "Mesas dulces tematicas en Temperley y zona sur. Cupcakes, cake pops, galletitas, alfajores, trufas. Diseno estetico para eventos.",
+      "description": "Mesas dulces temáticas en Temperley y zona sur. Cupcakes, cake pops, galletitas, alfajores, trufas. Diseño estético para eventos.",
       "provider": {"@type": "Bakery", "name": "Dulces Creaciones", "telephone": "+5491133266362"},
       "areaServed": [{"@type": "City", "name": "Temperley"}, {"@type": "City", "name": "Lomas de Zamora"}, {"@type": "City", "name": "Adrogue"}],
       "serviceType": "Catering",
@@ -229,7 +229,7 @@
       "description": "Tortas artesanales de casamiento, boda y egresados en Temperley y zona sur GBA. Diseños elegantes de dos y tres pisos, rellenos premium, cobertura buttercream y ganache.",
       "provider": {"@type": "Bakery", "name": "Dulces Creaciones", "telephone": "+5491133266362"},
       "areaServed": [{"@type": "City", "name": "Temperley"}, {"@type": "City", "name": "Lomas de Zamora"}, {"@type": "City", "name": "Adrogue"}, {"@type": "City", "name": "Banfield"}],
-      "serviceType": "Pasteleria",
+      "serviceType": "Pastelería",
       "url": "https://dulcescreaciones.vercel.app/tortas-bodas-egresados.html",
       "keywords": ["torta de casamiento zona sur", "torta casamiento Temperley", "tortas bodas Temperley", "tortas egresados zona sur", "tortas boda artesanal", "tortas eventos zona sur"]
     }
