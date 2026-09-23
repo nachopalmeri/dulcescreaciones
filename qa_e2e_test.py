@@ -13,6 +13,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         super().end_headers()
 
 def run_server():
+    socketserver.TCPServer.allow_reuse_address = True
     with socketserver.TCPServer(("", PORT), Handler) as httpd:
         httpd.serve_forever()
 
