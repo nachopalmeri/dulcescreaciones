@@ -52,16 +52,13 @@
   ]
 }
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link rel="dns-prefetch" href="https://whatsapp.com"/>
 <link rel="preconnect" href="https://wa.me"/>
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap"/></noscript>
-<link rel="stylesheet" href="styles.css?v=20260923i"/>
-<link rel="stylesheet" href="styles-chrome.css?v=2"/>
-<link rel="stylesheet" href="styles-pages.css?v=3"/>
-<link rel="stylesheet" href="styles-home.css?v=2"/>
+<link rel="preconnect" href="https://www.googletagmanager.com"/>
+<link rel="dns-prefetch" href="https://www.google-analytics.com"/>
+<link rel="preload" href="/fonts/cormorant-garamond-latin.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="preload" href="/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="stylesheet" href="styles.css?v=20260924c"/>
 <!-- Schema.org: Service -->
 <script type="application/ld+json">
 {
@@ -378,7 +375,15 @@
         </div>
       </div>
       <div class="mapa-frame reveal reveal-delay-2">
-        <iframe title="Mapa de ubicación en Temperley" src="https://maps.google.com/maps?cid=8399718831301719330&amp;hl=es&amp;z=14&amp;output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-facade" data-map-src="https://maps.google.com/maps?cid=8399718831301719330&amp;hl=es&amp;z=14&amp;output=embed">
+          <svg class="map-facade-pin" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+          <strong class="map-facade-title">Taller en Temperley, Zona Sur</strong>
+          <span class="map-facade-text">Retiro con día y horario coordinados por WhatsApp</span>
+          <div class="map-facade-actions">
+            <button type="button" class="map-facade-btn">Ver mapa</button>
+            <a class="map-facade-link" href="https://maps.google.com/?cid=8399718831301719330" target="_blank" rel="noopener noreferrer">Abrir en Google Maps</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -521,7 +526,7 @@
   <span class="fab-text">Pedir torta</span>
   <span class="fab-bar-text"><span class="fab-bar-title">Consultar por WhatsApp</span><span class="fab-bar-sub">Presupuesto sin cargo en el día</span></span>
 </a>
-<script src="scripts.js?v=20260924a"></script>
+<script src="scripts.js?v=20260924c"></script>
 <script>
 document.querySelectorAll('.faq-question').forEach(q => {
   q.addEventListener('click', () => {

@@ -51,15 +51,12 @@
 <meta name="ICBM" content="-34.7616, -58.4031"/>
 
 <!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@400;500;600;700&display=swap"/></noscript>
 <script>document.documentElement.classList.add('js');</script>
-<link rel="stylesheet" href="styles.css?v=20260923i"/>
-<link rel="stylesheet" href="styles-chrome.css?v=2"/>
-<link rel="stylesheet" href="styles-pages.css?v=3"/>
-<link rel="stylesheet" href="styles-home.css?v=2"/>
+<link rel="preconnect" href="https://www.googletagmanager.com"/>
+<link rel="dns-prefetch" href="https://www.google-analytics.com"/>
+<link rel="preload" href="/fonts/cormorant-garamond-latin.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="preload" href="/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="stylesheet" href="styles.css?v=20260924c"/>
 
 <!-- Google Analytics 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7M2V2QC4ME"></script>
@@ -407,7 +404,7 @@
       <div class="hero-img-showcase">
         <div class="hero-blob" aria-hidden="true"></div>
         <div class="hero-img-frame">
-          <img src="images/torta-minimalista-romantica-hero.webp" alt="Torta blanca minimalista con corazones rosas, hecha a mano por Dulces Creaciones" width="440" height="495" loading="eager"/>
+          <img src="images/torta-minimalista-romantica-hero.webp" alt="Torta blanca minimalista con corazones rosas, hecha a mano por Dulces Creaciones" width="440" height="495" loading="eager" fetchpriority="high" decoding="async"/>
           <div class="hero-floating-badge">
             <div class="badge-text">
               <strong>Diseño exclusivo</strong>
@@ -798,7 +795,15 @@
       </div>
 
       <div class="mapa-frame reveal reveal-delay-2">
-        <iframe title="Ubicación de Dulces Creaciones en Temperley, Zona Sur" src="https://maps.google.com/maps?cid=8399718831301719330&amp;hl=es&amp;z=14&amp;output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-facade" data-map-src="https://maps.google.com/maps?cid=8399718831301719330&amp;hl=es&amp;z=14&amp;output=embed">
+          <svg class="map-facade-pin" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+          <strong class="map-facade-title">Taller en Temperley, Zona Sur</strong>
+          <span class="map-facade-text">Retiro con día y horario coordinados por WhatsApp</span>
+          <div class="map-facade-actions">
+            <button type="button" class="map-facade-btn">Ver mapa</button>
+            <a class="map-facade-link" href="https://maps.google.com/?cid=8399718831301719330" target="_blank" rel="noopener noreferrer">Abrir en Google Maps</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1043,7 +1048,7 @@
   </div>
 </div>
 
-<script src="scripts.js?v=20260924a"></script>
+<script src="scripts.js?v=20260924c"></script>
 
 <!-- INTERNAL LINKS PSEO (Solo crawlers) -->
 <div style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;" aria-hidden="true">

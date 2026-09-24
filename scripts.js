@@ -543,4 +543,19 @@ document.addEventListener('DOMContentLoaded', () => {
     fab.classList.toggle('fab-hidden', inView.size > 0);
   });
   targets.forEach((el) => observer.observe(el));
+
+  document.querySelectorAll('.map-facade').forEach((facade) => {
+    const btn = facade.querySelector('.map-facade-btn');
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+      const iframe = document.createElement('iframe');
+      iframe.src = facade.dataset.mapSrc;
+      iframe.title = 'Ubicación de Dulces Creaciones en Temperley, Zona Sur';
+      iframe.loading = 'lazy';
+      iframe.referrerPolicy = 'no-referrer-when-downgrade';
+      iframe.allowFullscreen = true;
+      facade.replaceWith(iframe);
+      trackEvent('maps_click', { link_location: 'map_facade' });
+    });
+  });
 });
