@@ -3,6 +3,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/referidos(.html)?",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/tortas-bodas-egresados-temperley.html",
       "destination": "/tortas-bodas-egresados.html",
       "permanent": true

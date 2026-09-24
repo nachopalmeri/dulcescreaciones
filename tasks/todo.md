@@ -69,5 +69,5 @@
 - [x] Conservación (3-5 días) y anticipación unificadas
 
 ## Pendiente (requiere confirmación del dueño)
-- [ ] ¿Programa de referidos real? ($500, mínimo $8.000, crédito sin vencimiento) — si no, eliminar referidos.html
-- [ ] ¿"5+ años de trayectoria" es cierto? (tortas-personalizadas-zona-sur.html, llms.txt)
+- [x] Programa de referidos NO existe → página eliminada, 301 a la home
+- [x] "5+ años de trayectoria" confirmado por el dueño

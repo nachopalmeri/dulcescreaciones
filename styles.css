@@ -4655,13 +4655,7 @@ main.pg-blog .pg-blog-list {
   color: #2A160B;
 }
 
-/* Referidos page cards use hard-coded white in its inline styles */
-[data-theme="dark"] .paso-card,
-[data-theme="dark"] .beneficio-item,
-[data-theme="dark"] .ejemplo-box,
-[data-theme="dark"] .faq-referidos .faq-item {
-  background: var(--blanco) !important;
-}
+
 .pg-works-grid:focus-visible,
 .galeria-mesas-grid:focus-visible {
   outline: 2px solid var(--rosa-d);
