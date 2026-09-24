@@ -361,7 +361,7 @@
   </nav>
 </header>
 
-<main id="main-content" tabindex="-1">
+<main id="main-content" class="home-main" tabindex="-1">
 
 <!-- HERO SECTION -->
 <section class="hero" id="inicio">
@@ -386,6 +386,7 @@
             Ver la galería
           </a>
         </div>
+        <p class="hero-note"><span class="hero-note-dot" aria-hidden="true"></span><span class="hero-note-part">Anticipación recomendada: 7 a 15 días</span><span class="hero-note-sep" aria-hidden="true"> · </span><span class="hero-note-part">Retiro en Temperley</span></p>
         <div class="hero-trust-bar">
           <a class="hero-trust-item hero-trust-link" href="https://maps.google.com/?cid=8399718831301719330" target="_blank" rel="noopener noreferrer" aria-label="Ver las reseñas 5.0 en Google Maps">
             <span class="trust-stars" aria-hidden="true">★★★★★</span>
@@ -403,7 +404,7 @@
       <div class="hero-img-showcase">
         <div class="hero-blob" aria-hidden="true"></div>
         <div class="hero-img-frame">
-          <img src="images/torta-minimalista-romantica-hero.webp" alt="Torta personalizada artesanal Dulces Creaciones" width="440" height="495" loading="eager"/>
+          <img src="images/torta-minimalista-romantica-hero.webp" alt="Torta blanca minimalista con corazones rosas, hecha a mano por Dulces Creaciones" width="440" height="495" loading="eager"/>
           <div class="hero-floating-badge">
             <div class="badge-text">
               <strong>Diseño exclusivo</strong>
@@ -452,7 +453,7 @@
       <!-- 1. Infantiles -->
       <article class="category-card reveal reveal-delay-1">
         <div class="category-card-img">
-          <img src="images/torta-moana-disney.webp" alt="Torta infantil temática Disney Moana" width="400" height="300" loading="lazy"/>
+          <img src="images/torta-moana-disney.webp" alt="Torta infantil temática Disney Moana" width="400" height="500" loading="lazy"/>
           <span class="category-badge">Infantiles</span>
         </div>
         <div class="category-card-body">
@@ -465,7 +466,7 @@
       <!-- 2. 15 Años & Bodas -->
       <article class="category-card reveal reveal-delay-2">
         <div class="category-card-img">
-          <img src="images/torta-15-anos-fiesta.webp" alt="Torta elegante para fiesta de 15 años" width="400" height="300" loading="lazy"/>
+          <img src="images/torta-15-anos-fiesta.webp" alt="Torta rosa de 15 años con lettering Happy 15" width="400" height="500" loading="lazy"/>
           <span class="category-badge">15 años y eventos</span>
         </div>
         <div class="category-card-body">
@@ -478,7 +479,7 @@
       <!-- 3. Mesas Dulces -->
       <article class="category-card reveal reveal-delay-3">
         <div class="category-card-img">
-          <img src="images/torta-globos-cumpleanos.webp" alt="Torta de cumpleaños con esferas para mesa dulce en Temperley" width="400" height="300" loading="lazy"/>
+          <img src="images/torta-globos-cumpleanos.webp" alt="Torta de cumpleaños con esferas para mesa dulce en Temperley" width="400" height="500" loading="lazy"/>
           <span class="category-badge">Candy Bar</span>
         </div>
         <div class="category-card-body">
@@ -491,7 +492,7 @@
       <!-- 4. Fútbol & Gaming -->
       <article class="category-card reveal reveal-delay-4">
         <div class="category-card-img">
-          <img src="images/torta-futbol-san-lorenzo.webp" alt="Torta temática de fútbol San Lorenzo y clubes argentinos" width="400" height="300" loading="lazy"/>
+          <img src="images/torta-futbol-san-lorenzo.webp" alt="Torta con forma de camiseta de San Lorenzo" width="400" height="500" loading="lazy"/>
           <span class="category-badge">Temáticas</span>
         </div>
         <div class="category-card-body">
@@ -525,95 +526,104 @@
     </div>
 
     <div class="gallery-grid">
-      <div class="gallery-item reveal reveal-delay-1" data-category="infantil">
-        <img src="images/torta-moana-disney.webp" alt="Torta Moana Disney personalizada con nombre" width="400" height="400" loading="lazy"/>
-        <div class="gallery-item-overlay">
+      <div class="gallery-item gallery-item--featured reveal reveal-delay-1" data-category="infantil">
+        <div class="gallery-media">
+          <img src="images/torta-moana-disney.webp" alt="Torta Moana Disney personalizada con nombre" width="400" height="400" loading="lazy"/>
+          <span class="gallery-zoom" aria-hidden="true">Ver en grande</span>
+        </div>
+        <div class="gallery-caption">
           <span class="gallery-item-label">Moana Disney</span>
-          <span class="gallery-item-action">Ver diseño</span>
+          <a class="gallery-item-cta" href="https://wa.me/5491133266362?text=Hola%20Elizabeth%21%20Vi%20la%20torta%20de%20Moana%20en%20la%20web%20y%20quiero%20una%20as%C3%AD%20para%20mi%20festejo.%20%C2%BFMe%20pas%C3%A1s%20disponibilidad%20y%20presupuesto%3F&amp;utm_source=galeria_item&amp;utm_medium=whatsapp&amp;utm_campaign=moana" target="_blank" rel="noopener noreferrer" aria-label="Quiero una así: Moana Disney, consultar por WhatsApp" onclick="event.stopPropagation();if(typeof trackWhatsAppClick==='function')trackWhatsAppClick(this);">Quiero una así</a>
         </div>
       </div>
       <div class="gallery-item reveal reveal-delay-2" data-category="infantil">
-        <img src="images/torta-kuromi-sanrio.webp" alt="Torta Kuromi Sanrio de dos pisos en violeta" width="400" height="400" loading="lazy"/>
-        <div class="gallery-item-overlay">
-          <span class="gallery-item-label">Kuromi Sanrio</span>
-          <span class="gallery-item-action">Ver diseño</span>
+        <div class="gallery-media">
+          <img src="images/torta-kuromi-sanrio.webp" alt="Torta Kuromi Sanrio de dos pisos en violeta" width="400" height="400" loading="lazy"/>
+          <span class="gallery-zoom" aria-hidden="true">Ver en grande</span>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-item-label">Kuromi de dos pisos</span>
+          <a class="gallery-item-cta" href="https://wa.me/5491133266362?text=Hola%20Elizabeth%21%20Vi%20la%20torta%20de%20Kuromi%20de%20dos%20pisos%20en%20la%20web%20y%20quiero%20una%20as%C3%AD%20para%20mi%20festejo.%20%C2%BFMe%20pas%C3%A1s%20disponibilidad%20y%20presupuesto%3F&amp;utm_source=galeria_item&amp;utm_medium=whatsapp&amp;utm_campaign=kuromi" target="_blank" rel="noopener noreferrer" aria-label="Quiero una así: Kuromi de dos pisos, consultar por WhatsApp" onclick="event.stopPropagation();if(typeof trackWhatsAppClick==='function')trackWhatsAppClick(this);">Quiero una así</a>
         </div>
       </div>
       <div class="gallery-item reveal reveal-delay-3" data-category="tematica">
-        <img src="images/torta-futbol-san-lorenzo.webp" alt="Torta con forma de camiseta de San Lorenzo" width="400" height="400" loading="lazy"/>
-        <div class="gallery-item-overlay">
-          <span class="gallery-item-label">Camiseta San Lorenzo</span>
-          <span class="gallery-item-action">Ver diseño</span>
+        <div class="gallery-media">
+          <img src="images/torta-futbol-san-lorenzo.webp" alt="Torta con forma de camiseta de San Lorenzo" width="400" height="400" loading="lazy"/>
+          <span class="gallery-zoom" aria-hidden="true">Ver en grande</span>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-item-label">Camiseta de San Lorenzo</span>
+          <a class="gallery-item-cta" href="https://wa.me/5491133266362?text=Hola%20Elizabeth%21%20Vi%20la%20torta%20camiseta%20de%20San%20Lorenzo%20en%20la%20web%20y%20quiero%20una%20as%C3%AD%20para%20mi%20festejo.%20%C2%BFMe%20pas%C3%A1s%20disponibilidad%20y%20presupuesto%3F&amp;utm_source=galeria_item&amp;utm_medium=whatsapp&amp;utm_campaign=san_lorenzo" target="_blank" rel="noopener noreferrer" aria-label="Quiero una así: Camiseta de San Lorenzo, consultar por WhatsApp" onclick="event.stopPropagation();if(typeof trackWhatsAppClick==='function')trackWhatsAppClick(this);">Quiero una así</a>
         </div>
       </div>
       <div class="gallery-item reveal reveal-delay-4" data-category="tematica">
-        <img src="images/ig-post-6.webp" alt="Torta de fútbol de la Selección Argentina con Messi" width="400" height="400" loading="lazy"/>
-        <div class="gallery-item-overlay">
+        <div class="gallery-media">
+          <img src="images/ig-post-6.webp" alt="Torta de fútbol de la Selección Argentina con Messi" width="400" height="400" loading="lazy"/>
+          <span class="gallery-zoom" aria-hidden="true">Ver en grande</span>
+        </div>
+        <div class="gallery-caption">
           <span class="gallery-item-label">Selección Argentina</span>
-          <span class="gallery-item-action">Ver diseño</span>
+          <a class="gallery-item-cta" href="https://wa.me/5491133266362?text=Hola%20Elizabeth%21%20Vi%20la%20torta%20de%20la%20Selecci%C3%B3n%20Argentina%20en%20la%20web%20y%20quiero%20una%20as%C3%AD%20para%20mi%20festejo.%20%C2%BFMe%20pas%C3%A1s%20disponibilidad%20y%20presupuesto%3F&amp;utm_source=galeria_item&amp;utm_medium=whatsapp&amp;utm_campaign=seleccion" target="_blank" rel="noopener noreferrer" aria-label="Quiero una así: Selección Argentina, consultar por WhatsApp" onclick="event.stopPropagation();if(typeof trackWhatsAppClick==='function')trackWhatsAppClick(this);">Quiero una así</a>
         </div>
       </div>
       <div class="gallery-item reveal reveal-delay-1" data-category="quince">
-        <img src="images/torta-15-anos-fiesta.webp" alt="Torta de 15 años rosa con lettering Happy 15" width="400" height="400" loading="lazy"/>
-        <div class="gallery-item-overlay">
-          <span class="gallery-item-label">Happy 15 Rosa</span>
-          <span class="gallery-item-action">Ver diseño</span>
+        <div class="gallery-media">
+          <img src="images/torta-15-anos-fiesta.webp" alt="Torta de 15 años rosa con lettering Happy 15" width="400" height="400" loading="lazy"/>
+          <span class="gallery-zoom" aria-hidden="true">Ver en grande</span>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-item-label">Happy 15 en rosa</span>
+          <a class="gallery-item-cta" href="https://wa.me/5491133266362?text=Hola%20Elizabeth%21%20Vi%20la%20torta%20rosa%20de%2015%20a%C3%B1os%20en%20la%20web%20y%20quiero%20una%20as%C3%AD%20para%20mi%20festejo.%20%C2%BFMe%20pas%C3%A1s%20disponibilidad%20y%20presupuesto%3F&amp;utm_source=galeria_item&amp;utm_medium=whatsapp&amp;utm_campaign=quince_rosa" target="_blank" rel="noopener noreferrer" aria-label="Quiero una así: Happy 15 en rosa, consultar por WhatsApp" onclick="event.stopPropagation();if(typeof trackWhatsAppClick==='function')trackWhatsAppClick(this);">Quiero una así</a>
         </div>
       </div>
       <div class="gallery-item reveal reveal-delay-2" data-category="quince">
-        <img src="images/ig-post-9.webp" alt="Torta de aniversario 50 años con alianzas y esferas doradas" width="400" height="400" loading="lazy"/>
-        <div class="gallery-item-overlay">
-          <span class="gallery-item-label">Aniversario 50 Años</span>
-          <span class="gallery-item-action">Ver diseño</span>
+        <div class="gallery-media">
+          <img src="images/ig-post-9.webp" alt="Torta de aniversario 50 años con alianzas y esferas doradas" width="400" height="400" loading="lazy"/>
+          <span class="gallery-zoom" aria-hidden="true">Ver en grande</span>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-item-label">Aniversario de 50 años</span>
+          <a class="gallery-item-cta" href="https://wa.me/5491133266362?text=Hola%20Elizabeth%21%20Vi%20la%20torta%20de%20aniversario%20de%2050%20a%C3%B1os%20en%20la%20web%20y%20quiero%20una%20as%C3%AD%20para%20mi%20festejo.%20%C2%BFMe%20pas%C3%A1s%20disponibilidad%20y%20presupuesto%3F&amp;utm_source=galeria_item&amp;utm_medium=whatsapp&amp;utm_campaign=aniversario_50" target="_blank" rel="noopener noreferrer" aria-label="Quiero una así: Aniversario de 50 años, consultar por WhatsApp" onclick="event.stopPropagation();if(typeof trackWhatsAppClick==='function')trackWhatsAppClick(this);">Quiero una así</a>
         </div>
       </div>
       <div class="gallery-item reveal reveal-delay-3" data-category="tematica">
-        <img src="images/torta-fortnite-gaming.webp" alt="Torta gaming Fortnite con casco de Marshmello" width="400" height="400" loading="lazy"/>
-        <div class="gallery-item-overlay">
-          <span class="gallery-item-label">Gaming Fortnite</span>
-          <span class="gallery-item-action">Ver diseño</span>
+        <div class="gallery-media">
+          <img src="images/torta-fortnite-gaming.webp" alt="Torta gaming Fortnite con casco de Marshmello" width="400" height="400" loading="lazy"/>
+          <span class="gallery-zoom" aria-hidden="true">Ver en grande</span>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-item-label">Fortnite con Marshmello</span>
+          <a class="gallery-item-cta" href="https://wa.me/5491133266362?text=Hola%20Elizabeth%21%20Vi%20la%20torta%20de%20Fortnite%20en%20la%20web%20y%20quiero%20una%20as%C3%AD%20para%20mi%20festejo.%20%C2%BFMe%20pas%C3%A1s%20disponibilidad%20y%20presupuesto%3F&amp;utm_source=galeria_item&amp;utm_medium=whatsapp&amp;utm_campaign=fortnite" target="_blank" rel="noopener noreferrer" aria-label="Quiero una así: Fortnite con Marshmello, consultar por WhatsApp" onclick="event.stopPropagation();if(typeof trackWhatsAppClick==='function')trackWhatsAppClick(this);">Quiero una así</a>
         </div>
       </div>
-      <div class="gallery-item reveal reveal-delay-4" data-category="romantica">
-        <img src="images/ig-post-11.webp" alt="Torta blanca elegante con rosa de azúcar plateada" width="400" height="400" loading="lazy"/>
-        <div class="gallery-item-overlay">
-          <span class="gallery-item-label">Elegante Rosa Blanca</span>
-          <span class="gallery-item-action">Ver diseño</span>
+      <div class="gallery-item gallery-item--featured reveal reveal-delay-4" data-category="romantica">
+        <div class="gallery-media">
+          <img src="images/ig-post-11.webp" alt="Torta blanca elegante con rosa de azúcar plateada" width="400" height="400" loading="lazy"/>
+          <span class="gallery-zoom" aria-hidden="true">Ver en grande</span>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-item-label">Blanca con rosa plateada</span>
+          <a class="gallery-item-cta" href="https://wa.me/5491133266362?text=Hola%20Elizabeth%21%20Vi%20la%20torta%20blanca%20con%20rosa%20plateada%20en%20la%20web%20y%20quiero%20una%20as%C3%AD%20para%20mi%20festejo.%20%C2%BFMe%20pas%C3%A1s%20disponibilidad%20y%20presupuesto%3F&amp;utm_source=galeria_item&amp;utm_medium=whatsapp&amp;utm_campaign=rosa_plateada" target="_blank" rel="noopener noreferrer" aria-label="Quiero una así: Blanca con rosa plateada, consultar por WhatsApp" onclick="event.stopPropagation();if(typeof trackWhatsAppClick==='function')trackWhatsAppClick(this);">Quiero una así</a>
         </div>
       </div>
       <div class="gallery-item reveal reveal-delay-1" data-category="infantil">
-        <img src="images/ig-post-2.webp" alt="Torta infantil de fondo de mar con ballenita" width="400" height="400" loading="lazy"/>
-        <div class="gallery-item-overlay">
-          <span class="gallery-item-label">Fondo de Mar</span>
-          <span class="gallery-item-action">Ver diseño</span>
+        <div class="gallery-media">
+          <img src="images/ig-post-2.webp" alt="Torta infantil de fondo de mar con ballenita" width="400" height="400" loading="lazy"/>
+          <span class="gallery-zoom" aria-hidden="true">Ver en grande</span>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-item-label">Fondo de mar con ballenita</span>
+          <a class="gallery-item-cta" href="https://wa.me/5491133266362?text=Hola%20Elizabeth%21%20Vi%20la%20torta%20de%20fondo%20de%20mar%20en%20la%20web%20y%20quiero%20una%20as%C3%AD%20para%20mi%20festejo.%20%C2%BFMe%20pas%C3%A1s%20disponibilidad%20y%20presupuesto%3F&amp;utm_source=galeria_item&amp;utm_medium=whatsapp&amp;utm_campaign=fondo_de_mar" target="_blank" rel="noopener noreferrer" aria-label="Quiero una así: Fondo de mar con ballenita, consultar por WhatsApp" onclick="event.stopPropagation();if(typeof trackWhatsAppClick==='function')trackWhatsAppClick(this);">Quiero una así</a>
         </div>
       </div>
       <div class="gallery-item reveal reveal-delay-2" data-category="romantica">
-        <img src="images/torta-disco-retro.webp" alt="Torta blanca de cumpleaños con bolas disco y perlas" width="400" height="400" loading="lazy"/>
-        <div class="gallery-item-overlay">
-          <span class="gallery-item-label">Disco & Perlas</span>
-          <span class="gallery-item-action">Ver diseño</span>
+        <div class="gallery-media">
+          <img src="images/torta-disco-retro.webp" alt="Torta blanca de cumpleaños con bolas disco y perlas" width="400" height="400" loading="lazy"/>
+          <span class="gallery-zoom" aria-hidden="true">Ver en grande</span>
         </div>
-      </div>
-      <div class="gallery-item reveal reveal-delay-3" data-category="romantica">
-        <img src="images/ig-post-12.webp" alt="Torta negra de cumpleaños con detalles plateados" width="400" height="400" loading="lazy"/>
-        <div class="gallery-item-overlay">
-          <span class="gallery-item-label">Black & Silver</span>
-          <span class="gallery-item-action">Ver diseño</span>
-        </div>
-      </div>
-      <div class="gallery-item reveal reveal-delay-4" data-category="romantica">
-        <img src="images/ig-post-10.webp" alt="Torta con forma de estrella para cumpleaños de 19" width="400" height="400" loading="lazy"/>
-        <div class="gallery-item-overlay">
-          <span class="gallery-item-label">Estrella 19 Años</span>
-          <span class="gallery-item-action">Ver diseño</span>
-        </div>
-      </div>
-      <div class="gallery-item reveal reveal-delay-1" data-category="romantica">
-        <img src="images/ig-post-4.webp" alt="Torta rosa de graduación para licenciada con topper personalizado" width="400" height="400" loading="lazy"/>
-        <div class="gallery-item-overlay">
-          <span class="gallery-item-label">Graduación Licenciada</span>
-          <span class="gallery-item-action">Ver diseño</span>
+        <div class="gallery-caption">
+          <span class="gallery-item-label">Bolas disco y perlas</span>
+          <a class="gallery-item-cta" href="https://wa.me/5491133266362?text=Hola%20Elizabeth%21%20Vi%20la%20torta%20blanca%20con%20bolas%20disco%20y%20perlas%20en%20la%20web%20y%20quiero%20una%20as%C3%AD%20para%20mi%20festejo.%20%C2%BFMe%20pas%C3%A1s%20disponibilidad%20y%20presupuesto%3F&amp;utm_source=galeria_item&amp;utm_medium=whatsapp&amp;utm_campaign=disco_perlas" target="_blank" rel="noopener noreferrer" aria-label="Quiero una así: Bolas disco y perlas, consultar por WhatsApp" onclick="event.stopPropagation();if(typeof trackWhatsAppClick==='function')trackWhatsAppClick(this);">Quiero una así</a>
         </div>
       </div>
     </div>
@@ -793,13 +803,14 @@
 
 <!-- FAQ SECTION -->
 <section id="faq">
-  <div class="container">
-    <div class="section-header reveal">
+  <div class="container faq-layout">
+    <div class="section-header faq-intro reveal">
       <span class="section-label">Despejá tus dudas</span>
       <h2 class="section-title">Preguntas frecuentes</h2>
       <p class="section-subtitle">
         Todo lo que necesitás saber antes de encargar tu torta artesanal.
       </p>
+      <p class="faq-intro-more">¿Tenés otra pregunta? <a href="https://wa.me/5491133266362?text=Hola%20Elizabeth%21%20Tengo%20una%20consulta%20sobre%20un%20pedido%20de%20torta.&amp;utm_source=faq&amp;utm_medium=whatsapp&amp;utm_campaign=index" target="_blank" rel="noopener noreferrer" class="faq-intro-link">Escribinos por WhatsApp</a></p>
     </div>
 
     <div class="faq-grid">
@@ -854,19 +865,19 @@
 
     <div class="ig-feed-grid">
       <a href="https://instagram.com/dulcescreaciones_dc" target="_blank" rel="noopener noreferrer" class="ig-feed-item reveal reveal-delay-1">
-        <img src="images/ig-post-1.webp" alt="Torta de cumpleaños con fotos personalizadas publicada en Instagram" width="300" height="300" loading="lazy"/>
+        <img src="images/ig-post-1.webp" alt="Torta blanca de cumpleaños con toppers de fotos de la familia y cartel Happy Birthday" width="300" height="300" loading="lazy"/>
         <div class="ig-feed-overlay"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></div>
       </a>
       <a href="https://instagram.com/dulcescreaciones_dc" target="_blank" rel="noopener noreferrer" class="ig-feed-item reveal reveal-delay-2">
-        <img src="images/ig-post-5.webp" alt="Torta de la Selección Argentina publicada en Instagram" width="300" height="300" loading="lazy"/>
+        <img src="images/ig-post-12.webp" alt="Torta negra de cumpleaños con lettering Happy Birthday plateado y bolas disco" width="300" height="300" loading="lazy"/>
         <div class="ig-feed-overlay"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></div>
       </a>
       <a href="https://instagram.com/dulcescreaciones_dc" target="_blank" rel="noopener noreferrer" class="ig-feed-item reveal reveal-delay-3">
-        <img src="images/ig-post-9.webp" alt="Torta de aniversario con alianzas doradas publicada en Instagram" width="300" height="300" loading="lazy"/>
+        <img src="images/ig-post-10.webp" alt="Torta con forma de estrella con borde bordó para un cumpleaños de 19" width="300" height="300" loading="lazy"/>
         <div class="ig-feed-overlay"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></div>
       </a>
       <a href="https://instagram.com/dulcescreaciones_dc" target="_blank" rel="noopener noreferrer" class="ig-feed-item reveal reveal-delay-4">
-        <img src="images/ig-post-7.webp" alt="Torta blanca Happy Birthday con detalles dorados publicada en Instagram" width="300" height="300" loading="lazy"/>
+        <img src="images/ig-post-4.webp" alt="Torta rosa de graduación con perlas, birrete y cartel de licenciada" width="300" height="300" loading="lazy"/>
         <div class="ig-feed-overlay"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></div>
       </a>
     </div>

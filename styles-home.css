@@ -1,0 +1,552 @@
+/* ==========================================================================
+   HOME LAYER — index.html only (scoped under main.home-main)
+   Loaded after styles.css. Keep every home rule scoped so nothing leaks
+   into the PSEO / blog pages that share section ids.
+   ========================================================================== */
+
+:root {
+  --home-blush: #FAF0F2;
+  --home-section-y: clamp(64px, 10vw, 128px);
+  --home-hairline: rgba(201, 147, 70, 0.85);
+  --home-card-border: rgba(229, 164, 180, 0.28);
+}
+[data-theme="dark"] {
+  --home-blush: #21161A;
+  --home-hairline: rgba(229, 184, 111, 0.7);
+  --home-card-border: rgba(242, 167, 187, 0.14);
+}
+
+/* --------------------------------------------------------------------------
+   Global fixes (harmless on every page)
+   -------------------------------------------------------------------------- */
+.dc-footer-links-inline {
+  list-style: none;
+  padding: 0;
+}
+/* In dark mode --rosa-d is a light pink (#F2A7BB): white text on it fails
+   AA (~1.9:1), so the label uses the dark cocoa instead (~9:1). */
+[data-theme="dark"] .gallery-filter-btn.active {
+  background: var(--rosa-d);
+  color: #2A160B;
+  border-color: var(--rosa-d);
+}
+
+/* --------------------------------------------------------------------------
+   Section rhythm: cream / soft blush, one vertical padding, one label style
+   -------------------------------------------------------------------------- */
+.home-main > section:not(.hero) {
+  padding-top: var(--home-section-y);
+  padding-bottom: var(--home-section-y);
+}
+.home-main #especialidades,
+.home-main #rellenos,
+.home-main #zona,
+.home-main #instagram-feed {
+  background: var(--crema);
+}
+.home-main #galeria,
+.home-main #autor,
+.home-main #faq {
+  background: var(--home-blush);
+}
+
+.home-main .section-header {
+  margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+}
+.home-main .section-subtitle {
+  max-width: 60ch;
+}
+.home-main .mapa-desc,
+.home-main .autor-text p {
+  max-width: 60ch;
+}
+
+/* Section label: small caps + a single gold hairline underneath */
+.home-main .section-label {
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+}
+.home-main .section-label::before {
+  display: none;
+}
+.home-main .section-label::after,
+.home-main .autor-text .section-label::after,
+.home-main #zona .section-label::after {
+  display: block;
+  content: '';
+  width: 28px;
+  height: 1px;
+  background: var(--home-hairline);
+  opacity: 1;
+}
+.home-main #zona .section-label,
+.home-main .autor-text .section-label {
+  align-items: flex-start;
+}
+@media (max-width: 820px) {
+  .home-main .autor-text .section-label {
+    align-items: center;
+  }
+  .home-main .autor-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Hero
+   -------------------------------------------------------------------------- */
+.home-main .hero-actions {
+  margin-bottom: 1.1rem;
+}
+.home-main .hero-note {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0 0 2rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: var(--muted);
+  letter-spacing: 0.01em;
+}
+.home-main .hero-note-part {
+  white-space: nowrap;
+}
+.home-main .hero-note-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .home-main .hero-note {
+    display: block;
+    text-align: center;
+  }
+  .home-main .hero-note-dot {
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 0.5rem 0 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-main .hero {
+    padding-top: 7rem;
+    padding-bottom: 2.75rem;
+  }
+  .home-main .hero-grid {
+    gap: 1.25rem;
+  }
+  .home-main .hero-img-showcase {
+    max-width: 296px;
+    margin: 0 auto;
+  }
+  .home-main .hero-img-frame img {
+    aspect-ratio: 5 / 4;
+    max-height: 44svh;
+    object-position: center 40%;
+  }
+  .home-main .hero-floating-badge {
+    padding: 0.35rem 0.7rem;
+    bottom: 0.6rem;
+    left: 0.6rem;
+  }
+  .home-main .hero-floating-badge .badge-text span {
+    display: none;
+  }
+  .home-main .hero-badge-pill {
+    margin-bottom: 0.75rem;
+  }
+  .home-main .hero-text-col h1 {
+    font-size: clamp(2.15rem, 9vw, 2.6rem);
+    margin-bottom: 0.75rem;
+  }
+  .home-main .hero-desc {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin-bottom: 1.25rem;
+  }
+  .home-main .hero-actions {
+    gap: 0.6rem;
+    margin-bottom: 0.9rem;
+  }
+  .home-main .hero-note {
+    font-size: 0.78rem;
+    margin-bottom: 1.4rem;
+  }
+  .home-main .hero-note-sep {
+    display: none;
+  }
+  .home-main .hero-note-part + .hero-note-sep + .hero-note-part {
+    display: block;
+    margin-top: 0.1rem;
+  }
+  .home-main .hero-trust-bar {
+    justify-content: center;
+    gap: 0.5rem 1.1rem;
+    padding-top: 1.1rem;
+  }
+  .home-main .hero-trust-item + .hero-trust-item::before {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Especialidades: portrait crops that keep the top of the cake
+   -------------------------------------------------------------------------- */
+.home-main #especialidades .category-card-img {
+  aspect-ratio: 4 / 5;
+}
+/* The source photos carry a small Instagram carousel mark in the top-right
+   corner (~2–5% of the height); anchor the 4:5 crop low enough to hide it. */
+.home-main #especialidades .category-card-img img {
+  object-position: center 85%;
+}
+@media (max-width: 600px) {
+  .home-main #especialidades .category-card-img img {
+    object-position: center 32%;
+  }
+}
+.home-main #especialidades .category-card-body h3 {
+  min-height: 2.4em;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+.home-main #especialidades .category-badge {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+@media (max-width: 600px) {
+  .home-main #especialidades .category-card-img {
+    aspect-ratio: 1 / 1;
+  }
+  .home-main #especialidades .category-card-body {
+    padding: 1.25rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Galería: photo + visible caption + "Quiero una así"
+   -------------------------------------------------------------------------- */
+.home-main #galeria .gallery-item {
+  aspect-ratio: auto;
+  background: #FFFFFF;
+  border: 1px solid var(--home-card-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-subtle);
+}
+.home-main #galeria .gallery-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+.home-main #galeria .gallery-media {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--nude);
+}
+.home-main #galeria .gallery-item img {
+  object-position: center 35%;
+}
+.home-main #galeria .gallery-item:hover img {
+  transform: scale(1.04);
+}
+
+.home-main #galeria .gallery-zoom {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--choco);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-subtle);
+  opacity: 0;
+  transition: opacity var(--duration-fast) var(--ease-out);
+  pointer-events: none;
+}
+@media (hover: hover) {
+  .home-main #galeria .gallery-item:hover .gallery-zoom {
+    opacity: 1;
+  }
+}
+
+.home-main #galeria .gallery-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.1rem;
+  height: 4.5rem;
+  padding: 0.5rem 1rem;
+  border-top: 1px solid var(--home-card-border);
+}
+.home-main #galeria .gallery-item-label {
+  font-family: var(--font-serif);
+  font-size: 1.12rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--choco);
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.home-main #galeria .gallery-item-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 24px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--rosa-d);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+  transition: color var(--duration-fast), text-decoration-color var(--duration-fast), gap var(--duration-fast) var(--ease-out);
+}
+.home-main #galeria .gallery-item-cta::after {
+  content: '→';
+}
+.home-main #galeria .gallery-item-cta:hover,
+.home-main #galeria .gallery-item-cta:focus-visible {
+  color: var(--rosa-hover);
+  text-decoration-color: currentColor;
+  gap: 0.55rem;
+}
+
+/* Two featured tiles: first (left) and eighth (right) — 4 × 4 grid */
+.home-main #galeria .gallery-item[data-category]:first-child {
+  aspect-ratio: auto;
+}
+.home-main #galeria .gallery-item--featured .gallery-caption {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.home-main #galeria .gallery-item--featured .gallery-item-label {
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+}
+@media (min-width: 901px) {
+  .home-main #galeria .gallery-item--featured img {
+    object-position: center 85%;
+  }
+  .home-main #galeria .gallery-item--featured {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .home-main #galeria .gallery-item--featured .gallery-media {
+    aspect-ratio: auto;
+    height: calc(100% - 4.5rem);
+    min-height: 16rem;
+  }
+}
+@media (max-width: 900px) {
+  .home-main #galeria .gallery-item--featured {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .home-main #galeria .gallery-item--featured .gallery-media {
+    aspect-ratio: 4 / 3;
+  }
+  .home-main #galeria .gallery-caption {
+    height: auto;
+    min-height: 4rem;
+    padding: 0.55rem 0.8rem;
+  }
+  .home-main #galeria .gallery-item-label {
+    font-size: 1rem;
+    white-space: normal;
+    overflow: visible;
+    text-wrap: balance;
+  }
+  .home-main #galeria .gallery-item--featured .gallery-item-label {
+    font-size: 1.2rem;
+  }
+  .home-main #galeria .gallery-item-cta {
+    font-size: 0.78rem;
+  }
+}
+@media (max-width: 600px) {
+  .home-main #galeria .gallery-item--featured .gallery-media {
+    aspect-ratio: 1 / 1;
+  }
+  .home-main #galeria .gallery-filter-wrap {
+    gap: 0.45rem;
+  }
+}
+
+[data-theme="dark"] .home-main #galeria .gallery-item {
+  background: var(--blanco);
+}
+[data-theme="dark"] .home-main #galeria .gallery-zoom {
+  background: rgba(42, 31, 25, 0.94);
+}
+
+/* --------------------------------------------------------------------------
+   Cómo funciona: flat cards, compact rows on phones
+   -------------------------------------------------------------------------- */
+.home-main #proceso .paso-card {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+.home-main #proceso .paso-card p {
+  max-width: 34ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 600px) {
+  .home-main #proceso .pasos-grid {
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+  .home-main #proceso .paso-card {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    column-gap: 1rem;
+    align-items: start;
+    text-align: left;
+    padding: 1.15rem 1.15rem 1.2rem;
+    border-radius: var(--radius-md);
+  }
+  .home-main #proceso .paso-card:hover {
+    transform: none;
+  }
+  .home-main #proceso .paso-number {
+    grid-row: 1 / span 2;
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    font-size: 1.2rem;
+    box-shadow: 0 0 0 4px rgba(229, 164, 180, 0.14);
+  }
+  .home-main #proceso .paso-card h3 {
+    font-size: 1.25rem;
+    margin: 0.15rem 0 0.3rem;
+  }
+  .home-main #proceso .paso-card p {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    max-width: none;
+    margin: 0;
+  }
+  .home-main #proceso .proceso-callout {
+    margin-top: 1.75rem;
+    padding: 1rem 1.15rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Autor
+   -------------------------------------------------------------------------- */
+.home-main #autor .autor-card {
+  box-shadow: var(--shadow-sm);
+}
+
+/* --------------------------------------------------------------------------
+   Zona: the map never shows as an empty white box
+   -------------------------------------------------------------------------- */
+.home-main #zona .mapa-frame {
+  position: relative;
+  min-height: 320px;
+  background:
+    radial-gradient(rgba(163, 74, 99, 0.10) 1px, transparent 1px) 0 0 / 18px 18px,
+    var(--nude);
+}
+.home-main #zona .mapa-frame::before {
+  content: 'Temperley, Zona Sur';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--muted);
+  z-index: 0;
+}
+.home-main #zona .mapa-frame iframe {
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+@media (max-width: 840px) {
+  .home-main #zona .mapa-frame {
+    height: 340px;
+    transform: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   FAQ: heading left, questions right on desktop
+   -------------------------------------------------------------------------- */
+.home-main #faq .faq-intro-more {
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.home-main #faq .faq-intro-link {
+  color: var(--rosa-d);
+  font-weight: 600;
+}
+.home-main #faq .faq-intro-link:hover {
+  color: var(--rosa-hover);
+}
+@media (min-width: 961px) {
+  .home-main #faq .faq-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.45fr);
+    gap: clamp(2.5rem, 5vw, 5rem);
+    align-items: start;
+  }
+  .home-main #faq .faq-intro {
+    text-align: left;
+    margin: 0;
+    position: sticky;
+    top: 130px;
+  }
+  .home-main #faq .faq-intro .section-label {
+    align-items: flex-start;
+  }
+  .home-main #faq .faq-intro .section-subtitle {
+    margin: 0;
+  }
+  .home-main #faq .faq-grid {
+    max-width: none;
+    margin: 0;
+  }
+}
+@media (max-width: 960px) {
+  .home-main #faq .faq-grid {
+    max-width: 760px;
+  }
+}
+@media (max-width: 600px) {
+  .home-main #faq details.faq-item summary {
+    font-size: 1.15rem;
+    padding: 1.1rem 1.15rem;
+  }
+  .home-main #faq details.faq-item p {
+    padding: 0 1.15rem 1.2rem;
+    font-size: 0.93rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Instagram
+   -------------------------------------------------------------------------- */
+.home-main #instagram-feed .ig-feed-item img {
+  object-position: center 35%;
+}
