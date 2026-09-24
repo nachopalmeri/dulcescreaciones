@@ -147,7 +147,9 @@ def validate_site():
                 continue
             clean_href = href.split("?")[0].split("#")[0]
             if clean_href:
-                target = (f.parent / clean_href).resolve()
+                target = (root_dir / clean_href.lstrip("/")).resolve() if clean_href.startswith("/") else (f.parent / clean_href).resolve()
+                if clean_href == "/":
+                    target = (root_dir / "index.html").resolve()
                 if target not in all_file_paths and not (target.parent / target.name).exists():
                     broken_internal_links += 1
                     warnings.append(f"Enlace roto en {f.name} -> {href}")
