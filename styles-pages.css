@@ -1,0 +1,815 @@
+/* ==========================================================================
+   PAGES LAYER — body content of secondary pages (PSEO, temáticas, blog, menú)
+   Everything here is scoped to classes that index.html does not use, or to
+   page-level wrappers, so the home stays untouched.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Shared: hero trust row under the hero CTA (secondary hero only)
+   -------------------------------------------------------------------------- */
+.hero-editorial .hero-text-col:has(.pg-hero-trust) {
+  grid-template-areas:
+    "label photo"
+    "title photo"
+    "loc   photo"
+    "cta   photo"
+    "trust photo";
+  grid-template-rows: auto auto auto auto 1fr;
+}
+.hero-editorial .pg-hero-trust {
+  grid-area: trust;
+  align-self: start;
+  justify-self: start;
+  margin-top: 1.6rem;
+  padding-top: 1.1rem;
+  flex-wrap: wrap;
+  row-gap: 0.4rem;
+}
+@media (max-width: 820px) {
+  .hero-editorial .hero-text-col:has(.pg-hero-trust) {
+    grid-template-areas: "photo" "label" "title" "loc" "cta" "trust";
+    grid-template-rows: none;
+  }
+  .hero-editorial .pg-hero-trust {
+    justify-self: center;
+    justify-content: center;
+    margin-top: 1.25rem;
+    gap: 0.35rem 1rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Shared: "Trabajos reales" photo strip
+   -------------------------------------------------------------------------- */
+.pg-works {
+  margin: 3rem auto 0;
+}
+.pg-works-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+  margin-bottom: 1.1rem;
+}
+.pg-works-head .section-label {
+  margin: 0;
+}
+.pg-works-head p {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 0;
+}
+.pg-works-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.pg-work {
+  margin: 0;
+  background: #FFFFFF;
+  border: 1px solid rgba(229, 164, 180, 0.28);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.pg-work img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: var(--nude);
+  transition: transform var(--duration-slow) var(--ease-out);
+}
+.pg-work:hover img {
+  transform: scale(1.04);
+}
+.pg-work figcaption {
+  position: relative;
+  background: inherit;
+  padding: 0.8rem 1rem 0.9rem;
+  font-family: var(--font-serif);
+  font-size: 1.08rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--choco);
+}
+@media (max-width: 640px) {
+  .pg-works-grid {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    margin: 0 -1.5rem;
+    padding: 0.25rem 1.5rem 0.75rem;
+    scroll-padding-left: 1.5rem;
+  }
+  .pg-works-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .pg-work {
+    flex: 0 0 68%;
+    scroll-snap-align: start;
+    border-radius: var(--radius-md);
+  }
+  .pg-work figcaption {
+    font-size: 0.98rem;
+  }
+}
+[data-theme="dark"] .pg-work {
+  background: var(--blanco);
+}
+
+/* --------------------------------------------------------------------------
+   Local / PSEO pages: wider body, 3-column cards
+   -------------------------------------------------------------------------- */
+.pseo-wrap {
+  max-width: 1120px;
+}
+.pseo-wrap > .reveal:first-child {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pseo-wrap > .reveal:first-child .section-title {
+  text-wrap: balance;
+}
+.pseo-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 2.5rem 0 0;
+}
+.pseo-cards .detail-card {
+  height: 100%;
+}
+@media (max-width: 900px) {
+  .pseo-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+.pseo-wrap > .reveal[style*="text-align:center"] {
+  margin-top: 2.75rem !important;
+}
+.pseo-more,
+.pseo-wrap > div[style*="margin-top"]:not(.reveal),
+.pseo-wrap > .reveal[style*="padding"] {
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pseo-more {
+  margin-top: 3.5rem;
+}
+.pseo-more > h3 {
+  text-align: center;
+  font-size: 1.6rem !important;
+}
+.pseo-more > .pseo-faq-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.pseo-more details.faq-item {
+  margin-bottom: 0.75rem;
+}
+@media (max-width: 640px) {
+  .pseo-wrap {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+/* Wide variant (precios) already has its own detail-grid */
+.pseo-wrap-wide {
+  max-width: 1200px;
+}
+
+/* --------------------------------------------------------------------------
+   Shared small pieces used on secondary pages
+   -------------------------------------------------------------------------- */
+main .rellenos-cat {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--rosa-d);
+  margin-bottom: 0.35rem;
+}
+main .rellenos-card h3.sub {
+  font-size: 1.25rem;
+}
+main .rellenos-card h3 + .rellenos-list {
+  margin-top: 0.85rem;
+}
+main .nav-category {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1.15rem;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(229, 164, 180, 0.55);
+  background: var(--blanco);
+  color: var(--choco);
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: border-color var(--duration-fast), color var(--duration-fast), transform var(--duration-fast) var(--ease-out);
+}
+main .nav-category:hover {
+  border-color: var(--rosa-d);
+  color: var(--rosa-d);
+  transform: translateY(-2px);
+}
+
+/* --------------------------------------------------------------------------
+   Mesas dulces
+   -------------------------------------------------------------------------- */
+.incluye-grid,
+.tipos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+  counter-reset: pg-card;
+}
+.incluye-card,
+.tipo-card {
+  position: relative;
+  overflow: hidden;
+  background: #FFFFFF;
+  border: 1px solid rgba(229, 164, 180, 0.28);
+  border-radius: var(--radius-lg);
+  padding: 1.6rem 1.5rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+  text-align: left;
+  counter-increment: pg-card;
+  transition: transform var(--duration-normal) var(--ease-out), box-shadow var(--duration-normal) var(--ease-out);
+}
+.incluye-card:hover,
+.tipo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+.incluye-card::before {
+  content: counter(pg-card, decimal-leading-zero);
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--gold);
+  margin-bottom: 0.9rem;
+}
+.tipo-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--rosa), var(--gold));
+}
+.incluye-card h3,
+.tipo-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+}
+.incluye-card p,
+.tipo-card p {
+  color: var(--muted);
+  font-size: 0.93rem;
+  line-height: 1.65;
+}
+@media (max-width: 1000px) {
+  .incluye-grid,
+  .tipos-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 560px) {
+  .incluye-grid,
+  .tipos-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+.incluye-section .fact-box-summary {
+  max-width: 1000px !important;
+}
+.incluye-section .fact-box-summary ul {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+@media (max-width: 900px) {
+  .incluye-section .fact-box-summary ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+.galeria-mesas {
+  background: var(--nude);
+}
+.galeria-mesas-note {
+  color: var(--muted);
+  max-width: 380px;
+  font-size: 0.93rem;
+  line-height: 1.7;
+}
+.galeria-mesas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+.galeria-mesas-item {
+  position: relative;
+  margin: 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  background: #E8DCD4;
+  box-shadow: var(--shadow-sm);
+}
+.galeria-mesas-item img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-slow) var(--ease-out);
+}
+.galeria-mesas-item:hover img {
+  transform: scale(1.04);
+}
+.galeria-mesas-overlay {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 2.5rem 1.1rem 1rem;
+  background: linear-gradient(to top, rgba(40, 20, 10, 0.9) 0%, rgba(40, 20, 10, 0.55) 55%, transparent 100%);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
+}
+.galeria-mesas-label {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 1.2;
+}
+@media (max-width: 760px) {
+  .galeria-mesas-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.85rem;
+  }
+  .galeria-mesas-item:first-child {
+    grid-column: span 2;
+    aspect-ratio: 4 / 3;
+  }
+  .galeria-mesas-label {
+    font-size: 1rem;
+  }
+}
+
+.coordina-section {
+  background: var(--crema);
+}
+.coordina-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  margin-top: 2.5rem;
+}
+.coordina-text p {
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+.coordina-text ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem 1.25rem;
+  margin-top: 1.5rem;
+}
+.coordina-text li {
+  position: relative;
+  padding-left: 1.4rem;
+  color: var(--choco);
+  font-size: 0.94rem;
+}
+.coordina-text li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 7px;
+  height: 7px;
+  background: var(--gold);
+  transform: rotate(45deg);
+}
+.coordina-img img {
+  width: 100%;
+  max-width: 420px;
+  margin-left: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+  border: 6px solid #FFFFFF;
+  box-shadow: var(--shadow-lg);
+}
+.coordina-caption {
+  max-width: 420px;
+  margin: 0.75rem 0 0 auto;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+}
+@media (max-width: 820px) {
+  .coordina-grid {
+    grid-template-columns: 1fr;
+  }
+  .coordina-img img,
+  .coordina-caption {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .coordina-text ul {
+    grid-template-columns: 1fr;
+  }
+}
+[data-theme="dark"] .incluye-card,
+[data-theme="dark"] .tipo-card {
+  background: var(--blanco);
+}
+[data-theme="dark"] .coordina-img img {
+  border-color: var(--blanco);
+}
+
+/* Sections with inline side padding already provide the gutter on phones */
+@media (max-width: 640px) {
+  main section[style*="1.5rem"] > .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .galeria-mesas-grid {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    margin: 0 -1.5rem;
+    padding: 0.25rem 1.5rem 0.75rem;
+    scroll-padding-left: 1.5rem;
+  }
+  .galeria-mesas-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .galeria-mesas-item,
+  .galeria-mesas-item:first-child {
+    flex: 0 0 78%;
+    aspect-ratio: 4 / 5;
+    scroll-snap-align: start;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Thematic pages (infantiles, princesas, 15 años, fútbol…)
+   -------------------------------------------------------------------------- */
+/* Gallery grids sized to the number of photos so no slot is left empty */
+.gallery-grid.pg-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.gallery-grid.pg-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.gallery-grid.pg-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.gallery-grid.pg-cols-2 { max-width: 880px; }
+@media (max-width: 900px) {
+  .gallery-grid.pg-cols-2,
+  .gallery-grid.pg-cols-3,
+  .gallery-grid.pg-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .gallery-grid .pg-gallery-cta:nth-child(odd) {
+    grid-column: span 2;
+  }
+}
+.pg-gallery-header {
+  display: block;
+}
+.pg-gallery-note {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 560px;
+  margin-top: 0.75rem;
+}
+.pg-gallery-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  background: var(--rosa-light);
+  border: 1px solid rgba(229, 164, 180, 0.45);
+  box-shadow: var(--shadow-sm);
+}
+.pg-gallery-cta .section-label {
+  margin: 0;
+}
+.pg-gallery-cta-title {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--choco);
+}
+.pg-gallery-cta p:not(.pg-gallery-cta-title) {
+  color: var(--muted);
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+.pg-gallery-cta .btn-wa {
+  margin-top: 0.4rem;
+}
+
+/* Service summary: 4 columns on desktop, 2 on phones */
+main .fact-box-summary ul {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+main .fact-box-summary {
+  max-width: 1000px !important;
+}
+@media (max-width: 900px) {
+  main .fact-box-summary ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    font-size: 0.86rem !important;
+  }
+}
+
+/* Theme cards: accent bar spans the full card width */
+main .mesa-card {
+  overflow: hidden;
+}
+main .mesa-card::before {
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 0;
+}
+
+/* Review request: full-width strip */
+main #recomendacion-banner {
+  border-radius: 0 !important;
+  margin: 0 !important;
+  border-top: 1px solid rgba(229, 164, 180, 0.3);
+  border-bottom: 1px solid rgba(229, 164, 180, 0.3);
+}
+
+/* Long SEO copy: comfortable reading measure, left aligned */
+main .pg-prose {
+  text-align: left !important;
+  max-width: 680px !important;
+}
+main .pg-prose p {
+  font-size: 1rem;
+}
+main .pg-prose strong {
+  font-weight: 500;
+  color: var(--choco);
+}
+[data-theme="dark"] .pg-gallery-cta {
+  background: var(--rosa-light);
+}
+
+/* --------------------------------------------------------------------------
+   Bodas y egresados
+   -------------------------------------------------------------------------- */
+.detail-grid.pg-grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 0;
+}
+@media (max-width: 900px) {
+  .detail-grid.pg-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+.pg-cta-card {
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid rgba(229, 164, 180, 0.28);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: clamp(2rem, 5vw, 3.25rem) clamp(1.25rem, 5vw, 3.5rem);
+}
+.pg-cta-card p {
+  color: var(--muted);
+  line-height: 1.75;
+  margin: 1rem auto 1.75rem;
+  max-width: 620px;
+}
+.pg-cta-card strong {
+  color: var(--choco);
+  font-weight: 600;
+}
+[data-theme="dark"] .pg-cta-card {
+  background: var(--blanco);
+}
+
+/* --------------------------------------------------------------------------
+   Blog index
+   -------------------------------------------------------------------------- */
+main.pg-blog .pg-blog-list {
+  padding: clamp(2.25rem, 5vw, 3.5rem) 1.5rem 4rem;
+}
+.pg-blog-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+@media (max-width: 1000px) {
+  .pg-blog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .pg-blog-grid {
+    grid-template-columns: 1fr;
+  }
+  main.pg-blog .pg-blog-list > .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.pg-blog-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 1.5rem;
+  overflow: hidden;
+}
+.pg-blog-card > :not(.pg-blog-thumb-link) {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.pg-blog-thumb-link {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+  background: var(--nude);
+}
+.pg-blog-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform var(--duration-slow) var(--ease-out);
+}
+.pg-blog-card:hover .pg-blog-thumb {
+  transform: scale(1.04);
+}
+.pg-blog-card p {
+  flex-grow: 1;
+}
+.pg-blog-more {
+  align-self: flex-start;
+  margin-top: 1rem;
+  color: var(--rosa-d);
+  font-weight: 600;
+  font-size: 0.92rem;
+  text-decoration: underline;
+  text-decoration-color: rgba(163, 74, 99, 0.35);
+  text-underline-offset: 4px;
+  transition: text-decoration-color var(--duration-fast);
+}
+.pg-blog-more:hover {
+  text-decoration-color: currentColor;
+}
+
+/* --------------------------------------------------------------------------
+   Blog posts
+   -------------------------------------------------------------------------- */
+.pg-post-article {
+  padding: clamp(2rem, 5vw, 3rem) 1.5rem 4rem;
+}
+.pg-post-body {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.pg-back {
+  display: inline-block;
+  color: var(--rosa-d);
+  font-size: 0.88rem;
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+}
+.pg-back:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.pg-post-label {
+  display: flex;
+  margin-bottom: 0.75rem;
+}
+.pg-post-body h1 {
+  line-height: 1.12;
+  text-wrap: balance;
+}
+.pg-post-figure {
+  margin: 0 0 2.25rem;
+}
+.pg-post-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  background: var(--nude);
+}
+.pg-post-figure figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-style: italic;
+  text-align: center;
+}
+.pg-post-body a:not(.btn-wa):not(.pg-back) {
+  color: var(--rosa-d);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 500;
+}
+.pg-post-body a:not(.btn-wa):not(.pg-back):hover {
+  color: var(--rosa-hover);
+}
+.pg-post-body table {
+  width: 100%;
+  border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
+}
+
+/* --------------------------------------------------------------------------
+   Menú / catálogo
+   -------------------------------------------------------------------------- */
+.pg-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media (max-width: 960px) {
+  .pg-menu-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .pg-menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.pg-menu-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 1.5rem;
+  overflow: hidden;
+}
+.pg-menu-card > :not(img) {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.pg-menu-card > img {
+  height: auto !important;
+  aspect-ratio: 4 / 3;
+  border-radius: 0 !important;
+  margin-bottom: 1.2rem !important;
+}
+.pg-menu-card p {
+  flex-grow: 1;
+}
+.pg-menu-card .btn-wa {
+  margin-top: 1.25rem !important;
+  align-self: flex-start;
+}
+
+/* --------------------------------------------------------------------------
+   Reduced motion
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .pg-work img,
+  .pg-blog-thumb,
+  .galeria-mesas-item img,
+  .incluye-card,
+  .tipo-card,
+  main .nav-category {
+    transition: none !important;
+  }
+  .pg-work:hover img,
+  .pg-blog-card:hover .pg-blog-thumb,
+  .galeria-mesas-item:hover img,
+  .incluye-card:hover,
+  .tipo-card:hover,
+  main .nav-category:hover {
+    transform: none !important;
+  }
+  .pg-works-grid,
+  .galeria-mesas-grid {
+    scroll-behavior: auto;
+  }
+}
