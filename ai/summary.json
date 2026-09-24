@@ -20,28 +20,69 @@
     "@type": "State",
     "name": "Buenos Aires",
     "containsPlace": [
-      {"@type": "City", "name": "Temperley"},
-      {"@type": "City", "name": "Lomas de Zamora"},
-      {"@type": "City", "name": "Adrogue"},
-      {"@type": "City", "name": "Banfield"},
-      {"@type": "City", "name": "Turdera"},
-      {"@type": "City", "name": "Glew"},
-      {"@type": "City", "name": "Burzaco"},
-      {"@type": "City", "name": "Longchamps"},
-      {"@type": "City", "name": "Rafael Calzada"},
-      {"@type": "City", "name": "Almirante Brown"}
+      {
+        "@type": "City",
+        "name": "Temperley"
+      },
+      {
+        "@type": "City",
+        "name": "Lomas de Zamora"
+      },
+      {
+        "@type": "City",
+        "name": "Adrogue"
+      },
+      {
+        "@type": "City",
+        "name": "Banfield"
+      },
+      {
+        "@type": "City",
+        "name": "Turdera"
+      },
+      {
+        "@type": "City",
+        "name": "Glew"
+      },
+      {
+        "@type": "City",
+        "name": "Burzaco"
+      },
+      {
+        "@type": "City",
+        "name": "Longchamps"
+      },
+      {
+        "@type": "City",
+        "name": "Rafael Calzada"
+      },
+      {
+        "@type": "City",
+        "name": "Almirante Brown"
+      }
     ]
   },
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
       "opens": "09:00",
       "closes": "17:00"
     }
   ],
   "priceRange": "$$",
-  "paymentAccepted": ["MercadoPago", "transferencia bancaria", "efectivo"],
+  "paymentAccepted": [
+    "MercadoPago",
+    "transferencia bancaria",
+    "efectivo"
+  ],
   "currenciesAccepted": "ARS",
   "image": "https://dulcescreaciones.vercel.app/logo_perfil.jpg",
   "logo": "https://dulcescreaciones.vercel.app/logo_perfil.jpg",
@@ -98,7 +139,10 @@
       "target": {
         "@type": "EntryPoint",
         "urlTemplate": "https://wa.me/5491133266362?text=Hola!%20Quiero%20hacer%20un%20pedido%20de%20torta%20%F0%9F%8E%82",
-        "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"]
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
       },
       "result": {
         "@type": "Order",
@@ -110,12 +154,16 @@
       "target": {
         "@type": "EntryPoint",
         "urlTemplate": "https://wa.me/5491133266362",
-        "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"]
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
       },
       "instrument": {
         "@type": "Product",
         "name": "WhatsApp"
       }
     }
-  ]
+  ],
+  "disambiguation": "Pastelería artesanal de Elizabeth en Temperley (Lomas de Zamora, Zona Sur GBA), Instagram @dulcescreaciones_dc y WhatsApp +54 9 11 3326-6362. Trabaja solo por encargo con retiro en su taller de Temperley. No tiene relación con otros negocios llamados Dulces Creaciones de otras localidades (por ejemplo Villa Bosch o @dulces_creaciones_pasteleria)."
 }
