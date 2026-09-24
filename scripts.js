@@ -138,7 +138,10 @@ document.addEventListener('DOMContentLoaded', () => {
       navLinks.classList.toggle('open', isOpen);
       hamburger.classList.toggle('active', isOpen);
       hamburger.setAttribute('aria-expanded', String(isOpen));
-      document.body.style.overflow = isOpen ? 'hidden' : '';
+      // Lock scrolling on <html>: overflow on <body> would turn it into a
+      // scroll container and unstick the sticky header of secondary pages
+      document.documentElement.style.overflow = isOpen ? 'hidden' : '';
+      document.body.classList.toggle('nav-open', isOpen);
 
       trackEvent('menu_toggle', {
         action: isOpen ? 'open' : 'close',
@@ -497,12 +500,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+});
+
+// ===== WHATSAPP CTA (desktop pill / mobile bottom bar) =====
+// Hidden while another WhatsApp call to action is already on screen:
+// the hero buttons, the final CTA section or the footer WhatsApp button.
+document.addEventListener('DOMContentLoaded', () => {
   const fab = document.querySelector('.fab-wa');
-  const heroCta = document.querySelector('.hero-actions');
-  if (fab && heroCta && 'IntersectionObserver' in window) {
-    fab.classList.add('fab-hidden');
-    new IntersectionObserver(([entry]) => {
-      fab.classList.toggle('fab-hidden', entry.isIntersecting);
-    }).observe(heroCta);
+  if (!fab) return;
+
+  // Pages whose FAB markup predates the mobile bar get its label here
+  if (!fab.querySelector('.fab-bar-text')) {
+    const bar = document.createElement('span');
+    bar.className = 'fab-bar-text';
+    bar.setAttribute('aria-hidden', 'true');
+    bar.innerHTML = '<span class="fab-bar-title">Consultar por WhatsApp</span>' +
+      '<span class="fab-bar-sub">Presupuesto sin cargo en el día</span>';
+    fab.appendChild(bar);
   }
+
+  if (!('IntersectionObserver' in window)) return;
+
+  const heroTarget = document.querySelector('.hero-actions') || document.querySelector('.hero-cta');
+  const targets = [
+    heroTarget,
+    document.getElementById('cta-final'),
+    document.querySelector('footer .dc-footer-cta-btn')
+  ].filter(Boolean);
+  if (targets.length === 0) return;
+
+  const inView = new Set();
+  if (heroTarget && heroTarget.getBoundingClientRect().top < window.innerHeight) {
+    inView.add(heroTarget);
+    fab.classList.add('fab-hidden');
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) inView.add(entry.target);
+      else inView.delete(entry.target);
+    });
+    fab.classList.toggle('fab-hidden', inView.size > 0);
+  });
+  targets.forEach((el) => observer.observe(el));
 });

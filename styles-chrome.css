@@ -1,1 +1,169 @@
 /* chrome layer — merged into styles.css after the redesign pass */
+
+/* ==========================================================================
+   HEADER ON SECONDARY PAGES
+   index.html uses a fixed .site-header over its hero. Secondary pages use the
+   same markup plus .site-header--page, which is sticky instead: it stays in
+   the document flow, so the first section is never hidden underneath it.
+   ========================================================================== */
+.site-header--page {
+  position: sticky;
+  top: 0;
+}
+
+/* body { overflow-x: hidden } turns body into a scroll container (html has
+   overflow-x: clip), which would stop the sticky header from sticking.
+   clip hides horizontal overflow without creating a scroll container. */
+body:has(.site-header--page) {
+  overflow-x: clip;
+}
+
+/* In-page anchors land below the sticky header */
+html:has(.site-header--page) {
+  scroll-padding-top: 7.5rem;
+}
+html:has(.site-header--page) section[id],
+html:has(.site-header--page) div[id] {
+  scroll-margin-top: 0;
+}
+
+.nav-logo-text {
+  min-width: 0;
+}
+
+@media (max-width: 380px) {
+  .nav-logo {
+    gap: 0.55rem;
+  }
+  .nav-logo-title {
+    font-size: 1.2rem;
+  }
+  .nav-logo-subtitle {
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+  }
+}
+
+/* Keyboard focus that is visible on the light nav and the rose topbar */
+.site-header a:focus-visible,
+.site-header button:focus-visible {
+  outline: 2px solid var(--rosa-d);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.topbar a:focus-visible {
+  outline-color: #FFFFFF;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.dc-footer-links,
+.dc-footer-links-inline {
+  list-style: none;
+  padding: 0;
+  margin-left: 0;
+}
+
+.dc-footer a:focus-visible {
+  outline: 2px solid #FFFFFF;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ==========================================================================
+   WHATSAPP CTA
+   Desktop: floating pill. Phones (< 700px): full-width bottom bar.
+   ========================================================================== */
+.fab-wa .fab-bar-text {
+  display: none;
+}
+
+.fab-wa .fab-status-dot {
+  flex-shrink: 0;
+}
+
+.fab-wa:focus-visible {
+  outline: 3px solid var(--choco);
+  outline-offset: 3px;
+}
+
+@media (max-width: 699px) {
+  .fab-wa,
+  .fab-wa:hover,
+  .fab-wa:active {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: calc(56px + env(safe-area-inset-bottom, 0px));
+    padding: 0.4rem 1rem calc(0.4rem + env(safe-area-inset-bottom, 0px));
+    border-radius: 0;
+    justify-content: center;
+    gap: 0.75rem;
+    box-shadow: 0 -6px 22px rgba(56, 30, 15, 0.16);
+    transform: none;
+  }
+  .fab-wa svg {
+    width: 26px;
+    height: 26px;
+  }
+  .fab-wa span.fab-text,
+  .fab-wa .fab-status-dot {
+    display: none;
+  }
+  .fab-wa .fab-bar-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+    text-align: left;
+  }
+  .fab-bar-title {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+  .fab-bar-sub {
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  .fab-wa.fab-hidden {
+    opacity: 0;
+    transform: translateY(110%);
+    pointer-events: none;
+  }
+  .fab-wa:focus-visible {
+    outline-offset: -5px;
+    outline-color: #FFFFFF;
+  }
+
+  /* Keep the last content (footer bottom bar) clear of the WhatsApp bar */
+  body:has(.fab-wa) .dc-footer {
+    padding-bottom: calc(2rem + 56px + env(safe-area-inset-bottom, 0px));
+  }
+  body:has(.fab-wa):not(:has(.dc-footer)) {
+    padding-bottom: calc(56px + env(safe-area-inset-bottom, 0px));
+  }
+  /* The install prompt sits above the bar instead of under it */
+  body:has(.fab-wa) #pwa-prompt {
+    bottom: calc(56px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+/* Never float the CTA over the open mobile menu */
+body.nav-open .fab-wa {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fab-wa,
+  .fab-wa.fab-hidden {
+    transition: opacity 0.01ms linear !important;
+  }
+  .fab-wa.fab-hidden {
+    transform: none;
+  }
+}
