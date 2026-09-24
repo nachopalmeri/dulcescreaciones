@@ -9,7 +9,7 @@
 - Ubicación: Temperley, Zona Sur GBA, Buenos Aires, Argentina
 
 ## Reglas globales
-Heredar de C:\Users\nacho\.agents\AGENTS.md — especialmente:
+Heredar de `~/.agents/AGENTS.md` — especialmente:
 - Chat-first: no pedir nombres de workflows al usuario
 - Push obligatorio a GitHub al cerrar sesión
 - Anti-cementerio: no acumular info sin acción
