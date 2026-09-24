@@ -7,3 +7,4 @@ workflows
 *.py
 *.ps1
 test_*.png
+videos
