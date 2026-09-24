@@ -113,6 +113,17 @@ document.addEventListener('DOMContentLoaded', () => {
       trackInstagramClick(igLink);
       return;
     }
+
+    const reviewLink = e.target.closest('a[href*="writereview"]');
+    if (reviewLink) {
+      trackEvent('review_click', { link_location: getLinkLocation(reviewLink), page_path: window.location.pathname });
+      return;
+    }
+
+    const mapsLink = e.target.closest('a[href*="maps.google."], a[href*="google.com/maps"], a[href*="maps.app.goo.gl"]');
+    if (mapsLink) {
+      trackEvent('maps_click', { link_location: getLinkLocation(mapsLink), page_path: window.location.pathname });
+    }
   });
 });
 
@@ -209,6 +220,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxCounter = document.getElementById('lightbox-counter');
   const lightboxCaption = document.querySelector('.lightbox-caption');
   const lightboxCtaLink = document.querySelector('.lightbox-cta-link');
+  let lightboxShareBtn = null;
+  if (lightboxCtaLink && lightboxCtaLink.parentElement) {
+    lightboxShareBtn = document.createElement('button');
+    lightboxShareBtn.type = 'button';
+    lightboxShareBtn.className = 'lightbox-share-btn';
+    lightboxShareBtn.textContent = 'Compartir';
+    lightboxCtaLink.parentElement.appendChild(lightboxShareBtn);
+  }
   const lightboxClose = document.querySelector('.lightbox-close');
   const lightboxPrev = document.querySelector('.lightbox-prev');
   const lightboxNext = document.querySelector('.lightbox-next');
@@ -350,6 +369,21 @@ document.addEventListener('DOMContentLoaded', () => {
       renderLightboxItem();
     }
   });
+
+  if (lightboxShareBtn) {
+    lightboxShareBtn.addEventListener('click', async () => {
+      const item = visibleImages[currentIndex];
+      if (!item) return;
+      const url = 'https://dulcescreaciones.vercel.app/?utm_source=share&utm_medium=referral&utm_campaign=gallery_share#galeria';
+      const text = `Mirá esta torta de Dulces Creaciones (Temperley): ${item.label}`;
+      trackEvent('share', { method: navigator.share ? 'web_share' : 'whatsapp', content_type: 'gallery_image', item_id: item.label });
+      if (navigator.share) {
+        try { await navigator.share({ title: 'Dulces Creaciones', text, url }); } catch (e) {}
+        return;
+      }
+      window.open(`https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}`, '_blank', 'noopener');
+    });
+  }
 });
 
 // ===== THEME TOGGLE (LIGHT / DARK) =====
@@ -543,7 +577,10 @@ document.addEventListener('DOMContentLoaded', () => {
     fab.classList.toggle('fab-hidden', inView.size > 0);
   });
   targets.forEach((el) => observer.observe(el));
+});
 
+// ===== MAP FACADE (load Google Maps only on tap) =====
+document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.map-facade').forEach((facade) => {
     const btn = facade.querySelector('.map-facade-btn');
     if (!btn) return;

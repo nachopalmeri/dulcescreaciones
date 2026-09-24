@@ -103,7 +103,7 @@ def run_audit():
             elif name == "Twitter Card tags":
                 passed = 'name="twitter:' in html_text
             elif name == "robots index/follow":
-                passed = 'content="index, follow"' in html_text
+                passed = 'content="index, follow' in html_text
             elif name == "Schema.org LocalBusiness JSON-LD":
                 passed = '"@type": "Bakery"' in html_text and '"LocalBusiness"' not in html_text or '"@type": "Bakery"' in html_text
             elif name == "Schema.org Service/ItemList JSON-LD":

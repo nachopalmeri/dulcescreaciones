@@ -58,3 +58,16 @@
 - Link directo para pedir reseñas: https://search.google.com/local/writereview?placeid=ChIJS-6XoBtgKmoRIvXlAMbLkXQ
 - [ ] Pedir reseñas a clientas reales (guion en GBP-MASTER-KIT.md, sección 3); con reseñas reales recién ahí agregar AggregateRating
 - [ ] Ojo homónimos: existen otras "Dulces Creaciones" (Laferrere, Villa Bosch). No agregar "Temperley" al nombre del perfil de Google (va contra sus reglas); diferenciar con dirección, teléfono, categoría y link a la web idénticos en GBP, IG y FB
+
+## Hecho 2026-09-24 (iteración errores / alcance)
+- [x] Axe: 0 problemas serios/críticos en 53 páginas (claro y oscuro)
+- [x] Testimonios inventados eliminados en referidos.html
+- [x] Botón "Compartir" en el visor de fotos (Web Share / WhatsApp con UTM share)
+- [x] Footer: Instagram + "Dejá tu reseña en Google" en todas las páginas; tracking review_click / maps_click
+- [x] Fotos torta-*.webp sin ícono de Instagram ni bordes de captura; previews OG regeneradas
+- [x] robots max-image-preview:large en todas las páginas indexables
+- [x] Conservación (3-5 días) y anticipación unificadas
+
+## Pendiente (requiere confirmación del dueño)
+- [ ] ¿Programa de referidos real? ($500, mínimo $8.000, crédito sin vencimiento) — si no, eliminar referidos.html
+- [ ] ¿"5+ años de trayectoria" es cierto? (tortas-personalizadas-zona-sur.html, llms.txt)

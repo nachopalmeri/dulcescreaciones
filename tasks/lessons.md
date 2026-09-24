@@ -42,3 +42,10 @@
 ## 2026-09-23: Afirmaciones de salud sin respaldo (sin TACC / celíacos)
 - Problema: 4 páginas afirmaban harinas "certificadas", "protocolos estrictos contra contaminación cruzada", "aptas para celíacos" y "envase sellado apto celíaco"; no era cierto
 - Regla: nunca escribir "sin TACC", "apto celíacos" ni garantías de salud sin certificación real confirmada por el dueño. Texto aprobado: "opciones sin gluten a pedido, sin certificación sin TACC; si es para una persona celíaca, consultar antes"
+
+## 2026-09-24 — Iteración de errores
+- Variables creadas dentro de un `DOMContentLoaded` no existen en otro: el botón Compartir rompió el JS de las 53 páginas hasta que la prueba en navegador lo detectó. Probar SIEMPRE con Playwright capturando `pageerror` antes de publicar.
+- No colgar lógica independiente (mapa) de un bloque con `return` tempranos (FAB): cada feature en su propio bloque.
+- Las fotos `torta-*.webp` eran capturas de Instagram (ícono de carrusel + líneas de marco). Limpiadas; si llegan fotos nuevas, subir el original, nunca capturas.
+- Datos contradictorios (conservación 3-5 vs 5-7 días, anticipación 5-7 vs 7-10) confunden a Google y a las IA: una sola cifra en todo el sitio.
+- Blanco sobre `--rosa-d` falla contraste en modo oscuro (rosa claro): usar texto cacao `#2A160B`.

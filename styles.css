@@ -4654,3 +4654,79 @@ main.pg-blog .pg-blog-list {
   background: var(--rosa-d);
   color: #2A160B;
 }
+
+/* Referidos page cards use hard-coded white in its inline styles */
+[data-theme="dark"] .paso-card,
+[data-theme="dark"] .beneficio-item,
+[data-theme="dark"] .ejemplo-box,
+[data-theme="dark"] .faq-referidos .faq-item {
+  background: var(--blanco) !important;
+}
+.pg-works-grid:focus-visible,
+.galeria-mesas-grid:focus-visible {
+  outline: 2px solid var(--rosa-d);
+  outline-offset: 4px;
+}
+
+.lightbox-cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.lightbox-share-btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--radius-full);
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.lightbox-share-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Secondary pink button (non-WhatsApp links styled like .btn-wa) */
+.btn-wa.btn-rosa {
+  background: var(--rosa-d);
+  box-shadow: 0 8px 22px rgba(163, 74, 99, 0.28);
+}
+.btn-wa.btn-rosa:hover {
+  background: var(--rosa-hover);
+  box-shadow: 0 10px 30px rgba(163, 74, 99, 0.38);
+}
+/* White text on --rosa-d fails AA in dark mode (light pink), so every
+   filled pink control switches to the dark cocoa label there (~9:1). */
+[data-theme="dark"] .btn-wa.btn-rosa,
+[data-theme="dark"] .mapa-tag:hover,
+[data-theme="dark"] details.faq-item[open] summary::after,
+[data-theme="dark"] .dc-footer-links-inline li a:hover,
+[data-theme="dark"] #pwa-install {
+  color: #2A160B;
+}
+
+/* Footer social + review links (brand column) */
+.dc-footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.1rem;
+  margin-top: 1rem;
+}
+.dc-footer-social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 32px;
+  font-size: 0.82rem;
+  color: rgba(253, 251, 247, 0.85);
+  text-decoration: underline;
+  text-decoration-color: rgba(229, 164, 180, 0.45);
+  text-underline-offset: 4px;
+}
+.dc-footer-social a:hover {
+  color: #FFFFFF;
+  text-decoration-color: var(--rosa);
+}
